@@ -83,29 +83,42 @@ body {
     flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
-    width: 70px;
+    width: 90px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 4px;
 }
 
-.month {
+.date-weekday {
     background: var(--main-yellow);
     color: var(--text-primary);
     text-align: center;
-    padding: 3px 0;
+    padding: 4px 0;
     font-size: 16px;
     font-weight: bold;
 }
 
-.day {
+.date-details {
     background: white;
     color: var(--text-primary);
     text-align: center;
-    padding: 6px 0;
-    font-size: 28px;
-    font-weight: bold;
+    padding: 4px 0;
     border: 1px solid #eee;
     border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.date-number {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.date-year {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
 }
 
 .card-subtitle {

@@ -1,7 +1,9 @@
 export const newsData = [
     {
+        year: "2024",
         month: "11",
         day: "20",
+        weekday: "周三",
         projects: [
             {
                 name: "data-engineer-handbook",
@@ -28,8 +30,10 @@ export const newsData = [
         ]
     },
     {
+        year: "2024",
         month: "11",
         day: "21",
+        weekday: "周四",
         projects: [
             {
                 name: "ChatGPT-Next-Web",

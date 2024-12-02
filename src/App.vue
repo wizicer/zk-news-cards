@@ -12,8 +12,11 @@
           </div>
         </div>
         <div class="date">
-          <span class="month">{{ card.month }}月</span>
-          <span class="day">{{ card.day }}</span>
+          <span class="date-weekday">{{ card.weekday }}</span>
+          <div class="date-details">
+            <div class="date-number">{{ card.month }}.{{ card.day }}</div>
+            <div class="date-year">{{ card.year }}</div>
+          </div>
         </div>
       </div>
       <div class="card-subtitle">
