@@ -23,16 +23,18 @@
       </div>
       <div class="projects">
         <div v-for="(project, pIndex) in card.projects" :key="pIndex" class="project-item">
-          <div class="project-icon">
-            <img v-if="project.iconUrl" :src="project.iconUrl" :alt="project.name">
-            <img v-else-if="project.iconUrls" :src="project.iconUrls[0]" :alt="project.name">
-            <span v-else-if="project.icon">{{ project.icon }}</span>
-            <span v-else>{{ getTypeIcon(project.type) }}</span>
+          <div class="project-meta">
+            <div class="project-icon">
+              <img v-if="project.iconUrl" :src="project.iconUrl" :alt="project.name">
+              <img v-else-if="project.iconUrls" :src="project.iconUrls[0]" :alt="project.name">
+              <span v-else-if="project.icon">{{ project.icon }}</span>
+              <span v-else>{{ getTypeIcon(project.type) }}</span>
+            </div>
+            <span class="project-type" v-if="project.type">{{ project.type }}</span>
           </div>
           <div class="project-content">
             <h3 class="project-name">
               {{ project.name }}
-              <span class="project-type" v-if="project.type">[{{ project.type }}]</span>
             </h3>
             <a :href="project.url" class="project-url">{{ project.url }}</a>
             <div class="project-tags">
