@@ -261,8 +261,32 @@ body {
 }
 
 @media print {
+    @page {
+        size: 480px 640px;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .news-container {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
     .news-card {
-        break-inside: avoid;
+        width: 480px;
+        height: 640px;
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
         page-break-after: always;
+        break-inside: avoid;
+        box-shadow: none;
+        border-radius: 0;
     }
 }
