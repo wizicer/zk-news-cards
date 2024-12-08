@@ -24,25 +24,30 @@
       <div class="projects">
         <div v-for="(project, pIndex) in card.projects" :key="pIndex" class="project-item">
           <div class="project-icon">
-            <span v-if="!project.iconUrl">{{ project.icon }}</span>
-            <img v-else :src="project.iconUrl" :alt="project.name">
+            <img v-if="project.iconUrl" :src="project.iconUrl" :alt="project.name">
+            <img v-else-if="project.iconUrls" :src="project.iconUrls[0]" :alt="project.name">
+            <span v-else-if="project.icon">{{ project.icon }}</span>
+            <span v-else>{{ getTypeIcon(project.type) }}</span>
           </div>
           <div class="project-content">
-            <h3 class="project-name">{{ project.name }}</h3>
+            <h3 class="project-name">
+              {{ project.name }}
+              <span class="project-type" v-if="project.type">[{{ project.type }}]</span>
+            </h3>
             <a :href="project.url" class="project-url">{{ project.url }}</a>
-            <p class="project-description">{{ project.description }}</p>
-            <div class="project-stats">
-              <span class="lang">{{ project.language }}</span>
-              <span class="stars">⭐ {{ project.stars }}</span>
-              <span class="forks">🔱 {{ project.forks }}</span>
-              <span class="trending">⭐ +{{ project.trending }}</span>
+            <div class="project-tags">
+              <span v-for="(tag, tIndex) in project.tags" :key="tIndex" class="tag">
+                {{ tag }}
+              </span>
             </div>
             <p class="project-summary">{{ project.summary }}</p>
           </div>
         </div>
       </div>
       <div class="card-footer">
-        由 @icerdesign 收集
+        由
+        <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a>
+        收集
       </div>
     </div>
   </div>
@@ -50,6 +55,15 @@
 
 <script>
 import { newsData } from './data'
+const iconMap = {
+  '论文': '📄',
+  '新闻': '📰',
+  '开源': '💻',
+  '视频': '🎥',
+  '博客': '📝',
+  '活动': '🎪',
+  '工具': '🛠️'
+};
 
 export default {
   name: 'App',
@@ -60,7 +74,12 @@ export default {
   },
   computed: {
     displayedCards() {
-      return this.cards
+      return newsData;
+    },
+    getTypeIcon() {
+      return (type) => {
+        return iconMap[type] || '📌';
+      }
     }
   }
 }
