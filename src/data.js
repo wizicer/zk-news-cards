@@ -1,9 +1,12 @@
+const getWeekday = (dateStr) => {
+    const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+    const date = new Date(dateStr);
+    return weekdays[date.getDay()];
+};
+
 export const newsData = [
     {
-        year: "2024",
-        month: "11",
-        day: "20",
-        weekday: "周三",
+        date: "2024-12-08",
         projects: [
             {
                 name: "Aligned Foundation Genesis Airdrop",
@@ -22,4 +25,13 @@ export const newsData = [
             }
         ]
     },
-];
+].map(item => {
+    const [year, month, day] = item.date.split('-');
+    return {
+        ...item,
+        year,
+        month,
+        day,
+        weekday: getWeekday(item.date)
+    };
+});
