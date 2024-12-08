@@ -31,6 +31,17 @@
               <span v-else>{{ getTypeIcon(project.type) }}</span>
             </div>
             <span class="project-type" v-if="project.type">{{ project.type }}</span>
+            <div class="project-qr">
+              <qrcode-vue
+                :value="project.url"
+                :size="64"
+                level="L"
+                render-as="svg"
+                :margin="0"
+                background="#ffffff"
+                foreground="#000000"
+              />
+            </div>
           </div>
           <div class="project-content">
             <h3 class="project-name">
@@ -55,8 +66,13 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue'
 import { newsData } from './data'
+import QrcodeVue from 'qrcode.vue'
+
+const cards = ref(newsData)
+
 const iconMap = {
   '论文': '📄',
   '新闻': '📰',
@@ -65,26 +81,13 @@ const iconMap = {
   '博客': '📝',
   '活动': '🎪',
   '工具': '🛠️'
-};
-
-export default {
-  name: 'App',
-  data() {
-    return {
-      cards: newsData
-    }
-  },
-  computed: {
-    displayedCards() {
-      return newsData;
-    },
-    getTypeIcon() {
-      return (type) => {
-        return iconMap[type] || '📌';
-      }
-    }
-  }
 }
+
+const getTypeIcon = (type) => {
+  return iconMap[type] || '📌'
+}
+
+const displayedCards = ref(newsData)
 </script>
 
 <style>

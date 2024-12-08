@@ -10,6 +10,7 @@
     "clean": "rimraf dist node_modules"
   },
   "dependencies": {
+    "qrcode.vue": "^3.6.0",
     "vue": "^3.3.11"
   },
   "devDependencies": {
