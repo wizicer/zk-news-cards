@@ -16,7 +16,13 @@ async function takeScreenshot() {
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.setViewport({ width: 480, height: 640 });
+    
+    // Set high DPI viewport (2x scale)
+    await page.setViewport({
+        width: 480,
+        height: 640,
+        deviceScaleFactor: 2
+    });
     
     // Wait for dev server to be ready
     await page.goto('http://localhost:3000', { waitUntil: 'networkidle0' });
@@ -24,10 +30,13 @@ async function takeScreenshot() {
     // Wait for any Vue hydration to complete
     await new Promise(resolve => setTimeout(resolve, 2000));
     
-    await page.screenshot({ path: filepath, fullPage: true });
+    await page.screenshot({
+        path: filepath,
+        fullPage: true,
+    });
     await browser.close();
     
-    console.log(`Screenshot saved to: ${filepath}`);
+    console.log(`High DPI Screenshot saved to: ${filepath}`);
 }
 
 takeScreenshot()
