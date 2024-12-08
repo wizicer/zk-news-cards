@@ -8,11 +8,14 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rimraf dist node_modules",
-    "screenshot": "node screenshot.js"
+    "screenshot": "node screenshot.js",
+    "build:ssr": "vite build --ssr server-entry.js --outDir dist/server",
+    "generate": "npm run build:ssr && node ssr.js"
   },
   "dependencies": {
     "qrcode.vue": "^3.6.0",
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "@vue/server-renderer": "^3.3.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
