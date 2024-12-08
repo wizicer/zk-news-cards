@@ -4,11 +4,11 @@
       <div class="card-header">
         <div class="github-title">
           <div class="title-icon">
-            <span class="github-icon">{ }</span>
-            GitHub <span class="highlight">趋势</span>
+            <span class="github-icon">ZKP</span>
+            零知识证明 <span class="highlight">新闻</span>
           </div>
           <div class="subtitle-text">
-            GitHub 今天有什么热门项目🔥
+            零知识证明 今天有什么热点🔥
           </div>
         </div>
         <div class="date">
@@ -42,6 +42,7 @@
         </div>
       </div>
       <div class="card-footer">
+        由 @icerdesign 收集
       </div>
     </div>
   </div>
