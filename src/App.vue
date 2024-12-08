@@ -8,7 +8,7 @@
             零知识证明 <span class="highlight">新闻</span>
           </div>
           <div class="subtitle-text">
-            零知识证明 今天有什么热点🔥
+            零知识证明 前沿热点追踪 🎯
           </div>
         </div>
         <div class="date">
