@@ -4,7 +4,7 @@ const getWeekday = (dateStr) => {
     return weekdays[date.getDay()];
 };
 
-export const newsData = [
+const oldData = [
     {
         date: "2024-12-08",
         projects: [
@@ -22,6 +22,27 @@ export const newsData = [
                 type: "论文",
                 tags: ["University of Pennsylvania", "低内存"],
                 summary: "Baweja等人在论文中提出了Scribe，一种低内存SNARK，通过利用磁盘存储在廉价设备上高效证明大称述，显著减少内存需求并优化I/O成本。"
+            }
+        ]
+    },
+];
+export const newsData = [
+    {
+        date: "2024-12-09",
+        projects: [
+            {
+                name: "Zeam: Ethereum beam client in Zig",
+                url: "https://github.com/blockblaz/zeam",
+                type: "开源",
+                tags: ["Blockblaz", "Ethereum", "Github"],
+                summary: "Blockblaz团队发布了Zeam开源项目，这是Zig实现的Beam客户端的生产级实现，旨在通过ZK-VMs大规模扩展和去中心化以太坊共识协议。"
+            },
+            {
+                name: "Play-by-email provable games",
+                url: "https://blog.hyle.eu/podcast-1-matteo-zkchess/",
+                type: "博客",
+                tags: ["Hylé", "Matteo", "zkEmail", "RISC0"],
+                summary: "Hylé博客讨论了zkChess，一个使用zkEmail和RISC0构建的邮件可验证游戏引擎，探讨了zkEmail的酷炫之处及其在加密领域的应用。"
             }
         ]
     },
