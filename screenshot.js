@@ -11,8 +11,9 @@ async function takeScreenshot() {
 
     // Generate filename with current date
     const today = new Date();
-    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}.png`;
-    const filepath = path.join(screenshotDir, filename);
+    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+    const htmlPath = path.join('./html', `${filename}.html`);
+    const filepath = path.join(screenshotDir, `${filename}.png`);
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -24,11 +25,11 @@ async function takeScreenshot() {
         deviceScaleFactor: 2
     });
     
-    // Wait for dev server to be ready
-    await page.goto('http://localhost:3000', { waitUntil: 'networkidle0' });
+    // Load the local HTML file
+    await page.goto(`file://${path.resolve(htmlPath)}`, { waitUntil: 'networkidle0' });
     
-    // Wait for any Vue hydration to complete
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    // Small delay to ensure all content is rendered
+    await new Promise(resolve => setTimeout(resolve, 1000));
     
     await page.screenshot({
         path: filepath,
