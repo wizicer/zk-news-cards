@@ -25,8 +25,6 @@ const oldData = [
             }
         ]
     },
-];
-export const newsData = [
     {
         date: "2024-12-09",
         projects: [
@@ -43,6 +41,27 @@ export const newsData = [
                 type: "博客",
                 tags: ["Hylé", "Matteo", "zkEmail", "RISC0"],
                 summary: "Hylé博客讨论了zkChess，一个使用zkEmail和RISC0构建的邮件可验证游戏引擎，探讨了zkEmail的酷炫之处及其在加密领域的应用。"
+            }
+        ]
+    },
+];
+export const newsData = [
+    {
+        date: "2024-12-10",
+        projects: [
+            {
+                name: "Zero-Knowledge Magic for Cheap",
+                url: "https://medium.com/@tekkac/zero-knowledge-magic-on-starknet-56ac2453234f",
+                type: "博客",
+                tags: ["Starknet", "Circom", "Garaga"],
+                summary: "Tekkac在博客中介绍了如何在Starknet上使用零知识证明，并详细说明了使用Circom和Garaga进行证明生成和验证的过程。"
+            },
+            {
+                name: "Will ZK Eat The Modular Stack?",
+                url: "https://equilibrium.co/writing/will-zk-eat-the-modular-stack",
+                type: "博客",
+                tags: ["Equilibrium", "模块化", "应用"],
+                summary: "Hannes在博客中探讨了ZK与模块化堆栈的关系，讨论了区块链如何扩展当前计算范式，并分析了ZK和模块化在提高效率和扩展性方面的潜力。"
             }
         ]
     },
