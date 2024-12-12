@@ -63,8 +63,6 @@ const oldData = [
             }
         ]
     },
-];
-export const newsData = [
     {
         date: "2024-12-11",
         projects: [
@@ -81,6 +79,27 @@ export const newsData = [
                 type: "视频",
                 tags: ["ZK Hack", "Dominik Schmidt", "Plonky3", "Puzzle V-3"],
                 summary: "ZK Hack举办了一场关于使用Plonky3进行范围检查的工作坊，由Polygon Miden的Dominik Schmidt主讲，介绍了ZK概念和工具，并启动了Puzzle V-3竞赛。"
+            }
+        ]
+    },
+];
+export const newsData = [
+    {
+        date: "2024-12-12",
+        projects: [
+            {
+                name: "awesome-zkvm",
+                url: "https://github.com/rkdud007/awesome-zkvm",
+                type: "开源",
+                tags: ["rkdud007", "awesome", "zkVM"],
+                summary: "rkdud007发布了awesome-zkvm开源zkVM列表，涵盖了多个项目和资源，支持并行证明和GPU证明的横向对比等功能。"
+            },
+            {
+                name: "An Update on Folding", 
+                url: "https://www.youtube.com/watch?v=4alOna5X3ro",
+                type: "视频",
+                tags: ["ZK Hack", "Albert Garreta", "Folding"],
+                summary: "视频详细介绍了折叠方案的定义、特性、应用及其在Nova方案后的进展，特别是Hypernova的定义和协议。"
             }
         ]
     },
