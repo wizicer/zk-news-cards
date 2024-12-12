@@ -8,18 +8,23 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rimraf dist node_modules",
-    "screenshot": "node screenshot.js",
+    "screenshot": "node cli.js screenshot",
+    "notify": "node cli.js notify",
     "build:ssr": "vite build --ssr server-entry.js --outDir dist/server",
     "generate": "npm run build:ssr && node ssr.js",
     "snap": "npm run generate && npm run screenshot"
   },
   "dependencies": {
+    "@vue/server-renderer": "^3.3.11",
+    "axios": "^1.6.2",
+    "commander": "^11.1.0",
+    "crypto": "^1.0.1",
     "qrcode.vue": "^3.6.0",
-    "vue": "^3.3.11",
-    "@vue/server-renderer": "^3.3.11"
+    "vue": "^3.3.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
+    "dotenv": "^16.4.7",
     "puppeteer": "^23.10.1",
     "rimraf": "^5.0.5",
     "vite": "^5.0.8"
