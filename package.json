@@ -12,7 +12,7 @@
     "notify": "node cli.js notify",
     "build:ssr": "vite build --ssr server-entry.js --outDir dist/server",
     "generate": "npm run build:ssr && node ssr.js",
-    "snap": "npm run generate && npm run screenshot"
+    "snap": "npm run generate && npm run notify"
   },
   "dependencies": {
     "@vue/server-renderer": "^3.3.11",
