@@ -82,8 +82,6 @@ const oldData = [
             }
         ]
     },
-];
-export const newsData = [
     {
         date: "2024-12-12",
         projects: [
@@ -101,6 +99,27 @@ export const newsData = [
                 tags: ["ZK Hack", "Albert Garreta", "Folding"],
                 summary: "视频详细介绍了折叠方案的定义、特性、应用及其在Nova方案后的进展，特别是Hypernova的定义和协议。"
             }
+        ]
+    },
+];
+export const newsData = [
+    {
+        date: "2024-12-13",
+        projects: [
+            {
+                "name": "Lagrange Introduces the Infinite Proving Layer: Expanding Decentralized Proving to ZK Rollups",
+                "url": "https://www.lagrange.dev/blog/infinite-proving-layer",
+                "type": "新闻",
+                "tags": ["Lagrange", "ZK Rollups"],
+                "summary": "Lagrange推出了Infinite Proving Layer，扩展了其ZK Prover Network，为ZK rollups提供证明生成。"
+            },
+            {
+                "name": "ZK in Sui",
+                "url": "https://zkv.xyz/zk-in-sui/",
+                "type": "博客",
+                "tags": ["ZKV",  "Sui", "zkLogin", "Kelp"],
+                "summary": "ZKV分享了关于Sui上的ZK技术应用，讨论了隐私保护和安全漏洞等关键问题。涉及到zkLogin登录和Kelp账户恢复等应用。"
+              }
         ]
     },
 ].map(item => {
