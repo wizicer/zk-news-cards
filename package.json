@@ -10,6 +10,7 @@
     "clean": "rimraf dist node_modules",
     "screenshot": "node cli.js screenshot",
     "notify": "node cli.js notify",
+    "pdf": "node cli.js pdf",
     "build:ssr": "vite build --ssr server-entry.js --outDir dist/server",
     "generate": "npm run build:ssr && node ssr.js",
     "snap": "npm run generate && npm run notify"

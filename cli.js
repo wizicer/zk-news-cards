@@ -58,6 +58,53 @@ async function takeScreenshot() {
     return filepath;
 }
 
+async function generatePDF() {
+    // Create pdfs directory if it doesn't exist
+    const pdfDir = './pdfs';
+    if (!fs.existsSync(pdfDir)) {
+        fs.mkdirSync(pdfDir);
+    }
+
+    // Generate filename with current date
+    const today = new Date();
+    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+    const htmlPath = path.join('./html', `${filename}.html`);
+    const filepath = path.join(pdfDir, `${filename}.pdf`);
+
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    
+    // Set viewport similar to screenshot
+    await page.setViewport({
+        width: 480,
+        height: 640,
+        deviceScaleFactor: 2
+    });
+    
+    // Load the local HTML file
+    await page.goto(`file://${path.resolve(htmlPath)}`, { waitUntil: 'networkidle0' });
+    
+    // Small delay to ensure all content is rendered
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    await page.pdf({
+        path: filepath,
+        width: '480px',
+        height: '640px',
+        printBackground: true,
+        margin: {
+            top: '20px',
+            right: '20px',
+            bottom: '20px',
+            left: '20px'
+        }
+    });
+    await browser.close();
+    
+    console.log(`PDF saved to: ${filepath}`);
+    return filepath;
+}
+
 async function sendWecomNotification(imagePath) {
     if (!WECOM_WEBHOOK_URL) {
         throw new Error('WECOM_WEBHOOK_URL environment variable is not set');
@@ -103,6 +150,18 @@ program
             await takeScreenshot();
         } catch (error) {
             console.error('Failed to take screenshot:', error);
+            process.exit(1);
+        }
+    });
+
+program
+    .command('pdf')
+    .description('Generate a PDF of the news card')
+    .action(async () => {
+        try {
+            await generatePDF();
+        } catch (error) {
+            console.error('Failed to generate PDF:', error);
             process.exit(1);
         }
     });
