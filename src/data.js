@@ -4,7 +4,7 @@ const getWeekday = (dateStr) => {
     return weekdays[date.getDay()];
 };
 
-const oldData = [
+export const newsData = [
     {
         date: "2024-12-08",
         projects: [
@@ -101,8 +101,6 @@ const oldData = [
             }
         ]
     },
-];
-export const newsData = [
     {
         date: "2024-12-13",
         projects: [
