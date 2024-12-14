@@ -120,6 +120,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-14",
+        projects: [
+            {
+                "name": "Your definitive guide to zkVMs",
+                "url": "https://x.com/kautukkundan/status/1867589273446232368",
+                "type": "博客",
+                "tags": ["Succinct", "zkVM",],
+                "summary": "Succinct团队在ZK-Residency项目中分享了关于zkVM的详细指南，比较了SP1、RISC0、Jolt、Nexus、Delphinus和Powdr等zkVM在多种加密算法上的表现。"
+              },
+              {
+                "name": "Joining Tools For Humanity to Build a Better World",
+                "url": "https://x.com/realdanielshorr/status/1867235849026638198",
+                "type": "新闻",
+                "tags": ["Daniel Shorr", "Humanity"],
+                "summary": "Daniel Shorr宣布加入Tools for Humanity，致力于构建全球最大的真实人类网络，通过zkAI技术实现隐私和安全的认证。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
