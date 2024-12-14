@@ -9,8 +9,8 @@
       <div class="card-header">
         <div class="github-title">
           <div class="title-icon">
-            <span class="github-icon">ZKP</span>
-            零知识证明 <span class="highlight">新闻</span>
+            <span class="github-icon"></span>
+            零知识证明 <span class="highlight">zkDaily</span>
           </div>
           <div class="subtitle-text">
             零知识证明 前沿热点追踪 🎯
@@ -106,7 +106,7 @@ const getTypeIcon = (type) => {
 const generateTextContent = () => {
   let text = ''
   displayedCards.value.forEach(card => {
-    text += `🚀zkDaily ${card.year}-${card.month}-${card.day} ${card.weekday}\n\n`
+    text += `🚀zkDaily 前沿热点追踪 ${card.year}-${card.month}-${card.day} ${card.weekday}\n\n`
     card.projects.forEach(project => {
       const icon = project.icon || getTypeIcon(project.type)
       text += `${icon} ${project.name}\n`

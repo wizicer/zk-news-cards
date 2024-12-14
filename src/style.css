@@ -33,6 +33,7 @@ body {
 }
 
 .news-card {
+    position: relative;
     background: var(--card-bg);
     border-radius: 20px;
     padding: 24px;
@@ -42,6 +43,8 @@ body {
     height: 626px;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header {
@@ -147,6 +150,12 @@ body {
     padding-bottom: 24px;
 }
 
+.project-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
 .project-meta {
   display: flex;
   flex-direction: column;
@@ -251,10 +260,11 @@ body {
 }
 
 .card-footer {
-    margin-top: 12px;
     color: var(--text-secondary);
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
     font-size: 14px;
-    text-align: right;
 }
 
 .card-footer a {
