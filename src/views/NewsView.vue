@@ -132,28 +132,4 @@ const copyToClipboard = async () => {
 
 <style>
 @import '../style.css';
-
-.app-controls {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.copy-button {
-  padding: 8px 16px;
-  background: #1a1a1a;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s;
-  opacity: 0;
-}
-
-.copy-button:hover {
-  background: #333;
-  opacity: 1;
-}
 </style>
