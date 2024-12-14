@@ -142,19 +142,13 @@ body {
 }
 
 .project-item {
-    position: relative;
     display: flex;
     gap: 16px;
-    margin-bottom: 32px;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
 }
-
-.project-item:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
 
 .project-meta {
   display: flex;
@@ -194,12 +188,17 @@ body {
 
 .project-content {
     flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .project-name {
     color: var(--link-color);
     margin: 0 0 8px 0;
     font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .project-url {
@@ -208,6 +207,9 @@ body {
     font-size: 14px;
     display: block;
     margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .project-description {
