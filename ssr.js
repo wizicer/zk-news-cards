@@ -7,7 +7,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 async function generateStaticHTML() {
     const { createApp } = await import('./dist/server/server-entry.js')
-    const { app } = createApp()
+    const { app, router } = createApp()
+
+    await router.push('/')
+    await router.isReady()
+
     const appContent = await renderToString(app)
     
     // Generate date-based filename
