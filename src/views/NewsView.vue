@@ -1,10 +1,10 @@
 <template>
   <div class="app-controls">
-    <button @click="toggleView" class="view-toggle">
-      {{ isTextView ? '切换到卡片视图' : '切换到文本视图' }}
+    <button @click="copyToClipboard" class="copy-button">
+      复制文本内容
     </button>
   </div>
-  <div class="news-container" :class="{ 'text-view': isTextView, 'card-view': !isTextView }">
+  <div class="news-container">
     <div v-for="(card, index) in displayedCards" :key="index" class="news-card">
       <div class="card-header">
         <div class="github-title">
@@ -50,32 +50,19 @@
           </div>
           <div class="project-content">
             <h3 class="project-name">
-              <span class="project-icon-text">{{ project.icon || getTypeIcon(project.type) }}</span>
               {{ project.name }}
             </h3>
-          <span class="project-prefix">
-            -
-          </span>
             <a :href="project.url" class="project-url">{{ project.url }}</a>
             <div class="project-tags">
               <span v-for="(tag, tIndex) in project.tags" :key="tIndex" class="tag">
                 {{ tag }}
               </span>
             </div>
-            <p class="project-summary">
-          <span class="project-prefix">
-            -
-          </span>
-              {{ project.summary }}</p>
-          </div>
-          <div class="project-separator">
+            <p class="project-summary">{{ project.summary }}</p>
           </div>
         </div>
       </div>
       <div class="card-footer">
-          <div class="project-separator">
-            ---
-          </div>
         由
         <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a>
         收集
@@ -91,11 +78,6 @@ import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
 
 const route = useRoute()
-const isTextView = ref(false)
-
-const toggleView = () => {
-  isTextView.value = !isTextView.value
-}
 
 const selectedDate = computed(() => route.query.date)
 
@@ -120,10 +102,37 @@ const iconMap = {
 const getTypeIcon = (type) => {
   return iconMap[type] || '📌'
 }
+
+const generateTextContent = () => {
+  let text = ''
+  displayedCards.value.forEach(card => {
+    text += `🚀zkDaily ${card.year}-${card.month}-${card.day} ${card.weekday}\n\n`
+    card.projects.forEach(project => {
+      const icon = project.icon || getTypeIcon(project.type)
+      text += `${icon} ${project.name}\n`
+      text += `- ${project.url}\n`
+      text += `- ${project.summary}\n\n`
+    })
+    text += `---\n由 @icerdesign 收集\n`
+  })
+  return text
+}
+
+const copyToClipboard = async () => {
+  try {
+    const text = generateTextContent()
+    await navigator.clipboard.writeText(text)
+    // alert('内容已复制到剪贴板')
+  } catch (err) {
+    console.error('复制失败:', err)
+    alert('复制失败，请重试')
+  }
+}
 </script>
 
 <style>
 @import '../style.css';
+
 .app-controls {
   position: fixed;
   top: 20px;
@@ -131,7 +140,7 @@ const getTypeIcon = (type) => {
   z-index: 1000;
 }
 
-.view-toggle {
+.copy-button {
   padding: 8px 16px;
   background: #1a1a1a;
   color: white;
@@ -139,92 +148,12 @@ const getTypeIcon = (type) => {
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
-  transition: background 0.3s;
+  transition: all 0.3s;
   opacity: 0;
 }
 
-.view-toggle:hover {
+.copy-button:hover {
   background: #333;
   opacity: 1;
-}
-
-
-.text-view .news-card {
-  display: block;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-}
-
-.text-view .card-header {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.text-view .projects {
-  margin-top: 20px;
-}
-
-.text-view .project-item {
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
-  display: block;
-}
-
-.text-view .project-meta {
-  display: none;
-}
-
-.text-view .project-content {
-  margin: 0;
-}
-
-.text-view .project-name {
-  margin: 0;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.text-view .project-icon-text {
-  font-size: 18px;
-  display: inline-block;
-}
-
-.card-view .project-icon-text {
-  display: none;
-}
-
-.text-view .project-url {
-  font-size: 14px;
-  color: #666;
-}
-
-.text-view .project-tags {
-  display: none;
-}
-
-.text-view .project-summary {
-  margin: 5px 0;
-  font-size: 14px;
-}
-
-.text-view .project-separator {
-  display: block;
-}
-
-.card-view .project-separator {
-  display: none;
-}
-
-.text-view .project-prefix {
-  display: inline-block;
-}
-
-.card-view .project-prefix {
-  display: none;
 }
 </style>
