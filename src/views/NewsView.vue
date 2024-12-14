@@ -4,7 +4,7 @@
       {{ isTextView ? '切换到卡片视图' : '切换到文本视图' }}
     </button>
   </div>
-  <div class="news-container" :class="{ 'text-view': isTextView }">
+  <div class="news-container" :class="{ 'text-view': isTextView, 'card-view': !isTextView }">
     <div v-for="(card, index) in displayedCards" :key="index" class="news-card">
       <div class="card-header">
         <div class="github-title">
@@ -50,19 +50,32 @@
           </div>
           <div class="project-content">
             <h3 class="project-name">
+              <span class="project-icon-text">{{ project.icon || getTypeIcon(project.type) }}</span>
               {{ project.name }}
             </h3>
+          <span class="project-prefix">
+            -
+          </span>
             <a :href="project.url" class="project-url">{{ project.url }}</a>
             <div class="project-tags">
               <span v-for="(tag, tIndex) in project.tags" :key="tIndex" class="tag">
                 {{ tag }}
               </span>
             </div>
-            <p class="project-summary">{{ project.summary }}</p>
+            <p class="project-summary">
+          <span class="project-prefix">
+            -
+          </span>
+              {{ project.summary }}</p>
+          </div>
+          <div class="project-separator">
           </div>
         </div>
       </div>
       <div class="card-footer">
+          <div class="project-separator">
+            ---
+          </div>
         由
         <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a>
         收集
@@ -171,6 +184,18 @@ const getTypeIcon = (type) => {
 .text-view .project-name {
   margin: 0;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-view .project-icon-text {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.card-view .project-icon-text {
+  display: none;
 }
 
 .text-view .project-url {
@@ -179,11 +204,27 @@ const getTypeIcon = (type) => {
 }
 
 .text-view .project-tags {
-  margin: 5px 0;
+  display: none;
 }
 
 .text-view .project-summary {
   margin: 5px 0;
   font-size: 14px;
+}
+
+.text-view .project-separator {
+  display: block;
+}
+
+.card-view .project-separator {
+  display: none;
+}
+
+.text-view .project-prefix {
+  display: inline-block;
+}
+
+.card-view .project-prefix {
+  display: none;
 }
 </style>
