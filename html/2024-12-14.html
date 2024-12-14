@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKP Trending News</title>
+    <style>
+        :root {
+    --primary-color: #3498db;
+    --primary-light: #ebf5fb;
+    --primary-dark: #2980b9;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --border-color: #e1e8ed;
+    --card-bg: #ffffff;
+    --link-color: #e65c1a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    height: 640px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #e3f2fd;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 465px;
+    height: 630px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-card {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.08);
+    page-break-after: always;
+    width: 461px;
+    height: 626px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.github-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title-icon {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subtitle-text {
+    font-size: 22px;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 1;
+    padding: 0 2px;
+}
+
+.subtitle-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 40%;
+    background-color: var(--primary-color);
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.github-icon {
+    color: var(--text-primary);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+}
+
+.date-weekday {
+    background: var(--primary-color);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-details {
+    background: white;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    border: 1px solid #eee;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.date-number {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.date-year {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+}
+
+.card-subtitle {
+    border-bottom: 2px solid var(--primary-light);
+    margin: 12px 0;
+}
+
+.project-item {
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-right: 8px;
+  position: relative;
+  justify-content: flex-start;
+  min-width: 64px;
+}
+
+.project-qr {
+  margin-top: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.project-qr:hover {
+  opacity: 1;
+}
+
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  font-size: 32px;
+}
+
+.project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-content {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.project-name {
+    color: var(--link-color);
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.project-url {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-description {
+    margin: 8px 0;
+    color: var(--text-primary);
+}
+
+.project-stats {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.project-summary {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.project-type {
+  font-size: 0.8em;
+  color: #666;
+  font-weight: bold;
+  min-width: 2em;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card-footer {
+    color: var(--text-secondary);
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    font-size: 14px;
+}
+
+.card-footer a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.highlight {
+    background-color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@media print {
+    @page {
+        size: 480px 640px;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .news-container {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
+    .news-card {
+        width: 480px;
+        height: 640px;
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
+        page-break-after: always;
+        break-inside: avoid;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+
+.app-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.copy-button {
+  padding: 8px 16px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.copy-button:hover {
+  background: #333;
+  opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <div id="app"><!--[--><div class="app-controls"><button class="copy-button"> 复制文本内容 </button></div><div class="news-container"><!--[--><div class="news-card"><div class="card-header"><div class="github-title"><div class="title-icon"><span class="github-icon"></span> 零知识证明 <span class="highlight">zkDaily</span></div><div class="subtitle-text"> 零知识证明 前沿热点追踪 🎯 </div></div><div class="date"><span class="date-weekday">星期六</span><div class="date-details"><div class="date-number">12.14</div><div class="date-year">2024</div></div></div></div><div class="card-subtitle"></div><div class="projects"><!--[--><div class="project-item"><div class="project-meta"><div class="project-icon"><span>📝</span></div><span class="project-type">博客</span><div class="project-qr"><svg width="64" height="64" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><defs><!----></defs><rect width="100%" height="100%" fill="#ffffff"></rect><path fill="#000000" d="M0 0h7v1H0zM9 0h4v1H9zM14 0h1v1H14zM17 0h4v1H17zM22,0 h7v1H22zM0 1h1v1H0zM6 1h1v1H6zM8 1h1v1H8zM12 1h4v1H12zM17 1h1v1H17zM20 1h1v1H20zM22 1h1v1H22zM28,1 h1v1H28zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM9 2h4v1H9zM15 2h1v1H15zM18 2h1v1H18zM20 2h1v1H20zM22 2h1v1H22zM24 2h3v1H24zM28,2 h1v1H28zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM8 3h1v1H8zM13 3h1v1H13zM16 3h2v1H16zM20 3h1v1H20zM22 3h1v1H22zM24 3h3v1H24zM28,3 h1v1H28zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM9 4h4v1H9zM14 4h1v1H14zM18 4h3v1H18zM22 4h1v1H22zM24 4h3v1H24zM28,4 h1v1H28zM0 5h1v1H0zM6 5h1v1H6zM8 5h1v1H8zM10 5h1v1H10zM13 5h4v1H13zM20 5h1v1H20zM22 5h1v1H22zM28,5 h1v1H28zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18 6h1v1H18zM20 6h1v1H20zM22,6 h7v1H22zM9 7h1v1H9zM11 7h2v1H11zM14 7h2v1H14zM18 7h2v1H18zM0 8h5v1H0zM6 8h3v1H6zM13 8h1v1H13zM15 8h3v1H15zM19 8h1v1H19zM21 8h1v1H21zM23 8h1v1H23zM25 8h1v1H25zM27 8h1v1H27zM0 9h3v1H0zM5 9h1v1H5zM10 9h3v1H10zM14 9h1v1H14zM18 9h7v1H18zM28,9 h1v1H28zM0 10h1v1H0zM2 10h2v1H2zM5 10h2v1H5zM9 10h1v1H9zM12 10h1v1H12zM14 10h3v1H14zM18 10h1v1H18zM20 10h1v1H20zM22 10h2v1H22zM1 11h2v1H1zM7 11h1v1H7zM9 11h1v1H9zM11 11h2v1H11zM14 11h1v1H14zM16 11h1v1H16zM19 11h1v1H19zM23 11h1v1H23zM25 11h1v1H25zM27 11h1v1H27zM0 12h1v1H0zM2 12h1v1H2zM5 12h2v1H5zM8 12h2v1H8zM13 12h1v1H13zM17 12h1v1H17zM19 12h1v1H19zM21 12h1v1H21zM25 12h2v1H25zM0 13h2v1H0zM3 13h1v1H3zM11 13h4v1H11zM17 13h8v1H17zM28,13 h1v1H28zM1 14h1v1H1zM3 14h6v1H3zM12 14h1v1H12zM15 14h3v1H15zM20 14h1v1H20zM22 14h2v1H22zM25 14h2v1H25zM1 15h2v1H1zM4 15h1v1H4zM7 15h3v1H7zM11 15h1v1H11zM18 15h1v1H18zM20 15h1v1H20zM22 15h1v1H22zM24 15h1v1H24zM27 15h1v1H27zM1 16h6v1H1zM9 16h2v1H9zM13 16h1v1H13zM15 16h4v1H15zM20 16h1v1H20zM25 16h2v1H25zM0 17h1v1H0zM3 17h3v1H3zM8 17h1v1H8zM10 17h5v1H10zM16 17h9v1H16zM26 17h1v1H26zM28,17 h1v1H28zM0 18h1v1H0zM2 18h1v1H2zM4 18h4v1H4zM9 18h1v1H9zM12 18h1v1H12zM15 18h3v1H15zM21 18h2v1H21zM26 18h1v1H26zM0 19h1v1H0zM4 19h2v1H4zM7 19h4v1H7zM14 19h3v1H14zM20 19h1v1H20zM22 19h2v1H22zM27 19h1v1H27zM0 20h1v1H0zM2 20h2v1H2zM5 20h2v1H5zM8 20h3v1H8zM13 20h1v1H13zM15 20h3v1H15zM20 20h5v1H20zM26,20 h3v1H26zM8 21h1v1H8zM11 21h2v1H11zM14 21h1v1H14zM16 21h1v1H16zM19 21h2v1H19zM24,21 h5v1H24zM0 22h7v1H0zM8 22h1v1H8zM12 22h2v1H12zM15 22h1v1H15zM17 22h4v1H17zM22 22h1v1H22zM24 22h3v1H24zM0 23h1v1H0zM6 23h1v1H6zM9 23h2v1H9zM15 23h2v1H15zM19 23h2v1H19zM24 23h1v1H24zM0 24h1v1H0zM2 24h3v1H2zM6 24h1v1H6zM8 24h1v1H8zM10 24h1v1H10zM13 24h1v1H13zM15 24h3v1H15zM20 24h5v1H20zM26 24h1v1H26zM0 25h1v1H0zM2 25h3v1H2zM6 25h1v1H6zM8 25h1v1H8zM10 25h3v1H10zM14 25h1v1H14zM16 25h1v1H16zM19 25h1v1H19zM25 25h2v1H25zM28,25 h1v1H28zM0 26h1v1H0zM2 26h3v1H2zM6 26h1v1H6zM8 26h3v1H8zM13 26h4v1H13zM19 26h1v1H19zM21 26h2v1H21zM24 26h4v1H24zM0 27h1v1H0zM6 27h1v1H6zM8 27h5v1H8zM14 27h2v1H14zM18 27h4v1H18zM24 27h2v1H24zM27 27h1v1H27zM0 28h7v1H0zM8 28h2v1H8zM13 28h1v1H13zM15 28h1v1H15zM17 28h1v1H17zM19 28h1v1H19zM25 28h2v1H25z"></path><!----></svg></div></div><div class="project-content"><h3 class="project-name">Your definitive guide to zkVMs</h3><a href="https://x.com/kautukkundan/status/1867589273446232368" class="project-url">https://x.com/kautukkundan/status/1867589273446232368</a><div class="project-tags"><!--[--><span class="tag">Succinct</span><span class="tag">zkVM</span><!--]--></div><p class="project-summary">Succinct团队在ZK-Residency项目中分享了关于zkVM的详细指南，比较了SP1、RISC0、Jolt、Nexus、Delphinus和Powdr等zkVM在多种加密算法上的表现。</p></div></div><div class="project-item"><div class="project-meta"><div class="project-icon"><span>📰</span></div><span class="project-type">新闻</span><div class="project-qr"><svg width="64" height="64" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><defs><!----></defs><rect width="100%" height="100%" fill="#ffffff"></rect><path fill="#000000" d="M0 0h7v1H0zM8 0h2v1H8zM12 0h1v1H12zM14 0h1v1H14zM16 0h1v1H16zM18 0h1v1H18zM22 0h1v1H22zM24 0h1v1H24zM26,0 h7v1H26zM0 1h1v1H0zM6 1h1v1H6zM8 1h5v1H8zM18 1h3v1H18zM26 1h1v1H26zM32,1 h1v1H32zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM8 2h1v1H8zM10 2h3v1H10zM16 2h1v1H16zM18 2h1v1H18zM20 2h3v1H20zM26 2h1v1H26zM28 2h3v1H28zM32,2 h1v1H32zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM10 3h1v1H10zM17 3h3v1H17zM21 3h3v1H21zM26 3h1v1H26zM28 3h3v1H28zM32,3 h1v1H32zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM8 4h1v1H8zM11 4h5v1H11zM19 4h2v1H19zM22 4h1v1H22zM24 4h1v1H24zM26 4h1v1H26zM28 4h3v1H28zM32,4 h1v1H32zM0 5h1v1H0zM6 5h1v1H6zM9 5h1v1H9zM11 5h4v1H11zM17 5h2v1H17zM20 5h2v1H20zM23 5h1v1H23zM26 5h1v1H26zM32,5 h1v1H32zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18 6h1v1H18zM20 6h1v1H20zM22 6h1v1H22zM24 6h1v1H24zM26,6 h7v1H26zM10 7h2v1H10zM13 7h1v1H13zM20 7h1v1H20zM22 7h1v1H22zM0 8h1v1H0zM3 8h6v1H3zM11 8h2v1H11zM14 8h2v1H14zM17 8h1v1H17zM19 8h1v1H19zM24 8h2v1H24zM28 8h1v1H28zM30,8 h3v1H30zM1 9h5v1H1zM8 9h1v1H8zM10 9h1v1H10zM15 9h1v1H15zM18 9h2v1H18zM23 9h1v1H23zM28 9h4v1H28zM2 10h1v1H2zM6 10h3v1H6zM11 10h2v1H11zM14 10h2v1H14zM17 10h2v1H17zM21 10h3v1H21zM28,10 h5v1H28zM0 11h2v1H0zM4 11h1v1H4zM9 11h2v1H9zM14 11h4v1H14zM22 11h1v1H22zM27 11h1v1H27zM30 11h2v1H30zM1 12h3v1H1zM5 12h4v1H5zM12 12h5v1H12zM18 12h2v1H18zM22 12h1v1H22zM25 12h2v1H25zM31,12 h2v1H31zM1 13h2v1H1zM4 13h1v1H4zM7 13h1v1H7zM10 13h2v1H10zM16 13h1v1H16zM20 13h1v1H20zM22 13h3v1H22zM29 13h2v1H29zM3 14h4v1H3zM9 14h1v1H9zM14 14h1v1H14zM16 14h1v1H16zM19 14h1v1H19zM22 14h1v1H22zM26 14h1v1H26zM28 14h1v1H28zM30 14h1v1H30zM0 15h1v1H0zM3 15h2v1H3zM7 15h5v1H7zM13 15h3v1H13zM19 15h1v1H19zM22 15h4v1H22zM28 15h3v1H28zM32,15 h1v1H32zM5 16h4v1H5zM16 16h1v1H16zM20 16h1v1H20zM22 16h7v1H22zM1 17h4v1H1zM7 17h1v1H7zM9 17h1v1H9zM11 17h2v1H11zM15 17h1v1H15zM18 17h5v1H18zM25 17h2v1H25zM28 17h1v1H28zM30 17h1v1H30zM32,17 h1v1H32zM3 18h1v1H3zM5 18h4v1H5zM10 18h1v1H10zM12 18h2v1H12zM15 18h1v1H15zM17 18h7v1H17zM26 18h2v1H26zM29 18h2v1H29zM32,18 h1v1H32zM4 19h1v1H4zM7 19h3v1H7zM14 19h3v1H14zM19 19h1v1H19zM22 19h4v1H22zM28,19 h5v1H28zM0 20h1v1H0zM6 20h2v1H6zM10 20h2v1H10zM13 20h2v1H13zM17 20h4v1H17zM22 20h1v1H22zM25 20h1v1H25zM29 20h1v1H29zM0 21h2v1H0zM7 21h1v1H7zM16 21h2v1H16zM19 21h2v1H19zM23 21h3v1H23zM28 21h3v1H28zM0 22h1v1H0zM2 22h5v1H2zM8 22h1v1H8zM11 22h1v1H11zM13 22h1v1H13zM15 22h3v1H15zM20 22h5v1H20zM28 22h1v1H28zM30,22 h3v1H30zM0 23h1v1H0zM4 23h1v1H4zM7 23h3v1H7zM12 23h1v1H12zM14 23h1v1H14zM16 23h5v1H16zM24 23h1v1H24zM27 23h1v1H27zM30 23h1v1H30zM0 24h2v1H0zM3 24h4v1H3zM8 24h1v1H8zM12 24h1v1H12zM14 24h3v1H14zM19 24h2v1H19zM23 24h6v1H23zM31 24h1v1H31zM8 25h1v1H8zM10 25h4v1H10zM15 25h3v1H15zM24 25h1v1H24zM28 25h1v1H28zM30 25h1v1H30zM0 26h7v1H0zM8 26h1v1H8zM11 26h2v1H11zM15 26h2v1H15zM18 26h2v1H18zM21 26h4v1H21zM26 26h1v1H26zM28 26h1v1H28zM30 26h1v1H30zM0 27h1v1H0zM6 27h1v1H6zM8 27h1v1H8zM11 27h1v1H11zM13 27h1v1H13zM16 27h1v1H16zM18 27h1v1H18zM22 27h3v1H22zM28 27h4v1H28zM0 28h1v1H0zM2 28h3v1H2zM6 28h1v1H6zM8 28h2v1H8zM11 28h4v1H11zM17 28h3v1H17zM23 28h6v1H23zM32,28 h1v1H32zM0 29h1v1H0zM2 29h3v1H2zM6 29h1v1H6zM8 29h2v1H8zM11 29h1v1H11zM13 29h1v1H13zM17 29h3v1H17zM23 29h1v1H23zM27 29h1v1H27zM29,29 h4v1H29zM0 30h1v1H0zM2 30h3v1H2zM6 30h1v1H6zM9 30h1v1H9zM16 30h1v1H16zM18 30h5v1H18zM25 30h1v1H25zM27 30h2v1H27zM31,30 h2v1H31zM0 31h1v1H0zM6 31h1v1H6zM10 31h1v1H10zM12 31h2v1H12zM15 31h2v1H15zM20 31h1v1H20zM22 31h2v1H22zM26 31h3v1H26zM30,31 h3v1H30zM0 32h7v1H0zM8 32h1v1H8zM12 32h2v1H12zM16 32h2v1H16zM19 32h1v1H19zM24 32h1v1H24zM26 32h3v1H26z"></path><!----></svg></div></div><div class="project-content"><h3 class="project-name">Joining Tools For Humanity to Build a Better World</h3><a href="https://x.com/realdanielshorr/status/1867235849026638198" class="project-url">https://x.com/realdanielshorr/status/1867235849026638198</a><div class="project-tags"><!--[--><span class="tag">Daniel Shorr</span><span class="tag">Humanity</span><!--]--></div><p class="project-summary">Daniel Shorr宣布加入Tools for Humanity，致力于构建全球最大的真实人类网络，通过zkAI技术实现隐私和安全的认证。</p></div></div><!--]--></div><div class="card-footer"> 由 <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a> 收集 </div></div><!--]--></div><!--]--></div>
+</body>
+</html>
