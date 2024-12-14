@@ -1,0 +1,4 @@
+- using yarn as my package manager.
+- avoid unnecessary changes to existing code.
+- for each changes, I don't need you to explain the changes.
+- for each changes, summarize the changes as commit message.
