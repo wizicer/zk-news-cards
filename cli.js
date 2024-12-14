@@ -7,6 +7,7 @@ import axios from 'axios';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import dotenv from 'dotenv';
+import TelegramBot from 'node-telegram-bot-api';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -18,6 +19,10 @@ const program = new Command();
 
 // WeChat Work webhook URL - this should be configured via environment variable
 const WECOM_WEBHOOK_URL = process.env.WECOM_WEBHOOK_URL;
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+
+const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
 async function takeScreenshot() {
     // Create screenshots directory if it doesn't exist
@@ -137,6 +142,20 @@ async function sendWecomNotification(imagePath) {
     }
 }
 
+async function sendTelegramNotification(imagePath) {
+    if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
+        console.error('Telegram configuration missing. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in .env file');
+        return;
+    }
+
+    try {
+        await bot.sendPhoto(TELEGRAM_CHAT_ID, fs.createReadStream(imagePath));
+        console.log('Image sent to Telegram successfully');
+    } catch (error) {
+        console.error('Error sending image to Telegram:', error.message);
+    }
+}
+
 program
     .name('zkpnewscards-cli')
     .description('CLI for ZKP News Cards operations')
@@ -168,13 +187,18 @@ program
 
 program
     .command('notify')
-    .description('Take a screenshot and send it via WeCom')
+    .description('Take a screenshot and send notifications')
     .action(async () => {
         try {
-            const screenshotPath = await takeScreenshot();
-            await sendWecomNotification(screenshotPath);
+            const imagePath = await takeScreenshot();
+            if (WECOM_WEBHOOK_URL) {
+                await sendWecomNotification(imagePath);
+            }
+            if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
+                await sendTelegramNotification(imagePath);
+            }
         } catch (error) {
-            console.error('Failed to send notification:', error);
+            console.error('Error in notify command:', error);
             process.exit(1);
         }
     });
