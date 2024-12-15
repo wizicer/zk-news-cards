@@ -139,6 +139,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-15",
+        projects: [
+            {
+                "name": "Crypto Companions: The PET ecosystem (MPC / FHE / TEE & ZK)",
+                "url": "https://mirror.xyz/crypblizz.eth/AJLi9mL_7C8LkSYGlkaDbGfXaXFVtOGU_1eDs-_JDNA",
+                "type": "博客",
+                "tags": ["Crypblizz", "PETs"],
+                "summary": "Crypblizz分享了对隐私增强技术（PETs）的深入探讨，涵盖了MPC、FHE、TEE和ZK等技术的历史、演变及其在Web3行业中的重要性。"
+              },
+              {
+                "name": "zkLogin for Base blockchain",
+                "url": "https://github.com/shield-labs-xyz/zklogin",
+                "type": "开源",
+                "tags": ["shield-labs", "zkLogin", "Base"],
+                "summary": "shield-labs团队发布了zkLogin开源项目，允许用户在Base(兼容EVM)上使用Google/Apple账户进行自托管登录。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
