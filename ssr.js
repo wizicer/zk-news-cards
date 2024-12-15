@@ -35,7 +35,7 @@ async function generateStaticHTML() {
 </html>`
 
     // Ensure html directory exists
-    const htmlDir = path.join(__dirname, 'html')
+    const htmlDir = path.join(__dirname, 'docs')
     if (!fs.existsSync(htmlDir)) {
         fs.mkdirSync(htmlDir, { recursive: true })
     }

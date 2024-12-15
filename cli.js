@@ -34,7 +34,7 @@ async function takeScreenshot() {
     // Generate filename with current date
     const today = new Date();
     const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-    const htmlPath = path.join('./html', `${filename}.html`);
+    const htmlPath = path.join('./docs', `${filename}.html`);
     const filepath = path.join(screenshotDir, `${filename}.png`);
 
     const browser = await puppeteer.launch();
@@ -73,7 +73,7 @@ async function generatePDF() {
     // Generate filename with current date
     const today = new Date();
     const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-    const htmlPath = path.join('./html', `${filename}.html`);
+    const htmlPath = path.join('./docs', `${filename}.html`);
     const filepath = path.join(pdfDir, `${filename}.pdf`);
 
     const browser = await puppeteer.launch();
