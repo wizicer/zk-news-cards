@@ -113,6 +113,7 @@ const generateTextContent = () => {
       text += `- ${project.url}\n`
       text += `- ${project.summary}\n\n`
     })
+    text += `📄 网页查看： https://news.plonk.pro/${card.year}-${card.month}-${card.day}.html\n\n`
     text += `---\n由 @icerdesign 收集\n`
   })
   return text
