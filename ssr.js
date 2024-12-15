@@ -9,14 +9,14 @@ async function generateStaticHTML() {
     const { createApp } = await import('./dist/server/server-entry.js')
     const { app, router } = createApp()
 
+    // Generate HTML for root path
     await router.push('/')
     await router.isReady()
-
     const appContent = await renderToString(app)
     
     // Generate date-based filename
     const today = new Date()
-    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}.html`
+    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`
     
     const template = `
 <!DOCTYPE html>
@@ -40,9 +40,24 @@ async function generateStaticHTML() {
         fs.mkdirSync(htmlDir, { recursive: true })
     }
     
-    const outputPath = path.join(htmlDir, filename)
+    const outputPath = path.join(htmlDir, `${filename}.html`)
     fs.writeFileSync(outputPath, template)
     console.log(`Static HTML generated successfully at: ${outputPath}`)
+
+    // Generate text content
+    await router.push('/text')
+    await router.isReady()
+    const textContent = await renderToString(app)
+
+    // Ensure texts directory exists
+    const textsDir = path.join(__dirname, 'texts')
+    if (!fs.existsSync(textsDir)) {
+        fs.mkdirSync(textsDir, { recursive: true })
+    }
+
+    const textOutputPath = path.join(textsDir, `${filename}.txt`)
+    fs.writeFileSync(textOutputPath, textContent.replace(/<[^>]*>/g, '').trim())
+    console.log(`Text content generated successfully at: ${textOutputPath}`)
 }
 
 generateStaticHTML().catch(console.error)

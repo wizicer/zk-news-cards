@@ -76,6 +76,7 @@ import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
+import { generateTextContent, getTypeIcon } from '../utils/textGenerator'
 
 const route = useRoute()
 
@@ -89,39 +90,9 @@ const displayedCards = computed(() => {
   return [newsData[newsData.length - 1]]
 })
 
-const iconMap = {
-  '论文': '📄',
-  '新闻': '📰',
-  '开源': '💻',
-  '视频': '🎥',
-  '博客': '📝',
-  '活动': '🎪',
-  '工具': '🛠️'
-}
-
-const getTypeIcon = (type) => {
-  return iconMap[type] || '📌'
-}
-
-const generateTextContent = () => {
-  let text = ''
-  displayedCards.value.forEach(card => {
-    text += `🚀zkDaily 前沿热点追踪 ${card.year}-${card.month}-${card.day} ${card.weekday}\n\n`
-    card.projects.forEach(project => {
-      const icon = project.icon || getTypeIcon(project.type)
-      text += `${icon} ${project.name}\n`
-      text += `- ${project.url}\n`
-      text += `- ${project.summary}\n\n`
-    })
-    text += `📄 网页查看： https://news.plonk.pro/${card.year}-${card.month}-${card.day}.html\n\n`
-    text += `---\n由 @icerdesign 收集\n`
-  })
-  return text
-}
-
 const copyToClipboard = async () => {
   try {
-    const text = generateTextContent()
+    const text = generateTextContent(displayedCards.value)
     await navigator.clipboard.writeText(text)
     // alert('内容已复制到剪贴板')
   } catch (err) {
