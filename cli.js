@@ -110,22 +110,17 @@ async function generatePDF() {
     return filepath;
 }
 
-async function sendWecomNotification(imagePath) {
+async function sendWecomNotification(imagePath, textPath) {
     if (!WECOM_WEBHOOK_URL) {
         throw new Error('WECOM_WEBHOOK_URL environment variable is not set');
     }
 
-    // Read the image file
+    // Send image first
     const imageBuffer = fs.readFileSync(imagePath);
-    
-    // Calculate MD5 hash
     const md5Hash = crypto.createHash('md5').update(imageBuffer).digest('hex');
-    
-    // Convert to base64
     const base64Image = imageBuffer.toString('base64');
     
-    // Prepare the message payload
-    const payload = {
+    const imagePayload = {
         msgtype: 'image',
         image: {
             base64: base64Image,
@@ -134,15 +129,28 @@ async function sendWecomNotification(imagePath) {
     };
 
     try {
-        const response = await axios.post(WECOM_WEBHOOK_URL, payload);
-        console.log('Notification sent successfully:', response.data);
+        await axios.post(WECOM_WEBHOOK_URL, imagePayload);
+        console.log('Image sent successfully to Wecom');
+
+        // Then send text content
+        if (textPath && fs.existsSync(textPath)) {
+            const textContent = fs.readFileSync(textPath, 'utf-8');
+            const textPayload = {
+                msgtype: 'markdown',
+                markdown: {
+                    content: textContent
+                }
+            };
+            await axios.post(WECOM_WEBHOOK_URL, textPayload);
+            console.log('Text content sent successfully to Wecom');
+        }
     } catch (error) {
         console.error('Failed to send notification:', error.response?.data || error.message);
         throw error;
     }
 }
 
-async function sendTelegramNotification(imagePath) {
+async function sendTelegramNotification(imagePath, textPath) {
     if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
         console.error('Telegram configuration missing. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in .env file');
         return;
@@ -151,8 +159,14 @@ async function sendTelegramNotification(imagePath) {
     try {
         await bot.sendPhoto(TELEGRAM_CHAT_ID, fs.createReadStream(imagePath));
         console.log('Image sent to Telegram successfully');
+
+        if (textPath && fs.existsSync(textPath)) {
+            const textContent = fs.readFileSync(textPath, 'utf-8');
+            await bot.sendMessage(TELEGRAM_CHAT_ID, textContent);
+            console.log('Text content sent to Telegram successfully');
+        }
     } catch (error) {
-        console.error('Error sending image to Telegram:', error.message);
+        console.error('Error sending to Telegram:', error.message);
     }
 }
 
@@ -190,12 +204,16 @@ program
     .description('Take a screenshot and send notifications')
     .action(async () => {
         try {
+            const today = new Date();
+            const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
             const imagePath = await takeScreenshot();
+            const textPath = path.join('./texts', `${filename}.txt`);
+
             if (WECOM_WEBHOOK_URL) {
-                await sendWecomNotification(imagePath);
+                await sendWecomNotification(imagePath, textPath);
             }
             if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
-                await sendTelegramNotification(imagePath);
+                await sendTelegramNotification(imagePath, textPath);
             }
         } catch (error) {
             console.error('Error in notify command:', error);
