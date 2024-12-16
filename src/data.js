@@ -158,6 +158,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-16",
+        projects: [
+            {
+                "name": "A primer on hybrid Merkle trees",
+                "url": "https://x.com/m2magician/status/1867605074954137635",
+                "type": "博客",
+                "tags": ["NPLabs", "Merkle Trees", "Plonky3"],
+                "summary": "NPLabs团队分享了关于hybrid Merkle Trees的技术介绍，探讨了其在plonky3和递归证明中的应用，提供了详细的技术入门指南。"
+              },
+              {
+                "name": "Anonymous credentials from ECDSA",
+                "url": "https://eprint.iacr.org/2024/2010",
+                "type": "论文",
+                "tags": ["Google", "ECDSA"],
+                "summary": "Frigo和shelat在论文中提出了一种基于ECDSA的新匿名凭证方案，通过高效的zk证明解决了SHA256和文档解析问题，无需更改现有发行者流程或设备，适用于隐私保护的数字身份应用。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
