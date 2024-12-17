@@ -177,6 +177,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-17",
+        projects: [
+            {
+                "name": "OpenVM: A Performant and Modular zkVM Framework",
+                "url": "https://github.com/openvm-org/openvm",
+                "type": "开源",
+                "tags": ["Axiom", "Scroll", "zkVM"],
+                "summary": "Axiom, Scroll等团队发布了OpenVM开源项目，这是一个优先考虑模块化和可扩展性的zkVM框架，支持开发者添加自定义操作码、电路和证明系统。"
+              },
+              {
+                "name": "Siniel: Distributed Privacy-Preserving zkSNARK",
+                "url": "https://arxiv.org/pdf/2411.15031",
+                "type": "论文",
+                "tags": ["Daniel Yang", "Siniel", "zkSNARK"],
+                "summary": "Yang等人在论文中提出了一种zkSNARK隐私委托框架Siniel，允许有限算力证明者进行安全的任务委托。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {

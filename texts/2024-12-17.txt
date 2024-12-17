@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2024-12-17 星期二
+
+💻 OpenVM: A Performant and Modular zkVM Framework
+- https://github.com/openvm-org/openvm
+- Axiom, Scroll等团队发布了OpenVM开源项目，这是一个优先考虑模块化和可扩展性的zkVM框架，支持开发者添加自定义操作码、电路和证明系统。
+
+📄 Siniel: Distributed Privacy-Preserving zkSNARK
+- https://arxiv.org/pdf/2411.15031
+- Yang等人在论文中提出了一种zkSNARK隐私委托框架Siniel，允许有限算力证明者进行安全的任务委托。
+
+---
+📄 网页查看： https://news.plonk.pro/2024-12-17.html
+🪶 由 @icerdesign 收集
