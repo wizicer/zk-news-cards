@@ -188,11 +188,30 @@ export const newsData = [
                 "summary": "Axiom, Scroll等团队发布了OpenVM开源项目，这是一个优先考虑模块化和可扩展性的zkVM框架，支持开发者添加自定义操作码、电路和证明系统。"
               },
               {
-                "name": "Siniel: Distributed Privacy-Preserving zkSNARK",
-                "url": "https://arxiv.org/pdf/2411.15031",
+                "name": "PoneglyphDB: Efficient Non-interactive Zero-Knowledge Proofs for Arbitrary SQL-Query Verification",
+                "url": "https://arxiv.org/abs/2411.15031",
                 "type": "论文",
-                "tags": ["Daniel Yang", "Siniel", "zkSNARK"],
-                "summary": "Yang等人在论文中提出了一种zkSNARK隐私委托框架Siniel，允许有限算力证明者进行安全的任务委托。"
+                "tags": ["Binbin Gu", "Unversity of California", "SQL"],
+                "summary": "Gu等人在《PoneglyphDB: Efficient Non-interactive Zero-Knowledge Proofs for Arbitrary SQL-Query Verification》论文中提出了PoneglyphDB，通过非交互式零知识证明（ZKP）支持数据保密性和查询处理的可验证性。"
+              }
+        ]
+    },
+    {
+        date: "2024-12-18",
+        projects: [
+            {
+                "name": "Announcing Valida 0.7.0",
+                "url": "https://www.lita.foundation/blog/announcing-valida-0-7-0",
+                "type": "新闻",
+                "tags": [ "Lita Team", "WASM", "zkVM"],
+                "summary": "Lita团队发布了Valida 0.7.0更新，首次支持WASM编译器工具链，并增强了zkVM堆栈的开发体验。"
+              },
+              {
+                "name": "Mira: Generic Accumulation Scheme for Special-Sound Protocols",
+                "url": "https://blog.beal.io/posts/mira/",
+                "type": "博客",
+                "tags": ["Josh Beal", "accumulation", "Folding"],
+                "summary": "Josh Beal在博客中提出了一种通用的累积方案，适用于特殊可靠性的协议（类Protostar），显著提高了配对基论证的折叠效率。"
               }
         ]
     },
