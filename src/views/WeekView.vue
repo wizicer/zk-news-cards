@@ -88,26 +88,32 @@ function generateMarkdownContent(cards) {
     })
   })
   
-  for (const [type, projects] of Object.entries(groupedByType)) {
-    content += `**【${type}】**\n\n`
-    projects.forEach(project => {
-      content += `- ${project.summary}\n`
-      if (project.url) {
-        const urls = project.url.split(',').map(url => url.trim())
-        const urlTexts = urls.map((url, index) => {
-          if (url.includes('twitter.com') || url.includes('x.com')) {
-            return `[𝕏](${url})`
-          }
-          if (urls.length > 1) {
-            return `[${project.type === '视频' ? '视频' + (index + 1) : url.includes('blog') ? '博客' : '链接'}](${url})`
-          }
-          return `[${project.type === '视频' ? '视频' : url.includes('blog') ? '博客' : '链接'}](${url})`
-        })
-        content += `  ${urlTexts.join('，\n  ')}\n`
-      }
-      content += '\n'
-    })
-  }
+  // Define the order of categories
+  const categoryOrder = ['论文', '视频', '博客', '开源', '活动', '信息', '工具']
+  
+  // Generate content in the specified order
+  categoryOrder.forEach(type => {
+    if (groupedByType[type] && groupedByType[type].length > 0) {
+      content += `**【${type}】**\n\n`
+      groupedByType[type].forEach(project => {
+        content += `- ${project.summary}\n`
+        if (project.url) {
+          const urls = project.url.split(',').map(url => url.trim())
+          const urlTexts = urls.map((url, index) => {
+            if (url.includes('twitter.com') || url.includes('x.com')) {
+              return `[𝕏](${url})`
+            }
+            if (urls.length > 1) {
+              return `[${project.type === '视频' ? '视频' + (index + 1) : url.includes('blog') ? '博客' : '链接'}](${url})`
+            }
+            return `[${project.type === '视频' ? '视频' : url.includes('blog') ? '博客' : '链接'}](${url})`
+          })
+          content += `  ${urlTexts.join('，\n  ')}\n`
+        }
+        content += '\n'
+      })
+    }
+  })
   
   return content
 }
