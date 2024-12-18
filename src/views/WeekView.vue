@@ -6,11 +6,12 @@
         <button @click="copyWeekContent(week)" class="copy-btn">Copy</button>
       </div>
     </div>
+    <textarea v-model="generatedText" class="preview-text" readonly></textarea>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { newsData } from '../data'
 
 function getWeekRange(date) {
@@ -94,8 +95,11 @@ function generateMarkdownContent(cards) {
   return content
 }
 
+const generatedText = ref('')
+
 function copyWeekContent(week) {
   const content = generateMarkdownContent(week.cards)
+  generatedText.value = content
   navigator.clipboard.writeText(content)
 }
 </script>
@@ -130,4 +134,15 @@ function copyWeekContent(week) {
 .copy-btn:hover {
   background-color: #45a049;
 }
-</style>]]>
+
+.preview-text {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-family: monospace;
+  resize: vertical;
+}
+</style>
