@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2024-12-18 星期三
+
+📰 Announcing Valida 0.7.0
+- https://www.lita.foundation/blog/announcing-valida-0-7-0
+- Lita团队发布了Valida 0.7.0更新，首次支持WASM编译器工具链，并增强了zkVM堆栈的开发体验。
+
+📝 Mira: Generic Accumulation Scheme for Special-Sound Protocols
+- https://blog.beal.io/posts/mira/
+- Josh Beal在博客中提出了一种通用的累积方案，适用于特殊可靠性的协议（类Protostar），显著提高了配对基论证的折叠效率。
+
+---
+📄 网页查看： https://news.plonk.pro/2024-12-18.html
+🪶 由 @icerdesign 收集
