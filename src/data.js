@@ -21,7 +21,7 @@ export const newsData = [
                 url: "https://eprint.iacr.org/2024/1970",
                 type: "论文",
                 tags: ["University of Pennsylvania", "低内存"],
-                summary: "Baweja等人在论文中提出了Scribe，一种低内存SNARK，通过利用磁盘存储在廉价设备上高效证明大称述，显著减少内存需求并优化I/O成本。"
+                summary: "Baweja等人在论文{{name}}中提出了Scribe，一种低内存SNARK，通过利用磁盘存储在廉价设备上高效证明大称述，显著减少内存需求并优化I/O成本。"
             }
         ]
     },
@@ -40,7 +40,7 @@ export const newsData = [
                 url: "https://blog.hyle.eu/podcast-1-matteo-zkchess/",
                 type: "博客",
                 tags: ["Hylé", "Matteo", "zkEmail", "RISC0"],
-                summary: "Hylé博客讨论了zkChess，一个使用zkEmail和RISC0构建的邮件可验证游戏引擎，探讨了zkEmail的酷炫之处及其在加密领域的应用。"
+                summary: "Hylé博客{{name}}讨论了zkChess，一个使用zkEmail和RISC0构建的邮件可验证游戏引擎，探讨了zkEmail的酷炫之处及其在加密领域的应用。"
             }
         ]
     },
@@ -116,7 +116,7 @@ export const newsData = [
                 "url": "https://zkv.xyz/zk-in-sui/",
                 "type": "博客",
                 "tags": ["ZKV",  "Sui", "zkLogin", "Kelp"],
-                "summary": "ZKV分享了关于Sui上的ZK技术应用，讨论了隐私保护和安全漏洞等关键问题。涉及到zkLogin登录和Kelp账户恢复等应用。"
+                "summary": "ZKV分享了{{name}}关于Sui上的ZK技术应用，讨论了隐私保护和安全漏洞等关键问题。涉及到zkLogin登录和Kelp账户恢复等应用。"
               }
         ]
     },
@@ -128,7 +128,7 @@ export const newsData = [
                 "url": "https://x.com/kautukkundan/status/1867589273446232368",
                 "type": "博客",
                 "tags": ["Succinct", "zkVM",],
-                "summary": "Succinct团队在ZK-Residency项目中分享了关于zkVM的详细指南，比较了SP1、RISC0、Jolt、Nexus、Delphinus和Powdr等zkVM在多种加密算法上的表现。"
+                "summary": "Succinct团队在ZK-Residency项目中分享了{{name}}关于zkVM的详细指南，比较了SP1、RISC0、Jolt、Nexus、Delphinus和Powdr等zkVM在多种加密算法上的表现。"
               },
               {
                 "name": "Joining Tools For Humanity to Build a Better World",
@@ -147,7 +147,7 @@ export const newsData = [
                 "url": "https://mirror.xyz/crypblizz.eth/AJLi9mL_7C8LkSYGlkaDbGfXaXFVtOGU_1eDs-_JDNA",
                 "type": "博客",
                 "tags": ["Crypblizz", "PETs"],
-                "summary": "Crypblizz分享了对隐私增强技术（PETs）的深入探讨，涵盖了MPC、FHE、TEE和ZK等技术的历史、演变及其在Web3行业中的重要性。"
+                "summary": "Crypblizz分享了{{name}}对隐私增强技术（PETs）的深入探讨，涵盖了MPC、FHE、TEE和ZK等技术的历史、演变及其在Web3行业中的重要性。"
               },
               {
                 "name": "zkLogin for Base blockchain",
@@ -166,14 +166,14 @@ export const newsData = [
                 "url": "https://x.com/m2magician/status/1867605074954137635",
                 "type": "博客",
                 "tags": ["NPLabs", "Merkle Trees", "Plonky3"],
-                "summary": "NPLabs团队分享了关于hybrid Merkle Trees的技术介绍，探讨了其在plonky3和递归证明中的应用，提供了详细的技术入门指南。"
+                "summary": "NPLabs团队分享了{{name}}关于hybrid Merkle Trees的技术介绍，探讨了其在plonky3和递归证明中的应用，提供了详细的技术入门指南。"
               },
               {
                 "name": "Anonymous credentials from ECDSA",
                 "url": "https://eprint.iacr.org/2024/2010",
                 "type": "论文",
                 "tags": ["Google", "ECDSA"],
-                "summary": "Frigo和shelat在论文中提出了一种基于ECDSA的新匿名凭证方案，通过高效的zk证明解决了SHA256和文档解析问题，无需更改现有发行者流程或设备，适用于隐私保护的数字身份应用。"
+                "summary": "Frigo和shelat在论文{{name}}中提出了一种基于ECDSA的新匿名凭证方案，通过高效的zk证明解决了SHA256和文档解析问题，无需更改现有发行者流程或设备，适用于隐私保护的数字身份应用。"
               }
         ]
     },
@@ -192,7 +192,7 @@ export const newsData = [
                 "url": "https://arxiv.org/abs/2411.15031",
                 "type": "论文",
                 "tags": ["Binbin Gu", "Unversity of California", "SQL"],
-                "summary": "Gu等人在《PoneglyphDB: Efficient Non-interactive Zero-Knowledge Proofs for Arbitrary SQL-Query Verification》论文中提出了PoneglyphDB，通过非交互式零知识证明（ZKP）支持数据保密性和查询处理的可验证性。"
+                "summary": "Gu等人在{{name}}论文中提出了PoneglyphDB，通过非交互式零知识证明（ZKP）支持数据保密性和查询处理的可验证性。"
               }
         ]
     },
@@ -211,7 +211,7 @@ export const newsData = [
                 "url": "https://blog.beal.io/posts/mira/",
                 "type": "博客",
                 "tags": ["Josh Beal", "accumulation", "Folding"],
-                "summary": "Josh Beal在博客中提出了一种通用的累积方案，适用于特殊可靠性的协议（类Protostar），显著提高了配对基论证的折叠效率。"
+                "summary": "Josh Beal在博客{{name}}中提出了一种通用的累积方案，适用于特殊可靠性的协议（类Protostar），显著提高了配对基论证的折叠效率。"
               }
         ]
     },

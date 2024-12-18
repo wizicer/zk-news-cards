@@ -84,7 +84,10 @@ function generateMarkdownContent(cards) {
       if (!groupedByType[type]) {
         groupedByType[type] = []
       }
-      groupedByType[type].push(project)
+      groupedByType[type].push({
+        ...project,
+        summary: project.summary.replace(/{{name}}/g, `《${project.name}》`)
+      })
     })
   })
   
