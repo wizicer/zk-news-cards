@@ -68,7 +68,7 @@ const weeklyData = computed(() => {
 })
 
 function generateMarkdownContent(cards) {
-  let content = '---\n\n'
+  let content = ''
   
   // Use the week's end date from the first card's week range
   const firstCard = cards[0]
