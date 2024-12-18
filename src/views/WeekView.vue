@@ -14,13 +14,25 @@
 import { computed, ref } from 'vue'
 import { newsData } from '../data'
 
+/**
+ * Calculate the week range where:
+ * - Week starts on Thursday
+ * - Week ends on Wednesday of the next week
+ * This is useful for weekly news aggregation where we want to group articles
+ * from Thursday to Wednesday of the following week
+ */
 function getWeekRange(date) {
   const curr = new Date(date)
-  const day = curr.getDay()
-  const diffToThursday = day <= 4 ? -day + 4 : 7 - day + 4
-  const thursday = new Date(curr.setDate(curr.getDate() + diffToThursday))
+  const day = curr.getDay() // 0 = Sunday, 4 = Thursday
+  
+  // Find nearest passed Thursday
+  const diffToThursday = (day + 3) % 7
+  const thursday = new Date(curr.setDate(curr.getDate() - diffToThursday))
+  
+  // Calculate the following Wednesday
   const wednesday = new Date(thursday)
   wednesday.setDate(thursday.getDate() + 6)
+  
   return {
     start: thursday,
     end: wednesday
@@ -57,8 +69,13 @@ const weeklyData = computed(() => {
 
 function generateMarkdownContent(cards) {
   let content = '---\n\n'
-  const lastCard = cards[cards.length - 1]
-  content += `### ${lastCard.year}.${lastCard.month}.${lastCard.day}\n\n`
+  
+  // Use the week's end date from the first card's week range
+  const firstCard = cards[0]
+  const date = new Date(`${firstCard.year}-${firstCard.month}-${firstCard.day}`)
+  const weekRange = getWeekRange(date)
+  const endDate = weekRange.end
+  content += `### ${endDate.getFullYear()}.${String(endDate.getMonth() + 1).padStart(2, '0')}.${String(endDate.getDate()).padStart(2, '0')}\n\n`
   
   const groupedByType = {}
   cards.forEach(card => {
