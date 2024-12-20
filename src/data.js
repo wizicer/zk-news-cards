@@ -215,6 +215,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-20",
+        projects: [
+            {
+                "name": "zkVM 专列开票",
+                "url": "https://mp.weixin.qq.com/s/GLvncEzit0rTGSH5wFAvTw",
+                "type": "活动",
+                "tags": [ "Antalpha Lab", "zkVM"],
+                "summary": "Antalpha Lab发布zkVM的课程安排，从2024年12月30日开始的4周时间，欢迎感兴趣的同学报名。"
+              },
+              {
+                "name": "On the gas efficiency of the WHIR polynomial commitment scheme",
+                "url": "https://ethresear.ch/t/on-the-gas-efficiency-of-the-whir-polynomial-commitment-scheme/21301",
+                "type": "博客",
+                "tags": [ "Pierre", "PSE", "WHIR", ],
+                "summary": "Pierre等人在博客{{name}}中分析了WHIR多项式承诺方案的gas效率，开源了EVM验证器原型，展示了其在不同参数设置下的gas成本优化。TLDR，现在可做到1.3M gas。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {

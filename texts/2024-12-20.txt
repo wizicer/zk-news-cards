@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2024-12-20 星期五
+
+🎪 zkVM 专列开票
+- https://mp.weixin.qq.com/s/GLvncEzit0rTGSH5wFAvTw
+- Antalpha Lab发布zkVM的课程安排，从2024年12月30日开始的4周时间，欢迎感兴趣的同学报名。
+
+📝 On the gas efficiency of the WHIR polynomial commitment scheme
+- https://ethresear.ch/t/on-the-gas-efficiency-of-the-whir-polynomial-commitment-scheme/21301
+- Pierre等人在博客中分析了WHIR多项式承诺方案的gas效率，开源了EVM验证器原型，展示了其在不同参数设置下的gas成本优化。TLDR，现在可做到1.3M gas。
+
+---
+📄 网页查看： https://news.plonk.pro/2024-12-20.html
+🪶 由 @icerdesign 收集
