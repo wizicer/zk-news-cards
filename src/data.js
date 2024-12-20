@@ -4,6 +4,8 @@ const getWeekday = (dateStr) => {
     return weekdays[date.getDay()];
 };
 
+const createUrlItem = (name, url) => ({ name, url });
+
 export const newsData = [
     {
         date: "2024-12-08",
@@ -228,6 +230,9 @@ export const newsData = [
               {
                 "name": "On the gas efficiency of the WHIR polynomial commitment scheme",
                 "url": "https://ethresear.ch/t/on-the-gas-efficiency-of-the-whir-polynomial-commitment-scheme/21301",
+                "urls": [
+                    createUrlItem("代码", "https://github.com/privacy-scaling-explorations/sol-whir")
+                ],
                 "type": "博客",
                 "tags": [ "Pierre", "PSE", "WHIR", ],
                 "summary": "Pierre等人在博客{{name}}中分析了WHIR多项式承诺方案的gas效率，开源了EVM验证器原型，展示了其在不同参数设置下的gas成本优化。TLDR，现在可做到1.3M gas。"
