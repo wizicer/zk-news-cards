@@ -239,6 +239,35 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-22",
+        projects: [
+            {
+                "name": "Community Privacy Residency",
+                "url": "https://community-privacy.github.io/",
+                "type": "活动",
+                "tags": [
+                  "Community Privacy",
+                  "Taipei",
+                ],
+                "summary": "Community Privacy组织了一个为期2-4周的驻地项目，专注于研究、共同设计、原型设计和构建社区隐私的开源应用。项目将于2025年2月22日至3月22日在台北举行。"
+              },
+              {
+                "name": "Hash-based PCD from the BOIL accumulator",
+                "url": "https://hackmd.io/@nil-research/SJj8V9-Bke",
+                "urls": [
+                    createUrlItem("论文", "https://eprint.iacr.org/2024/1993")
+                ],
+                "type": "博客",
+                "tags": [
+                  "nil-research",
+                  "BOIL",
+                  "accumulation"
+                ],
+                "summary": "nil-research在{{name}}博客中对他们的论文BOIL进行解读，是一种用Reed-Solomon码实现了高效的累积方案，适用于任意基于哈希的SNARK。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {

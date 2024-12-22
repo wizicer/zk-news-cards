@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2024-12-22 星期日
+
+🎪 Community Privacy Residency
+- https://community-privacy.github.io/
+- Community Privacy组织了一个为期2-4周的驻地项目，专注于研究、共同设计、原型设计和构建社区隐私的开源应用。项目将于2025年2月22日至3月22日在台北举行。
+
+📝 Hash-based PCD from the BOIL accumulator
+- https://hackmd.io/@nil-research/SJj8V9-Bke
+- nil-research在博客中对他们的论文BOIL进行解读，是一种用Reed-Solomon码实现了高效的累积方案，适用于任意基于哈希的SNARK。
+
+---
+📄 网页查看： https://news.plonk.pro/2024-12-22.html
+🪶 由 @icerdesign 收集
