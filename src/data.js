@@ -268,6 +268,43 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-23",
+        projects: [
+            {
+                "name": "Wait, Why Do We Need Consensus Again?",
+                "url": "https://pod.network/blog/wait-why-do-we-need-consensus-again",
+                "type": "博客",
+                "tags": [
+                  "POD.NETWORK",
+                  "Consensus",
+                  "Blockchain",
+                  "Decentralization",
+                  "Double-Spending"
+                ],
+                "summary": "POD.NETWORK讨论了区块链中共识的必要性，指出共识并非构建去中心化支付的必需，通过无共识协议可以实现更快的交易确认。"
+              },
+        ]
+    },
+    {
+        date: "2024-12-25",
+        projects: [
+            {
+                "name": "Bypassing the characteristic bound in logUp",
+                "url": "https://eprint.iacr.org/2024/2067",
+                "type": "论文",
+                "tags": [ "Liam Eagen", "Ulrich Haböck", "Polygon Lab", "GKR" ],
+                "summary": "Liam Eagen和Ulrich Haböck在{{name}}学术笔记中提出了一种方法，通过抽象极点多重性的概念，绕过了logUp中的特征界限，并适用于Papini和Haböck的GKR变体，解锁了二进制域上的分数分解查找。"
+              },
+              {
+                "name": "Zero Knowledge Podcast Episodes 346",
+                "url": "https://zeroknowledge.fm/346-2/",
+                "type": "视频",
+                "tags": [ "ZK Podcast Team", "ZK", "MPC", "TEE", "ZKML" ],
+                "summary": "Zero Knowledge Podcast发布了346集，Anna与Dan Boneh讨论了最新的ZK研究，包括基于格的SNARKs、ZK在内容来源证明中的应用、ZK在FHE环境中的更新以及ZK在ML中的进展。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
