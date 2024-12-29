@@ -305,6 +305,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-29",
+        projects: [
+            {
+                "name": "ZK101 - 零知识学习零知识",
+                "url": "https://www.zk101.io/",
+                "type": "开源",
+                "tags": [ "Box", "zk101", "Tutorial" ],
+                "summary": "Box等人发布了ZK101开源教育平台，旨在使零知识证明技术易于理解和学习，包括从基础到高级的课程、实践案例和代码示例。"
+              },
+              {
+                "name": "LatticeFold: A Lattice-based Folding Scheme and its Applications to Succinct Proof Systems",
+                "url": "https://github.com/NethermindEth/latticefold",
+                "type": "开源",
+                "tags": [ "Nethermind", "Lattice-based", "Rust" ],
+                "summary": "Nethermind开源了LatticeFold，这是一个基于LatticeFold方案概念验证实现，包含非交互式折叠方案实现、Ajtai承诺方案、R1CS/CCS结构等。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
