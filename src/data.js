@@ -324,6 +324,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2024-12-30",
+        projects: [
+            {
+                "name": "Zero Knowledge Memory-Checking Techniques for Stacks and Queues",
+                "url": "https://eprint.iacr.org/2024/2084",
+                "type": "论文",
+                "tags": [ "Alexander Frolov", "Memory Checking", ],
+                "summary": "Alexander Frolov在{{name}}论文中提出了针对栈和队列的零知识内存检查技术，优化了RAM方案，减少了乘法门和辅助值的需求。"
+              },
+              {
+                "name": "MyZKP: Building Zero Knowledge Proof from Scratch in Rust",
+                "url": "https://koukyosyumei.github.io/MyZKP/index.html",
+                "type": "开源",
+                "tags": [ "koukyosyumei", "Rust" ],
+                "summary": "koukyosyumei发布了MyZKP开源项目，这是一个用Rust从头开始构建的零知识证明库，旨在作为理解和应用零知识证明的教育资源。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
