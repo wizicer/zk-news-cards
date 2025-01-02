@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-02 星期四
+
+📱 ANON.WORLD
+- https://anon.world/
+- @Slokh 发布了匿名社交网络 @anondotworld，使用ZKP生成匿名凭证，用户发帖时可附加多个凭证，社区由共享凭证的用户组成，成员可代表社区进行匿名操作。
+
+📝 If you want to learn ZK in 2025
+- https://x.com/Jeyffre/status/1874654453191815396
+- @Jeyffre 分享了RareSkills ZK Book的学习方法，强调通过按顺序学习ZK，提高学习效率。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-02.html
+🪶 由 @icerdesign 收集
