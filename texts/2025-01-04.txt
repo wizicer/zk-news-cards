@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-04 星期六
+
+📝 Understanding SNARKs through Quadratic Residues
+- https://x.com/thefrozenfire/status/1873445970010407084
+- @thefrozenfire 分享了利用二次剩余问题学习ZKP的核心思想的方法。
+
+📄 MicroNova: Folding-based arguments with efficient (on-chain) verification
+- https://eprint.iacr.org/2024/2099
+- Zhao等人在论文中提出了一种基于折叠的递归论证MicroNova，用于生成增量计算的证明，在以太坊上的验证约消耗2.2M gas（Groth16约220k gas）。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-04.html
+🪶 由 @icerdesign 收集
