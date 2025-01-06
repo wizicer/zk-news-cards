@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-06 星期一
+
+📝 ZK in Sui ZK in Celestia in 2024
+- https://zkv.xyz/zk-in-celestia-in-2024/
+- @zkv_xyz 分享了关于2024年Celestia中ZK技术的应用调查，包括ZK IDs、隐私保护、新兴ZK用例以及ZK安全漏洞等方面的内容。
+
+📝 Privacy-First CBDCs: Leveraging Cryptography and Ethereum for Next-Gen Digital Currencies
+- https://aztec.network/blog/privacy-first-cbdcs-leveraging-cryptography-and-ethereum-for-next-gen-digital-currencies
+- @aztecnetwork 讨论了隐私优先的CBDCs（央行数字货币），强调利用ZKPs和以太坊技术平衡创新、隐私、合规和用户信任。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-06.html
+🪶 由 @icerdesign 收集

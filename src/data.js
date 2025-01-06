@@ -400,6 +400,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2025-01-06",
+        projects: [
+            {
+                "name": "ZK in Sui ZK in Celestia in 2024",
+                "url": "https://zkv.xyz/zk-in-celestia-in-2024/",
+                "type": "博客",
+                "tags": [ "zkv.xyz", "Celestia", ],
+                "summary": "@zkv_xyz 分享了关于2024年Celestia中ZK技术的应用调查，包括ZK IDs、隐私保护、新兴ZK用例以及ZK安全漏洞等方面的内容。"
+              },
+              {
+                "name": "Privacy-First CBDCs: Leveraging Cryptography and Ethereum for Next-Gen Digital Currencies",
+                "url": "https://aztec.network/blog/privacy-first-cbdcs-leveraging-cryptography-and-ethereum-for-next-gen-digital-currencies",
+                "type": "博客",
+                "tags": [ "Aztec Labs", "CBDC", "合规" ],
+                "summary": "@aztecnetwork 讨论了隐私优先的CBDCs（央行数字货币），强调利用ZKPs和以太坊技术平衡创新、隐私、合规和用户信任。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
