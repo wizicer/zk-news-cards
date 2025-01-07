@@ -419,6 +419,25 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2025-01-07",
+        projects: [
+            {
+                "name": "zkApps on Mina and o1js",
+                "url": "https://www.o1labs.org/blog/zkapps-on-mina-and-o1js",
+                "type": "博客",
+                "tags": [ "o1Labs", "Mina", ],
+                "summary": "@o1_labs 团队分享了关于Mina和o1js的zkApps平台的最新进展，包括o1js v2.0的发布、动态数组和运行时表的引入、权限前提条件的设置、zkProgram的改进以及EdDSA的支持等内容。"
+              },
+              {
+                "name": "Ingonyama Research Grants 2025",
+                "url": "https://www.ingonyama.com/blog/ingonyama-research-grants-2025",
+                "type": "新闻",
+                "tags": [ "Ingonyama", "ZK", "ICICLE", "研究" ],
+                "summary": "@Ingo_zk 宣布2025年研究资助计划，提供10万美元支持使用ICICLE库进行的研究，旨在通过重新实现现有文献中的算法来超越现有研究基准。"
+              }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
