@@ -8,6 +8,7 @@ const iconMap = {
   '工具': '🛠️',
   '应用': '📱',
   '信息': '📃',
+  '漏洞': '🪳',
 }
 
 export const getTypeIcon = (type) => {

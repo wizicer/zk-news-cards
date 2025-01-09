@@ -438,6 +438,30 @@ export const newsData = [
               }
         ]
     },
+    {
+        date: "2025-01-09",
+        projects: [
+            {
+                "name": "PSA: iden3's implementation of the Poseidon Hash function is broken",
+                "url": "https://x.com/vdwijden/status/1877046148386451732",
+                "type": "漏洞",
+                "tags": [
+                  "MariusVanDerWijden",
+                  "Poseidon Hash",
+                  "cryptography",
+                  "bug"
+                ],
+                "summary": "@vdWijden 发现iden3的Poseidon哈希函数实现存在哈希碰撞漏洞，该实现被许多知名项目使用。"
+              },
+              {
+                "name": "zkPi: Proving Lean Theorems in Zero-Knowledge",
+                "url": "https://eprint.iacr.org/2024/267",
+                "type": "论文",
+                "tags": [ "Evan Laufer", "Dan Boneh", "Lean", ],
+                "summary": "Laufer等人在{{name}}论文中提出了zkPi，首个用于Lean证明的zkSNARK，允许证明者在零知识下验证Lean定理的正确性。"
+              },
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {

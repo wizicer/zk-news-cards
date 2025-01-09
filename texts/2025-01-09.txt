@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-09 星期四
+
+🪳 PSA: iden3&#39;s implementation of the Poseidon Hash function is broken
+- https://x.com/vdwijden/status/1877046148386451732
+- @vdWijden 发现iden3的Poseidon哈希函数实现存在哈希碰撞漏洞，该实现被许多知名项目使用。
+
+📄 zkPi: Proving Lean Theorems in Zero-Knowledge
+- https://eprint.iacr.org/2024/267
+- Laufer等人在论文中提出了zkPi，首个用于Lean证明的zkSNARK，允许证明者在零知识下验证Lean定理的正确性。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-09.html
+🪶 由 @icerdesign 收集
