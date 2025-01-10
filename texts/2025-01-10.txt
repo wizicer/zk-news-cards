@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-10 星期五
+
+📝 The Era of Provable Software
+- https://writings.succinct.xyz/provable
+- @SuccinctLabs 在博客中讨论了可证明软件时代，强调了ZK密码学的进步使得通过通用zkVM验证任意程序执行成为可能，这将推动区块链和计算领域的新应用。
+
+🎪 Try NoirLang quest at NodeGuardians
+- https://x.com/cryptobuilder_/status/1877385090231316820
+- @cryptobuilder_ 推荐尝试 @nodeguardians 的 @NoirLang 任务，通过游戏学习ZK的概念，无需了解ZK工作原理，即可学习如何证明程序并验证证据。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-10.html
+🪶 由 @icerdesign 收集
