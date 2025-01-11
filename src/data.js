@@ -479,27 +479,32 @@ export const newsData = [
                 "tags": [ "Lisa Akselrod", "NodeGuardians", "编程游戏" ],
                 "summary": "@cryptobuilder_ 推荐尝试 @nodeguardians 的 @NoirLang 任务，通过游戏学习ZK的概念，无需了解ZK工作原理，即可学习如何证明程序并验证证据。"
               },
-            //   {
-            //     "name": "The zk in zkTLS",
-            //     "url": "https://reclaimprotocol.org/blog/posts/zk-in-zktls",
-            //     "type": "博客",
-            //     "tags": [ "Madhavan Malolan", "zkTLS", ],
-            //     "summary": "Madhavan Malolan讨论了zkTLS的概念，澄清了zkTLS并非主要用于隐私保护，而是为了用户安全和数据完整性。文章深入探讨了TLS握手过程及其在加密通信中的作用。"
-            //   },
+        ]
+    },
+    {
+        date: "2025-01-11",
+        projects: [
+              {
+                "name": "The zk in zkTLS",
+                "url": "https://reclaimprotocol.org/blog/posts/zk-in-zktls",
+                "type": "博客",
+                "tags": [ "Madhavan Malolan", "Reclaim Protocol", ],
+                "summary": "Madhavan Malolan在博客{{name}}中讨论了zkTLS的概念，澄清了zkTLS并非主要用于隐私保护，而是为了用户安全和数据完整性。"
+              },
+            {
+                "name": "zkVMs and Privacy: Challenges and Opportunities",
+                "url": "https://x.com/luhelminger/status/1876940316931961143",
+                "type": "博客",
+                "tags": [ "Lukas Helminger", "zkVMs", "zkDSL", ],
+                "summary": "@luhelminger 讨论了zkVMs在2024年的主导地位及其在可扩展性用例中的应用，同时探讨了zkVMs在隐私保护方面面临的挑战和未来展望。"
+              }
             //   {
             //     "name": "At DevCon 2024's side event New Games. New Worlds.",
             //     "url": "https://x.com/hyle_org/status/1877354712925880779",
             //     "type": "活动",
             //     "tags": [ "Hylé", "GameFi", "DevCon 2024" ],
-            //     "summary": "在DevCon 2024的边会New Games. New Worlds.上，@sylvechv提出需要停止在链上运行去中心化游戏的观点，并探讨了其原因。"
+            //     "summary": "在DevCon 2024的边会New Games. New Worlds.上，@sylvechv 提出需要停止在链上运行去中心化游戏的观点，并探讨了其原因。"
             //   },
-            // {
-            //     "name": "zkVMs and Privacy: Challenges and Opportunities",
-            //     "url": "https://x.com/luhelminger/status/1876940316931961143",
-            //     "type": "博客",
-            //     "tags": [ "Lukas Helminger", "zkVMs", "zkDSL", ],
-            //     "summary": "Lukas Helminger讨论了zkVMs在2024年的主导地位及其在可扩展性用例中的应用，同时探讨了zkVMs在隐私保护方面面临的挑战和未来展望。"
-            //   }
         ]
     },
 ].map(item => {

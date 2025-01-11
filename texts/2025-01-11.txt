@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-11 星期六
+
+📝 The zk in zkTLS
+- https://reclaimprotocol.org/blog/posts/zk-in-zktls
+- Madhavan Malolan在博客中讨论了zkTLS的概念，澄清了zkTLS并非主要用于隐私保护，而是为了用户安全和数据完整性。
+
+📝 zkVMs and Privacy: Challenges and Opportunities
+- https://x.com/luhelminger/status/1876940316931961143
+- @luhelminger 讨论了zkVMs在2024年的主导地位及其在可扩展性用例中的应用，同时探讨了zkVMs在隐私保护方面面临的挑战和未来展望。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-11.html
+🪶 由 @icerdesign 收集
