@@ -507,6 +507,66 @@ export const newsData = [
             //   },
         ]
     },
+    {
+        date: "2025-01-15",
+        projects: [
+          {
+            "name": "stwo-web-stark",
+            "url": "https://github.com/Okm165/stwo-web-stark",
+            "type": "开源",
+            "tags": [ "Okm165", "Cairo", "WASM", ],
+            "summary": "开源项目stwo-web-stark，提供使用stwo证明器证明Cairo程序的Web演示，可以在网页中完成证明、验证等操作。"
+          },
+          {
+            "name": "A Survey of Interactive Verifiable Computing: Utilizing Randomness in Low-Degree Polynomials",
+            "url": "https://eprint.iacr.org/2025/008",
+            "type": "论文",
+            "tags": [ "Angold Wang", "低度多项式", "GKR", ],
+            "summary": "Angold Wang在{{name}}综述中审视了可验证计算，从基础复杂性理论到现代ZK-SNARKs，探讨了交互式证明系统、知识复杂性及低次多项式在错误检测和验证协议中的应用，最终落脚在GKR协议。"
+          },
+          // {
+          //   "name": "Irreducible launches alpha-ready Binius library and its first application, an Ethereum state proving service",
+          //   "url": "https://x.com/IrreducibleHW/status/1877086675907871044",
+          //   "type": "新闻",
+          //   "tags": [
+          //     "Irreducible",
+          //     "Binius",
+          //     "Ethereum",
+          //     "State Proving"
+          //   ],
+          //   "summary": "Irreducible宣布推出alpha-ready的Binius库及其首个应用——以太坊状态证明服务，标志着其在区块链技术领域的新进展。"
+          // },
+          // {
+          //   "name": "Pick, Prove, Profit: The NIVC Singularity",
+          //   "url": "https://blog.icme.io/pick-prove-profit-the-nivc-singularity-2/",
+          //   "type": "博客",
+          //   "tags": [
+          //     "NovaNet",
+          //     "NIVC",
+          //     "zkVM",
+          //     "ZKP",
+          //     "zkSNARK",
+          //     "FHE",
+          //     "AI"
+          //   ],
+          //   "summary": "NovaNet团队分享了NIVC（非均匀增量可验证计算）技术，探讨了其在zkVM设计中的应用及如何通过Nebula方案提升性能，同时展望了NIVC在去中心化、可扩展和高效证明网络中的潜力。"
+          // },
+          // {
+          //   "name": "Extending Groth16 for Disjunctive Statements",
+          //   "url": "https://eprint.iacr.org/2025/028",
+          //   "type": "论文",
+          //   "tags": [ "Xudong Zhu", "析取表达", "逻辑组合" ],
+          //   "summary": "Zhu等人在{{name}}论文中提出了CompGroth16，一个Groth16的变体，旨在支持包含代数和算术组件的析取语句证明，提高了表达能力和证明效率，但验证成本变高了。"
+          // },
+          // {
+          //   "name": "Hash-Based Multi-Signatures for Post-Quantum Ethereum",
+          //   "url": "https://eprint.iacr.org/2025/055",
+          //   "type": "论文",
+          //   "tags": [ "Justin Drake", "后量子密码", "多重签名", ],
+          //   "summary": "Drake等人在{{name}}论文中提出了一种基于哈希的签名方案家族，作为BLS签名的后量子替代方案，专注于实例化底层签名方案并避免安全证明中的随机预言。"
+          // }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {

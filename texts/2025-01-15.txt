@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-15 星期三
+
+💻 stwo-web-stark
+- https://github.com/Okm165/stwo-web-stark
+- 开源项目stwo-web-stark，提供使用stwo证明器证明Cairo程序的Web演示，可以在网页中完成证明、验证等操作。
+
+📄 A Survey of Interactive Verifiable Computing: Utilizing Randomness in Low-Degree Polynomials
+- https://eprint.iacr.org/2025/008
+- Angold Wang在综述中审视了可验证计算，从基础复杂性理论到现代ZK-SNARKs，探讨了交互式证明系统、知识复杂性及低次多项式在错误检测和验证协议中的应用，最终落脚在GKR协议。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-15.html
+🪶 由 @icerdesign 收集
