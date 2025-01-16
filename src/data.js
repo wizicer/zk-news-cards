@@ -524,6 +524,25 @@ export const newsData = [
             "tags": [ "Angold Wang", "低度多项式", "GKR", ],
             "summary": "Angold Wang在{{name}}综述中审视了可验证计算，从基础复杂性理论到现代ZK-SNARKs，探讨了交互式证明系统、知识复杂性及低次多项式在错误检测和验证协议中的应用，最终落脚在GKR协议。"
           },
+        ]
+    },
+    {
+        date: "2025-01-16",
+        projects: [
+          {
+            "name": "Why We Can't Build Perfectly Secure Multi-Party Applications (yet)",
+            "url": "https://mirror.xyz/privacy-scaling-explorations.eth/nXUhkZ84ckZi_5mYRFCCKgkLVFAmM2ECdEFCQul2jPs",
+            "type": "博客",
+            "tags": [ "Enrico Bottazzi", "MPC", "FHE", "iO" ],
+            "summary": "PSE研究员Enrico Bottazzi探讨了为何目前无法构建完全安全的多方应用程序，分析了多方计算和全同态加密等技术在安全性和活性之间的权衡。"
+          },
+          {
+            "name": "FRI and Proximity Proofs (Part.1)",
+            "url": "https://zkhack.dev/whiteboard/s2m7/",
+            "type": "视频",
+            "tags": [ "Dan Boneh", "FRI", "Reed-Solomon", ],
+            "summary": "Dan Boneh在ZK Whiteboard Sessions中分享了FRI及其在密码学中的基础，包括线性代码、IOPs背景，以及如何将Polynomial-IOP编译为SNARK。"
+          }
           // {
           //   "name": "Irreducible launches alpha-ready Binius library and its first application, an Ethereum state proving service",
           //   "url": "https://x.com/IrreducibleHW/status/1877086675907871044",

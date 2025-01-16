@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-16 星期四
+
+📝 Why We Can't Build Perfectly Secure Multi-Party Applications (yet)
+- https://mirror.xyz/privacy-scaling-explorations.eth/nXUhkZ84ckZi_5mYRFCCKgkLVFAmM2ECdEFCQul2jPs
+- PSE研究员Enrico Bottazzi探讨了为何目前无法构建完全安全的多方应用程序，分析了多方计算和全同态加密等技术在安全性和活性之间的权衡。
+
+🎥 FRI and Proximity Proofs (Part.1)
+- https://zkhack.dev/whiteboard/s2m7/
+- Dan Boneh在ZK Whiteboard Sessions中分享了FRI及其在密码学中的基础，包括线性代码、IOPs背景，以及如何将Polynomial-IOP编译为SNARK。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-16.html
+🪶 由 @icerdesign 收集
