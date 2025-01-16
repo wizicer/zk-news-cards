@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { renderToString } from '@vue/server-renderer'
+import he from 'he'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -56,7 +57,9 @@ async function generateStaticHTML() {
     }
 
     const textOutputPath = path.join(textsDir, `${filename}.txt`)
-    fs.writeFileSync(textOutputPath, textContent.replace(/<[^>]*>/g, '').trim())
+    const textWithoutTags = textContent.replace(/<[^>]*>/g, '').trim();
+    const textOutput = he.decode(textWithoutTags);
+    fs.writeFileSync(textOutputPath, textOutput)
     console.log(`Text content generated successfully at: ${textOutputPath}`)
 }
 
