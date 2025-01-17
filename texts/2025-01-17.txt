@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-17 星期五
+
+📰 Binius Alpha Release & Ethereum State Proving Service
+- https://www.irreducible.com/posts/ethereum-state-proving-service
+- @IrreducibleHW 团队宣布了Binius库及其首个应用——以太坊状态证明服务。该服务利用Reth以太坊节点，生成以太坊MPT状态树的压缩证明，支持无状态客户端解决方案。
+
+📝 Pick, Prove, Profit: The NIVC Singularity
+- https://blog.icme.io/pick-prove-profit-the-nivc-singularity-2/
+- NovaNet团队分享了NIVC（非均匀增量可验证计算）技术，探讨了其在zkVM设计中的应用及如何通过Nebula方案提升性能，同时展望了使用NIVC替代现在GROTH16做链上验证的潜力。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-17.html
+🪶 由 @icerdesign 收集

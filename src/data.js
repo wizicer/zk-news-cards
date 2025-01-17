@@ -543,33 +543,28 @@ export const newsData = [
             "tags": [ "Dan Boneh", "FRI", "Reed-Solomon", ],
             "summary": "Dan Boneh在ZK Whiteboard Sessions中分享了FRI及其在密码学中的基础，包括线性代码、IOPs背景，以及如何将Polynomial-IOP编译为SNARK。"
           }
-          // {
-          //   "name": "Irreducible launches alpha-ready Binius library and its first application, an Ethereum state proving service",
-          //   "url": "https://x.com/IrreducibleHW/status/1877086675907871044",
-          //   "type": "新闻",
-          //   "tags": [
-          //     "Irreducible",
-          //     "Binius",
-          //     "Ethereum",
-          //     "State Proving"
-          //   ],
-          //   "summary": "Irreducible宣布推出alpha-ready的Binius库及其首个应用——以太坊状态证明服务，标志着其在区块链技术领域的新进展。"
-          // },
-          // {
-          //   "name": "Pick, Prove, Profit: The NIVC Singularity",
-          //   "url": "https://blog.icme.io/pick-prove-profit-the-nivc-singularity-2/",
-          //   "type": "博客",
-          //   "tags": [
-          //     "NovaNet",
-          //     "NIVC",
-          //     "zkVM",
-          //     "ZKP",
-          //     "zkSNARK",
-          //     "FHE",
-          //     "AI"
-          //   ],
-          //   "summary": "NovaNet团队分享了NIVC（非均匀增量可验证计算）技术，探讨了其在zkVM设计中的应用及如何通过Nebula方案提升性能，同时展望了NIVC在去中心化、可扩展和高效证明网络中的潜力。"
-          // },
+        ]
+    },
+    {
+        date: "2025-01-17",
+        projects: [
+          {
+            "name": "Binius Alpha Release & Ethereum State Proving Service",
+            "url": "https://www.irreducible.com/posts/ethereum-state-proving-service",
+            "urls": [
+                createUrlItem("𝕏", "https://x.com/IrreducibleHW/status/1877086675907871044")
+            ],
+            "type": "新闻",
+            "tags": [ "Irreducible Team", "Binius", "Ethereum", ],
+            "summary": "@IrreducibleHW 团队宣布了Binius库及其首个应用——以太坊状态证明服务。该服务利用Reth以太坊节点，生成以太坊MPT状态树的压缩证明，支持无状态客户端解决方案。"
+          },
+          {
+            "name": "Pick, Prove, Profit: The NIVC Singularity",
+            "url": "https://blog.icme.io/pick-prove-profit-the-nivc-singularity-2/",
+            "type": "博客",
+            "tags": [ "NovaNet", "NIVC", "zkVM", ],
+            "summary": "NovaNet团队分享了NIVC（非均匀增量可验证计算）技术，探讨了其在zkVM设计中的应用及如何通过Nebula方案提升性能，同时展望了使用NIVC替代现在GROTH16做链上验证的潜力。"
+          },
           // {
           //   "name": "Extending Groth16 for Disjunctive Statements",
           //   "url": "https://eprint.iacr.org/2025/028",
