@@ -1,4 +1,4 @@
-🚀zkDaily 前沿热点追踪 2025-01-17 星期五
+🚀zkDaily 前沿热点追踪 2025-01-18 星期六
 
 📰 探讨 Poseidon 延展性攻击，可影响零知识证明应用的安全性
 - https://mp.weixin.qq.com/s/tdJ_noFvkPvCFpMNh84_Kg
@@ -9,5 +9,5 @@
 - Soukhanov等人在论文中提出了一种新型SNARK证明系统Morgana，其主要特点是电路key大小与电路描述成正比，而非约束数量，相比现有技术Spartan有直接加速效果。
 
 ---
-📄 网页查看： https://news.plonk.pro/2025-01-17.html
+📄 网页查看： https://news.plonk.pro/2025-01-18.html
 🪶 由 @icerdesign 收集
