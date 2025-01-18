@@ -565,6 +565,25 @@ export const newsData = [
             "tags": [ "NovaNet", "NIVC", "zkVM", ],
             "summary": "NovaNet团队分享了NIVC（非均匀增量可验证计算）技术，探讨了其在zkVM设计中的应用及如何通过Nebula方案提升性能，同时展望了使用NIVC替代现在GROTH16做链上验证的潜力。"
           },
+        ]
+    },
+    {
+        date: "2025-01-17",
+        projects: [
+            {
+              "name": "探讨 Poseidon 延展性攻击，可影响零知识证明应用的安全性",
+              "url": "https://mp.weixin.qq.com/s/tdJ_noFvkPvCFpMNh84_Kg",
+              "type": "新闻",
+              "tags": [ "慢雾", "Poseidon", "延展性攻击" ],
+              "summary": "慢雾团队深入揭示了Iden3密码学库中Poseidon哈希函数的延展性问题，即由于代码实现问题导致哈希碰撞及其安全性影响。"
+            },
+            {
+              "name": "Morgana: a laconic circuit builder",
+              "url": "https://eprint.iacr.org/2025/65",
+              "type": "论文",
+              "tags": [ "Lev Soukhanov", "sumcheck" ],
+              "summary": "Soukhanov等人在{{name}}论文中提出了一种新型SNARK证明系统Morgana，其主要特点是电路key大小与电路描述成正比，而非约束数量，相比现有技术Spartan有直接加速效果。"
+            },
           // {
           //   "name": "Extending Groth16 for Disjunctive Statements",
           //   "url": "https://eprint.iacr.org/2025/028",
