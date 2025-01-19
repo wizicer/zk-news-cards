@@ -573,7 +573,7 @@ export const newsData = [
             {
               "name": "探讨 Poseidon 延展性攻击，可影响零知识证明应用的安全性",
               "url": "https://mp.weixin.qq.com/s/tdJ_noFvkPvCFpMNh84_Kg",
-              "type": "新闻",
+              "type": "博客",
               "tags": [ "慢雾", "Poseidon", "延展性攻击" ],
               "summary": "慢雾团队深入揭示了Iden3密码学库中Poseidon哈希函数的延展性问题，即由于代码实现问题导致哈希碰撞及其安全性影响。"
             },
@@ -584,13 +584,39 @@ export const newsData = [
               "tags": [ "Lev Soukhanov", "sumcheck" ],
               "summary": "Soukhanov等人在{{name}}论文中提出了一种新型SNARK证明系统Morgana，其主要特点是电路key大小与电路描述成正比，而非约束数量，相比现有技术Spartan有直接加速效果。"
             },
-          // {
-          //   "name": "Extending Groth16 for Disjunctive Statements",
-          //   "url": "https://eprint.iacr.org/2025/028",
-          //   "type": "论文",
-          //   "tags": [ "Xudong Zhu", "析取表达", "逻辑组合" ],
-          //   "summary": "Zhu等人在{{name}}论文中提出了CompGroth16，一个Groth16的变体，旨在支持包含代数和算术组件的析取语句证明，提高了表达能力和证明效率，但验证成本变高了。"
-          // },
+        ]
+    },
+    {
+        date: "2025-01-19",
+        projects: [
+            {
+              "name": "零知识证明 - RISC0 zkVM源代码入门",
+              "url": "https://mp.weixin.qq.com/s/E6GbCexZ6QNFe6_K2i_J9w",
+              "type": "博客",
+              "tags": [ "Star Li", "zkVM", "RISC0", "Zirgen" ],
+              "summary": "Star Li 分享了RISC0 zkVM的源代码结构，包括Bonsai证明服务、Groth16证明实现、电路接口等，展示了zkVM如何通过Rust语言实现复杂的业务逻辑。"
+            },
+          {
+            "name": "Extending Groth16 for Disjunctive Statements",
+            "url": "https://eprint.iacr.org/2025/028",
+            "type": "论文",
+            "tags": [ "Xudong Zhu", "析取表达", "逻辑组合" ],
+            "summary": "Zhu等人在{{name}}论文中提出了CompGroth16，一个Groth16的变体，旨在支持包含代数和算术组件的析取语句证明，提高了表达能力和证明效率，但验证成本变高了。"
+          },
+            // {
+            //   "name": "MyZKP: Building Zero Knowledge Proofs from Scratch in Rust",
+            //   "url": "https://github.com/Koukyosyumei/MyZKP",
+            //   "type": "开源",
+            //   "tags": [
+            //     "Koukyosyumei",
+            //     "Zero-Knowledge Proofs",
+            //     "Rust",
+            //     "zkSNARKs",
+            //     "zkSTARKs",
+            //     "Educational"
+            //   ],
+            //   "summary": "@Koukyosyumei 发布了MyZKP开源项目，这是一个用Rust从头开始构建的零知识协议实现，旨在作为理解和应用零知识证明的教育资源。"
+            // },
           // {
           //   "name": "Hash-Based Multi-Signatures for Post-Quantum Ethereum",
           //   "url": "https://eprint.iacr.org/2025/055",

@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-19 星期日
+
+📝 零知识证明 - RISC0 zkVM源代码入门
+- https://mp.weixin.qq.com/s/E6GbCexZ6QNFe6_K2i_J9w
+- Star Li 分享了RISC0 zkVM的源代码结构，包括Bonsai证明服务、Groth16证明实现、电路接口等，展示了zkVM如何通过Rust语言实现复杂的业务逻辑。
+
+📄 Extending Groth16 for Disjunctive Statements
+- https://eprint.iacr.org/2025/028
+- Zhu等人在论文中提出了CompGroth16，一个Groth16的变体，旨在支持包含代数和算术组件的析取语句证明，提高了表达能力和证明效率，但验证成本变高了。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-19.html
+🪶 由 @icerdesign 收集
