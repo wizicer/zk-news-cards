@@ -603,6 +603,25 @@ export const newsData = [
             "tags": [ "Xudong Zhu", "析取表达", "逻辑组合" ],
             "summary": "Zhu等人在{{name}}论文中提出了CompGroth16，一个Groth16的变体，旨在支持包含代数和算术组件的析取语句证明，提高了表达能力和证明效率，但验证成本变高了。"
           },
+        ]
+    },
+    {
+        date: "2025-01-20",
+        projects: [
+            {
+              "name": "SoK: Trusted setups for powers-of-tau strings",
+              "url": "https://eprint.iacr.org/2025/064",
+              "type": "论文",
+              "tags": [ "Faxing Wang", "τ", "可信设置", ],
+              "summary": "Wang等人在{{name}}论文中系统化地分析了可信设置，区分了设置协议和仪式，并评估了不同方法的特点、优势和弱点。"
+            },
+            {
+              "name": "Founding Zero-Knowledge Proofs of Training on Optimum Vicinity",
+              "url": "https://eprint.iacr.org/2025/053",
+              "type": "论文",
+              "tags": [ "Gefei Tan", "机器学习", "Proof of Training", ],
+              "summary": "Tan等人在{{name}}论文中提出了一种新的zkPoT方法，通过引入optimum vicinity概念，直接证明训练模型的正确性，而非整个训练过程，显著提高了性能。"
+            }
             // {
             //   "name": "MyZKP: Building Zero Knowledge Proofs from Scratch in Rust",
             //   "url": "https://github.com/Koukyosyumei/MyZKP",

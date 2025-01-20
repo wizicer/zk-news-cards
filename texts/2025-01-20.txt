@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-20 星期一
+
+📄 SoK: Trusted setups for powers-of-tau strings
+- https://eprint.iacr.org/2025/064
+- Wang等人在论文中系统化地分析了可信设置，区分了设置协议和仪式，并评估了不同方法的特点、优势和弱点。
+
+📄 Founding Zero-Knowledge Proofs of Training on Optimum Vicinity
+- https://eprint.iacr.org/2025/053
+- Tan等人在论文中提出了一种新的zkPoT方法，通过引入optimum vicinity概念，直接证明训练模型的正确性，而非整个训练过程，显著提高了性能。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-20.html
+🪶 由 @icerdesign 收集
