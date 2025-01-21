@@ -498,13 +498,6 @@ export const newsData = [
                 "tags": [ "Lukas Helminger", "zkVMs", "zkDSL", ],
                 "summary": "@luhelminger 讨论了zkVMs在2024年的主导地位及其在可扩展性用例中的应用，同时探讨了zkVMs在隐私保护方面面临的挑战和未来展望。"
               }
-            //   {
-            //     "name": "At DevCon 2024's side event New Games. New Worlds.",
-            //     "url": "https://x.com/hyle_org/status/1877354712925880779",
-            //     "type": "活动",
-            //     "tags": [ "Hylé", "GameFi", "DevCon 2024" ],
-            //     "summary": "在DevCon 2024的边会New Games. New Worlds.上，@sylvechv 提出需要停止在链上运行去中心化游戏的观点，并探讨了其原因。"
-            //   },
         ]
     },
     {
@@ -622,27 +615,25 @@ export const newsData = [
               "tags": [ "Gefei Tan", "机器学习", "Proof of Training", ],
               "summary": "Tan等人在{{name}}论文中提出了一种新的zkPoT方法，通过引入optimum vicinity概念，直接证明训练模型的正确性，而非整个训练过程，显著提高了性能。"
             }
-            // {
-            //   "name": "MyZKP: Building Zero Knowledge Proofs from Scratch in Rust",
-            //   "url": "https://github.com/Koukyosyumei/MyZKP",
-            //   "type": "开源",
-            //   "tags": [
-            //     "Koukyosyumei",
-            //     "Zero-Knowledge Proofs",
-            //     "Rust",
-            //     "zkSNARKs",
-            //     "zkSTARKs",
-            //     "Educational"
-            //   ],
-            //   "summary": "@Koukyosyumei 发布了MyZKP开源项目，这是一个用Rust从头开始构建的零知识协议实现，旨在作为理解和应用零知识证明的教育资源。"
-            // },
-          // {
-          //   "name": "Hash-Based Multi-Signatures for Post-Quantum Ethereum",
-          //   "url": "https://eprint.iacr.org/2025/055",
-          //   "type": "论文",
-          //   "tags": [ "Justin Drake", "后量子密码", "多重签名", ],
-          //   "summary": "Drake等人在{{name}}论文中提出了一种基于哈希的签名方案家族，作为BLS签名的后量子替代方案，专注于实例化底层签名方案并避免安全证明中的随机预言。"
-          // }
+        ]
+    },
+    {
+        date: "2025-01-21",
+        projects: [
+            {
+              "name": "MyZKP: Building Zero Knowledge Proofs from Scratch in Rust",
+              "url": "https://github.com/Koukyosyumei/MyZKP",
+              "type": "开源",
+              "tags": [ "Koukyosyumei", "Rust", ],
+              "summary": "@Koukyosyumei 发布了MyZKP开源项目，这是一个用Rust从头开始构建的零知识协议实现，旨在作为理解和应用零知识证明的教育资源。"
+            },
+              {
+                "name": "Hylé 关于链上去中心化游戏的观点",
+                "url": "https://x.com/hyle_org/status/1877354712925880779",
+                "type": "信息",
+                "tags": [ "Hylé", "GameFi", "DevCon 2024" ],
+                "summary": "在DevCon 2024的边会New Games. New Worlds.上，@sylvechv 提出需要停止在链上运行去中心化游戏的观点，并探讨了其原因。"
+              },
         ]
     },
 ].map(item => {

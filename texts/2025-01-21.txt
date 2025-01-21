@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-21 星期二
+
+💻 MyZKP: Building Zero Knowledge Proofs from Scratch in Rust
+- https://github.com/Koukyosyumei/MyZKP
+- @Koukyosyumei 发布了MyZKP开源项目，这是一个用Rust从头开始构建的零知识协议实现，旨在作为理解和应用零知识证明的教育资源。
+
+📃 Hylé 关于链上去中心化游戏的观点
+- https://x.com/hyle_org/status/1877354712925880779
+- 在DevCon 2024的边会New Games. New Worlds.上，@sylvechv 提出需要停止在链上运行去中心化游戏的观点，并探讨了其原因。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-21.html
+🪶 由 @icerdesign 收集
