@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-22 星期三
+
+💻 ZKLoRA: Efficient Zero-Knowledge Proofs for LoRA Verification
+- https://github.com/bagel-org/ZKLoRA
+- bagel-org团队发布了ZKLoRA开源项目，专注于为LoRA验证提供高效的零知识证明，支持在保护LoRA权重隐私的同时验证其与基础模型的兼容性。
+
+📝 Aleo Specifications Now Publicly Available
+- https://provable.com/blog/aleo-specs-now-publicly-available
+- @ProvableHQ 分享了Aleo网络的技术规格，包括Varuna证明系统（基于Marlin）、AleoVM虚拟机和AleoBFT共识算法。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-22.html
+🪶 由 @icerdesign 收集

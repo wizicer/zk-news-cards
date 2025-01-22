@@ -636,6 +636,25 @@ export const newsData = [
               },
         ]
     },
+    {
+        date: "2025-01-22",
+        projects: [
+          {
+            "name": "ZKLoRA: Efficient Zero-Knowledge Proofs for LoRA Verification",
+            "url": "https://github.com/bagel-org/ZKLoRA",
+            "type": "开源",
+            "tags": [ "bagel-org", "LoRA", "机器学习" ],
+            "summary": "bagel-org团队发布了ZKLoRA开源项目，专注于为LoRA验证提供高效的零知识证明，支持在保护LoRA权重隐私的同时验证其与基础模型的兼容性。"
+          },
+          {
+            "name": "Aleo Specifications Now Publicly Available",
+            "url": "https://provable.com/blog/aleo-specs-now-publicly-available",
+            "type": "博客",
+            "tags": [ "Provable", "Aleo", "Varuna", ],
+            "summary": "@ProvableHQ 分享了Aleo网络的技术规格，包括Varuna证明系统（基于Marlin）、AleoVM虚拟机和AleoBFT共识算法。"
+          }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {
