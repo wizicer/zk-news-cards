@@ -655,6 +655,37 @@ export const newsData = [
           }
         ]
     },
+    {
+        date: "2025-01-23",
+        projects: [
+            {
+              "name": "Auto-Accelerated Circuits in powdrVM",
+              "url": "https://www.powdr.org/blog/auto-acc-circuits",
+              "type": "博客",
+              "tags": [ "powdr labs", "zkVM", "电路优化", ],
+              "summary": "@powdr_labs 在{{name}}博客中介绍了powdrVM的最新实验性功能：自动生成加速电路以优化Rust程序的性能，展示了如何通过静态和运行时分析选择加速块，并自动生成优化电路。"
+            },
+            {
+              "name": "FRI and Proximity Proofs (Part.2)",
+              "url": "https://www.youtube.com/watch?v=CWbx_rnj7LI",
+              "type": "视频",
+              "tags": [ "Dan Boneh", "ZK Hack", "FRI", ],
+              "summary": "@danboneh 教授在 @__zkhack__ Whiteboard Sessions 中详细讲解了FRI协议及其分析，包括两阶段协议（提交和查询）和多种验证方法，以及FRI的变体和未来SNARK发展的潜在替代方案。"
+            },
+            // {
+            //   "name": "SP1 Turbo absolutely mogs the competition for proving rollup workloads",
+            //   "url": "https://x.com/jtguibas/status/1882145322664927336",
+            //   "type": "新闻",
+            //   "tags": [
+            //     "jtguibas.eth",
+            //     "SP1 Turbo",
+            //     "R0",
+            //     "benchmark"
+            //   ],
+            //   "summary": "@@jtguibas 分享了SP1 Turbo在证明rollup工作负载方面的性能，与R0的最新1.2.1版本相比，SP1 Turbo在各种以太坊区块上的速度提高了6-7倍。"
+            // },
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {

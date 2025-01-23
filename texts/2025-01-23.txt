@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-23 星期四
+
+📝 Auto-Accelerated Circuits in powdrVM
+- https://www.powdr.org/blog/auto-acc-circuits
+- @powdr_labs 在博客中介绍了powdrVM的最新实验性功能：自动生成加速电路以优化Rust程序的性能，展示了如何通过静态和运行时分析选择加速块，并自动生成优化电路。
+
+🎥 FRI and Proximity Proofs (Part.2)
+- https://www.youtube.com/watch?v=CWbx_rnj7LI
+- @danboneh 教授在 @__zkhack__ Whiteboard Sessions 中详细讲解了FRI协议及其分析，包括两阶段协议（提交和查询）和多种验证方法，以及FRI的变体和未来SNARK发展的潜在替代方案。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-23.html
+🪶 由 @icerdesign 收集
