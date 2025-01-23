@@ -58,7 +58,7 @@
                 {{ tag }}
               </span>
             </div>
-            <p class="project-summary">{{ project.summary.replaceAll('\{\{name\}\}','') }}</p>
+            <p class="project-summary" v-if="project.summary">{{ project.summary.replaceAll('\{\{name\}\}','') }}</p>
           </div>
         </div>
       </div>
