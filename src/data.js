@@ -672,6 +672,28 @@ export const newsData = [
               "tags": [ "Dan Boneh", "ZK Hack", "FRI", ],
               "summary": "@danboneh 教授在 @__zkhack__ Whiteboard Sessions 中详细讲解了FRI协议及其分析，包括两阶段协议（提交和查询）和多种验证方法，以及FRI的变体和未来SNARK发展的潜在替代方案。"
             },
+        ]
+    },
+    {
+        date: "2025-01-24",
+        projects: [
+            {
+              "name": "Liquefaction: Privately Liquefying Blockchain Assets",
+              "url": "https://arxiv.org/abs/2412.02634",
+              "type": "论文",
+              "tags": [ "James Austgen", "TEE", "区块链钱包", ],
+              "summary": "Austgen等人在{{name}}论文中提出了Liquefaction，一种利用TEE技术对私钥进行约束的钱包平台，展示了加密货币资产所有权模型的脆弱性及其广泛影响。"
+            },
+            {
+              "name": "Introducing Twist and Shout",
+              "url": "https://a16zcrypto.com/posts/article/introducing-twist-and-shout/",
+              "urls": [
+                createUrlItem("论文", "https://people.cs.georgetown.edu/jthaler/TwistShout.pdf")
+              ],
+              "type": "博客",
+              "tags": [ "Justin Thaler", "zkVM", "Jolt", ],
+              "summary": "Justin Thaler和Srinath Setty在博客{{name}}中介绍了新发表论文中的重要概念：Twist和Shout，两种新的内存检查参数，旨在确保证明者正确处理VM内存的每次读写，预计将显著提升Jolt zkVM的证明速度。"
+            }
             // {
             //   "name": "SP1 Turbo absolutely mogs the competition for proving rollup workloads",
             //   "url": "https://x.com/jtguibas/status/1882145322664927336",

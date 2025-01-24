@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-24 星期五
+
+📄 Liquefaction: Privately Liquefying Blockchain Assets
+- https://arxiv.org/abs/2412.02634
+- Austgen等人在论文中提出了Liquefaction，一种利用TEE技术对私钥进行约束的钱包平台，展示了加密货币资产所有权模型的脆弱性及其广泛影响。
+
+📝 Introducing Twist and Shout
+- https://a16zcrypto.com/posts/article/introducing-twist-and-shout/
+- Justin Thaler和Srinath Setty在博客中介绍了新发表论文中的重要概念：Twist和Shout，两种新的内存检查参数，旨在确保证明者正确处理VM内存的每次读写，预计将显著提升Jolt zkVM的证明速度。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-24.html
+🪶 由 @icerdesign 收集
