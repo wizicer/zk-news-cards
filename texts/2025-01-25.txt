@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-25 星期六
+
+📄 Horizen 2.0: An Advanced and Efficient EVM for Zero-Knowledge Applications
+- https://downloads.horizen.io/file/web-assets/Horizen-2.0-Whitepaper.pdf
+- @HorizenLabs 在论文中提出了一种专为零知识应用设计的EVM链Horizen 2.0，通过预编译扩展支持多种ZK证明机制，显著提升了验证效率并降低了成本，为开发者提供了更灵活的ZK工具。
+
+📰 SP1 Turbo benchmark
+- https://x.com/jtguibas/status/1882145322664927336
+- @jtguibas 分享了SP1 Turbo在证明rollup工作负载方面的性能，与R0的最新1.2.1版本相比，SP1 Turbo在各种以太坊区块上的速度提高了6-7倍。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-25.html
+🪶 由 @icerdesign 收集

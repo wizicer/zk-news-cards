@@ -694,18 +694,30 @@ export const newsData = [
               "tags": [ "Justin Thaler", "zkVM", "Jolt", ],
               "summary": "Justin Thaler和Srinath Setty在博客{{name}}中介绍了新发表论文中的重要概念：Twist和Shout，两种新的内存检查参数，旨在确保证明者正确处理VM内存的每次读写，预计将显著提升Jolt zkVM的证明速度。"
             }
-            // {
-            //   "name": "SP1 Turbo absolutely mogs the competition for proving rollup workloads",
-            //   "url": "https://x.com/jtguibas/status/1882145322664927336",
-            //   "type": "新闻",
-            //   "tags": [
-            //     "jtguibas.eth",
-            //     "SP1 Turbo",
-            //     "R0",
-            //     "benchmark"
-            //   ],
-            //   "summary": "@@jtguibas 分享了SP1 Turbo在证明rollup工作负载方面的性能，与R0的最新1.2.1版本相比，SP1 Turbo在各种以太坊区块上的速度提高了6-7倍。"
-            // },
+        ]
+    },
+    {
+        date: "2025-01-25",
+        projects: [
+            {
+              "name": "Horizen 2.0: An Advanced and Efficient EVM for Zero-Knowledge Applications",
+              "url": "https://downloads.horizen.io/file/web-assets/Horizen-2.0-Whitepaper.pdf",
+              "type": "论文",
+              "tags": [ "Horizen Labs", "zkEVM" ],
+              "summary": "@HorizenLabs 在{{name}}论文中提出了一种专为零知识应用设计的EVM链Horizen 2.0，通过预编译扩展支持多种ZK证明机制，显著提升了验证效率并降低了成本，为开发者提供了更灵活的ZK工具。"
+            },
+            {
+              "name": "SP1 Turbo benchmark",
+              "url": "https://x.com/jtguibas/status/1882145322664927336",
+              "type": "新闻",
+              "tags": [
+                "jtguibas.eth",
+                "SP1 Turbo",
+                "R0",
+                "benchmark"
+              ],
+              "summary": "@jtguibas 分享了SP1 Turbo在证明rollup工作负载方面的性能，与R0的最新1.2.1版本相比，SP1 Turbo在各种以太坊区块上的速度提高了6-7倍。"
+            },
         ]
     },
 ].map(item => {
