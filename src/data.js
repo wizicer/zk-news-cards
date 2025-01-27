@@ -720,6 +720,38 @@ export const newsData = [
             },
         ]
     },
+    {
+        date: "2025-01-27",
+        projects: [
+            {
+              "name": "How to Prove False Statements: Practical Attacks on Fiat-Shamir",
+              "url": "https://eprint.iacr.org/2025/118",
+              "type": "论文",
+              "tags": [ "Dmitry Khovratovich", "Fiat-Shamir", "GKR", ],
+              "summary": "Khovratovich等人在{{name}}论文中揭示了Fiat-Shamir变换在实际应用中的安全漏洞，特别是针对基于GKR协议的交互式简洁论证，展示了如何为错误陈述生成接受证明。"
+            },
+            {
+              "name": "Missing verifier checks and fiat-shamir observations",
+              "url": "https://github.com/succinctlabs/sp1/security/advisories/GHSA-c873-wfhp-wx5m",
+              "type": "新闻",
+              "tags": [ "Succinct Labs", "Fiat-Shamir", "Plonky3" ],
+              "summary": "Succinct Labs发布了关于SP1 STARK验证器的安全公告，指出在v4.0.0之前版本中存在验证器检查缺失和Fiat-Shamir观察问题，已通过v4.0.0修复。"
+            },
+            // {
+            //   "name": "Integer Commitments, Old and New Tools",
+            //   "url": "https://eprint.iacr.org/2025/081",
+            //   "type": "论文",
+            //   "tags": [
+            //     "Iftach Haitner, Yehuda Lindell, Nikolaos Makriyannis",
+            //     "Integer Commitments",
+            //     "Range Proofs",
+            //     "Zero-Knowledge Proofs",
+            //     "RSA"
+            //   ],
+            //   "summary": "Haitner等人在{{name}}论文中详细介绍了基于RSA的整数承诺及相关协议，并提出了一种新的高效设置协议，用于采样承诺参数。"
+            // }
+        ]
+    },
 ].map(item => {
     const [year, month, day] = item.date.split('-');
     return {

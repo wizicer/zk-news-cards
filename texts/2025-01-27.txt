@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-01-27 星期一
+
+📄 How to Prove False Statements: Practical Attacks on Fiat-Shamir
+- https://eprint.iacr.org/2025/118
+- Khovratovich等人在论文中揭示了Fiat-Shamir变换在实际应用中的安全漏洞，特别是针对基于GKR协议的交互式简洁论证，展示了如何为错误陈述生成接受证明。
+
+📰 Missing verifier checks and fiat-shamir observations
+- https://github.com/succinctlabs/sp1/security/advisories/GHSA-c873-wfhp-wx5m
+- Succinct Labs发布了关于SP1 STARK验证器的安全公告，指出在v4.0.0之前版本中存在验证器检查缺失和Fiat-Shamir观察问题，已通过v4.0.0修复。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-01-27.html
+🪶 由 @icerdesign 收集
