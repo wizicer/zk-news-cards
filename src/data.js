@@ -17,6 +17,7 @@ export const newsData = [
     year,
     month,
     day,
-    weekday: getWeekday(item.date)
+    weekday: getWeekday(item.date),
+    weekdayNumber: new Date(item.date).getDay(),
   };
 });

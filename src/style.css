@@ -1,5 +1,13 @@
 :root {
-    --primary-color: #3498db;
+    --color-monday: #e74c3c;    /* Red */
+    --color-tuesday: #f39c12;   /* Orange */
+    --color-wednesday: #f1c40f; /* Yellow */
+    --color-thursday: #2ecc71;  /* Green */
+    --color-friday: #3498db;    /* Blue */
+    --color-saturday: #9b59b6;  /* Purple */
+    --color-sunday: #e91e63;    /* Pink */
+    
+    --primary-color: var(--color-monday); /* Will be updated via JS */
     --primary-light: #ebf5fb;
     --primary-dark: #2980b9;
     --text-primary: #2c3e50;

@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
@@ -100,6 +100,16 @@ const copyToClipboard = async () => {
     alert('复制失败，请重试')
   }
 }
+
+const updatePrimaryColor = () => {
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  const today = displayedCards.value[0].weekdayNumber;
+  document.documentElement.style.setProperty('--primary-color', `var(--color-${days[today]})`);
+};
+
+onMounted(() => {
+  updatePrimaryColor();
+});
 </script>
 
 <style>
