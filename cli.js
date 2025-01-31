@@ -35,7 +35,6 @@ async function takeScreenshot() {
     const today = new Date();
     const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
     const htmlPath = path.join('./docs', `${filename}.html`);
-    const filepath = path.join(screenshotDir, `${filename}.png`);
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -53,14 +52,25 @@ async function takeScreenshot() {
     // Small delay to ensure all content is rendered
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    await page.screenshot({
-        path: filepath,
-        fullPage: true,
-    });
-    await browser.close();
+    // Get all news cards
+    const cards = await page.$$('.news-card');
+    const filepaths = [];
     
-    console.log(`High DPI Screenshot saved to: ${filepath}`);
-    return filepath;
+    for (let i = 0; i < cards.length; i++) {
+        const card = cards[i];
+        const filepath = path.join(screenshotDir, `${filename}-${i + 1}.png`);
+        
+        // Screenshot individual card
+        await card.screenshot({
+            path: filepath,
+        });
+        
+        filepaths.push(filepath);
+        console.log(`Card ${i + 1} screenshot saved to: ${filepath}`);
+    }
+
+    await browser.close();
+    return filepaths;
 }
 
 async function generatePDF() {
@@ -206,14 +216,18 @@ program
         try {
             const today = new Date();
             const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-            const imagePath = await takeScreenshot();
+            const imagePaths = await takeScreenshot();
             const textPath = path.join('./texts', `${filename}.txt`);
 
             if (WECOM_WEBHOOK_URL) {
-                await sendWecomNotification(imagePath, textPath);
+                for (const imagePath of imagePaths) {
+                    await sendWecomNotification(imagePath, textPath);
+                }
             }
             if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
-                await sendTelegramNotification(imagePath, textPath);
+                for (const imagePath of imagePaths) {
+                    await sendTelegramNotification(imagePath, textPath);
+                }
             }
         } catch (error) {
             console.error('Error in notify command:', error);
