@@ -26,7 +26,7 @@ body {
     background-color: #e3f2fd;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .news-container {
@@ -34,10 +34,11 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 465px;
-    height: 630px;
+    height: 100%;
     margin: 10px;
-    overflow: hidden;
+    overflow-y: auto;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .news-card {
@@ -48,11 +49,16 @@ body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.08);
     page-break-after: always;
     width: 461px;
-    height: 626px;
+    min-height: 626px;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.news-card:last-child {
+    margin-bottom: 0;
 }
 
 .card-header {

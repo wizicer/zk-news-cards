@@ -83,11 +83,22 @@ const route = useRoute()
 const selectedDate = computed(() => route.query.date)
 
 const displayedCards = computed(() => {
-  if (selectedDate.value) {
-    return newsData.filter(card => card.date === selectedDate.value)
-  }
-  // Default to latest news
-  return [newsData[newsData.length - 1]]
+  let cards = selectedDate.value
+    ? newsData.filter(card => card.date === selectedDate.value)
+    : [newsData[newsData.length - 1]]
+
+  // Split projects into groups of 2
+  return cards.flatMap(card => {
+    const projects = card.projects
+    const cardGroups = []
+    for (let i = 0; i < projects.length; i += 2) {
+      cardGroups.push({
+        ...card,
+        projects: projects.slice(i, i + 2)
+      })
+    }
+    return cardGroups
+  })
 })
 
 const copyToClipboard = async () => {
