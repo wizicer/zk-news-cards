@@ -302,6 +302,26 @@ body {
     font-weight: bold;
 }
 
+.page-indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.indicator-dot {
+    width: 4px;
+    height: 8px;
+    background-color: #ddd;
+}
+
+.indicator-dot.active {
+    background-color: #666;
+    height: 10px;
+}
+
 @media print {
     @page {
         size: 480px 640px;

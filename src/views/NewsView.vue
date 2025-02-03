@@ -67,6 +67,11 @@
         <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a>
         收集
       </div>
+      <div class="page-indicator" v-if="displayedCards.length > 1">
+        <div v-for="i in displayedCards.length" :key="i" 
+             :class="['indicator-dot', { active: i === index + 1 }]">
+        </div>
+      </div>
     </div>
   </div>
 </template>
