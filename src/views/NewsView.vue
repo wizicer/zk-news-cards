@@ -4,7 +4,7 @@
       复制文本内容
     </button>
   </div>
-  <div class="news-container">
+  <div class="news-container" :style="{ '--primary-color': weekdayColor }">
     <div v-for="(card, index) in displayedCards" :key="index" class="news-card">
       <div class="card-header">
         <div class="github-title">
@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
@@ -101,7 +101,14 @@ const displayedCards = computed(() => {
   })
 })
 
-const copyToClipboard = async () => {
+const weekdayColor = computed(() => {
+  const weekday = displayedCards.value[0]?.weekdayNumber || 0;
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+  return `var(--color-${days[weekday]})`
+})
+
+async function copyToClipboard() {
   try {
     const text = generateTextContent(displayedCards.value)
     await navigator.clipboard.writeText(text)
@@ -111,16 +118,6 @@ const copyToClipboard = async () => {
     alert('复制失败，请重试')
   }
 }
-
-const updatePrimaryColor = () => {
-  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-  const today = displayedCards.value[0].weekdayNumber;
-  document.documentElement.style.setProperty('--primary-color', `var(--color-${days[today]})`);
-};
-
-onMounted(() => {
-  updatePrimaryColor();
-});
 </script>
 
 <style>
