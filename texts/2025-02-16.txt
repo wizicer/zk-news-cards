@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-16 星期日
+
+📰 Introducing the Nexus Layer 1: A planetary-scale supercomputer
+- https://x.com/nexuslabs/status/1890111367023395272
+- @NexusLabs 宣布推出Nexus Layer 1，一个行星级超级计算机，并宣布Testnet II将于2025年2月18日北京时间 13:00 开始。
+
+📝 Introducing Pico: A Modular and Performant zkVM
+- https://blog.brevis.network/2025/02/11/introducing-pico-a-modular-and-performant-zkvm/
+- @brevis_zk 团队在博客中介绍了Pico，一个提供模块化和高效率的zkVM，基于RISC-V架构。性能测试显示其韵速度比RISC0、OpenVM和SP1都高出一倍以上。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-02-16.html
+🪶 由 @icerdesign 收集
