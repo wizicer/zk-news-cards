@@ -53,7 +53,7 @@ async function takeScreenshot() {
     await new Promise(resolve => setTimeout(resolve, 1000));
     
     // Get all news cards
-    const cards = await page.$$('.news-card');
+    const cards = await page.$$('.news-card, .insight-card');
     const filepaths = [];
     
     for (let i = 0; i < cards.length; i++) {
