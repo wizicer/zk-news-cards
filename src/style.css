@@ -322,6 +322,229 @@ body {
     height: 10px;
 }
 
+.insight-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: relative;
+  width: 461px;
+  min-height: 626px;
+  display: flex;
+  flex-direction: column;
+}
+
+.insight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1.5rem 0;
+  background: var(--primary-color);
+  color: white;
+  position: relative;
+  margin-bottom: 0;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.insight-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 10px 5px;
+  background: var(--primary-dark);
+  border-radius: 8px 0 0 8px;
+}
+
+.insight-title-section {
+  flex: 1;
+  z-index: 1;
+}
+
+.insight-subtitle-section {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  text-align: right;
+  z-index: 1;
+}
+
+.insight-main-title {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  bottom: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.insight-slogan {
+  font-size: 1rem;
+  opacity: 0.9;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid white;
+}
+
+.insight-content {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 12px solid var(--primary-color);
+}
+
+.insight-content::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border: 4px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-content::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: 2px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-title {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px 0;
+  margin-bottom: 1rem;
+  background: var(--primary-light);
+  color: var(--text-primary);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.insight-frame {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.insight-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.insight-url-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.insight-url {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+}
+
+.insight-url a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.project-qr {
+  position: absolute;
+  left: 10px;
+  bottom: -34px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.insight-quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.insight-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: #f5f5f5;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: var(--primary-color);
+  width: 100%;
+  min-height: 16px;
+}
+
+.insight-footer a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.insight-footer a:hover {
+  text-decoration: underline;
+}
+
+.insight-copyright {
+  float: right;
+  padding-right: 30px;
+}
+
+.app-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.copy-button {
+  padding: 8px 16px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.copy-button:hover {
+  background: #333;
+  opacity: 1;
+}
+
 @media print {
     @page {
         size: 480px 640px;
@@ -351,28 +574,4 @@ body {
         box-shadow: none;
         border-radius: 0;
     }
-}
-
-.app-controls {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.copy-button {
-  padding: 8px 16px;
-  background: #1a1a1a;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s;
-  opacity: 0;
-}
-
-.copy-button:hover {
-  background: #333;
-  opacity: 1;
 }
