@@ -125,24 +125,23 @@ async function sendWecomNotification(imagePath, textPath) {
         throw new Error('WECOM_WEBHOOK_URL environment variable is not set');
     }
 
-    // Send image first
-    const imageBuffer = fs.readFileSync(imagePath);
-    const md5Hash = crypto.createHash('md5').update(imageBuffer).digest('hex');
-    const base64Image = imageBuffer.toString('base64');
-    
-    const imagePayload = {
-        msgtype: 'image',
-        image: {
-            base64: base64Image,
-            md5: md5Hash
-        }
-    };
-
     try {
-        await axios.post(WECOM_WEBHOOK_URL, imagePayload);
-        console.log('Image sent successfully to Wecom');
+        if (imagePath) {
+            const imageBuffer = fs.readFileSync(imagePath);
+            const md5Hash = crypto.createHash('md5').update(imageBuffer).digest('hex');
+            const base64Image = imageBuffer.toString('base64');
+            
+            const imagePayload = {
+                msgtype: 'image',
+                image: {
+                    base64: base64Image,
+                    md5: md5Hash
+                }
+            };
+            await axios.post(WECOM_WEBHOOK_URL, imagePayload);
+            console.log('Image sent successfully to Wecom');
+        }
 
-        // Then send text content
         if (textPath && fs.existsSync(textPath)) {
             const textContent = fs.readFileSync(textPath, 'utf-8');
             const textPayload = {
@@ -167,8 +166,10 @@ async function sendTelegramNotification(imagePath, textPath) {
     }
 
     try {
-        await bot.sendPhoto(TELEGRAM_CHAT_ID, fs.createReadStream(imagePath));
-        console.log('Image sent to Telegram successfully');
+        if (imagePath) {
+            await bot.sendPhoto(TELEGRAM_CHAT_ID, fs.createReadStream(imagePath));
+            console.log('Image sent to Telegram successfully');
+        }
 
         if (textPath && fs.existsSync(textPath)) {
             const textContent = fs.readFileSync(textPath, 'utf-8');
@@ -220,13 +221,15 @@ program
             const textPath = path.join('./texts', `${filename}.txt`);
 
             if (WECOM_WEBHOOK_URL) {
+                await sendWecomNotification(null, textPath);
                 for (const imagePath of imagePaths) {
-                    await sendWecomNotification(imagePath, textPath);
+                    await sendWecomNotification(imagePath, null);
                 }
             }
             if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
+                await sendTelegramNotification(null, textPath);
                 for (const imagePath of imagePaths) {
-                    await sendTelegramNotification(imagePath, textPath);
+                    await sendTelegramNotification(imagePath, null);
                 }
             }
         } catch (error) {
