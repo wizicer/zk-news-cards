@@ -27,7 +27,7 @@ export default [
         "urls": [
             createUrlItem("源代码", "https://github.com/brevis-network/pico")
         ],
-        "summary": "@brevis_zk 团队在博客{{name}}中介绍了Pico，一个提供模块化和高效率的zkVM，基于RISC-V架构。性能测试显示其韵速度比RISC0、OpenVM和SP1都高出一倍以上。"
+        "summary": "@brevis_zk 团队在博客{{name}}中介绍了Pico，一个提供模块化和高效率的zkVM，基于RISC-V架构。性能测试显示其运行速度比RISC0、OpenVM和SP1都高出一倍以上。"
       }
     ],
     insights: [
