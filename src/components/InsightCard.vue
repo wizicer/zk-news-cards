@@ -13,8 +13,8 @@
       <div class="insight-title">{{ insight.title }}</div>
       <div class="insight-frame">
         <div class="image-container">
-          <img v-for="(imageUrl, index) in imageUrls" :key="index" :src="imageUrl"
-            :alt="`${insight.title} - ${index + 1}`" class="insight-image" />
+          <img v-for="imageUrl in insight.images" :key="imageUrl" :src="imageUrl"
+            :alt="`${insight.title}`" class="insight-image" />
         </div>
       </div>
       <div v-if="insight.url" class="insight-url-wrapper">

@@ -16,5 +16,6 @@ export default defineConfig({
         server: resolve(__dirname, 'server-entry.js')
       }
     }
-  }
+  },
+  publicDir: 'docs'
 })

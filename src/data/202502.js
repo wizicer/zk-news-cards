@@ -37,7 +37,7 @@ export default [
         "slogan": "密码学中的保险柜",
         "url": "https://x.com/zkillustrated/status/1887157412894757066",
         "images": [
-          import("../assets/2025-02-16.png")
+          "./images/2025-02-16.png"
         ],
       }
     ]
