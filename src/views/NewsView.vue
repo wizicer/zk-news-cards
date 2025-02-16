@@ -73,6 +73,14 @@
         </div>
       </div>
     </div>
+      <div v-if="displayedInsights.length > 0" class="insights-section">
+        <InsightCard 
+          v-for="(insight, index) in displayedInsights" 
+          :key="index" 
+          :insight="insight"
+          :date="date"
+        />
+      </div>
   </div>
 </template>
 
@@ -81,19 +89,24 @@ import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
+import InsightCard from '../components/InsightCard.vue';
 import { generateTextContent, getTypeIcon } from '../utils/textGenerator'
 
 const route = useRoute()
 
 const selectedDate = computed(() => route.query.date)
 
-const displayedCards = computed(() => {
-  let cards = selectedDate.value
+const selectedItems = computed(() => {
+  return selectedDate.value
     ? newsData.filter(card => card.date === selectedDate.value)
     : [newsData[newsData.length - 1]]
-
+});
+const date = computed(() => {
+  return selectedItems.value[0]?.date || ''
+});
+const displayedCards = computed(() => {
   // Split projects into groups of 2
-  return cards.flatMap(card => {
+  return selectedItems.value.flatMap(card => {
     const projects = card.projects
     const cardGroups = []
     for (let i = 0; i < projects.length; i += 2) {
@@ -104,6 +117,9 @@ const displayedCards = computed(() => {
     }
     return cardGroups
   })
+})
+const displayedInsights = computed(() => {
+  return selectedItems.value.flatMap(card => card.insights)
 })
 
 const weekdayColor = computed(() => {
