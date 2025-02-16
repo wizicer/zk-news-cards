@@ -25,7 +25,7 @@
       <div v-if="insight.quotes && insight.quotes.length > 0" class="insight-quote">
         {{ insight.quotes[0] }}
       </div>
-      <div v-if="insight.url" class="project-qr">
+      <div v-if="insight.url" class="insight-project-qr">
         <qrcode-vue
           :value="insight.url"
           :size="64"
