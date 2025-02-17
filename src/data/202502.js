@@ -81,6 +81,21 @@ export default [
         ],
       }
     ]
+  },
+  {
+    date: "2025-02-18",
+    projects: [
+    ],
+    insights: [
+      {
+        "title": "如何在饭桌上一分钟说清楚零知识证明",
+        "type": "original",
+        "slogan": "用筷子讲ZKP",
+        "images": [
+          "./images/2025-02-18.drawio.svg"
+        ],
+      }
+    ]
   }
 ];
 
