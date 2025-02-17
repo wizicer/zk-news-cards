@@ -74,12 +74,14 @@
       </div>
     </div>
       <div v-if="displayedInsights.length > 0" class="insights-section">
-        <InsightCard 
-          v-for="(insight, index) in displayedInsights" 
-          :key="index" 
-          :insight="insight"
-          :date="date"
-        />
+        <template v-for="(insight, index) in displayedInsights">
+          <InsightCard 
+            v-if="insight"
+            :key="index" 
+            :insight="insight"
+            :date="date"
+          />
+        </template>
       </div>
   </div>
 </template>
