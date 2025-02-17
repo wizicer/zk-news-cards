@@ -323,15 +323,14 @@ body {
 }
 
 .insight-card {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background: white;
-  position: relative;
-  width: 461px;
-  min-height: 626px;
-  display: flex;
-  flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+    width: 461px;
+    min-height: 626px;
+    display: flex;
+    flex-direction: column;
 }
 
 .insight-header {
@@ -352,10 +351,10 @@ body {
   top: 0;
   right: 0;
   min-width: 20px;
-  height: 20px;
-  padding: 0 10px 5px;
+  height: 18px;
+  padding: 3px 10px 5px;
   background: var(--primary-dark);
-  border-radius: 8px 0 0 8px;
+  border-radius: 0 0 0 8px;
 }
 
 .insight-title-section {
@@ -520,6 +519,19 @@ body {
 .insight-copyright {
   float: right;
   padding-right: 30px;
+}
+
+.insight-website {
+    position: absolute;
+    top: 6px;
+    left: 26px;
+}
+
+.insight-website a {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-shadow: 0 0 2px rgba(200,200,200,0.9);
+    text-decoration: none;
 }
 
 .app-controls {
