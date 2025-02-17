@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-17 星期一
+
+📄 LatticeFold+: Faster, Simpler, Shorter Lattice-Based Folding for Succinct Proof Systems
+- https://eprint.iacr.org/2025/247
+- @danboneh 和 @Charles_Chen533 在论文中提出了LatticeFold+，通过两种新技术进行改进：1）开发了更高效的代数范围证明；2）利用双承诺和基于sumcheck的转换简化验证电路。这些改进使证明者速度提升五到十倍，验证电路更简单，证明更短。
+
+💻 AIR-ICICLE : Plonky3 on ICICLE, part 1
+- https://hackmd.io/@Ingonyama/air-icicle
+- @Ingo_zk 团队开源了AIR-ICICLE项目，集成了Plonky3框架与ICICLE库，支持用户编写AIR电路并生成踪迹数据，优化了STARK证明生成流程。
+
+---
+📄 网页查看： https://news.plonk.pro/2025-02-17.html
+🪶 由 @icerdesign 收集

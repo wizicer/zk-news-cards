@@ -42,6 +42,46 @@ export default [
       }
     ]
   },
+  {
+    date: "2025-02-17",
+    projects: [
+      {
+        "name": "LatticeFold+: Faster, Simpler, Shorter Lattice-Based Folding for Succinct Proof Systems",
+        "url": "https://eprint.iacr.org/2025/247",
+        "type": "论文",
+        "tags": [
+          "Dan Boneh", "Binyi Chen",
+          "格密码"
+        ],
+        "summary": "@danboneh 和 @Charles_Chen533 在{{name}}论文中提出了LatticeFold+，通过两种新技术进行改进：1）开发了更高效的代数范围证明；2）利用双承诺和基于sumcheck的转换简化验证电路。这些改进使证明者速度提升五到十倍，验证电路更简单，证明更短。"
+      },
+      {
+        "name": "AIR-ICICLE : Plonky3 on ICICLE, part 1",
+        "url": "https://hackmd.io/@Ingonyama/air-icicle",
+        "type": "开源",
+        "tags": [
+          "Ingonyama",
+          "Plonky3",
+          "ICICLE",
+        ],
+        "summary": "@Ingo_zk 团队开源了AIR-ICICLE项目，集成了Plonky3框架与ICICLE库，支持用户编写AIR电路并生成踪迹数据，优化了STARK证明生成流程。"
+      }
+    ],
+    insights: [
+      {
+        "title": "穿越幻灭谷",
+        "type": "reprint",
+        "slogan": "穿越幻灭谷",
+        "url": "https://x.com/ballsyalchemist/status/1887627046190522681",
+        "quotes": [
+          "曾经，零知识证明被誉为安全、可扩展性和隐私的“圣杯”，但如今已跌至低谷。不过，这或许意味着未来它将迎来真正的上升期，走向更稳健的发展。"
+        ],
+        "images": [
+          "./images/2025-02-17.png"
+        ],
+      }
+    ]
+  }
 ];
 
 const others = [
