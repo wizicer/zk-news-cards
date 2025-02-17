@@ -17,13 +17,13 @@
             :alt="`${insight.title}`" class="insight-image" />
         </div>
       </div>
+      <div v-if="insight.quotes && insight.quotes.length > 0" class="insight-quote">
+        {{ insight.quotes[0] }}
+      </div>
       <div v-if="insight.url" class="insight-url-wrapper">
         <div class="insight-url">
           <a :href="insight.url" target="_blank">{{ insight.url }}</a>
         </div>
-      </div>
-      <div v-if="insight.quotes && insight.quotes.length > 0" class="insight-quote">
-        {{ insight.quotes[0] }}
       </div>
       <div v-if="insight.url" class="insight-project-qr">
         <qrcode-vue
