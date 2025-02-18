@@ -28,7 +28,7 @@ const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 function getDateParts() {
     const today = new Date();
     return {
-        year: String(today.getFullYear()).slice(-2),
+        year: String(today.getFullYear()),
         month: String(today.getMonth() + 1).padStart(2, '0'),
         day: String(today.getDate()).padStart(2, '0')
     };
