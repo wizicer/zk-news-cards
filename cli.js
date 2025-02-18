@@ -53,6 +53,11 @@ async function takeScreenshot() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     
+    // Copy to temporary file in docs directory
+    const tempHtmlPath = path.join(path.dirname(htmlPath), '../..', 'temp.html');
+    console.log(`Copying to ${tempHtmlPath}`);
+    fs.copyFileSync(htmlPath, tempHtmlPath);
+    
     // Set high DPI viewport (2x scale)
     await page.setViewport({
         width: 480,
@@ -60,8 +65,8 @@ async function takeScreenshot() {
         deviceScaleFactor: 2
     });
     
-    // Load the local HTML file
-    await page.goto(`file://${path.resolve(htmlPath)}`, { waitUntil: 'networkidle0' });
+    // Load the temp HTML file
+    await page.goto(`file://${path.resolve(tempHtmlPath)}`, { waitUntil: 'networkidle0' });
     
     // Small delay to ensure all content is rendered
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -84,6 +89,10 @@ async function takeScreenshot() {
     }
 
     await browser.close();
+    
+    // Clean up temporary file
+    fs.unlinkSync(tempHtmlPath);
+    
     return filepaths;
 }
 
@@ -103,6 +112,11 @@ async function generatePDF() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     
+    // Copy to temporary file in docs directory
+    const tempHtmlPath = path.join(path.dirname(htmlPath), '../..', 'temp.html');
+    console.log(`Copying to ${tempHtmlPath}`);
+    fs.copyFileSync(htmlPath, tempHtmlPath);
+    
     // Set viewport similar to screenshot
     await page.setViewport({
         width: 480,
@@ -110,8 +124,8 @@ async function generatePDF() {
         deviceScaleFactor: 2
     });
     
-    // Load the local HTML file
-    await page.goto(`file://${path.resolve(htmlPath)}`, { waitUntil: 'networkidle0' });
+    // Load the temp HTML file
+    await page.goto(`file://${path.resolve(tempHtmlPath)}`, { waitUntil: 'networkidle0' });
     
     // Small delay to ensure all content is rendered
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -129,6 +143,9 @@ async function generatePDF() {
         }
     });
     await browser.close();
+    
+    // Clean up temporary file
+    fs.unlinkSync(tempHtmlPath);
     
     console.log(`PDF saved to: ${filepath}`);
     return filepath;
