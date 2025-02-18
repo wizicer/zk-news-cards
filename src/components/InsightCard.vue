@@ -14,8 +14,10 @@
       <div class="insight-title">{{ insight.title }}</div>
       <div class="insight-frame">
         <div class="image-container">
-          <img v-for="imageUrl in insight.images" :key="imageUrl" :src="imageUrl"
-            :alt="`${insight.title}`" class="insight-image" />
+          <template v-for="imageUrl in insight.images" :key="imageUrl">
+            <object v-if="imageUrl.endsWith('.svg')" :data="imageUrl" type="image/svg+xml" class="insight-image"></object>
+            <img v-else :src="imageUrl" :alt="`${insight.title}`" class="insight-image" />
+          </template>
         </div>
       </div>
       <div v-if="insight.quotes && insight.quotes.length > 0" class="insight-quote">
