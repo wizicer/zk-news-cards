@@ -24,17 +24,31 @@ const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
+// Date utility function
+function getDateParts() {
+    const today = new Date();
+    return {
+        year: String(today.getFullYear()).slice(-2),
+        month: String(today.getMonth() + 1).padStart(2, '0'),
+        day: String(today.getDate()).padStart(2, '0')
+    };
+}
+
 async function takeScreenshot() {
+    const { year, month, day } = getDateParts();
+    
     // Create screenshots directory if it doesn't exist
-    const screenshotDir = './screenshots';
+    const screenshotDir = path.join('./screenshots', year, month);
     if (!fs.existsSync(screenshotDir)) {
-        fs.mkdirSync(screenshotDir);
+        fs.mkdirSync(screenshotDir, { recursive: true });
     }
 
-    // Generate filename with current date
-    const today = new Date();
-    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-    const htmlPath = path.join('./docs', `${filename}.html`);
+    const htmlDir = path.join('./docs', year, month);
+    if (!fs.existsSync(htmlDir)) {
+        fs.mkdirSync(htmlDir, { recursive: true });
+    }
+
+    const htmlPath = path.join(htmlDir, `${day}.html`);
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -58,7 +72,7 @@ async function takeScreenshot() {
     
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
-        const filepath = path.join(screenshotDir, `${filename}-${i + 1}.png`);
+        const filepath = path.join(screenshotDir, `${day}-${i + 1}.png`);
         
         // Screenshot individual card
         await card.screenshot({
@@ -74,17 +88,17 @@ async function takeScreenshot() {
 }
 
 async function generatePDF() {
-    // Create pdfs directory if it doesn't exist
-    const pdfDir = './pdfs';
+    const { year, month, day } = getDateParts();
+    
+    // Create PDF directory if it doesn't exist
+    const pdfDir = path.join('./pdfs', year, month);
     if (!fs.existsSync(pdfDir)) {
-        fs.mkdirSync(pdfDir);
+        fs.mkdirSync(pdfDir, { recursive: true });
     }
 
-    // Generate filename with current date
-    const today = new Date();
-    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-    const htmlPath = path.join('./docs', `${filename}.html`);
-    const filepath = path.join(pdfDir, `${filename}.pdf`);
+    const htmlDir = path.join('./docs', year, month);
+    const htmlPath = path.join(htmlDir, `${day}.html`);
+    const filepath = path.join(pdfDir, `${day}.pdf`);
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -212,13 +226,12 @@ program
 
 program
     .command('notify')
-    .description('Take a screenshot and send notifications')
+    .description('Send notification with screenshot and text content')
     .action(async () => {
         try {
-            const today = new Date();
-            const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+            const { year, month, day } = getDateParts();
             const imagePaths = await takeScreenshot();
-            const textPath = path.join('./texts', `${filename}.txt`);
+            const textPath = path.join('./texts', year, month, `${day}.txt`);
 
             if (WECOM_WEBHOOK_URL) {
                 await sendWecomNotification(null, textPath);

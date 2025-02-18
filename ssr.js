@@ -17,8 +17,20 @@ async function generateStaticHTML() {
     
     // Generate date-based filename
     const today = new Date()
-    const filename = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`
+    const year = String(today.getFullYear()).slice(-2)
+    const month = String(today.getMonth() + 1).padStart(2, '0')
+    const day = String(today.getDate()).padStart(2, '0')
+
+    // Ensure directories exist
+    const htmlDir = path.join(__dirname, 'docs', year, month)
+    const textsDir = path.join(__dirname, 'texts', year, month)
     
+    ;[htmlDir, textsDir].forEach(dir => {
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true })
+        }
+    })
+
     const template = `
 <!DOCTYPE html>
 <html>
@@ -35,13 +47,7 @@ async function generateStaticHTML() {
 </body>
 </html>`
 
-    // Ensure html directory exists
-    const htmlDir = path.join(__dirname, 'docs')
-    if (!fs.existsSync(htmlDir)) {
-        fs.mkdirSync(htmlDir, { recursive: true })
-    }
-    
-    const outputPath = path.join(htmlDir, `${filename}.html`)
+    const outputPath = path.join(htmlDir, `${day}.html`)
     fs.writeFileSync(outputPath, template)
     console.log(`Static HTML generated successfully at: ${outputPath}`)
 
@@ -50,13 +56,7 @@ async function generateStaticHTML() {
     await router.isReady()
     const textContent = await renderToString(app)
 
-    // Ensure texts directory exists
-    const textsDir = path.join(__dirname, 'texts')
-    if (!fs.existsSync(textsDir)) {
-        fs.mkdirSync(textsDir, { recursive: true })
-    }
-
-    const textOutputPath = path.join(textsDir, `${filename}.txt`)
+    const textOutputPath = path.join(textsDir, `${day}.txt`)
     const textWithoutTags = textContent.replace(/<[^>]*>/g, '').trim();
     const textOutput = he.decode(textWithoutTags);
     fs.writeFileSync(textOutputPath, textOutput)

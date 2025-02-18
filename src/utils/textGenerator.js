@@ -25,7 +25,7 @@ export const generateTextContent = (cards) => {
       text += `- ${project.url}\n`
       text += `- ${project.summary.replace(/{{name}}/g, '')}\n\n`
     })
-    text += `---\n📄 网页查看： https://news.plonk.pro/${card.year}-${card.month}-${card.day}.html\n`
+    text += `---\n📄 网页查看： https://news.plonk.pro/${card.year}/${card.month}/${card.day}.html\n`
     text += `🪶 由 @icerdesign 收集`
   })
   return text
