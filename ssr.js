@@ -13,8 +13,9 @@ async function generateStaticHTML() {
     // Generate HTML for root path
     await router.push('/')
     await router.isReady()
-    const appContent = await renderToString(app)
-    
+    let appContent = await renderToString(app)
+    appContent = appContent.replace(/"\.\/images\/.*"/g, m => `"../.${m.slice(1)}"`)
+
     // Generate date-based filename
     const today = new Date()
     const year = String(today.getFullYear())
