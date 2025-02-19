@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKP Trending News</title>
+    <style>
+        :root {
+    --color-monday: #e74c3c;    /* Red */
+    --color-tuesday: #f39c12;   /* Orange */
+    --color-wednesday: #f1c40f; /* Yellow */
+    --color-thursday: #2ecc71;  /* Green */
+    --color-friday: #3498db;    /* Blue */
+    --color-saturday: #9b59b6;  /* Purple */
+    --color-sunday: #e91e63;    /* Pink */
+    
+    --primary-color: var(--color-monday); /* Will be updated via JS */
+    --primary-light: #ebf5fb;
+    --primary-dark: #2980b9;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --border-color: #e1e8ed;
+    --card-bg: #ffffff;
+    --link-color: #e65c1a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    height: 640px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #e3f2fd;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 465px;
+    height: 100%;
+    margin: 10px;
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.news-card {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.08);
+    page-break-after: always;
+    width: 461px;
+    min-height: 626px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.news-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.github-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title-icon {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subtitle-text {
+    font-size: 22px;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 1;
+    padding: 0 2px;
+}
+
+.subtitle-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 40%;
+    background-color: var(--primary-color);
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.github-icon {
+    color: var(--text-primary);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+}
+
+.date-weekday {
+    background: var(--primary-color);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-details {
+    background: white;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    border: 1px solid #eee;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.date-number {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.date-year {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+}
+
+.card-subtitle {
+    border-bottom: 2px solid var(--primary-light);
+    margin: 12px 0;
+}
+
+.project-item {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.project-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-right: 8px;
+  position: relative;
+  justify-content: flex-start;
+  min-width: 64px;
+}
+
+.project-qr {
+  margin-top: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.project-qr:hover {
+  opacity: 1;
+}
+
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  font-size: 32px;
+}
+
+.project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-content {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.project-name {
+    color: var(--link-color);
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.project-url {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-description {
+    margin: 8px 0;
+    color: var(--text-primary);
+}
+
+.project-stats {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.project-summary {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.project-type {
+  font-size: 0.8em;
+  color: #666;
+  font-weight: bold;
+  min-width: 2em;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card-footer {
+    color: var(--text-secondary);
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    font-size: 14px;
+}
+
+.card-footer a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.highlight {
+    background-color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.page-indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.indicator-dot {
+    width: 4px;
+    height: 8px;
+    background-color: #ddd;
+}
+
+.indicator-dot.active {
+    background-color: #666;
+    height: 10px;
+}
+
+.insight-card {
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+    width: 461px;
+    min-height: 626px;
+    display: flex;
+    flex-direction: column;
+}
+
+.insight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1.5rem 0;
+  background: var(--primary-color);
+  color: white;
+  position: relative;
+  margin-bottom: 0;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.insight-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 20px;
+  height: 18px;
+  padding: 3px 10px 5px;
+  background: var(--primary-dark);
+  border-radius: 0 0 0 8px;
+}
+
+.insight-title-section {
+  flex: 1;
+  z-index: 1;
+}
+
+.insight-subtitle-section {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  text-align: right;
+  z-index: 1;
+}
+
+.insight-main-title {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  bottom: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.insight-slogan {
+  font-size: 1rem;
+  opacity: 0.9;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid white;
+}
+
+.insight-content {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 12px solid var(--primary-color);
+}
+
+.insight-content::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border: 4px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-content::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: 2px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-title {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px 0;
+  margin-bottom: 1rem;
+  background: var(--primary-light);
+  color: var(--text-primary);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.insight-frame {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.insight-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.insight-url-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.insight-url {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+}
+
+.insight-url a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.insight-project-qr {
+  position: absolute;
+  left: 10px;
+  bottom: -34px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.insight-quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-left: 4px solid #ddd;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.insight-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: #f5f5f5;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: var(--primary-color);
+  width: 100%;
+  min-height: 16px;
+}
+
+.insight-footer a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.insight-footer a:hover {
+  text-decoration: underline;
+}
+
+.insight-copyright {
+  float: right;
+  padding-right: 30px;
+}
+
+.insight-website {
+    position: absolute;
+    top: 6px;
+    left: 26px;
+}
+
+.insight-website a {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-shadow: 0 0 2px rgba(200,200,200,0.9);
+    text-decoration: none;
+}
+
+.app-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.copy-button {
+  padding: 8px 16px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.copy-button:hover {
+  background: #333;
+  opacity: 1;
+}
+
+@media print {
+    @page {
+        size: 480px 640px;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .news-container {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
+    .news-card {
+        width: 480px;
+        height: 640px;
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
+        page-break-after: always;
+        break-inside: avoid;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="app"><!--[--><div class="app-controls"><button class="copy-button"> 复制文本内容 </button></div><div class="news-container" style="--primary-color:var(--color-wednesday);"><!--[--><div class="news-card"><div class="card-header"><div class="github-title"><div class="title-icon"><span class="github-icon"></span> 零知识证明 <span class="highlight">zkDaily</span></div><div class="subtitle-text"> 零知识证明 前沿热点追踪 🎯 </div></div><div class="date"><span class="date-weekday">星期三</span><div class="date-details"><div class="date-number">02.19</div><div class="date-year">2025</div></div></div></div><div class="card-subtitle"></div><div class="projects"><!--[--><div class="project-item"><div class="project-meta"><div class="project-icon"><span>🎪</span></div><span class="project-type">活动</span><div class="project-qr"><svg width="64" height="64" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><defs><!----></defs><rect width="100%" height="100%" fill="#ffffff"></rect><path fill="#000000" d="M0 0h7v1H0zM12 0h1v1H12zM14 0h1v1H14zM19 0h2v1H19zM22,0 h7v1H22zM0 1h1v1H0zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1H10zM13 1h3v1H13zM17 1h2v1H17zM22 1h1v1H22zM28,1 h1v1H28zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM12 2h1v1H12zM15 2h1v1H15zM19 2h1v1H19zM22 2h1v1H22zM24 2h3v1H24zM28,2 h1v1H28zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM8 3h3v1H8zM13 3h1v1H13zM15 3h4v1H15zM22 3h1v1H22zM24 3h3v1H24zM28,3 h1v1H28zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM9 4h1v1H9zM11 4h4v1H11zM17 4h4v1H17zM22 4h1v1H22zM24 4h3v1H24zM28,4 h1v1H28zM0 5h1v1H0zM6 5h1v1H6zM8 5h2v1H8zM12 5h1v1H12zM15 5h1v1H15zM17 5h1v1H17zM20 5h1v1H20zM22 5h1v1H22zM28,5 h1v1H28zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18 6h1v1H18zM20 6h1v1H20zM22,6 h7v1H22zM9 7h2v1H9zM0 8h5v1H0zM6 8h4v1H6zM13 8h1v1H13zM15 8h3v1H15zM21 8h1v1H21zM23 8h1v1H23zM25 8h1v1H25zM27 8h1v1H27zM0 9h1v1H0zM2 9h1v1H2zM5 9h1v1H5zM7 9h1v1H7zM10 9h3v1H10zM14 9h1v1H14zM19 9h6v1H19zM28,9 h1v1H28zM1 10h3v1H1zM5 10h2v1H5zM10 10h1v1H10zM13 10h6v1H13zM22 10h2v1H22zM0 11h2v1H0zM4 11h2v1H4zM7 11h2v1H7zM11 11h1v1H11zM14 11h2v1H14zM20 11h1v1H20zM23 11h1v1H23zM25 11h1v1H25zM27 11h1v1H27zM1 12h3v1H1zM6 12h1v1H6zM8 12h3v1H8zM13 12h1v1H13zM16 12h2v1H16zM19 12h1v1H19zM21 12h1v1H21zM25 12h2v1H25zM4 13h1v1H4zM7 13h1v1H7zM11 13h4v1H11zM20 13h5v1H20zM28,13 h1v1H28zM1 14h3v1H1zM5 14h2v1H5zM9 14h1v1H9zM12 14h1v1H12zM15 14h1v1H15zM20 14h1v1H20zM22 14h2v1H22zM25 14h2v1H25zM1 15h1v1H1zM12 15h1v1H12zM15 15h1v1H15zM18 15h2v1H18zM22 15h1v1H22zM24 15h1v1H24zM27 15h1v1H27zM1 16h2v1H1zM4 16h3v1H4zM8 16h4v1H8zM13 16h1v1H13zM16 16h2v1H16zM20 16h1v1H20zM25 16h2v1H25zM0 17h5v1H0zM9 17h4v1H9zM14 17h1v1H14zM18 17h4v1H18zM23 17h2v1H23zM26 17h1v1H26zM28,17 h1v1H28zM0 18h1v1H0zM3 18h7v1H3zM12 18h1v1H12zM14 18h3v1H14zM18 18h1v1H18zM20 18h1v1H20zM22 18h1v1H22zM26 18h1v1H26zM0 19h1v1H0zM2 19h1v1H2zM5 19h1v1H5zM8 19h2v1H8zM12 19h1v1H12zM14 19h2v1H14zM20 19h4v1H20zM27 19h1v1H27zM0 20h1v1H0zM6 20h1v1H6zM8 20h1v1H8zM11 20h1v1H11zM13 20h1v1H13zM15 20h3v1H15zM20 20h5v1H20zM26,20 h3v1H26zM8 21h1v1H8zM10 21h3v1H10zM14 21h1v1H14zM19 21h2v1H19zM24,21 h5v1H24zM0 22h7v1H0zM8 22h1v1H8zM12 22h2v1H12zM15 22h2v1H15zM19 22h2v1H19zM22 22h1v1H22zM24 22h3v1H24zM0 23h1v1H0zM6 23h1v1H6zM12 23h1v1H12zM16 23h1v1H16zM18 23h3v1H18zM24 23h1v1H24zM27,23 h2v1H27zM0 24h1v1H0zM2 24h3v1H2zM6 24h1v1H6zM8 24h4v1H8zM13 24h1v1H13zM17 24h1v1H17zM20 24h5v1H20zM26 24h2v1H26zM0 25h1v1H0zM2 25h3v1H2zM6 25h1v1H6zM8 25h5v1H8zM14 25h1v1H14zM25 25h2v1H25zM28,25 h1v1H28zM0 26h1v1H0zM2 26h3v1H2zM6 26h1v1H6zM8 26h1v1H8zM10 26h1v1H10zM13 26h1v1H13zM15 26h2v1H15zM20 26h3v1H20zM24 26h4v1H24zM0 27h1v1H0zM6 27h1v1H6zM8 27h1v1H8zM12 27h1v1H12zM14 27h1v1H14zM19 27h2v1H19zM24 27h2v1H24zM27 27h1v1H27zM0 28h7v1H0zM8 28h1v1H8zM10 28h1v1H10zM13 28h1v1H13zM15 28h3v1H15zM19 28h1v1H19zM25 28h2v1H25z"></path><!----></svg></div></div><div class="project-content"><h3 class="project-name">Nexus Layer 1 Testnet II</h3><a href="https://x.com/NexusLabs/status/1892068785231888741" class="project-url">https://x.com/NexusLabs/status/1892068785231888741</a><div class="project-tags"><!--[--><span class="tag">NexusLabs</span><span class="tag">Testnet</span><!--]--></div><p class="project-summary">@NexusLabs 推出Nexus Layer 1，已经可以在浏览器上“挖矿”了，这个帖子让大家填自己的地址，已经收集到26k个回复。</p></div></div><div class="project-item"><div class="project-meta"><div class="project-icon"><span>📰</span></div><span class="project-type">新闻</span><div class="project-qr"><svg width="64" height="64" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><!----></defs><rect width="100%" height="100%" fill="#ffffff"></rect><path fill="#000000" d="M0 0h7v1H0zM9 0h2v1H9zM14 0h1v1H14zM18,0 h7v1H18zM0 1h1v1H0zM6 1h1v1H6zM8 1h1v1H8zM11 1h1v1H11zM13 1h2v1H13zM18 1h1v1H18zM24,1 h1v1H24zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM9 2h2v1H9zM12 2h3v1H12zM18 2h1v1H18zM20 2h3v1H20zM24,2 h1v1H24zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM8 3h1v1H8zM10 3h2v1H10zM13 3h1v1H13zM15 3h2v1H15zM18 3h1v1H18zM20 3h3v1H20zM24,3 h1v1H24zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM8 4h1v1H8zM10 4h1v1H10zM13 4h2v1H13zM18 4h1v1H18zM20 4h3v1H20zM24,4 h1v1H24zM0 5h1v1H0zM6 5h1v1H6zM9 5h6v1H9zM18 5h1v1H18zM24,5 h1v1H24zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18,6 h7v1H18zM8 7h3v1H8zM13 7h1v1H13zM1 8h1v1H1zM3 8h4v1H3zM8 8h2v1H8zM12 8h1v1H12zM17 8h2v1H17zM20 8h2v1H20zM23 8h1v1H23zM0 9h3v1H0zM4 9h1v1H4zM7 9h4v1H7zM12 9h4v1H12zM19 9h5v1H19zM0 10h1v1H0zM5 10h2v1H5zM8 10h1v1H8zM10 10h4v1H10zM15 10h1v1H15zM17 10h1v1H17zM21 10h1v1H21zM24,10 h1v1H24zM1 11h2v1H1zM4 11h2v1H4zM7 11h1v1H7zM9 11h1v1H9zM14 11h2v1H14zM20,11 h5v1H20zM4 12h1v1H4zM6 12h2v1H6zM9 12h3v1H9zM13 12h4v1H13zM18 12h1v1H18zM24,12 h1v1H24zM0 13h1v1H0zM4 13h1v1H4zM7 13h1v1H7zM10 13h2v1H10zM13 13h5v1H13zM20 13h1v1H20zM23 13h1v1H23zM0 14h3v1H0zM5 14h2v1H5zM10 14h1v1H10zM13 14h3v1H13zM17 14h2v1H17zM20,14 h5v1H20zM0 15h1v1H0zM3 15h2v1H3zM7 15h5v1H7zM13 15h1v1H13zM16 15h1v1H16zM19 15h1v1H19zM21 15h2v1H21zM24,15 h1v1H24zM0 16h1v1H0zM2 16h1v1H2zM4 16h3v1H4zM16 16h5v1H16zM22 16h2v1H22zM8 17h1v1H8zM12 17h3v1H12zM16 17h1v1H16zM20 17h1v1H20zM22 17h2v1H22zM0 18h7v1H0zM10 18h2v1H10zM16 18h1v1H16zM18 18h1v1H18zM20 18h1v1H20zM24,18 h1v1H24zM0 19h1v1H0zM6 19h1v1H6zM8 19h1v1H8zM12 19h1v1H12zM15 19h2v1H15zM20 19h1v1H20zM24,19 h1v1H24zM0 20h1v1H0zM2 20h3v1H2zM6 20h1v1H6zM8 20h2v1H8zM11 20h1v1H11zM15 20h6v1H15zM23,20 h2v1H23zM0 21h1v1H0zM2 21h3v1H2zM6 21h1v1H6zM8 21h1v1H8zM10 21h3v1H10zM17 21h2v1H17zM23,21 h2v1H23zM0 22h1v1H0zM2 22h3v1H2zM6 22h1v1H6zM10 22h1v1H10zM12 22h1v1H12zM14 22h2v1H14zM17 22h1v1H17zM20,22 h5v1H20zM0 23h1v1H0zM6 23h1v1H6zM8 23h1v1H8zM13 23h3v1H13zM18 23h3v1H18zM22,23 h3v1H22zM0 24h7v1H0zM11 24h1v1H11zM13 24h1v1H13zM16 24h1v1H16zM18 24h1v1H18zM21 24h1v1H21zM24,24 h1v1H24z"></path><!----></svg></div></div><div class="project-content"><h3 class="project-name">THE MODULAR BLOCKCHAIN FOR ZK PROOF VERIFICATION</h3><a href="https://zkverify.io/" class="project-url">https://zkverify.io/</a><div class="project-tags"><!--[--><span class="tag">zkVerify</span><span class="tag">ZK Proofs</span><span class="tag">Blockchain Efficiency</span><span class="tag">Cost Reduction</span><!--]--></div><p class="project-summary">zkVerify ( @ZKVProtocol ) 是 @HorizenLabs 开发的一个高性能、公开、去中心化的区块链，专注于零知识证明的验证。它提供模块化和可组合的方式，供 ZK 应用验证证明。</p></div></div><!--]--></div><div class="card-footer"> 由 <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a> 收集 </div><!----></div><!--]--><div class="insights-section"><!--[--><!--[--><div class="insight-card"><div class="insight-header"><div class="insight-title-section"><!----><div class="insight-main-title">每日ZKP见解</div></div><div class="insight-subtitle-section"><div class="insight-slogan">ZKP电路的组成</div></div><div class="insight-corner">2025-02-19</div></div><div class="insight-content"><div class="insight-title">ZKP电路 = 计算 + 约束</div><div class="insight-frame"><div class="image-container"><!--[--><!--[--><object data="./images/2025/02/19.drawio.svg" type="image/svg+xml" class="insight-image"></object><!--]--><!--]--></div></div><!----><!----><!----></div><div class="insight-footer"><span class="insight-copyright"> 由 <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a><span> 创作 </span></span></div></div><!--]--><!--]--></div></div><!--]--></div>
+</body>
+</html>
