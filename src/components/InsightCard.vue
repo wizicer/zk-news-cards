@@ -2,7 +2,7 @@
   <div class="insight-card">
     <div class="insight-header">
       <div class="insight-title-section">
-        <div class="insight-website"><a href="https://www.zkshanghai.xyz" target="_blank">www.zkshanghai.xyz</a></div>
+        <div v-if="false" class="insight-website"><a href="https://www.zkshanghai.xyz" target="_blank">www.zkshanghai.xyz</a></div>
         <div class="insight-main-title">每日ZKP见解</div>
       </div>
       <div class="insight-subtitle-section">
