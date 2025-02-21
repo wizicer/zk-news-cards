@@ -12,4 +12,5 @@ Install required fonts:
 ```bash
 sudo apt install fonts-noto-color-emoji
 sudo apt install fonts-wqy-zenhei
+sudo apt install fonts-lmodern
 ```
