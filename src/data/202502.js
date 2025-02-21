@@ -204,6 +204,35 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-02-21",
+    projects: [
+      {
+        "name": "Khatam: Reducing the Communication Complexity of Code-Based SNARKs",
+        "url": "https://eprint.iacr.org/2024/1843",
+        "type": "论文",
+        "tags": [
+          "Hadas Zeilberger",
+          "基于编码",
+          "多线性PC"
+        ],
+        "summary": "Hadas Zeilberger在{{name}}论文中提出了一种降低基于编码的SNARKs通信复杂性的方法，利用线性码的“相关一致性”性质，证明当向量𝜋𝐿 + 𝑟𝜋𝑅接近某个码字时，𝜋𝐿、𝜋𝑅和𝜋𝐿 + 𝑟𝜋𝑅在特定位置上也与码字一致。这一性质能显著降低了通信复杂性。"
+      },
+      {
+        "name": "Neo: Lattice-based folding scheme for CCS over small fields and pay-per-bit commitments",
+        "url": "https://eprint.iacr.org/2025/294",
+        "type": "论文",
+        "tags": [
+          "Wilson Nguyen", "Srinath Setty",
+          "格",
+          "折叠",
+        ],
+        "summary": "Wilson Nguyen和Srinath Setty在{{name}}论文中提出了Neo，一种新的基于格的折叠方案，适用于CCS。Neo通过适应HyperNova的折叠方案到格设置，解决了LatticeFold的局限性，提供了后量子安全性，并引入了按位付费的承诺成本。"
+      },
+    ],
+    insights: [
+    ]
   }
 ];
 
@@ -222,4 +251,17 @@ const others = [
     summary:
       "Haitner等人在{{name}}论文中详细介绍了基于RSA的整数承诺及相关协议，并提出了一种新的高效设置协议，用于采样承诺参数。",
   },
+      {
+        "name": "MPC-in-the-Head: A Novel Approach to Zero-Knowledge Proofs",
+        "url": "https://www.zksecurity.xyz/blog/posts/mpcith-intro/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          "ZK",
+          "MPC",
+          "IKOS transformation",
+          "Post-Quantum Signatures"
+        ],
+        "summary": "zksecurity.xyz在博客{{name}}中探讨了MPC-in-the-Head转换，这是一种从任何MPC协议构建零知识证明系统的方法，并讨论了其在开发后量子签名方案中的应用。"
+      }
 ];

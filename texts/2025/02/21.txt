@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-21 星期五
+
+📄 Khatam: Reducing the Communication Complexity of Code-Based SNARKs
+- https://eprint.iacr.org/2024/1843
+- Hadas Zeilberger在论文中提出了一种降低基于编码的SNARKs通信复杂性的方法，利用线性码的“相关一致性”性质，证明当向量𝜋𝐿 + 𝑟𝜋𝑅接近某个码字时，𝜋𝐿、𝜋𝑅和𝜋𝐿 + 𝑟𝜋𝑅在特定位置上也与码字一致。这一性质能显著降低了通信复杂性。
+
+📄 Neo: Lattice-based folding scheme for CCS over small fields and pay-per-bit commitments
+- https://eprint.iacr.org/2025/294
+- Wilson Nguyen和Srinath Setty在论文中提出了Neo，一种新的基于格的折叠方案，适用于CCS。Neo通过适应HyperNova的折叠方案到格设置，解决了LatticeFold的局限性，提供了后量子安全性，并引入了按位付费的承诺成本。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/02/21.html
+🪶 由 @icerdesign 收集
