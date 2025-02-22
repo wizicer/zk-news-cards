@@ -233,6 +233,37 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-02-22",
+    projects: [
+      {
+        "name": "Ethproofs: Progressing towards fully SNARKing the L1",
+        "url": "https://ethproofs.org/",
+        "type": "开源",
+        "tags": [
+          "ethproofs.org",
+          "Ethereum",
+        ],
+        "urls": [
+            createUrlItem("源代码", "https://github.com/ethproofs/ethproofs")
+        ],
+        "summary": "ethproofs.org 是以太坊区块证明浏览器，汇总各 zkVM 团队数据（目前包括 @succinctlabs 和 @snarkify_zkp 的数据），提供区块证明的全面概览。"
+      },
+      {
+        "name": "MPC-in-the-Head: A Novel Approach to Zero-Knowledge Proofs",
+        "url": "https://www.zksecurity.xyz/blog/posts/mpcith-intro/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          "ZK",
+          "MPC",
+        ],
+        "summary": "@zksecurityXYZ 在博客{{name}}中探讨了MPC-in-the-Head转换，这是一种从任何MPC协议构建零知识证明系统的方法，并讨论了其在开发后量子签名方案中的应用。"
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 
@@ -251,17 +282,4 @@ const others = [
     summary:
       "Haitner等人在{{name}}论文中详细介绍了基于RSA的整数承诺及相关协议，并提出了一种新的高效设置协议，用于采样承诺参数。",
   },
-      {
-        "name": "MPC-in-the-Head: A Novel Approach to Zero-Knowledge Proofs",
-        "url": "https://www.zksecurity.xyz/blog/posts/mpcith-intro/",
-        "type": "博客",
-        "tags": [
-          "zksecurity.xyz",
-          "ZK",
-          "MPC",
-          "IKOS transformation",
-          "Post-Quantum Signatures"
-        ],
-        "summary": "zksecurity.xyz在博客{{name}}中探讨了MPC-in-the-Head转换，这是一种从任何MPC协议构建零知识证明系统的方法，并讨论了其在开发后量子签名方案中的应用。"
-      }
 ];

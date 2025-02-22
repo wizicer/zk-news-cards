@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-22 星期六
+
+💻 Ethproofs: Progressing towards fully SNARKing the L1
+- https://ethproofs.org/
+- ethproofs.org 是以太坊区块证明浏览器，汇总各 zkVM 团队数据（目前包括 @succinctlabs 和 @snarkify_zkp 的数据），提供区块证明的全面概览。
+
+📝 MPC-in-the-Head: A Novel Approach to Zero-Knowledge Proofs
+- https://www.zksecurity.xyz/blog/posts/mpcith-intro/
+- @zksecurityXYZ 在博客中探讨了MPC-in-the-Head转换，这是一种从任何MPC协议构建零知识证明系统的方法，并讨论了其在开发后量子签名方案中的应用。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/02/22.html
+🪶 由 @icerdesign 收集
