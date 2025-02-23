@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-23 星期日
+
+🎪 NoirCon 1 is coming to Denver
+- https://lu.ma/38g79n99
+- @NoirLang 主办的 NoirCon 1 将于 Denver 举行，包括AI与隐私应用的技术深度探讨和隐私优先开发的真实案例研究。
+
+📝 Understanding the Math Behind ZKPs
+- https://zkintro.com/articles/understanding-math-behind-zkps
+- zkintro 分享了关于ZKP数学基础的博客，旨在为高中学生或STEM毕业生提供直观理解，包括电路、功能完备性、承诺、秘密共享和sigma协议等关键概念。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/02/23.html
+🪶 由 @icerdesign 收集
