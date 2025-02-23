@@ -264,6 +264,43 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-02-23",
+    projects: [
+      {
+        "name": "NoirCon 1 is coming to Denver",
+        "url": "https://lu.ma/38g79n99",
+        "type": "活动",
+        "tags": [
+          "Aztec",
+          "Noir",
+          "AI",
+          "Denver"
+        ],
+        "summary": "@NoirLang 主办的 NoirCon 1 将于 Denver 举行，包括AI与隐私应用的技术深度探讨和隐私优先开发的真实案例研究。"
+      },
+      {
+        "name": "Understanding the Math Behind ZKPs",
+        "url": "https://zkintro.com/articles/understanding-math-behind-zkps",
+        "type": "博客",
+        "tags": [
+          "zkintro.com",
+          "数学基础"
+        ],
+        "summary": "zkintro 分享了关于ZKP数学基础的博客{{name}}，旨在为高中学生或STEM毕业生提供直观理解，包括电路、功能完备性、承诺、秘密共享和sigma协议等关键概念。"
+      }
+    ],
+    insights: [
+      {
+        "title": "完备性 与 可靠性",
+        "type": "original",
+        "slogan": "完备且可靠的ZKP",
+        "images": [
+          "./images/2025/02/23.drawio.svg"
+        ],
+      }
+    ]
   }
 ];
 
