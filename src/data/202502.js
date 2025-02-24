@@ -301,6 +301,43 @@ export default [
         ],
       }
     ]
+  },
+  {
+    date: "2025-02-24",
+    projects: [
+      {
+        "name": "Trustless Attestation Verification",
+        "url": "https://github.com/tiktok-privacy-innovation/trustless-attestation-verification",
+        "type": "开源",
+        "tags": [
+          "tiktok",
+          "TEE",
+          "远程认证"
+        ],
+        "summary": "@tiktok_us 团队的开源项目{{name}}，旨在解决TEE环境需要信任远程认证(RA)服务，他们利用ZKP创建无需信任第三方的认证系统，电路用Circom编写， 支持Groth16。"
+      },
+      {
+        "name": "2024，从零知识证明到AI！",
+        "url": "https://mp.weixin.qq.com/s/mo7azkzhOv1rsObKm3afsA",
+        "type": "博客",
+        "tags": [
+          "Star Li",
+          "AI",
+          "zkHack V"
+        ],
+        "summary": "Star Li在博客{{name}}中分享了从零知识证明到AI的转变，包括他们的成绩回顾，以及转向AI的心路和方式。"
+      }
+    ],
+    insights: [
+      {
+        "title": "可信执行环境 TEE (Trusted Execution Environment)",
+        "type": "original",
+        "slogan": "硬件保证的可信环境",
+        "images": [
+          "./images/2025/02/24.drawio.svg"
+        ],
+      }
+    ]
   }
 ];
 

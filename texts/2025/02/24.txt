@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-24 星期一
+
+💻 Trustless Attestation Verification
+- https://github.com/tiktok-privacy-innovation/trustless-attestation-verification
+- @tiktok_us 团队的开源项目，旨在解决TEE环境需要信任远程认证(RA)服务，他们利用ZKP创建无需信任第三方的认证系统，电路用Circom编写， 支持Groth16。
+
+📝 2024，从零知识证明到AI！
+- https://mp.weixin.qq.com/s/mo7azkzhOv1rsObKm3afsA
+- Star Li在博客中分享了从零知识证明到AI的转变，包括他们的成绩回顾，以及转向AI的心路和方式。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/02/24.html
+🪶 由 @icerdesign 收集
