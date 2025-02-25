@@ -351,7 +351,6 @@ export default [
           "R1CS",
           "Lean",
           "Haskell",
-          "zkSNARK"
         ],
         "summary": "@NethermindEth 团队开源了Surveyor项目，支持将R1CS二进制格式转换为Lean提取器，依赖Haskell，用于对R1CS进行形式化证明。"
       },
