@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-25 星期二
+
+💻 Surveyor R1CS binary format to Lean extractor
+- https://github.com/NethermindEth/Surveyor
+- @NethermindEth 团队开源了Surveyor项目，支持将R1CS二进制格式转换为Lean提取器，依赖Haskell，用于对R1CS进行形式化证明。
+
+📝 Tornado Anonymity Revoker Design
+- https://np.engineering/posts/tornado-anonymity-revoker-design/
+- Antonio Mejías Gil在博客中讨论了Tornado Cash协议的匿名撤销设计，提出了一种允许特定实体撤销用户匿名性的修改方案。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/02/25.html
+🪶 由 @icerdesign 收集
