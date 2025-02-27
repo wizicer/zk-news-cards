@@ -375,6 +375,45 @@ export default [
         ],
       }
     ]
+  },
+  {
+    date: "2025-02-27",
+    projects: [
+      {
+        "name": "zkVM Projects Part 1: A Landscape Overview",
+        "url": "https://blog.zksecurity.xyz/posts/zkvm-projects-1/",
+        "type": "博客",
+        "tags": [
+          "zkSecurity",
+          "Cairo",
+          "RISC0",
+          "Jolt",
+          "Lasso"
+        ],
+        "summary": "@zksecurityXYZ 在博客{{name}}中讨论了zkVM的概念及其在区块链中的应用，包括Cairo、RISC Zero和Jolt/Lasso等项目的发展历程和技术特点。"
+      },
+      {
+        "name": "Context-Dependent Threshold Decryption and its Applications",
+        "url": "https://eprint.iacr.org/2025/279",
+        "type": "论文",
+        "tags": [
+          "Dan Boneh",
+          "门限解密",
+          "上下文依赖",
+        ],
+        "summary": "@danboneh 等人在{{name}}论文中提出了上下文高门限解密的研究，包括定义、构建、安全证明和应用，特别是引入了上下文依赖解密的新安全特性。感兴趣的可以先查看今天的每日ZKP见解。"
+      }
+    ],
+    insights: [
+      {
+        "title": "上下文高门限解密 Context High-Threshold Decryption",
+        "type": "original",
+        "slogan": "遗产开关",
+        "images": [
+          "./images/2025/02/27.drawio.svg"
+        ],
+      }
+    ]
   }
 ];
 
