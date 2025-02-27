@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-27 星期四
+
+📝 zkVM Projects Part 1: A Landscape Overview
+- https://blog.zksecurity.xyz/posts/zkvm-projects-1/
+- @zksecurityXYZ 在博客中讨论了zkVM的概念及其在区块链中的应用，包括Cairo、RISC Zero和Jolt/Lasso等项目的发展历程和技术特点。
+
+📄 Context-Dependent Threshold Decryption and its Applications
+- https://eprint.iacr.org/2025/279
+- @danboneh 等人在论文中提出了上下文高门限解密的研究，包括定义、构建、安全证明和应用，特别是引入了上下文依赖解密的新安全特性。感兴趣的可以先查看今天的每日ZKP见解。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/02/27.html
+🪶 由 @icerdesign 收集
