@@ -414,10 +414,66 @@ export default [
         ],
       }
     ]
+  },
+  {
+    date: "2025-02-28",
+    projects: [
+      {
+        "name": "Plonky3 Python Notebook",
+        "url": "https://github.com/coset-io/plonky3-python-notebook",
+        "type": "开源",
+        "tags": [
+          "coset-io",
+          "Plonky3",
+          "Python"
+        ],
+        "summary": "coset-io发布了Plonky3 Python Notebook，这是一个教育资源，旨在通过交互式Python笔记本揭示Plonky3证明系统的内部工作原理，使高级ZK技术更易于开发者理解。"
+      },
+      {
+        "name": "Noir Research Grant Request (NRG) #2 on Private Shared States",
+        "url": "https://hashcloak.github.io/noir-mpc-ml-report/introduction.html",
+        "type": "博客",
+        "tags": [
+          "Hashcloak",
+          "MPC",
+          "Noir",
+          "co-noir"
+        ],
+        "summary": "Hashcloak分享了他们在Noir研究资助请求（NRG）#2上的工作和经验，实现了在MPC和ZK结合的环境下的机器学习功能，特别是在Noir中实现逻辑回归并通过co-noir执行。"
+      }
+    ],
+    insights: [
+      {
+        "title": "一个年营收超过1亿美元的市场",
+        "type": "reprint",
+        "slogan": "证明市场",
+        "url": "https://x.com/ETHGlobal/status/1894533413954359736",
+        "quotes": [
+          "区块链通过冗余执行交易来达成共识。未来，区块链节点将仅需验证证明，零知识证明的需求将大幅增长。", 
+          "目前，区块链每年为链安全支付超过10亿美元的费用。而零知识证明的成本仅为通过通胀增发支付链安全的十分之一，因此，证明市场有潜力成为一个年营收超过1亿美元的市场。"
+        ],
+        "images": [
+          "./images/2025/02/28.png"
+        ],
+      }
+    ]
   }
 ];
 
 const others = [
+      {
+        "name": "Verifiable Multi-Scalar Multiplications (MSMs) in Cryptographic Proof Systems",
+        "url": "https://decentralizedthoughts.github.io/2025-02-14-verifiable-MSM/",
+        "type": "博客",
+        "tags": [
+          "Decentralized Thoughts",
+          "MSM",
+          "zkSNARK",
+          "Cryptographic Proofs",
+          "Verification Efficiency"
+        ],
+        "summary": "Decentralized Thoughts在博客{{name}}中讨论了在加密证明系统中验证多标量乘法（MSM）结果的高效方法，该方法通过将计算分解为可批量验证的子计算，显著提高了验证效率。"
+      },
   {
     name: "Integer Commitments, Old and New Tools",
     url: "https://eprint.iacr.org/2025/081",

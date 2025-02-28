@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-02-28 星期五
+
+💻 Plonky3 Python Notebook
+- https://github.com/coset-io/plonky3-python-notebook
+- coset-io发布了Plonky3 Python Notebook，这是一个教育资源，旨在通过交互式Python笔记本揭示Plonky3证明系统的内部工作原理，使高级ZK技术更易于开发者理解。
+
+📝 Noir Research Grant Request (NRG) #2 on Private Shared States
+- https://hashcloak.github.io/noir-mpc-ml-report/introduction.html
+- Hashcloak分享了他们在Noir研究资助请求（NRG）#2上的工作和经验，实现了在MPC和ZK结合的环境下的机器学习功能，特别是在Noir中实现逻辑回归并通过co-noir执行。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/02/28.html
+🪶 由 @icerdesign 收集
