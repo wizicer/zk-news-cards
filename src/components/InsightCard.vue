@@ -20,8 +20,10 @@
           </template>
         </div>
       </div>
-      <div v-if="insight.quotes && insight.quotes.length > 0" class="insight-quote">
-        {{ insight.quotes[0] }}
+      <div v-if="insight.quotes && insight.quotes.length > 0">
+        <div v-for="(quote, index) in insight.quotes" :key="index" class="insight-quote">
+          {{ quote }}
+        </div>
       </div>
       <div v-if="insight.url" class="insight-url-wrapper">
         <div class="insight-url">
