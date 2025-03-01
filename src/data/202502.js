@@ -459,33 +459,3 @@ export default [
     ]
   }
 ];
-
-const others = [
-      {
-        "name": "Verifiable Multi-Scalar Multiplications (MSMs) in Cryptographic Proof Systems",
-        "url": "https://decentralizedthoughts.github.io/2025-02-14-verifiable-MSM/",
-        "type": "博客",
-        "tags": [
-          "Decentralized Thoughts",
-          "MSM",
-          "zkSNARK",
-          "Cryptographic Proofs",
-          "Verification Efficiency"
-        ],
-        "summary": "Decentralized Thoughts在博客{{name}}中讨论了在加密证明系统中验证多标量乘法（MSM）结果的高效方法，该方法通过将计算分解为可批量验证的子计算，显著提高了验证效率。"
-      },
-  {
-    name: "Integer Commitments, Old and New Tools",
-    url: "https://eprint.iacr.org/2025/081",
-    type: "论文",
-    tags: [
-      "Iftach Haitner, Yehuda Lindell, Nikolaos Makriyannis",
-      "Integer Commitments",
-      "Range Proofs",
-      "Zero-Knowledge Proofs",
-      "RSA",
-    ],
-    summary:
-      "Haitner等人在{{name}}论文中详细介绍了基于RSA的整数承诺及相关协议，并提出了一种新的高效设置协议，用于采样承诺参数。",
-  },
-];

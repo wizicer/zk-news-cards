@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKP Trending News</title>
+    <style>
+        :root {
+    --color-monday: #e74c3c;    /* Red */
+    --color-tuesday: #f39c12;   /* Orange */
+    --color-wednesday: #f1c40f; /* Yellow */
+    --color-thursday: #2ecc71;  /* Green */
+    --color-friday: #3498db;    /* Blue */
+    --color-saturday: #9b59b6;  /* Purple */
+    --color-sunday: #e91e63;    /* Pink */
+    
+    --primary-color: var(--color-monday); /* Will be updated via JS */
+    --primary-light: #ebf5fb;
+    --primary-dark: #2980b9;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --border-color: #e1e8ed;
+    --card-bg: #ffffff;
+    --link-color: #e65c1a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    height: 640px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #e3f2fd;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 465px;
+    height: 100%;
+    margin: 10px;
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.news-card {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.08);
+    page-break-after: always;
+    width: 461px;
+    min-height: 626px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.news-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.github-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title-icon {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subtitle-text {
+    font-size: 22px;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 1;
+    padding: 0 2px;
+}
+
+.subtitle-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 40%;
+    background-color: var(--primary-color);
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.github-icon {
+    color: var(--text-primary);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+}
+
+.date-weekday {
+    background: var(--primary-color);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-details {
+    background: white;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    border: 1px solid #eee;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.date-number {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.date-year {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+}
+
+.card-subtitle {
+    border-bottom: 2px solid var(--primary-light);
+    margin: 12px 0;
+}
+
+.project-item {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.project-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-right: 8px;
+  position: relative;
+  justify-content: flex-start;
+  min-width: 64px;
+}
+
+.project-qr {
+  margin-top: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.project-qr:hover {
+  opacity: 1;
+}
+
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  font-size: 32px;
+}
+
+.project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-content {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.project-name {
+    color: var(--link-color);
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.project-url {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-description {
+    margin: 8px 0;
+    color: var(--text-primary);
+}
+
+.project-stats {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.project-summary {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.project-type {
+  font-size: 0.8em;
+  color: #666;
+  font-weight: bold;
+  min-width: 2em;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card-footer {
+    color: var(--text-secondary);
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    font-size: 14px;
+}
+
+.card-footer a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.highlight {
+    background-color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.page-indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.indicator-dot {
+    width: 4px;
+    height: 8px;
+    background-color: #ddd;
+}
+
+.indicator-dot.active {
+    background-color: #666;
+    height: 10px;
+}
+
+.insight-card {
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+    width: 461px;
+    min-height: 626px;
+    display: flex;
+    flex-direction: column;
+}
+
+.insight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1.5rem 0;
+  background: var(--primary-color);
+  color: white;
+  position: relative;
+  margin-bottom: 0;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.insight-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 20px;
+  height: 18px;
+  padding: 3px 10px 5px;
+  background: var(--primary-dark);
+  border-radius: 0 0 0 8px;
+}
+
+.insight-title-section {
+  flex: 1;
+  z-index: 1;
+}
+
+.insight-subtitle-section {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  text-align: right;
+  z-index: 1;
+}
+
+.insight-main-title {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  bottom: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.insight-slogan {
+  font-size: 1rem;
+  opacity: 0.9;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid white;
+}
+
+.insight-content {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 12px solid var(--primary-color);
+}
+
+.insight-content::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border: 4px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-content::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: 2px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-title {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px 0;
+  margin-bottom: 1rem;
+  background: var(--primary-light);
+  color: var(--text-primary);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.insight-frame {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.insight-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.insight-url-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.insight-url {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+}
+
+.insight-url a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.insight-project-qr {
+  position: absolute;
+  left: 10px;
+  bottom: -34px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.insight-quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-left: 4px solid #ddd;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.insight-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: #f5f5f5;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: var(--primary-color);
+  width: 100%;
+  min-height: 16px;
+}
+
+.insight-footer a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.insight-footer a:hover {
+  text-decoration: underline;
+}
+
+.insight-copyright {
+  float: right;
+  padding-right: 30px;
+}
+
+.insight-website {
+    position: absolute;
+    top: 6px;
+    left: 26px;
+}
+
+.insight-website a {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-shadow: 0 0 2px rgba(200,200,200,0.9);
+    text-decoration: none;
+}
+
+.app-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.copy-button {
+  padding: 8px 16px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.copy-button:hover {
+  background: #333;
+  opacity: 1;
+}
+
+@media print {
+    @page {
+        size: 480px 640px;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .news-container {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
+    .news-card {
+        width: 480px;
+        height: 640px;
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
+        page-break-after: always;
+        break-inside: avoid;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="app"><!--[--><div class="app-controls"><button class="copy-button"> 复制文本内容 </button></div><div class="news-container" style="--primary-color:var(--color-saturday);"><!--[--><div class="news-card"><div class="card-header"><div class="github-title"><div class="title-icon"><span class="github-icon"></span> 零知识证明 <span class="highlight">zkDaily</span></div><div class="subtitle-text"> 零知识证明 前沿热点追踪 🎯 </div></div><div class="date"><span class="date-weekday">星期六</span><div class="date-details"><div class="date-number">03.01</div><div class="date-year">2025</div></div></div></div><div class="card-subtitle"></div><div class="projects"><!--[--><div class="project-item"><div class="project-meta"><div class="project-icon"><span>📝</span></div><span class="project-type">博客</span><div class="project-qr"><svg width="64" height="64" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><defs><!----></defs><rect width="100%" height="100%" fill="#ffffff"></rect><path fill="#000000" d="M0 0h7v1H0zM9 0h1v1H9zM13 0h1v1H13zM16 0h1v1H16zM19 0h1v1H19zM21 0h3v1H21zM26,0 h7v1H26zM0 1h1v1H0zM6 1h1v1H6zM8 1h2v1H8zM11 1h2v1H11zM14 1h2v1H14zM21 1h2v1H21zM24 1h1v1H24zM26 1h1v1H26zM32,1 h1v1H32zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM9 2h3v1H9zM19 2h1v1H19zM21 2h1v1H21zM24 2h1v1H24zM26 2h1v1H26zM28 2h3v1H28zM32,2 h1v1H32zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM8 3h2v1H8zM11 3h1v1H11zM13 3h3v1H13zM17 3h2v1H17zM20 3h1v1H20zM22 3h3v1H22zM26 3h1v1H26zM28 3h3v1H28zM32,3 h1v1H32zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM10 4h1v1H10zM12 4h1v1H12zM16 4h4v1H16zM21 4h3v1H21zM26 4h1v1H26zM28 4h3v1H28zM32,4 h1v1H32zM0 5h1v1H0zM6 5h1v1H6zM8 5h1v1H8zM10 5h1v1H10zM14 5h3v1H14zM26 5h1v1H26zM32,5 h1v1H32zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18 6h1v1H18zM20 6h1v1H20zM22 6h1v1H22zM24 6h1v1H24zM26,6 h7v1H26zM12 7h1v1H12zM14 7h2v1H14zM21 7h3v1H21zM0 8h5v1H0zM6 8h5v1H6zM12 8h2v1H12zM15 8h1v1H15zM17 8h2v1H17zM20 8h1v1H20zM24 8h2v1H24zM27 8h1v1H27zM29 8h1v1H29zM31 8h1v1H31zM2 9h1v1H2zM4 9h1v1H4zM7 9h3v1H7zM13 9h1v1H13zM16 9h1v1H16zM19 9h1v1H19zM23 9h1v1H23zM26 9h1v1H26zM30,9 h3v1H30zM1 10h1v1H1zM3 10h1v1H3zM6 10h1v1H6zM8 10h2v1H8zM11 10h2v1H11zM14 10h3v1H14zM18 10h1v1H18zM22 10h1v1H22zM27 10h3v1H27zM31 10h1v1H31zM9 11h3v1H9zM14 11h2v1H14zM18 11h2v1H18zM21 11h1v1H21zM25 11h1v1H25zM27 11h1v1H27zM30 11h1v1H30zM0 12h3v1H0zM6 12h1v1H6zM9 12h1v1H9zM11 12h1v1H11zM14 12h1v1H14zM17 12h2v1H17zM20 12h1v1H20zM22 12h1v1H22zM25 12h1v1H25zM28 12h2v1H28zM0 13h1v1H0zM2 13h2v1H2zM5 13h1v1H5zM8 13h3v1H8zM12 13h2v1H12zM16 13h1v1H16zM19 13h1v1H19zM21 13h1v1H21zM23 13h1v1H23zM26 13h1v1H26zM31,13 h2v1H31zM3 14h1v1H3zM5 14h3v1H5zM14 14h2v1H14zM17 14h2v1H17zM20 14h1v1H20zM22 14h1v1H22zM25 14h3v1H25zM31 14h1v1H31zM0 15h1v1H0zM2 15h1v1H2zM5 15h1v1H5zM9 15h2v1H9zM12 15h1v1H12zM14 15h1v1H14zM16 15h1v1H16zM18 15h6v1H18zM30 15h1v1H30zM2 16h1v1H2zM4 16h1v1H4zM6 16h2v1H6zM10 16h1v1H10zM12 16h1v1H12zM14 16h2v1H14zM17 16h3v1H17zM22 16h4v1H22zM28 16h1v1H28zM31 16h1v1H31zM0 17h5v1H0zM8 17h3v1H8zM14 17h1v1H14zM16 17h4v1H16zM23 17h1v1H23zM26 17h1v1H26zM29 17h1v1H29zM31,17 h2v1H31zM3 18h6v1H3zM10 18h4v1H10zM15 18h2v1H15zM20 18h2v1H20zM24 18h1v1H24zM26 18h4v1H26zM31 18h1v1H31zM0 19h1v1H0zM4 19h1v1H4zM7 19h2v1H7zM10 19h2v1H10zM14 19h2v1H14zM19 19h4v1H19zM24 19h2v1H24zM28 19h1v1H28zM30 19h1v1H30zM1 20h1v1H1zM3 20h1v1H3zM6 20h2v1H6zM9 20h3v1H9zM14 20h1v1H14zM17 20h3v1H17zM22 20h4v1H22zM27 20h2v1H27zM31 20h1v1H31zM0 21h3v1H0zM5 21h1v1H5zM7 21h1v1H7zM12 21h2v1H12zM16 21h1v1H16zM19 21h5v1H19zM25 21h2v1H25zM29 21h1v1H29zM31,21 h2v1H31zM0 22h1v1H0zM6 22h1v1H6zM8 22h1v1H8zM10 22h1v1H10zM14 22h2v1H14zM18 22h1v1H18zM20 22h3v1H20zM24 22h1v1H24zM26 22h1v1H26zM29 22h1v1H29zM31 22h1v1H31zM0 23h1v1H0zM2 23h1v1H2zM4 23h1v1H4zM7 23h1v1H7zM10 23h1v1H10zM12 23h1v1H12zM14 23h1v1H14zM21 23h1v1H21zM26 23h1v1H26zM29 23h2v1H29zM0 24h1v1H0zM4 24h3v1H4zM8 24h1v1H8zM10 24h1v1H10zM12 24h2v1H12zM15 24h5v1H15zM22 24h1v1H22zM24 24h5v1H24zM32,24 h1v1H32zM8 25h1v1H8zM10 25h1v1H10zM13 25h1v1H13zM16 25h1v1H16zM19 25h2v1H19zM23 25h2v1H23zM28 25h3v1H28zM32,25 h1v1H32zM0 26h7v1H0zM8 26h2v1H8zM11 26h6v1H11zM21 26h1v1H21zM23 26h2v1H23zM26 26h1v1H26zM28 26h1v1H28zM30 26h2v1H30zM0 27h1v1H0zM6 27h1v1H6zM9 27h1v1H9zM11 27h1v1H11zM14 27h3v1H14zM18 27h4v1H18zM23 27h2v1H23zM28 27h3v1H28zM32,27 h1v1H32zM0 28h1v1H0zM2 28h3v1H2zM6 28h1v1H6zM8 28h4v1H8zM15 28h1v1H15zM17 28h3v1H17zM22 28h1v1H22zM24 28h5v1H24zM0 29h1v1H0zM2 29h3v1H2zM6 29h1v1H6zM8 29h1v1H8zM10 29h1v1H10zM12 29h2v1H12zM16 29h4v1H16zM21 29h2v1H21zM24 29h2v1H24zM27 29h4v1H27zM0 30h1v1H0zM2 30h3v1H2zM6 30h1v1H6zM8 30h3v1H8zM13 30h3v1H13zM21 30h4v1H21zM26 30h1v1H26zM29 30h3v1H29zM0 31h1v1H0zM6 31h1v1H6zM8 31h1v1H8zM12 31h2v1H12zM16 31h1v1H16zM19 31h1v1H19zM21 31h2v1H21zM25 31h1v1H25zM28 31h3v1H28zM0 32h7v1H0zM8 32h1v1H8zM12 32h1v1H12zM14 32h4v1H14zM22 32h4v1H22zM27 32h1v1H27zM31 32h1v1H31z"></path><!----></svg></div></div><div class="project-content"><h3 class="project-name">Verifiable Multi-Scalar Multiplications (MSMs) in Cryptographic Proof Systems</h3><a href="https://decentralizedthoughts.github.io/2025-02-14-verifiable-MSM/" class="project-url">https://decentralizedthoughts.github.io/2025-02-14-verifiable-MSM/</a><div class="project-tags"><!--[--><span class="tag">Decentralized Thoughts</span><span class="tag">MSM</span><!--]--></div><p class="project-summary">Decentralized Thoughts在博客中讨论了在加密证明系统中验证多标量乘法（MSM）结果的高效方法，该方法通过将计算分解为可批量验证的子计算，显著提高了验证效率。</p></div></div><div class="project-item"><div class="project-meta"><div class="project-icon"><span>📄</span></div><span class="project-type">论文</span><div class="project-qr"><svg width="64" height="64" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs><!----></defs><rect width="100%" height="100%" fill="#ffffff"></rect><path fill="#000000" d="M0 0h7v1H0zM8 0h2v1H8zM12 0h3v1H12zM18,0 h7v1H18zM0 1h1v1H0zM6 1h1v1H6zM14 1h1v1H14zM16 1h1v1H16zM18 1h1v1H18zM24,1 h1v1H24zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM9 2h3v1H9zM13 2h4v1H13zM18 2h1v1H18zM20 2h3v1H20zM24,2 h1v1H24zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM9 3h5v1H9zM16 3h1v1H16zM18 3h1v1H18zM20 3h3v1H20zM24,3 h1v1H24zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM10 4h1v1H10zM12 4h1v1H12zM16 4h1v1H16zM18 4h1v1H18zM20 4h3v1H20zM24,4 h1v1H24zM0 5h1v1H0zM6 5h1v1H6zM10 5h2v1H10zM13 5h1v1H13zM18 5h1v1H18zM24,5 h1v1H24zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18,6 h7v1H18zM8 7h1v1H8zM13 7h2v1H13zM0 8h2v1H0zM3 8h2v1H3zM6 8h1v1H6zM10 8h1v1H10zM16 8h1v1H16zM18 8h1v1H18zM24,8 h1v1H24zM0 9h1v1H0zM3 9h1v1H3zM5 9h1v1H5zM7 9h1v1H7zM11 9h5v1H11zM17 9h1v1H17zM19 9h5v1H19zM0 10h5v1H0zM6 10h1v1H6zM8 10h2v1H8zM11 10h3v1H11zM15 10h1v1H15zM17 10h5v1H17zM24,10 h1v1H24zM0 11h1v1H0zM4 11h1v1H4zM7 11h2v1H7zM12 11h1v1H12zM15 11h1v1H15zM17 11h3v1H17zM21,11 h4v1H21zM0 12h1v1H0zM2 12h1v1H2zM4 12h8v1H4zM16 12h1v1H16zM18 12h2v1H18zM24,12 h1v1H24zM0 13h2v1H0zM3 13h2v1H3zM8 13h1v1H8zM11 13h2v1H11zM14 13h2v1H14zM17 13h1v1H17zM20 13h1v1H20zM23 13h1v1H23zM0 14h3v1H0zM6 14h4v1H6zM12 14h1v1H12zM14 14h3v1H14zM18 14h1v1H18zM20,14 h5v1H20zM0 15h1v1H0zM3 15h3v1H3zM9 15h2v1H9zM12 15h1v1H12zM19 15h1v1H19zM21 15h2v1H21zM24,15 h1v1H24zM0 16h1v1H0zM4 16h1v1H4zM6 16h3v1H6zM11 16h1v1H11zM13 16h1v1H13zM15 16h6v1H15zM22 16h2v1H22zM8 17h1v1H8zM10 17h1v1H10zM12 17h1v1H12zM14 17h3v1H14zM20 17h1v1H20zM22 17h2v1H22zM0 18h7v1H0zM10 18h3v1H10zM14 18h1v1H14zM16 18h1v1H16zM18 18h1v1H18zM20 18h1v1H20zM24,18 h1v1H24zM0 19h1v1H0zM6 19h1v1H6zM11 19h6v1H11zM20 19h1v1H20zM24,19 h1v1H24zM0 20h1v1H0zM2 20h3v1H2zM6 20h1v1H6zM8 20h3v1H8zM14 20h7v1H14zM24,20 h1v1H24zM0 21h1v1H0zM2 21h3v1H2zM6 21h1v1H6zM8 21h5v1H8zM14 21h1v1H14zM17 21h2v1H17zM0 22h1v1H0zM2 22h3v1H2zM6 22h1v1H6zM9 22h3v1H9zM13 22h1v1H13zM16 22h2v1H16zM20,22 h5v1H20zM0 23h1v1H0zM6 23h1v1H6zM8 23h1v1H8zM10 23h1v1H10zM14 23h1v1H14zM17 23h1v1H17zM19 23h2v1H19zM22,23 h3v1H22zM0 24h7v1H0zM8 24h1v1H8zM12 24h1v1H12zM14 24h1v1H14zM16 24h1v1H16zM18 24h1v1H18zM21 24h1v1H21zM24,24 h1v1H24z"></path><!----></svg></div></div><div class="project-content"><h3 class="project-name">Integer Commitments, Old and New Tools</h3><a href="https://eprint.iacr.org/2025/081" class="project-url">https://eprint.iacr.org/2025/081</a><div class="project-tags"><!--[--><span class="tag">Iftach Haitner</span><span class="tag">Yehuda Lindell</span><span class="tag">整数承诺</span><!--]--></div><p class="project-summary">Haitner等人在论文中以教程的形式详细介绍了基于RSA的整数承诺及相关协议，并提出了一种新的高效设置协议，用于采样承诺参数。</p></div></div><!--]--></div><div class="card-footer"> 由 <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a> 收集 </div><!----></div><!--]--><!----></div><!--]--></div>
+</body>
+</html>

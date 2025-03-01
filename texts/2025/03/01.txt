@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-01 星期六
+
+📝 Verifiable Multi-Scalar Multiplications (MSMs) in Cryptographic Proof Systems
+- https://decentralizedthoughts.github.io/2025-02-14-verifiable-MSM/
+- Decentralized Thoughts在博客中讨论了在加密证明系统中验证多标量乘法（MSM）结果的高效方法，该方法通过将计算分解为可批量验证的子计算，显著提高了验证效率。
+
+📄 Integer Commitments, Old and New Tools
+- https://eprint.iacr.org/2025/081
+- Haitner等人在论文中以教程的形式详细介绍了基于RSA的整数承诺及相关协议，并提出了一种新的高效设置协议，用于采样承诺参数。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/03/01.html
+🪶 由 @icerdesign 收集
