@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-02 星期日
+
+📄 How to Share an NP Statement or Combiners for Zero-Knowledge Proofs
+- https://eprint.iacr.org/2025/334
+- Benny Applebaum和Eliran Kachlon在论文中提出了信息论安全的NPSS定义和构造，支持任意t≤n的t-out-of-n秘密共享，并展示了其在零知识证明组合中的应用。
+
+📄 Bulletproofs for R1CS: Bridging the Completeness-Soundness Gap and a ZK Extension
+- https://eprint.iacr.org/2025/327
+- @coinbase 的 Gil Segev在论文中提出了一种扩展的Bulletproofs系统，用于R1CS，旨在弥补完整性和可靠性之间的差距，并增加了诚实验证者零知识特性。（诚实验证者零知识性(HVZK)指的是在验证者严格遵循协议的前提下，证明系统能够确保验证者无法从交互中获取任何关于证明者秘密信息的额外知识。是较弱但实用的特性。）
+
+---
+📄 网页查看： https://news.plonk.pro/2025/03/02.html
+🪶 由 @icerdesign 收集
