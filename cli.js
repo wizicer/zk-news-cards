@@ -182,15 +182,27 @@ async function sendTelegramNotification(imagePath, textPath) {
 
     try {
         // Split the chat IDs by comma
-        const chatIds = TELEGRAM_CHAT_ID.split(',').map(id => id.trim());
+        const chatConfigs = TELEGRAM_CHAT_ID.split(',').map(id => {
+            const trimmedId = id.trim();
+            // Parse chat_id and message_thread_id if in format: chatId(threadId)
+            const match = trimmedId.match(/^([^(]+)(?:\((\d+)\))?$/);
+            if (match) {
+                return {
+                    chatId: match[1],
+                    threadId: match[2] ? parseInt(match[2]) : undefined
+                };
+            }
+            return { chatId: trimmedId };
+        });
         
         if (imagePath) {
-            for (const chatId of chatIds) {
+            for (const { chatId, threadId } of chatConfigs) {
                 try {
-                    await bot.sendPhoto(chatId, fs.createReadStream(imagePath));
-                    console.log(`Image sent to Telegram chat ${chatId} successfully`);
+                    const options = threadId ? { message_thread_id: threadId } : {};
+                    await bot.sendPhoto(chatId, fs.createReadStream(imagePath), options);
+                    console.log(`Image sent to Telegram chat ${chatId}${threadId ? ` thread ${threadId}` : ''} successfully`);
                 } catch (error) {
-                    console.error(`Error sending image to Telegram chat ${chatId}:`, error.message);
+                    console.error(`Error sending image to Telegram chat ${chatId}${threadId ? ` thread ${threadId}` : ''}:`, error.message);
                     // Continue to next chat ID even if this one fails
                 }
             }
@@ -198,12 +210,13 @@ async function sendTelegramNotification(imagePath, textPath) {
 
         if (textPath && fs.existsSync(textPath)) {
             const textContent = fs.readFileSync(textPath, 'utf-8');
-            for (const chatId of chatIds) {
+            for (const { chatId, threadId } of chatConfigs) {
                 try {
-                    await bot.sendMessage(chatId, textContent);
-                    console.log(`Text content sent to Telegram chat ${chatId} successfully`);
+                    const options = threadId ? { message_thread_id: threadId } : {};
+                    await bot.sendMessage(chatId, textContent, options);
+                    console.log(`Text content sent to Telegram chat ${chatId}${threadId ? ` thread ${threadId}` : ''} successfully`);
                 } catch (error) {
-                    console.error(`Error sending text to Telegram chat ${chatId}:`, error.message);
+                    console.error(`Error sending text to Telegram chat ${chatId}${threadId ? ` thread ${threadId}` : ''}:`, error.message);
                     // Continue to next chat ID even if this one fails
                 }
             }
