@@ -181,15 +181,32 @@ async function sendTelegramNotification(imagePath, textPath) {
     }
 
     try {
+        // Split the chat IDs by comma
+        const chatIds = TELEGRAM_CHAT_ID.split(',').map(id => id.trim());
+        
         if (imagePath) {
-            await bot.sendPhoto(TELEGRAM_CHAT_ID, fs.createReadStream(imagePath));
-            console.log('Image sent to Telegram successfully');
+            for (const chatId of chatIds) {
+                try {
+                    await bot.sendPhoto(chatId, fs.createReadStream(imagePath));
+                    console.log(`Image sent to Telegram chat ${chatId} successfully`);
+                } catch (error) {
+                    console.error(`Error sending image to Telegram chat ${chatId}:`, error.message);
+                    // Continue to next chat ID even if this one fails
+                }
+            }
         }
 
         if (textPath && fs.existsSync(textPath)) {
             const textContent = fs.readFileSync(textPath, 'utf-8');
-            await bot.sendMessage(TELEGRAM_CHAT_ID, textContent);
-            console.log('Text content sent to Telegram successfully');
+            for (const chatId of chatIds) {
+                try {
+                    await bot.sendMessage(chatId, textContent);
+                    console.log(`Text content sent to Telegram chat ${chatId} successfully`);
+                } catch (error) {
+                    console.error(`Error sending text to Telegram chat ${chatId}:`, error.message);
+                    // Continue to next chat ID even if this one fails
+                }
+            }
         }
     } catch (error) {
         console.error('Error sending to Telegram:', error.message);
