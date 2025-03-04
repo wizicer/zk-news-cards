@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-04 星期二
+
+📝 Unearthing the Reality of zkTLS: A Benchmarking and Cryptanalysis Report
+- https://hackmd.io/@-fI_Eu_rR8qs02aOhOPWNg/HkRyz5OF1g
+- @xxiang_xie 和Xiao Wang分享了关于zkTLS的基准测试和密码分析报告，包括MPC-TLS和Proxy-TLS两种主要方法的性能比较，并指出了 @reclaimprotocol 中的问题，最后展示了Primus的garble-then-prove系统的显著速度优势。
+
+📝 Making Airdrops More Human with ZKEmail
+- https://x.com/zkemail/status/1896599253117530500
+- @zkemail 团队分享了如何通过ZKEmail使空投更加人性化的博客，讨论了使用ZK技术验证资格并通过邮箱领取代币的方法。并表示他们已经与 @JupiterExchange 展开了合作。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/03/04.html
+🪶 由 @icerdesign 收集
