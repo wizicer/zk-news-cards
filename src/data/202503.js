@@ -91,6 +91,46 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-05",
+    projects: [
+      {
+        "name": "Mopro: Comparison of Circom Provers",
+        "url": "https://mirror.xyz/privacy-scaling-explorations.eth/GLbuCflH0hu_DncKxiC2No5w3LZJAGw4QaCB-HYD5e0",
+        "type": "博客",
+        "tags": [
+          "Vivian Jeng",
+          "Mopro",
+          "Circom",
+          "Groth16",
+        ],
+        "summary": "Vivian Jeng在{{name}}博客中分享了Mopro团队对Circom的Groth16证明生成器的比较研究，重点讨论了移动设备上的证明生成速度和性能优化。"
+      },
+      {
+        "name": "zkVM Benchmarking",
+        "url": "https://blog.pi2.network/zkvm-benchmarking/",
+        "type": "博客",
+        "tags": [
+          "Pi Squared",
+          "zkVM",
+        ],
+        "summary": "Pi Squared在博客{{name}}中深入探讨了zkVM生态系统，包括Risc Zero、Jolt、zkWasm、Cairo、Nexus、SP1、Lurk七种zkVM的性能比较及其在实现证明协议中的应用。"
+      }
+    ],
+    insights: [
+      {
+        "title": "如何证明自己是“一个人”",
+        "type": "reprint",
+        "slogan": "证明自己",
+        "url": "https://x.com/sodofi_/status/1896980643780894908",
+        "quotes": [
+        ],
+        "images": [
+          "./images/2025/03/05.jpg"
+        ],
+      }
+    ]
+  },
 ];
 
 const others = [
