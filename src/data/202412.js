@@ -1,4 +1,4 @@
-import { createUrlItem } from './util';
+import { createUrlItem } from './util.js';
 
 export default [
     {

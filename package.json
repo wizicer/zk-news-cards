@@ -11,6 +11,7 @@
     "screenshot": "node cli.js screenshot",
     "notify": "node cli.js notify",
     "pdf": "node cli.js pdf",
+    "api": "node cli.js api",
     "build:ssr": "vite build --ssr server-entry.js --outDir dist/server",
     "generate": "npm run build:ssr && node ssr.js",
     "shot": "npm run generate && npm run screenshot",

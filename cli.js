@@ -256,6 +256,19 @@ program
     });
 
 program
+    .command('api')
+    .description('Generate static API files under /docs/api/')
+    .action(async () => {
+        try {
+            const { generateAPI } = await import('./generate.js');
+            await generateAPI();
+        } catch (error) {
+            console.error('Failed to generate API files:', error);
+            process.exit(1);
+        }
+    });
+
+program
     .command('notify')
     .description('Send notification with screenshot and text content')
     .action(async () => {
