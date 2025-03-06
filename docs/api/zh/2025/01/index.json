@@ -1,0 +1,142 @@
+{
+  "10": {
+    "date": "2025-01-10",
+    "projects": [
+      "The Era of Provable Software",
+      "Try NoirLang quest at NodeGuardians"
+    ]
+  },
+  "11": {
+    "date": "2025-01-11",
+    "projects": [
+      "The zk in zkTLS",
+      "zkVMs and Privacy: Challenges and Opportunities"
+    ]
+  },
+  "15": {
+    "date": "2025-01-15",
+    "projects": [
+      "stwo-web-stark",
+      "A Survey of Interactive Verifiable Computing: Utilizing Randomness in Low-Degree Polynomials"
+    ]
+  },
+  "16": {
+    "date": "2025-01-16",
+    "projects": [
+      "Why We Can't Build Perfectly Secure Multi-Party Applications (yet)",
+      "FRI and Proximity Proofs (Part.1)"
+    ]
+  },
+  "17": {
+    "date": "2025-01-17",
+    "projects": [
+      "Binius Alpha Release & Ethereum State Proving Service",
+      "Pick, Prove, Profit: The NIVC Singularity"
+    ]
+  },
+  "18": {
+    "date": "2025-01-18",
+    "projects": [
+      "探讨 Poseidon 延展性攻击，可影响零知识证明应用的安全性",
+      "Morgana: a laconic circuit builder"
+    ]
+  },
+  "19": {
+    "date": "2025-01-19",
+    "projects": [
+      "零知识证明 - RISC0 zkVM源代码入门",
+      "Extending Groth16 for Disjunctive Statements"
+    ]
+  },
+  "20": {
+    "date": "2025-01-20",
+    "projects": [
+      "SoK: Trusted setups for powers-of-tau strings",
+      "Founding Zero-Knowledge Proofs of Training on Optimum Vicinity"
+    ]
+  },
+  "21": {
+    "date": "2025-01-21",
+    "projects": [
+      "MyZKP: Building Zero Knowledge Proofs from Scratch in Rust",
+      "Hylé 关于链上去中心化游戏的观点"
+    ]
+  },
+  "22": {
+    "date": "2025-01-22",
+    "projects": [
+      "ZKLoRA: Efficient Zero-Knowledge Proofs for LoRA Verification",
+      "Aleo Specifications Now Publicly Available"
+    ]
+  },
+  "23": {
+    "date": "2025-01-23",
+    "projects": [
+      "Auto-Accelerated Circuits in powdrVM",
+      "FRI and Proximity Proofs (Part.2)"
+    ]
+  },
+  "24": {
+    "date": "2025-01-24",
+    "projects": [
+      "Liquefaction: Privately Liquefying Blockchain Assets",
+      "Introducing Twist and Shout"
+    ]
+  },
+  "25": {
+    "date": "2025-01-25",
+    "projects": [
+      "Horizen 2.0: An Advanced and Efficient EVM for Zero-Knowledge Applications",
+      "SP1 Turbo benchmark"
+    ]
+  },
+  "27": {
+    "date": "2025-01-27",
+    "projects": [
+      "How to Prove False Statements: Practical Attacks on Fiat-Shamir",
+      "Missing verifier checks and fiat-shamir observations"
+    ]
+  },
+  "01": {
+    "date": "2025-01-01",
+    "projects": [
+      "ZKryptium",
+      "Proof.Fun"
+    ]
+  },
+  "02": {
+    "date": "2025-01-02",
+    "projects": [
+      "ANON.WORLD",
+      "If you want to learn ZK in 2025"
+    ]
+  },
+  "04": {
+    "date": "2025-01-04",
+    "projects": [
+      "Understanding SNARKs through Quadratic Residues",
+      "MicroNova: Folding-based arguments with efficient (on-chain) verification"
+    ]
+  },
+  "06": {
+    "date": "2025-01-06",
+    "projects": [
+      "ZK in Sui ZK in Celestia in 2024",
+      "Privacy-First CBDCs: Leveraging Cryptography and Ethereum for Next-Gen Digital Currencies"
+    ]
+  },
+  "07": {
+    "date": "2025-01-07",
+    "projects": [
+      "zkApps on Mina and o1js",
+      "Ingonyama Research Grants 2025"
+    ]
+  },
+  "09": {
+    "date": "2025-01-09",
+    "projects": [
+      "PSA: iden3's implementation of the Poseidon Hash function is broken",
+      "zkPi: Proving Lean Theorems in Zero-Knowledge"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2025-01-15",
+    "projects": [
+      {
+        "name": "stwo-web-stark",
+        "url": "https://github.com/Okm165/stwo-web-stark",
+        "type": "开源",
+        "tags": [
+          "Okm165",
+          "Cairo",
+          "WASM"
+        ],
+        "summary": "开源项目stwo-web-stark，提供使用stwo证明器证明Cairo程序的Web演示，可以在网页中完成证明、验证等操作。"
+      },
+      {
+        "name": "A Survey of Interactive Verifiable Computing: Utilizing Randomness in Low-Degree Polynomials",
+        "url": "https://eprint.iacr.org/2025/008",
+        "type": "论文",
+        "tags": [
+          "Angold Wang",
+          "低度多项式",
+          "GKR"
+        ],
+        "summary": "Angold Wang在{{name}}综述中审视了可验证计算，从基础复杂性理论到现代ZK-SNARKs，探讨了交互式证明系统、知识复杂性及低次多项式在错误检测和验证协议中的应用，最终落脚在GKR协议。"
+      }
+    ],
+    "year": "2025",
+    "month": "01",
+    "day": "15",
+    "weekday": "星期三",
+    "weekdayNumber": 3
+  }
+]

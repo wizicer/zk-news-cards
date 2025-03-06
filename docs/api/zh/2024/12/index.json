@@ -1,0 +1,120 @@
+{
+  "10": {
+    "date": "2024-12-10",
+    "projects": [
+      "Zero-Knowledge Magic for Cheap",
+      "Will ZK Eat The Modular Stack?"
+    ]
+  },
+  "11": {
+    "date": "2024-12-11",
+    "projects": [
+      "zkP2P 协议解析",
+      "Range Checks using Polygon Plonky3 + Puzzle V-3"
+    ]
+  },
+  "12": {
+    "date": "2024-12-12",
+    "projects": [
+      "awesome-zkvm",
+      "An Update on Folding"
+    ]
+  },
+  "13": {
+    "date": "2024-12-13",
+    "projects": [
+      "Lagrange Introduces the Infinite Proving Layer: Expanding Decentralized Proving to ZK Rollups",
+      "ZK in Sui"
+    ]
+  },
+  "14": {
+    "date": "2024-12-14",
+    "projects": [
+      "Your definitive guide to zkVMs",
+      "Joining Tools For Humanity to Build a Better World"
+    ]
+  },
+  "15": {
+    "date": "2024-12-15",
+    "projects": [
+      "Crypto Companions: The PET ecosystem (MPC / FHE / TEE & ZK)",
+      "zkLogin for Base blockchain"
+    ]
+  },
+  "16": {
+    "date": "2024-12-16",
+    "projects": [
+      "A primer on hybrid Merkle trees",
+      "Anonymous credentials from ECDSA"
+    ]
+  },
+  "17": {
+    "date": "2024-12-17",
+    "projects": [
+      "OpenVM: A Performant and Modular zkVM Framework",
+      "PoneglyphDB: Efficient Non-interactive Zero-Knowledge Proofs for Arbitrary SQL-Query Verification"
+    ]
+  },
+  "18": {
+    "date": "2024-12-18",
+    "projects": [
+      "Announcing Valida 0.7.0",
+      "Mira: Generic Accumulation Scheme for Special-Sound Protocols"
+    ]
+  },
+  "20": {
+    "date": "2024-12-20",
+    "projects": [
+      "zkVM 专列开票",
+      "On the gas efficiency of the WHIR polynomial commitment scheme"
+    ]
+  },
+  "22": {
+    "date": "2024-12-22",
+    "projects": [
+      "Community Privacy Residency",
+      "Hash-based PCD from the BOIL accumulator"
+    ]
+  },
+  "23": {
+    "date": "2024-12-23",
+    "projects": [
+      "Wait, Why Do We Need Consensus Again?"
+    ]
+  },
+  "25": {
+    "date": "2024-12-25",
+    "projects": [
+      "Bypassing the characteristic bound in logUp",
+      "Zero Knowledge Podcast Episodes 346"
+    ]
+  },
+  "29": {
+    "date": "2024-12-29",
+    "projects": [
+      "ZK101 - 零知识学习零知识",
+      "LatticeFold: A Lattice-based Folding Scheme and its Applications to Succinct Proof Systems"
+    ]
+  },
+  "30": {
+    "date": "2024-12-30",
+    "projects": [
+      "Zero Knowledge Memory-Checking Techniques for Stacks and Queues",
+      "MyZKP: Building Zero Knowledge Proof from Scratch in Rust"
+    ]
+  },
+  "08": {
+    "date": "2024-12-08",
+    "projects": [
+      "Aligned Foundation Genesis Airdrop",
+      "Scribe: Low-memory SNARKs via Read-Write Streaming"
+    ]
+  },
+  "09": {
+    "date": "2024-12-09",
+    "projects": [
+      "Zeam: Ethereum beam client in Zig",
+      "Play-by-email provable games"
+    ]
+  }
+}

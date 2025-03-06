@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2025-01-01",
+    "projects": [
+      {
+        "name": "ZKryptium",
+        "url": "https://github.com/Cybersecurity-LINKS/zkryptium",
+        "type": "开源",
+        "tags": [
+          "Cybersecurity-LINKS",
+          "BBS+",
+          "CL2003"
+        ],
+        "summary": "Cybersecurity-LINKS团队发布了ZKryptium开源库，实现了BBS+、Blind BBS和CL2003签名方案，支持创建零知识证明。"
+      },
+      {
+        "name": "Proof.Fun",
+        "url": "https://www.proof.fun/",
+        "type": "新闻",
+        "tags": [
+          "nebrazkp"
+        ],
+        "summary": "@nebrazkp 孵化了一个发币项目，基于公共项目或论文等，重要特点是原主可通过zk证明验证身份并获得10%代币奖励。"
+      }
+    ],
+    "year": "2025",
+    "month": "01",
+    "day": "01",
+    "weekday": "星期三",
+    "weekdayNumber": 3
+  }
+]

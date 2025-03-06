@@ -1,0 +1,115 @@
+{
+  "16": {
+    "date": "2025-02-16",
+    "projects": [
+      "Introducing the Nexus Layer 1: A planetary-scale supercomputer",
+      "Introducing Pico: A Modular and Performant zkVM"
+    ],
+    "insights": [
+      "密码学中的保险柜"
+    ]
+  },
+  "17": {
+    "date": "2025-02-17",
+    "projects": [
+      "LatticeFold+: Faster, Simpler, Shorter Lattice-Based Folding for Succinct Proof Systems",
+      "AIR-ICICLE : Plonky3 on ICICLE, part 1"
+    ],
+    "insights": [
+      "穿越幻灭谷"
+    ]
+  },
+  "18": {
+    "date": "2025-02-18",
+    "projects": [
+      "On the Power of Polynomial Preprocessing",
+      "Introducing bugs.zksecurity.xyz"
+    ],
+    "insights": [
+      "用筷子讲ZKP"
+    ]
+  },
+  "19": {
+    "date": "2025-02-19",
+    "projects": [
+      "Nexus Layer 1 Testnet II",
+      "THE MODULAR BLOCKCHAIN FOR ZK PROOF VERIFICATION"
+    ],
+    "insights": [
+      "ZKP电路的组成"
+    ]
+  },
+  "20": {
+    "date": "2025-02-20",
+    "projects": [
+      "Aleo Mainnet Inflation Bug Discovery and Fix",
+      "You should not build Tornado Cash with FHE",
+      "Sindri: A Platform for Zero-Knowledge Proof Development",
+      "SuiOverflow 2025 Hackathon"
+    ]
+  },
+  "21": {
+    "date": "2025-02-21",
+    "projects": [
+      "Khatam: Reducing the Communication Complexity of Code-Based SNARKs",
+      "Neo: Lattice-based folding scheme for CCS over small fields and pay-per-bit commitments"
+    ]
+  },
+  "22": {
+    "date": "2025-02-22",
+    "projects": [
+      "Ethproofs: Progressing towards fully SNARKing the L1",
+      "MPC-in-the-Head: A Novel Approach to Zero-Knowledge Proofs"
+    ]
+  },
+  "23": {
+    "date": "2025-02-23",
+    "projects": [
+      "NoirCon 1 is coming to Denver",
+      "Understanding the Math Behind ZKPs"
+    ],
+    "insights": [
+      "完备且可靠的ZKP"
+    ]
+  },
+  "24": {
+    "date": "2025-02-24",
+    "projects": [
+      "Trustless Attestation Verification",
+      "2024，从零知识证明到AI！"
+    ],
+    "insights": [
+      "硬件保证的可信环境"
+    ]
+  },
+  "25": {
+    "date": "2025-02-25",
+    "projects": [
+      "Surveyor R1CS binary format to Lean extractor",
+      "Tornado Anonymity Revoker Design"
+    ],
+    "insights": [
+      "高性能与易用性的角逐"
+    ]
+  },
+  "27": {
+    "date": "2025-02-27",
+    "projects": [
+      "zkVM Projects Part 1: A Landscape Overview",
+      "Context-Dependent Threshold Decryption and its Applications"
+    ],
+    "insights": [
+      "遗产开关"
+    ]
+  },
+  "28": {
+    "date": "2025-02-28",
+    "projects": [
+      "Plonky3 Python Notebook",
+      "Noir Research Grant Request (NRG) #2 on Private Shared States"
+    ],
+    "insights": [
+      "证明市场"
+    ]
+  }
+}

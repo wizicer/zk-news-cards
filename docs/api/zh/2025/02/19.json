@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2025-02-19",
+    "projects": [
+      {
+        "name": "Nexus Layer 1 Testnet II",
+        "url": "https://x.com/NexusLabs/status/1892068785231888741",
+        "type": "活动",
+        "tags": [
+          "NexusLabs",
+          "Testnet"
+        ],
+        "summary": "@NexusLabs 推出Nexus Layer 1，已经可以在浏览器上“挖矿”了，这个帖子让大家填自己的地址，已经收集到26k个回复。"
+      },
+      {
+        "name": "THE MODULAR BLOCKCHAIN FOR ZK PROOF VERIFICATION",
+        "url": "https://zkverify.io/",
+        "type": "新闻",
+        "tags": [
+          "zkVerify",
+          "ZK Proofs",
+          "Blockchain Efficiency",
+          "Cost Reduction"
+        ],
+        "summary": "zkVerify ( @ZKVProtocol ) 是 @HorizenLabs 开发的一个高性能、公开、去中心化的区块链，专注于零知识证明的验证。它提供模块化和可组合的方式，供 ZK 应用验证证明。"
+      }
+    ],
+    "insights": [
+      {
+        "title": "ZKP电路 = 计算 + 约束",
+        "type": "original",
+        "slogan": "ZKP电路的组成",
+        "images": [
+          "./images/2025/02/19.drawio.svg"
+        ]
+      }
+    ],
+    "year": "2025",
+    "month": "02",
+    "day": "19",
+    "weekday": "星期三",
+    "weekdayNumber": 3
+  }
+]

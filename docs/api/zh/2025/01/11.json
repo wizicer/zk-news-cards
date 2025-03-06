@@ -1,0 +1,33 @@
+[
+  {
+    "date": "2025-01-11",
+    "projects": [
+      {
+        "name": "The zk in zkTLS",
+        "url": "https://reclaimprotocol.org/blog/posts/zk-in-zktls",
+        "type": "博客",
+        "tags": [
+          "Madhavan Malolan",
+          "Reclaim Protocol"
+        ],
+        "summary": "Madhavan Malolan在博客{{name}}中讨论了zkTLS的概念，澄清了zkTLS并非主要用于隐私保护，而是为了用户安全和数据完整性。"
+      },
+      {
+        "name": "zkVMs and Privacy: Challenges and Opportunities",
+        "url": "https://x.com/luhelminger/status/1876940316931961143",
+        "type": "博客",
+        "tags": [
+          "Lukas Helminger",
+          "zkVMs",
+          "zkDSL"
+        ],
+        "summary": "@luhelminger 讨论了zkVMs在2024年的主导地位及其在可扩展性用例中的应用，同时探讨了zkVMs在隐私保护方面面临的挑战和未来展望。"
+      }
+    ],
+    "year": "2025",
+    "month": "01",
+    "day": "11",
+    "weekday": "星期六",
+    "weekdayNumber": 6
+  }
+]

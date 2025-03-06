@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2024-12-11",
+    "projects": [
+      {
+        "name": "zkP2P 协议解析",
+        "url": "https://www.youtube.com/watch?v=DLZDl1WBuns",
+        "type": "视频",
+        "tags": [
+          "fanka",
+          "zkP2P"
+        ],
+        "summary": "fanka在视频分享了zkP2P协议解析，并提供了相关资料链接。"
+      },
+      {
+        "name": "Range Checks using Polygon Plonky3 + Puzzle V-3",
+        "url": "https://www.youtube.com/watch?v=c8y7l3Ee70g",
+        "type": "视频",
+        "tags": [
+          "ZK Hack",
+          "Dominik Schmidt",
+          "Plonky3",
+          "Puzzle V-3"
+        ],
+        "summary": "ZK Hack举办了一场关于使用Plonky3进行范围检查的工作坊，由Polygon Miden的Dominik Schmidt主讲，介绍了ZK概念和工具，并启动了Puzzle V-3竞赛。"
+      }
+    ],
+    "year": "2024",
+    "month": "12",
+    "day": "11",
+    "weekday": "星期三",
+    "weekdayNumber": 3
+  }
+]
