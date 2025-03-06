@@ -1,0 +1,9 @@
+🚀zkDaily 前沿热点追踪 2025-03-06 星期四
+
+📝 Intmax: a scalable payment L2 from plasma and validity proofs
+- https://mirror.xyz/privacy-scaling-explorations.eth/__VLZrfjSScx42E786k-Ba4YptQfv8ujCWY_DuN1k4o
+- Pierre在博客中探讨了Intmax，一个基于Plasma和有效性证明的可扩展支付L2解决方案，详细介绍了其工作原理、数据可用性机制及如何通过有效性证明防止恶意聚合器。
+
+---
+📄 网页查看： https://news.plonk.pro/2025/03/06.html
+🪶 由 @icerdesign 收集

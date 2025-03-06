@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKP Trending News</title>
+    <style>
+        :root {
+    --color-monday: #e74c3c;    /* Red */
+    --color-tuesday: #f39c12;   /* Orange */
+    --color-wednesday: #f1c40f; /* Yellow */
+    --color-thursday: #2ecc71;  /* Green */
+    --color-friday: #3498db;    /* Blue */
+    --color-saturday: #9b59b6;  /* Purple */
+    --color-sunday: #e91e63;    /* Pink */
+    
+    --primary-color: var(--color-monday); /* Will be updated via JS */
+    --primary-light: #ebf5fb;
+    --primary-dark: #2980b9;
+    --text-primary: #2c3e50;
+    --text-secondary: #7f8c8d;
+    --border-color: #e1e8ed;
+    --card-bg: #ffffff;
+    --link-color: #e65c1a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    height: 640px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #e3f2fd;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 465px;
+    height: 100%;
+    margin: 10px;
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.news-card {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.08);
+    page-break-after: always;
+    width: 461px;
+    min-height: 626px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.news-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.github-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title-icon {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subtitle-text {
+    font-size: 22px;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 1;
+    padding: 0 2px;
+}
+
+.subtitle-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 40%;
+    background-color: var(--primary-color);
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.github-icon {
+    color: var(--text-primary);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+}
+
+.date-weekday {
+    background: var(--primary-color);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-details {
+    background: white;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 4px 0;
+    border: 1px solid #eee;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.date-number {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.date-year {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+}
+
+.card-subtitle {
+    border-bottom: 2px solid var(--primary-light);
+    margin: 12px 0;
+}
+
+.project-item {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.project-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-right: 8px;
+  position: relative;
+  justify-content: flex-start;
+  min-width: 64px;
+}
+
+.project-qr {
+  margin-top: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.project-qr:hover {
+  opacity: 1;
+}
+
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  font-size: 32px;
+}
+
+.project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-content {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.project-name {
+    color: var(--link-color);
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.project-url {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.project-description {
+    margin: 8px 0;
+    color: var(--text-primary);
+}
+
+.project-stats {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.project-summary {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.project-type {
+  font-size: 0.8em;
+  color: #666;
+  font-weight: bold;
+  min-width: 2em;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.project-item:has(+ .project-notes) {
+  margin-bottom: 0px;
+  padding-bottom: 12px;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+.project-notes {
+  margin-top: 0px;
+  padding: 12px 16px 16px;
+  background-color: rgba(245, 245, 250, 0.7);
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  padding-top: 16px;
+}
+
+.notes-title {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  position: absolute;
+  top: -36px;
+  right: 24px;
+  background: linear-gradient(to bottom, white 50%, rgba(245, 245, 250, 0.7) 50%);
+  padding: 2px 12px;
+  text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1),
+               3px 4px 4px rgba(179, 147, 211, 0.15),
+               4px 6px 4px rgba(179, 147, 211, 0.2),
+               5px 8px 4px rgba(179, 147, 211, 0.25);
+  z-index: 2;
+}
+
+.notes-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-item {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+}
+
+.note-item:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.note-item strong {
+  font-weight: 600;
+}
+
+.note-item p {
+  margin: 0;
+}
+
+.note-item ul {
+  padding-left: 16px;
+  margin: 4px 0;
+}
+
+.note-item li {
+  margin-bottom: 4px;
+}
+
+.note-item h1, .note-item h2, .note-item h3, .note-item h4 {
+  margin: 8px 0 4px;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+.note-item code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.note-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.note-item a:hover {
+  text-decoration: underline;
+}
+
+.card-footer {
+    color: var(--text-secondary);
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    font-size: 14px;
+}
+
+.card-footer a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.highlight {
+    background-color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.page-indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.indicator-dot {
+    width: 4px;
+    height: 8px;
+    background-color: #ddd;
+}
+
+.indicator-dot.active {
+    background-color: #666;
+    height: 10px;
+}
+
+.insight-card {
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+    width: 461px;
+    min-height: 626px;
+    display: flex;
+    flex-direction: column;
+}
+
+.insight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1.5rem 0;
+  background: var(--primary-color);
+  color: white;
+  position: relative;
+  margin-bottom: 0;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.insight-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 20px;
+  height: 18px;
+  padding: 3px 10px 5px;
+  background: var(--primary-dark);
+  border-radius: 0 0 0 8px;
+}
+
+.insight-title-section {
+  flex: 1;
+  z-index: 1;
+}
+
+.insight-subtitle-section {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  text-align: right;
+  z-index: 1;
+}
+
+.insight-main-title {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  bottom: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.insight-slogan {
+  font-size: 1rem;
+  opacity: 0.9;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid white;
+}
+
+.insight-content {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 12px solid var(--primary-color);
+}
+
+.insight-content::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border: 4px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-content::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: 2px solid var(--primary-color);
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.insight-title {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 4px 0;
+  margin-bottom: 1rem;
+  background: var(--primary-light);
+  color: var(--text-primary);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.insight-frame {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.insight-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.insight-url-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.insight-url {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+}
+
+.insight-url a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.insight-project-qr {
+  position: absolute;
+  left: 10px;
+  bottom: -34px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.insight-quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-left: 4px solid #ddd;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.insight-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background: #f5f5f5;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: var(--primary-color);
+  width: 100%;
+  min-height: 16px;
+}
+
+.insight-footer a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.insight-footer a:hover {
+  text-decoration: underline;
+}
+
+.insight-copyright {
+  float: right;
+  padding-right: 30px;
+}
+
+.insight-website {
+    position: absolute;
+    top: 6px;
+    left: 26px;
+}
+
+.insight-website a {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-shadow: 0 0 2px rgba(200,200,200,0.9);
+    text-decoration: none;
+}
+
+.app-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.copy-button {
+  padding: 8px 16px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.copy-button:hover {
+  background: #333;
+  opacity: 1;
+}
+
+@media print {
+    @page {
+        size: 480px 640px;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .news-container {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
+    .news-card {
+        width: 480px;
+        height: 640px;
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
+        page-break-after: always;
+        break-inside: avoid;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="app"><!--[--><div class="app-controls"><button class="copy-button"> 复制文本内容 </button></div><div class="news-container" style="--primary-color:var(--color-thursday);"><!--[--><div class="news-card"><div class="card-header"><div class="github-title"><div class="title-icon"><span class="github-icon"></span> 零知识证明 <span class="highlight">zkDaily</span></div><div class="subtitle-text"> 零知识证明 前沿热点追踪 🎯 </div></div><div class="date"><span class="date-weekday">星期四</span><div class="date-details"><div class="date-number">03.06</div><div class="date-year">2025</div></div></div></div><div class="card-subtitle"></div><div class="projects"><!--[--><div><div class="project-item"><div class="project-meta"><div class="project-icon"><span>📝</span></div><span class="project-type">博客</span><div class="project-qr"><svg width="64" height="64" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37"><defs><!----></defs><rect width="100%" height="100%" fill="#ffffff"></rect><path fill="#000000" d="M0 0h7v1H0zM8 0h4v1H8zM15 0h1v1H15zM20 0h1v1H20zM22 0h1v1H22zM26 0h1v1H26zM30,0 h7v1H30zM0 1h1v1H0zM6 1h1v1H6zM11 1h4v1H11zM16 1h1v1H16zM18 1h2v1H18zM24 1h1v1H24zM28 1h1v1H28zM30 1h1v1H30zM36,1 h1v1H36zM0 2h1v1H0zM2 2h3v1H2zM6 2h1v1H6zM9 2h1v1H9zM11 2h1v1H11zM13 2h2v1H13zM18 2h1v1H18zM20 2h3v1H20zM25 2h1v1H25zM27 2h2v1H27zM30 2h1v1H30zM32 2h3v1H32zM36,2 h1v1H36zM0 3h1v1H0zM2 3h3v1H2zM6 3h1v1H6zM10 3h2v1H10zM17 3h2v1H17zM21 3h2v1H21zM25 3h1v1H25zM27 3h2v1H27zM30 3h1v1H30zM32 3h3v1H32zM36,3 h1v1H36zM0 4h1v1H0zM2 4h3v1H2zM6 4h1v1H6zM10 4h4v1H10zM15 4h3v1H15zM19 4h2v1H19zM26 4h1v1H26zM28 4h1v1H28zM30 4h1v1H30zM32 4h3v1H32zM36,4 h1v1H36zM0 5h1v1H0zM6 5h1v1H6zM9 5h1v1H9zM11 5h1v1H11zM13 5h2v1H13zM20 5h2v1H20zM23 5h1v1H23zM25 5h2v1H25zM28 5h1v1H28zM30 5h1v1H30zM36,5 h1v1H36zM0 6h7v1H0zM8 6h1v1H8zM10 6h1v1H10zM12 6h1v1H12zM14 6h1v1H14zM16 6h1v1H16zM18 6h1v1H18zM20 6h1v1H20zM22 6h1v1H22zM24 6h1v1H24zM26 6h1v1H26zM28 6h1v1H28zM30,6 h7v1H30zM8 7h2v1H8zM12 7h2v1H12zM15 7h1v1H15zM18 7h2v1H18zM22 7h1v1H22zM25 7h1v1H25zM28 7h1v1H28zM0 8h2v1H0zM3 8h2v1H3zM6 8h1v1H6zM9 8h1v1H9zM12 8h6v1H12zM19 8h1v1H19zM21 8h1v1H21zM24 8h1v1H24zM28 8h1v1H28zM30 8h1v1H30zM36,8 h1v1H36zM4 9h1v1H4zM8 9h1v1H8zM10 9h1v1H10zM14 9h1v1H14zM17 9h2v1H17zM21 9h1v1H21zM23 9h1v1H23zM25 9h3v1H25zM32 9h1v1H32zM35 9h1v1H35zM1 10h2v1H1zM5 10h4v1H5zM12 10h1v1H12zM15 10h1v1H15zM18 10h1v1H18zM20 10h1v1H20zM22 10h3v1H22zM27 10h2v1H27zM33,10 h4v1H33zM0 11h1v1H0zM5 11h1v1H5zM7 11h2v1H7zM10 11h1v1H10zM15 11h3v1H15zM19 11h1v1H19zM26 11h1v1H26zM28 11h1v1H28zM32 11h1v1H32zM34 11h1v1H34zM1 12h3v1H1zM5 12h2v1H5zM16 12h1v1H16zM18 12h2v1H18zM21 12h1v1H21zM24 12h1v1H24zM27 12h2v1H27zM30 12h1v1H30zM33 12h1v1H33zM35,12 h2v1H35zM1 13h1v1H1zM3 13h3v1H3zM10 13h1v1H10zM12 13h2v1H12zM15 13h4v1H15zM20 13h10v1H20zM32 13h4v1H32zM0 14h3v1H0zM4 14h3v1H4zM9 14h2v1H9zM13 14h3v1H13zM19 14h1v1H19zM25 14h3v1H25zM30 14h1v1H30zM35,14 h2v1H35zM0 15h3v1H0zM4 15h1v1H4zM12 15h1v1H12zM23 15h2v1H23zM27 15h2v1H27zM30 15h1v1H30zM34 15h1v1H34zM36,15 h1v1H36zM1 16h2v1H1zM6 16h7v1H6zM15 16h3v1H15zM21 16h3v1H21zM25 16h1v1H25zM27 16h1v1H27zM30 16h2v1H30zM33,16 h4v1H33zM0 17h2v1H0zM5 17h1v1H5zM7 17h1v1H7zM9 17h1v1H9zM11 17h1v1H11zM13 17h1v1H13zM15 17h1v1H15zM17 17h3v1H17zM25 17h3v1H25zM31 17h1v1H31zM33 17h1v1H33zM0 18h4v1H0zM5 18h4v1H5zM10 18h1v1H10zM12 18h1v1H12zM15 18h2v1H15zM18 18h3v1H18zM23 18h5v1H23zM29 18h4v1H29zM36,18 h1v1H36zM0 19h3v1H0zM4 19h2v1H4zM7 19h1v1H7zM10 19h2v1H10zM13 19h2v1H13zM18 19h3v1H18zM23 19h1v1H23zM25 19h3v1H25zM31 19h1v1H31zM33 19h1v1H33zM36,19 h1v1H36zM1 20h2v1H1zM4 20h3v1H4zM8 20h2v1H8zM11 20h1v1H11zM17 20h1v1H17zM20 20h2v1H20zM23 20h2v1H23zM26 20h2v1H26zM29 20h2v1H29zM32 20h2v1H32zM35,20 h2v1H35zM0 21h1v1H0zM5 21h1v1H5zM7 21h2v1H7zM10 21h1v1H10zM12 21h1v1H12zM15 21h2v1H15zM18 21h2v1H18zM21 21h3v1H21zM27 21h1v1H27zM31 21h3v1H31zM35 21h1v1H35zM0 22h1v1H0zM3 22h2v1H3zM6 22h1v1H6zM11 22h1v1H11zM14 22h2v1H14zM17 22h2v1H17zM21 22h3v1H21zM26 22h4v1H26zM36,22 h1v1H36zM0 23h1v1H0zM2 23h2v1H2zM5 23h1v1H5zM7 23h1v1H7zM11 23h2v1H11zM14 23h2v1H14zM17 23h1v1H17zM19 23h1v1H19zM22 23h1v1H22zM30,23 h7v1H30zM1 24h1v1H1zM3 24h1v1H3zM5 24h2v1H5zM9 24h4v1H9zM15 24h1v1H15zM18 24h4v1H18zM24 24h1v1H24zM28 24h1v1H28zM30 24h2v1H30zM33 24h1v1H33zM36,24 h1v1H36zM0 25h1v1H0zM3 25h1v1H3zM5 25h1v1H5zM7 25h2v1H7zM10 25h1v1H10zM14 25h3v1H14zM21 25h3v1H21zM26 25h2v1H26zM29 25h1v1H29zM31 25h2v1H31zM34 25h2v1H34zM0 26h2v1H0zM3 26h2v1H3zM6 26h3v1H6zM10 26h3v1H10zM15 26h2v1H15zM19 26h2v1H19zM22 26h1v1H22zM25 26h3v1H25zM29 26h4v1H29zM34,26 h3v1H34zM0 27h1v1H0zM3 27h2v1H3zM7 27h5v1H7zM15 27h1v1H15zM18 27h3v1H18zM22 27h1v1H22zM24 27h1v1H24zM26 27h1v1H26zM28 27h1v1H28zM32 27h3v1H32zM36,27 h1v1H36zM0 28h1v1H0zM3 28h1v1H3zM6 28h1v1H6zM9 28h2v1H9zM13 28h3v1H13zM17 28h1v1H17zM22 28h1v1H22zM24 28h2v1H24zM28 28h5v1H28zM34 28h2v1H34zM8 29h5v1H8zM14 29h2v1H14zM20 29h1v1H20zM25 29h1v1H25zM27 29h2v1H27zM32 29h1v1H32zM34 29h2v1H34zM0 30h7v1H0zM10 30h2v1H10zM13 30h1v1H13zM15 30h1v1H15zM17 30h3v1H17zM22 30h3v1H22zM28 30h1v1H28zM30 30h1v1H30zM32 30h2v1H32zM36,30 h1v1H36zM0 31h1v1H0zM6 31h1v1H6zM9 31h2v1H9zM12 31h3v1H12zM20 31h1v1H20zM25 31h1v1H25zM27 31h2v1H27zM32 31h2v1H32zM35 31h1v1H35zM0 32h1v1H0zM2 32h3v1H2zM6 32h1v1H6zM8 32h2v1H8zM12 32h1v1H12zM14 32h2v1H14zM17 32h1v1H17zM19 32h2v1H19zM26 32h7v1H26zM35 32h1v1H35zM0 33h1v1H0zM2 33h3v1H2zM6 33h1v1H6zM8 33h1v1H8zM13 33h2v1H13zM22 33h2v1H22zM27 33h1v1H27zM29 33h3v1H29zM34,33 h3v1H34zM0 34h1v1H0zM2 34h3v1H2zM6 34h1v1H6zM12 34h2v1H12zM15 34h1v1H15zM17 34h2v1H17zM20 34h1v1H20zM22 34h2v1H22zM25 34h3v1H25zM29 34h1v1H29zM31 34h4v1H31zM36,34 h1v1H36zM0 35h1v1H0zM6 35h1v1H6zM8 35h3v1H8zM14 35h1v1H14zM17 35h3v1H17zM22 35h3v1H22zM29,35 h8v1H29zM0 36h7v1H0zM8 36h2v1H8zM12 36h4v1H12zM20 36h1v1H20zM23 36h2v1H23zM28 36h1v1H28zM30 36h1v1H30zM33 36h1v1H33zM36,36 h1v1H36z"></path><!----></svg></div></div><div class="project-content"><h3 class="project-name">Intmax: a scalable payment L2 from plasma and validity proofs</h3><a href="https://mirror.xyz/privacy-scaling-explorations.eth/__VLZrfjSScx42E786k-Ba4YptQfv8ujCWY_DuN1k4o" class="project-url">https://mirror.xyz/privacy-scaling-explorations.eth/__VLZrfjSScx42E786k-Ba4YptQfv8ujCWY_DuN1k4o</a><div class="project-tags"><!--[--><span class="tag">Pierre</span><span class="tag">Plasma</span><span class="tag">L2</span><!--]--></div><p class="project-summary">Pierre在博客中探讨了Intmax，一个基于Plasma和有效性证明的可扩展支付L2解决方案，详细介绍了其工作原理、数据可用性机制及如何通过有效性证明防止恶意聚合器。</p></div></div><div class="project-notes"><h4 class="notes-title">Notes</h4><ul class="notes-list"><!--[--><li class="note-item"><p>Intmax是基于Plasma和数据有效性(DA)证明的可扩展支付L2解决方案。</p>
+</li><li class="note-item"><p>Plasma是一种通过最小化链上数据并依赖用户挑战机制实现扩展的L2架构。</p>
+</li><li class="note-item"><p><strong>防数据扣留</strong>：用 DA 机制和 BLS 签名，防止数据扣留(data withholding)并确保交易数据的完整性。</p>
+</li><li class="note-item"><p><strong>防恶意聚合器</strong>：通过有效性证明（如 PCD）防止聚合器提交恶意交易，确保交易和余额的有效性。</p>
+</li><li class="note-item"><p><strong>可扩展性</strong>：Intmax 的链上数据量极低，理论 TPS 可达 7000，通过优化数据存储和证明生成实现高效扩展。</p>
+</li><li class="note-item"><p><strong>主要算法</strong>：Intmax 使用 Plonky2 生成单一余额证明，支持复杂的证明组合和验证流程。</p>
+</li><!--]--></ul></div></div><!--]--></div><div class="card-footer"> 由 <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a> 收集 </div><!----></div><!--]--><!----></div><!--]--></div>
+</body>
+</html>

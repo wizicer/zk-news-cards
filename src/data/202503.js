@@ -131,6 +131,32 @@ export default [
       }
     ]
   },
+  {
+    date: "2025-03-06",
+    projects: [
+      {
+        "name": "Intmax: a scalable payment L2 from plasma and validity proofs",
+        "url": "https://mirror.xyz/privacy-scaling-explorations.eth/__VLZrfjSScx42E786k-Ba4YptQfv8ujCWY_DuN1k4o",
+        "type": "博客",
+        "tags": [
+          "Pierre",
+          "Plasma",
+          "L2",
+        ],
+        "summary": "Pierre在{{name}}博客中探讨了Intmax，一个基于Plasma和有效性证明的可扩展支付L2解决方案，详细介绍了其工作原理、数据可用性机制及如何通过有效性证明防止恶意聚合器。",
+        "notes": [
+          "Intmax是基于Plasma和数据有效性(DA)证明的可扩展支付L2解决方案。",
+          "Plasma是一种通过最小化链上数据并依赖用户挑战机制实现扩展的L2架构。",
+          "**防数据扣留**：用 DA 机制和 BLS 签名，防止数据扣留(data withholding)并确保交易数据的完整性。",
+          "**防恶意聚合器**：通过有效性证明（如 PCD）防止聚合器提交恶意交易，确保交易和余额的有效性。",
+          "**可扩展性**：Intmax 的链上数据量极低，理论 TPS 可达 7000，通过优化数据存储和证明生成实现高效扩展。",
+          "**主要算法**：Intmax 使用 Plonky2 生成单一余额证明，支持复杂的证明组合和验证流程。"
+        ]
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [
