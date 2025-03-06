@@ -27,16 +27,17 @@
       <div class="card-subtitle">
       </div>
       <div class="projects">
-        <div v-for="(project, pIndex) in card.projects" :key="pIndex" class="project-item">
-          <div class="project-meta">
-            <div class="project-icon">
-              <img v-if="project.iconUrl" :src="project.iconUrl" :alt="project.name">
-              <img v-else-if="project.iconUrls" :src="project.iconUrls[0]" :alt="project.name">
-              <span v-else-if="project.icon">{{ project.icon }}</span>
-              <span v-else>{{ getTypeIcon(project.type) }}</span>
-            </div>
-            <span class="project-type" v-if="project.type">{{ project.type }}</span>
-            <div class="project-qr">
+        <div v-for="(project, pIndex) in card.projects" :key="pIndex">
+          <div class="project-item">
+            <div class="project-meta">
+              <div class="project-icon">
+                <img v-if="project.iconUrl" :src="project.iconUrl" :alt="project.name">
+                <img v-else-if="project.iconUrls" :src="project.iconUrls[0]" :alt="project.name">
+                <span v-else-if="project.icon">{{ project.icon }}</span>
+                <span v-else>{{ getTypeIcon(project.type) }}</span>
+              </div>
+              <span class="project-type" v-if="project.type">{{ project.type }}</span>
+              <div class="project-qr">
               <qrcode-vue
                 :value="project.url"
                 :size="64"
@@ -46,19 +47,27 @@
                 background="#ffffff"
                 foreground="#000000"
               />
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-name">
+                {{ project.name }}
+              </h3>
+              <a :href="project.url" class="project-url">{{ project.url }}</a>
+              <div class="project-tags">
+                <span v-for="(tag, tIndex) in project.tags" :key="tIndex" class="tag">
+                  {{ tag }}
+                </span>
+              </div>
+              <p class="project-summary" v-if="project.summary">{{ project.summary.replaceAll('\{\{name\}\}', '') }}</p>
             </div>
           </div>
-          <div class="project-content">
-            <h3 class="project-name">
-              {{ project.name }}
-            </h3>
-            <a :href="project.url" class="project-url">{{ project.url }}</a>
-            <div class="project-tags">
-              <span v-for="(tag, tIndex) in project.tags" :key="tIndex" class="tag">
-                {{ tag }}
-              </span>
-            </div>
-            <p class="project-summary" v-if="project.summary">{{ project.summary.replaceAll('\{\{name\}\}','') }}</p>
+          <div class="project-notes" v-if="project.notes && project.notes.length > 0">
+            <h4 class="notes-title">Notes</h4>
+            <ul class="notes-list">
+              <li v-for="(note, nIndex) in project.notes" :key="nIndex" class="note-item" v-html="parseMarkdown(note)">
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -73,16 +82,16 @@
         </div>
       </div>
     </div>
-      <div v-if="displayedInsights.length > 0" class="insights-section">
-        <template v-for="(insight, index) in displayedInsights">
+    <div v-if="displayedInsights.length > 0" class="insights-section">
+      <template v-for="(insight, index) in displayedInsights">
           <InsightCard 
             v-if="insight"
             :key="index" 
             :insight="insight"
             :date="date"
           />
-        </template>
-      </div>
+      </template>
+    </div>
   </div>
 </template>
 
@@ -93,6 +102,7 @@ import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
 import InsightCard from '../components/InsightCard.vue';
 import { generateTextContent, getTypeIcon } from '../utils/textGenerator'
+import { parseMarkdown } from '../utils/markdownParser'
 
 const route = useRoute()
 
