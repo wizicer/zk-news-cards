@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-07 星期五
+
+📄 Diamond iO: A Straightforward Construction of Indistinguishability Obfuscation from Lattices
+- https://eprint.iacr.org/2025/236
+- Suegami和Bottazzi在论文中提出了diamond iO，一种新的基于格的iO构造，通过轻量级矩阵操作替代了昂贵的递归加密过程，显著降低了复杂性。
+
+📝 The Barrett-Montgomery duality and a new multi-precision modular reduction scheme with only $n^2+1$ digit multiplications
+- https://hackmd.io/@Ingonyama/Barret-Montgomery
+- Yuval Domb在博客中探讨了Barrett和Montgomery模约简算法的对偶性，并提出了一种新的多精度模约简方案，仅需$n^2+1$次数字乘法，显著提升了计算效率。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/07.html
+🪶 由 @icerdesign 收集

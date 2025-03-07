@@ -180,7 +180,6 @@ export default [
         "url": "https://hackmd.io/@Ingonyama/Barret-Montgomery",
         "type": "博客",
         "tags": [
-          "Yuval Domb",
           { zh: "模约简", en: "Modular Reduction" },
           "Barrett",
           "Montgomery",

@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-07 Friday
+
+📄 Diamond iO: A Straightforward Construction of Indistinguishability Obfuscation from Lattices
+- https://eprint.iacr.org/2025/236
+- Suegami and Bottazzi proposed diamond iO in , a new iO construction based on lattices that replaces expensive recursive encryption with lightweight matrix operations, significantly reducing complexity.
+
+📝 The Barrett-Montgomery duality and a new multi-precision modular reduction scheme with only $n^2+1$ digit multiplications
+- https://hackmd.io/@Ingonyama/Barret-Montgomery
+- Yuval Domb explored the duality of Barrett and Montgomery modular reduction algorithms in , proposing a new multi-precision modular reduction scheme that requires only $n^2+1$ digit multiplications, significantly improving computational efficiency.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/07.html
+🪶 Collected by @icerdesign
