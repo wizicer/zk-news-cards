@@ -26,6 +26,16 @@ export function createApp() {
         ]
     })
 
+    // Add global property for language in SSR context
+    app.config.globalProperties.$language = 'zh'
+
+    // Add route guard to extract and set language
+    router.beforeEach((to, from, next) => {
+        const lang = to.query.lang || 'zh'
+        app.config.globalProperties.$language = lang
+        next()
+    })
+
     app.use(router)
     return { app, router }
 }

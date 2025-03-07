@@ -4,9 +4,15 @@ import news2502 from './data/202502.js'
 import news2503 from './data/202503.js'
 
 const getWeekday = (dateStr) => {
-  const weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+  const weekdays = {
+    zh: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+    en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  };
   const date = new Date(dateStr);
-  return weekdays[date.getDay()];
+  return {
+    zh: weekdays.zh[date.getDay()],
+    en: weekdays.en[date.getDay()]
+  };
 };
 
 export const newsData = [

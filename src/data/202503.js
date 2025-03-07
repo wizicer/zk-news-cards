@@ -157,6 +157,43 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-07",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Diamond iO: A Straightforward Construction of Indistinguishability Obfuscation from Lattices",
+        "url": "https://eprint.iacr.org/2025/236",
+        "type": "论文",
+        "tags": [
+          "Sora Suegami", "Enrico Bottazzi",
+          "iO",
+          { zh: "格", en: "Lattice" },
+        ],
+        "summary": { 
+          zh: "Suegami和Bottazzi在{{name}}论文中提出了diamond iO，一种新的基于格的iO构造，通过轻量级矩阵操作替代了昂贵的递归加密过程，显著降低了复杂性。",
+          en: "Suegami and Bottazzi proposed diamond iO in {{name}}, a new iO construction based on lattices that replaces expensive recursive encryption with lightweight matrix operations, significantly reducing complexity."
+        }
+      },
+      {
+        "name": "The Barrett-Montgomery duality and a new multi-precision modular reduction scheme with only $n^2+1$ digit multiplications",
+        "url": "https://hackmd.io/@Ingonyama/Barret-Montgomery",
+        "type": "博客",
+        "tags": [
+          "Yuval Domb",
+          { zh: "模约简", en: "Modular Reduction" },
+          "Barrett",
+          "Montgomery",
+        ],
+        "summary": {
+          zh: "Yuval Domb在{{name}}博客中探讨了Barrett和Montgomery模约简算法的对偶性，并提出了一种新的多精度模约简方案，仅需$n^2+1$次数字乘法，显著提升了计算效率。",
+          en: "Yuval Domb explored the duality of Barrett and Montgomery modular reduction algorithms in {{name}}, proposing a new multi-precision modular reduction scheme that requires only $n^2+1$ digit multiplications, significantly improving computational efficiency."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [

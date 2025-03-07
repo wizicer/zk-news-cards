@@ -3,28 +3,39 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import { renderToString } from '@vue/server-renderer'
 import he from 'he'
+import { newsData } from './src/data.js'
+import { generateTextContent } from './src/utils/textGenerator.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-async function generateStaticHTML() {
-    const { createApp } = await import('./dist/server/server-entry.js')
-    const { app, router } = createApp()
-
-    // Generate HTML for root path
-    await router.push('/')
-    await router.isReady()
-    let appContent = await renderToString(app)
-    appContent = appContent.replace(/"\.\/images\/.*"/g, m => `"../.${m.slice(1)}"`)
-
-    // Generate date-based filename
+async function generateStaticHTML(language = 'zh') {
+    // Check if content exists for this language
     const today = new Date()
     const year = String(today.getFullYear())
     const month = String(today.getMonth() + 1).padStart(2, '0')
     const day = String(today.getDate()).padStart(2, '0')
+    
+    // Find the entry for today
+    const todayData = newsData.find(entry => entry.date === `${year}-${month}-${day}`)
+    
+    // Skip generation if the languages array doesn't include the current language
+    if (todayData && todayData.languages && !todayData.languages.includes(language)) {
+        console.log(`Skipping generation for ${language} as it's not listed in languages array for today`)
+        return
+    }
 
-    // Ensure directories exist
-    const htmlDir = path.join(__dirname, 'docs', year, month)
-    const textsDir = path.join(__dirname, 'texts', year, month)
+    const { createApp } = await import('./dist/server/server-entry.js')
+    const { app, router } = createApp()
+
+    // Generate HTML for root path with language parameter
+    await router.push(`/?lang=${language}`)
+    await router.isReady()
+    let appContent = await renderToString(app)
+    appContent = appContent.replace(/"\.\/images\/.*"/g, m => `"../.${m.slice(1)}"`)
+
+    // Ensure directories exist - use language-specific subdirectories
+    const htmlDir = path.join(__dirname, 'docs', language, year, month)
+    const textsDir = path.join(__dirname, 'texts', language, year, month)
     
     ;[htmlDir, textsDir].forEach(dir => {
         if (!fs.existsSync(dir)) {
@@ -45,23 +56,50 @@ async function generateStaticHTML() {
 </head>
 <body>
     <div id="app">${appContent}</div>
+    <script>
+        // Set initial language
+        window.initialLanguage = "${language}";
+    </script>
 </body>
 </html>`
 
     const outputPath = path.join(htmlDir, `${day}.html`)
     fs.writeFileSync(outputPath, template)
-    console.log(`Static HTML generated successfully at: ${outputPath}`)
+    console.log(`Static HTML (${language}) generated successfully at: ${outputPath}`)
 
     // Generate text content
-    await router.push('/text')
-    await router.isReady()
-    const textContent = await renderToString(app)
+    const matchingEntry = newsData.find(entry => {
+        const date = new Date(entry.date)
+        return date.getFullYear() === parseInt(year) && 
+               (date.getMonth() + 1) === parseInt(month) && 
+               date.getDate() === parseInt(day)
+    })
+    
+    let textOutput
+    if (matchingEntry) {
+        // Generate using the text generator directly
+        console.log(`Generating ${language} text content directly for ${year}-${month}-${day}`)
+        textOutput = generateTextContent([matchingEntry], language)
+    } else {
+        // Fallback to rendered content
+        await router.push(`/text?lang=${language}`)
+        await router.isReady()
+        const textContent = await renderToString(app)
+        const textWithoutTags = textContent.replace(/<[^>]*>/g, '').trim()
+        textOutput = he.decode(textWithoutTags)
+    }
 
     const textOutputPath = path.join(textsDir, `${day}.txt`)
-    const textWithoutTags = textContent.replace(/<[^>]*>/g, '').trim();
-    const textOutput = he.decode(textWithoutTags);
     fs.writeFileSync(textOutputPath, textOutput)
-    console.log(`Text content generated successfully at: ${textOutputPath}`)
+    console.log(`Text content (${language}) generated successfully at: ${textOutputPath}`)
 }
 
-generateStaticHTML().catch(console.error)
+// Process command line arguments
+const args = process.argv.slice(2);
+const languages = args.includes('--all-languages') ? ['zh', 'en'] : 
+               (args.includes('--language') ? [args[args.indexOf('--language') + 1]] : ['zh']);
+
+// Generate for all specified languages
+Promise.all(languages.map(lang => generateStaticHTML(lang)))
+    .then(() => console.log('All static HTML and text files generated successfully'))
+    .catch(console.error);

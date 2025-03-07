@@ -15,18 +15,70 @@ export const getTypeIcon = (type) => {
   return iconMap[type] || '📌'
 }
 
-export const generateTextContent = (cards) => {
+export const generateTextContent = (cards, language = 'zh') => {
+  const translations = {
+    zh: {
+      heading: '🚀zkDaily 前沿热点追踪',
+      viewWeb: '📄 网页查看：',
+      collectedBy: '🪶 由 @icerdesign 收集'
+    },
+    en: {
+      heading: '🚀zkDaily Frontier Tracker',
+      viewWeb: '📄 View on web:',
+      collectedBy: '🪶 Collected by @icerdesign'
+    }
+  }
+  
   let text = ''
   cards.forEach(card => {
-    text += `🚀zkDaily 前沿热点追踪 ${card.year}-${card.month}-${card.day} ${card.weekday}\n\n`
-    card.projects.forEach(project => {
-      const icon = project.icon || getTypeIcon(project.type)
-      text += `${icon} ${project.name}\n`
-      text += `- ${project.url}\n`
-      text += `- ${project.summary.replace(/{{name}}/g, '')}\n\n`
-    })
-    text += `---\n📄 网页查看： https://news.plonk.pro/${card.year}/${card.month}/${card.day}.html\n`
-    text += `🪶 由 @icerdesign 收集`
+    // Skip if the card doesn't support this language
+    if (language !== 'zh' && card.languages && !card.languages.includes(language)) {
+      console.log(`Skipping card ${card.date} for language ${language}`)
+      return
+    }
+    
+    // Get language-specific weekday
+    const weekday = card.weekday && typeof card.weekday === 'object' ? 
+      card.weekday[language] || card.weekday.en || card.weekday.zh : 
+      card.weekday
+    
+    // Use the correct translation for the heading
+    text += `${translations[language].heading} ${card.date} ${weekday}\n\n`
+    
+    if (card.projects) {
+      card.projects.forEach(project => {
+        // Get project icon
+        const icon = project.icon || getTypeIcon(project.type)
+        text += `${icon} ${project.name}\n`
+        text += `- ${project.url}\n`
+        
+        // Get language-specific summary
+        let summary = ''
+        if (project.summary) {
+          if (typeof project.summary === 'object') {
+            // Directly get the language-specific summary
+            summary = project.summary[language]
+            
+            // Fallback if the specified language summary is not available
+            if (!summary) {
+              if (language === 'en' && project.summary.en) {
+                summary = project.summary.en
+              } else if (project.summary.zh) {
+                summary = project.summary.zh
+              }
+            }
+          } else {
+            summary = project.summary
+          }
+        }
+        
+        text += `- ${summary.replace(/{{name}}/g, '')}\n\n`
+      })
+    }
+    
+    text += `---\n${translations[language].viewWeb} https://news.plonk.pro/${language}/${card.date.replace(/-/g, '/')}.html\n`
+    text += `${translations[language].collectedBy}`
   })
+  
   return text
 }

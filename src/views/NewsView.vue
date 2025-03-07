@@ -1,23 +1,29 @@
 <template>
   <div class="app-controls">
     <button @click="copyToClipboard" class="copy-button">
-      复制文本内容
+      {{ language === 'zh' ? '复制文本内容' : 'Copy Text' }}
+    </button>
+    <button @click="toggleLanguage" class="lang-button">
+      {{ language === 'zh' ? 'English' : '中文' }}
     </button>
   </div>
-  <div class="news-container" :style="{ '--primary-color': weekdayColor }">
+  <div class="news-container" :class="{ 'zh': language === 'zh', 'en': language === 'en' }" :style="{ '--primary-color': weekdayColor }">
     <div v-for="(card, index) in displayedCards" :key="index" class="news-card">
       <div class="card-header">
         <div class="github-title">
           <div class="title-icon">
             <span class="github-icon"></span>
-            零知识证明 <span class="highlight">zkDaily</span>
+            <span class="title-text">
+              {{ language === 'zh' ? '零知识证明' : '' }}
+            </span>
+            <span class="highlight">zkDaily</span>
           </div>
           <div class="subtitle-text">
-            零知识证明 前沿热点追踪 🎯
+            {{ language === 'zh' ? '零知识证明 前沿热点追踪 🎯' : 'ZKP Frontier Tracker 🎯' }}
           </div>
         </div>
         <div class="date">
-          <span class="date-weekday">{{ card.weekday }}</span>
+          <span class="date-weekday">{{ card.weekday[language] }}</span>
           <div class="date-details">
             <div class="date-number">{{ card.month }}.{{ card.day }}</div>
             <div class="date-year">{{ card.year }}</div>
@@ -56,10 +62,12 @@
               <a :href="project.url" class="project-url">{{ project.url }}</a>
               <div class="project-tags">
                 <span v-for="(tag, tIndex) in project.tags" :key="tIndex" class="tag">
-                  {{ tag }}
+                  {{ typeof tag === 'object' ? (tag[language] || tag.en || tag.zh) : tag }}
                 </span>
               </div>
-              <p class="project-summary" v-if="project.summary">{{ project.summary.replaceAll('\{\{name\}\}', '') }}</p>
+              <p class="project-summary" v-if="project.summary">
+                {{ (typeof project.summary === 'object' ? project.summary[language] : project.summary).replaceAll('\{\{name\}\}', '') }}
+              </p>
             </div>
           </div>
           <div class="project-notes" v-if="project.notes && project.notes.length > 0">
@@ -72,9 +80,9 @@
         </div>
       </div>
       <div class="card-footer">
-        由
+        {{ language === 'zh' ? '由' : 'Collected by' }}
         <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a>
-        收集
+        {{ language === 'zh' ? '收集' : '' }}
       </div>
       <div class="page-indicator" v-if="displayedCards.length > 1">
         <div v-for="i in displayedCards.length" :key="i" 
@@ -89,6 +97,7 @@
             :key="index" 
             :insight="insight"
             :date="date"
+            :language="language"
           />
       </template>
     </div>
@@ -97,7 +106,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
 import InsightCard from '../components/InsightCard.vue';
@@ -105,6 +114,14 @@ import { generateTextContent, getTypeIcon } from '../utils/textGenerator'
 import { parseMarkdown } from '../utils/markdownParser'
 
 const route = useRoute()
+const router = useRouter()
+
+const language = ref(route.query.lang || 'zh')
+
+function toggleLanguage() {
+  language.value = language.value === 'zh' ? 'en' : 'zh'
+  router.replace({ query: { ...route.query, lang: language.value } })
+}
 
 const selectedDate = computed(() => route.query.date)
 
@@ -143,12 +160,12 @@ const weekdayColor = computed(() => {
 
 async function copyToClipboard() {
   try {
-    const text = generateTextContent(displayedCards.value)
+    const text = generateTextContent(displayedCards.value, language.value)
     await navigator.clipboard.writeText(text)
-    // alert('内容已复制到剪贴板')
+    // alert(language.value === 'zh' ? '内容已复制到剪贴板' : 'Content copied to clipboard')
   } catch (err) {
-    console.error('复制失败:', err)
-    alert('复制失败，请重试')
+    console.error(language.value === 'zh' ? '复制失败:' : 'Copy failed:', err)
+    alert(language.value === 'zh' ? '复制失败，请重试' : 'Copy failed, please try again')
   }
 }
 </script>
