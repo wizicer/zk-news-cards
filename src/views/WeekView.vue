@@ -1,9 +1,14 @@
 <template>
   <div class="week-view">
+    <div class="language-selector">
+      <button @click="toggleLanguage" class="lang-button">
+        {{ language === 'zh' ? 'English' : '中文' }}
+      </button>
+    </div>
     <div v-for="week in weeklyData" :key="week.startDate" class="week-row">
       <div class="week-info">
         {{ week.startDate }} - {{ week.endDate }}
-        <button @click="copyWeekContent(week)" class="copy-btn">Copy</button>
+        <button @click="copyWeekContent(week)" class="copy-btn">{{ language === 'zh' ? '复制' : 'Copy' }}</button>
       </div>
     </div>
     <textarea v-model="generatedText" class="preview-text" readonly></textarea>
@@ -12,6 +17,7 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { newsData } from '../data'
 
 /**
@@ -42,6 +48,15 @@ function getWeekRange(date) {
 function formatDate(date) {
   const d = new Date(date)
   return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`
+}
+
+const route = useRoute()
+const router = useRouter()
+const language = ref(route.query.lang || 'zh')
+
+function toggleLanguage() {
+  language.value = language.value === 'zh' ? 'en' : 'zh'
+  router.replace({ query: { ...route.query, lang: language.value } })
 }
 
 const weeklyData = computed(() => {
@@ -77,6 +92,29 @@ function generateMarkdownContent(cards) {
   const endDate = weekRange.end
   content += `### ${endDate.getFullYear()}.${String(endDate.getMonth() + 1).padStart(2, '0')}.${String(endDate.getDate()).padStart(2, '0')}\n\n`
   
+  const typeLabelMap = {
+    zh: {
+      '论文': '论文',
+      '视频': '视频',
+      '博客': '博客',
+      '开源': '开源',
+      '活动': '活动',
+      '新闻': '信息',
+      '信息': '信息',
+      '工具': '工具'
+    },
+    en: {
+      '论文': 'Papers',
+      '视频': 'Videos',
+      '博客': 'Blogs',
+      '开源': 'Open Source',
+      '活动': 'Events',
+      '新闻': 'News',
+      '信息': 'News',
+      '工具': 'Tools'
+    }
+  }
+  
   const groupedByType = {}
   cards.forEach(card => {
     card.projects.forEach(project => {
@@ -84,9 +122,14 @@ function generateMarkdownContent(cards) {
       if (!groupedByType[type]) {
         groupedByType[type] = []
       }
+      
+      const summary = typeof project.summary === 'object' ? 
+        (project.summary[language.value] || project.summary.en || project.summary.zh) : 
+        project.summary;
+        
       groupedByType[type].push({
         ...project,
-        summary: project.summary.replace(/{{name}}/g, `《${project.name}》`)
+        summary: summary.replace(/{{name}}/g, `《${project.name}》`)
       })
     })
   })
@@ -97,7 +140,8 @@ function generateMarkdownContent(cards) {
   // Generate content in the specified order
   categoryOrder.forEach(type => {
     if (groupedByType[type] && groupedByType[type].length > 0) {
-      content += `**【${type}】**\n\n`
+      const typeLabel = typeLabelMap[language.value][type] || type
+      content += `**【${typeLabel}】**\n\n`
       groupedByType[type].forEach(project => {
         content += `- ${project.summary}\n`
         if (project.url) {
@@ -107,9 +151,15 @@ function generateMarkdownContent(cards) {
               return `[𝕏](${url})`
             }
             if (urls.length > 1) {
-              return `[${project.type === '视频' ? '视频' + (index + 1) : url.includes('blog') ? '博客' : '链接'}](${url})`
+              const linkText = language.value === 'zh' ? 
+                (project.type === '视频' ? '视频' + (index + 1) : url.includes('blog') ? '博客' : '链接') : 
+                (project.type === '视频' ? 'Video' + (index + 1) : url.includes('blog') ? 'Blog' : 'Link');
+              return `[${linkText}](${url})`
             }
-            return `[${project.type === '视频' ? '视频' : url.includes('blog') ? '博客' : '链接'}](${url})`
+            const linkText = language.value === 'zh' ? 
+              (project.type === '视频' ? '视频' : url.includes('blog') ? '博客' : '链接') : 
+              (project.type === '视频' ? 'Video' : url.includes('blog') ? 'Blog' : 'Link');
+            return `[${linkText}](${url})`
           })
           content += `  ${urlTexts.join('，\n  ')}\n`
         }
@@ -133,6 +183,25 @@ function copyWeekContent(week) {
 <style scoped>
 .week-view {
   padding: 20px;
+}
+
+.language-selector {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.lang-button {
+  padding: 5px 15px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lang-button:hover {
+  background-color: #0b7dda;
 }
 
 .week-row {
