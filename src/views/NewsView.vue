@@ -42,7 +42,7 @@
                 <span v-else-if="project.icon">{{ project.icon }}</span>
                 <span v-else>{{ getTypeIcon(project.type) }}</span>
               </div>
-              <span class="project-type" v-if="project.type">{{ project.type }}</span>
+              <span class="project-type" v-if="project.type">{{ language === 'zh' ? project.type : categoryNameMapEn[project.type] }}</span>
               <div class="project-qr">
               <qrcode-vue
                 :value="project.url"
@@ -110,7 +110,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
 import InsightCard from '../components/InsightCard.vue';
-import { generateTextContent, getTypeIcon } from '../utils/textGenerator'
+import { generateTextContent, getTypeIcon, categoryNameMapEn } from '../utils/textGenerator'
 import { parseMarkdown } from '../utils/markdownParser'
 
 const route = useRoute()

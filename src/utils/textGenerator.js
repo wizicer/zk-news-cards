@@ -11,6 +11,19 @@ const iconMap = {
   '漏洞': '🪳',
 }
 
+export const categoryNameMapEn = {
+  '论文': 'Papers',
+  '新闻': 'News',
+  '开源': 'Open Source',
+  '视频': 'Videos',
+  '博客': 'Blogs',
+  '活动': 'Events',
+  '工具': 'Tools',
+  '应用': 'Apps',
+  '信息': 'News',
+  '漏洞': 'Vulnerabilities',
+}
+
 export const getTypeIcon = (type) => {
   return iconMap[type] || '📌'
 }
