@@ -233,6 +233,10 @@ body {
     line-height: 1.4;
 }
 
+.project-name p {
+  margin: 0;
+}
+
 .project-url {
     color: var(--link-color);
     text-decoration: none;
@@ -262,6 +266,10 @@ body {
     font-size: 14px;
     margin: 8px 0;
     line-height: 1.5;
+}
+
+.project-summary p:first-of-type {
+  margin: 0;
 }
 
 .project-name {

@@ -56,8 +56,7 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-name">
-                {{ project.name }}
+              <h3 class="project-name" v-html="parseMathMarkdown(project.name)">
               </h3>
               <a :href="project.url" class="project-url">{{ project.url }}</a>
               <div class="project-tags">
@@ -65,15 +64,14 @@
                   {{ typeof tag === 'object' ? (tag[language] || tag.en || tag.zh) : tag }}
                 </span>
               </div>
-              <p class="project-summary" v-if="project.summary">
-                {{ (typeof project.summary === 'object' ? project.summary[language] : project.summary).replaceAll('\{\{name\}\}', '') }}
-              </p>
+              <div class="project-summary" v-if="project.summary" v-html="parseMathMarkdown((typeof project.summary === 'object' ? project.summary[language] : project.summary).replaceAll('\{\{name\}\}', ''))">
+              </div>
             </div>
           </div>
           <div class="project-notes" v-if="project.notes && project.notes.length > 0">
             <h4 class="notes-title">Notes</h4>
             <ul class="notes-list">
-              <li v-for="(note, nIndex) in project.notes" :key="nIndex" class="note-item" v-html="parseMarkdown(note)">
+              <li v-for="(note, nIndex) in project.notes" :key="nIndex" class="note-item" v-html="parseMathMarkdown(note)">
               </li>
             </ul>
           </div>
@@ -111,7 +109,7 @@ import { newsData } from '../data'
 import QrcodeVue from 'qrcode.vue'
 import InsightCard from '../components/InsightCard.vue';
 import { generateTextContent, getTypeIcon, categoryNameMapEn } from '../utils/textGenerator'
-import { parseMarkdown } from '../utils/markdownParser'
+import { parseMathMarkdown } from '../utils/mathMarkdownParser'
 
 const route = useRoute()
 const router = useRouter()

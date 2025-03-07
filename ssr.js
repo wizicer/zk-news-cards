@@ -53,6 +53,9 @@ async function generateStaticHTML(language = 'zh') {
     <style>
         ${fs.readFileSync(path.join(__dirname, 'src/style.css'), 'utf-8')}
     </style>
+    <style>
+        ${fs.readFileSync(path.join(__dirname, 'node_modules/katex/dist/katex.min.css'), 'utf-8')}
+    </style>
 </head>
 <body>
     <div id="app">${appContent}</div>

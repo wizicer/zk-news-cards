@@ -25,6 +25,7 @@
     "axios": "^1.6.2",
     "commander": "^11.1.0",
     "crypto": "^1.0.1",
+    "katex": "^0.16.21",
     "marked": "^15.0.7",
     "node-telegram-bot-api": "^0.66.0",
     "qrcode.vue": "^3.6.0",
