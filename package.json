@@ -18,7 +18,7 @@
     "shot": "npm run shot:all",
     "shot:all": "npm run generate && npm run screenshot && npm run screenshot -l zh && npm run screenshot -l en",
     "cast": "npm run cast:all",
-    "cast:all": "npm run generate:all && npm run notify -l zh && npm run notify -l en"
+    "cast:all": "npm run generate:all && npm run notify -- -l zh && npm run notify -- -l en"
   },
   "dependencies": {
     "@vue/server-renderer": "^3.3.11",

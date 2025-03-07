@@ -297,7 +297,7 @@ program
         try {
             const { year, month, day } = getDateParts();
             const imagePaths = await takeScreenshot(options.language);
-            const textPath = path.join('./texts', year, month, `${day}.txt`);
+            const textPath = path.join('./texts', options.language, year, month, `${day}.txt`);
 
             if (WECOM_WEBHOOK_URL_ZH || WECOM_WEBHOOK_URL_EN) {
                 await sendWecomNotification(null, textPath, options.language);
