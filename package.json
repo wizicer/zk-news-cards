@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@vue/server-renderer": "^3.3.11",
-    "axios": "^1.6.2",
+    "axios": "^1.8.2",
     "commander": "^11.1.0",
     "crypto": "^1.0.1",
     "katex": "^0.16.21",
@@ -33,11 +33,11 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue": "^4.6.2",
     "dotenv": "^16.4.7",
     "he": "^1.2.0",
     "puppeteer": "^23.10.1",
     "rimraf": "^5.0.5",
-    "vite": "^5.0.8"
+    "vite": "^5.4.14"
   }
 }
