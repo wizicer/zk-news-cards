@@ -12,16 +12,16 @@ const iconMap = {
 }
 
 export const categoryNameMapEn = {
-  '论文': 'Papers',
+  '论文': 'Paper',
   '新闻': 'News',
   '开源': 'Open Source',
-  '视频': 'Videos',
-  '博客': 'Blogs',
-  '活动': 'Events',
-  '工具': 'Tools',
-  '应用': 'Apps',
+  '视频': 'Video',
+  '博客': 'Blog',
+  '活动': 'Event',
+  '工具': 'Tool',
+  '应用': 'App',
   '信息': 'News',
-  '漏洞': 'Vulnerabilities',
+  '漏洞': 'Vulnerability',
 }
 
 export const getTypeIcon = (type) => {
