@@ -193,6 +193,42 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-08",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Polynomial Protocols for R1CS String Manipulation",
+        "url": "https://www.michaelstraka.com/polyprotocols",
+        "type": "博客",
+        "tags": [
+          "Michael Straka",
+          "Circom",
+          { zh: "字符串", en: "String" }
+        ],
+        "summary": { 
+          zh: "Michael Straka在{{name}}博客中分享了与Alin Tomescu合作开发的两个多项式协议，用于在R1CS电路中处理字符串连接和子字符串提取，代码实现用在了 @Aptos Keyless电路中。",
+          en: "Michael Straka shared polynomial protocols developed with Alin Tomescu for string concatenation and substring extraction in R1CS circuits, code implemented in @Aptos Keyless circuit."
+        }
+      },
+      {
+        "name": "Nexus Specification",
+        "url": "https://specification.nexus.xyz",
+        "type": "新闻",
+        "tags": [
+          "Nexus",
+          { zh: "规范", en: "Specification" },
+          "zkVM"
+        ],
+        "summary": { 
+          zh: "@NexusLabs 团队发布了Nexus规范文档，提供了详细的技术规格和指南，从中也可以看到他们在设计zkVM时的考虑，以及详细的约束条件。",
+          en: "@NexusLabs team released the Nexus specification document, providing detailed technical specifications and guidelines, also showing their considerations and constraints in designing the zkVM."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [

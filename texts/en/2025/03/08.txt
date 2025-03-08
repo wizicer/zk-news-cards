@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-08 Saturday
+
+📝 Polynomial Protocols for R1CS String Manipulation
+- https://www.michaelstraka.com/polyprotocols
+- Michael Straka shared polynomial protocols developed with Alin Tomescu for string concatenation and substring extraction in R1CS circuits, code implemented in @Aptos Keyless circuit.
+
+📰 Nexus Specification
+- https://specification.nexus.xyz
+- @NexusLabs team released the Nexus specification document, providing detailed technical specifications and guidelines, also showing their considerations and constraints in designing the zkVM.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/08.html
+🪶 Collected by @icerdesign

@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-08 星期六
+
+📝 Polynomial Protocols for R1CS String Manipulation
+- https://www.michaelstraka.com/polyprotocols
+- Michael Straka在博客中分享了与Alin Tomescu合作开发的两个多项式协议，用于在R1CS电路中处理字符串连接和子字符串提取，代码实现用在了 @Aptos Keyless电路中。
+
+📰 Nexus Specification
+- https://specification.nexus.xyz
+- @NexusLabs 团队发布了Nexus规范文档，提供了详细的技术规格和指南，从中也可以看到他们在设计zkVM时的考虑，以及详细的约束条件。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/08.html
+🪶 由 @icerdesign 收集
