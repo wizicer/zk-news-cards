@@ -14,7 +14,7 @@ const iconMap = {
 export const categoryNameMapEn = {
   '论文': 'Paper',
   '新闻': 'News',
-  '开源': 'Open Source',
+  '开源': 'OSS',
   '视频': 'Video',
   '博客': 'Blog',
   '活动': 'Event',

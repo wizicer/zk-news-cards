@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-09 星期日
+
+💻 zkVMs benchmarks
+- https://github.com/yetanotherco/zkvm_benchmarks
+- @alignedlayer 和 @class_lambda 团队发布了zkVM基准测试项目，包括在NV RTX A6000 GPU和AMD EPYC 8534P CPU上的Fibonacci和Keccak基准测试结果，包括RISC0，SP1，PICO三种证明系统。
+
+📝 Circom MPC: TL;DR and Retrospective
+- https://mirror.xyz/privacy-scaling-explorations.eth/qelA6kAr-CMq-dgmvFUKMMqxf6GoDaP8Cs-5sRWYfO4
+- PSE 团队分享了Circom MPC项目的回顾，讨论了使用Circom语言开发MPC应用的方法，包括circom-2-arithc编译器的实现和与MP-SPDZ后端的集成。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/09.html
+🪶 由 @icerdesign 收集

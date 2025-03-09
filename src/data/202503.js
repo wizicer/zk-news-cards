@@ -229,6 +229,41 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-09",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "zkVMs benchmarks",
+        "url": "https://github.com/yetanotherco/zkvm_benchmarks",
+        "type": "开源",
+        "tags": [
+          "Aligned", "Lambdaclass",
+          "zkVM",
+          { zh: "基准测试", en: "Benchmarks" },
+        ],
+        "summary": { 
+          zh: "@alignedlayer 和 @class_lambda 团队发布了zkVM基准测试项目，包括在NV RTX A6000 GPU和AMD EPYC 8534P CPU上的Fibonacci和Keccak基准测试结果，包括RISC0，SP1，PICO三种证明系统。",
+          en: "@alignedlayer and @class_lambda released zkVM benchmarks, including Fibonacci and Keccak benchmarks on NV RTX A6000 GPU and AMD EPYC 8534P CPU, with RISC0, SP1, PICO proof systems."
+        }
+      },
+      {
+        "name": "Circom MPC: TL;DR and Retrospective",
+        "url": "https://mirror.xyz/privacy-scaling-explorations.eth/qelA6kAr-CMq-dgmvFUKMMqxf6GoDaP8Cs-5sRWYfO4",
+        "type": "博客",
+        "tags": [
+          "PSE",
+          "MPC",
+        ],
+        "summary": { 
+          zh: "PSE 团队分享了Circom MPC项目的回顾，讨论了使用Circom语言开发MPC应用的方法，包括circom-2-arithc编译器的实现和与MP-SPDZ后端的集成。",
+          en: "PSE team shared a retrospective of the Circom MPC project, discussing the development of MPC applications using the Circom language, including the implementation of the circom-2-arithc compiler and integration with the MP-SPDZ backend."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [

@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-09 Sunday
+
+💻 zkVMs benchmarks
+- https://github.com/yetanotherco/zkvm_benchmarks
+- @alignedlayer and @class_lambda released zkVM benchmarks, including Fibonacci and Keccak benchmarks on NV RTX A6000 GPU and AMD EPYC 8534P CPU, with RISC0, SP1, PICO proof systems.
+
+📝 Circom MPC: TL;DR and Retrospective
+- https://mirror.xyz/privacy-scaling-explorations.eth/qelA6kAr-CMq-dgmvFUKMMqxf6GoDaP8Cs-5sRWYfO4
+- PSE team shared a retrospective of the Circom MPC project, discussing the development of MPC applications using the Circom language, including the implementation of the circom-2-arithc compiler and integration with the MP-SPDZ backend.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/09.html
+🪶 Collected by @icerdesign
