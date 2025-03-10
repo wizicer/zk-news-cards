@@ -1,5 +1,9 @@
 # Environment Setup
 
+## Documentation
+
+- [API Documentation](./API.md) - Details about the API structure and endpoints
+
 ## Ubuntu Dependencies
 
 Install required system dependencies by puppeteer: [REF](https://pptr.dev/troubleshooting)
@@ -13,4 +17,3 @@ Install required fonts:
 sudo apt install fonts-noto-color-emoji
 sudo apt install fonts-wqy-zenhei
 sudo apt install fonts-lmodern
-```
