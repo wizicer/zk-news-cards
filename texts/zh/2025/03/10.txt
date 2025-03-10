@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-10 星期一
+
+📝 A gentle introduction to shielded transactions
+- https://www.redshiftzero.com/post/utxo_privacy/
+- Redshift Zero在博客中介绍了隐匿交易(shielded tx)的概念，讨论了如何在ZCash等隐私支付系统中使用，以及如何在比特币类的UTXO协议上实现隐私保护。
+
+📄 Split Prover Zero-Knowledge SNARKs
+- https://eprint.iacr.org/2025/373
+- Garg等人在论文中提出了分割证明者zkSNARKs，允许Alice将部分zkSNARK计算任务委托给助手Bob，同时确保数据隐私和证明的不可区分性。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/10.html
+🪶 由 @icerdesign 收集

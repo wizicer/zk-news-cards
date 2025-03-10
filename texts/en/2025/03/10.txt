@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-10 Monday
+
+📝 A gentle introduction to shielded transactions
+- https://www.redshiftzero.com/post/utxo_privacy/
+- Redshift Zero introduced shielded transactions in blog , discussing how to use them in privacy payment systems like ZCash and how to implement privacy protection in Bitcoin-shaped UTXO-based protocols.
+
+📄 Split Prover Zero-Knowledge SNARKs
+- https://eprint.iacr.org/2025/373
+- Garg et al. proposed split prover zkSNARKs in paper , allowing Alice to delegate part of the zkSNARK computation tasks to helper Bob, while ensuring data privacy and proof indistinguishability.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/10.html
+🪶 Collected by @icerdesign

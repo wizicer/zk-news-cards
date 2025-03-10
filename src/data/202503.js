@@ -264,6 +264,40 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-10",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "A gentle introduction to shielded transactions",
+        "url": "https://www.redshiftzero.com/post/utxo_privacy/",
+        "type": "博客",
+        "tags": [
+          "Redshift Zero",
+          "UTXO"
+        ],
+        "summary": { 
+          zh: "Redshift Zero在博客{{name}}中介绍了隐匿交易(shielded tx)的概念，讨论了如何在ZCash等隐私支付系统中使用，以及如何在比特币类的UTXO协议上实现隐私保护。",
+          en: "Redshift Zero introduced shielded transactions in blog {{name}}, discussing how to use them in privacy payment systems like ZCash and how to implement privacy protection in Bitcoin-shaped UTXO-based protocols."
+        }
+      },
+      {
+        "name": "Split Prover Zero-Knowledge SNARKs",
+        "url": "https://eprint.iacr.org/2025/373",
+        "type": "论文",
+        "tags": [
+          "Sanjam Garg",
+          "Groth16",
+        ],
+        "summary": { 
+          zh: "Garg等人在{{name}}论文中提出了分割证明者zkSNARKs，允许Alice将部分zkSNARK计算任务委托给助手Bob，同时确保数据隐私和证明的不可区分性。",
+          en: "Garg et al. proposed split prover zkSNARKs in paper {{name}}, allowing Alice to delegate part of the zkSNARK computation tasks to helper Bob, while ensuring data privacy and proof indistinguishability."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [
