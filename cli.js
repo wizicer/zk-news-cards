@@ -231,7 +231,7 @@ async function sendTelegramNotification(imagePath, textPath, language = 'zh') {
             
             for (const { chatId, threadId } of chatConfigs) {
                 try {
-                    const options = threadId ? { message_thread_id: threadId, parse_mode: 'Markdown' } : { parse_mode: 'Markdown' };
+                    const options = threadId ? { message_thread_id: threadId } : {};
                     await bot.sendMessage(chatId, textContent, options);
                     console.log(`Text content sent successfully to Telegram chat ${chatId}${threadId ? ' thread ' + threadId : ''} (${language})`);
                 } catch (telegramError) {
