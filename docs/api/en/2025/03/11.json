@@ -1,0 +1,27 @@
+{
+  "date": "2025-03-11",
+  "projects": [
+    {
+      "name": "Exploring GKR: An Interactive Proof Scheme for Reducing Cryptographic Overhead",
+      "url": "https://taueflambda.dev/posts/gkr/",
+      "type": "博客",
+      "tags": [
+        "timofey",
+        "GKR",
+        "Sumcheck"
+      ],
+      "summary": "timofey explored GKR in blog{{name}}, a class of interactive proof schemes based on multilinear extensions, evaluated by the author as a scheme addresses cryptographic overhead differently—by nearly avoiding commitments in the first place."
+    },
+    {
+      "name": "Pairings coming out",
+      "url": "https://mirror.xyz/lisaakselrod.eth/5XJlZub-PJUpTXH7_shIEjr_z-R61-X_JfjXxnmIwEM",
+      "type": "博客",
+      "tags": [
+        "Lisa Akselrod",
+        "Pairings",
+        "Elliptic Curves"
+      ],
+      "summary": "Lisa Akselrod explored the mathematical principles of pairings in blog{{name}}, including the basic properties of elliptic curves, group laws, and rational functions, eventually leading to Weil Pairing."
+    }
+  ]
+}
