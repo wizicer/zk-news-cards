@@ -1,0 +1,25 @@
+{
+  "date": "2025-03-10",
+  "projects": [
+    {
+      "name": "A gentle introduction to shielded transactions",
+      "url": "https://www.redshiftzero.com/post/utxo_privacy/",
+      "type": "博客",
+      "tags": [
+        "Redshift Zero",
+        "UTXO"
+      ],
+      "summary": "Redshift Zero introduced shielded transactions in blog {{name}}, discussing how to use them in privacy payment systems like ZCash and how to implement privacy protection in Bitcoin-shaped UTXO-based protocols."
+    },
+    {
+      "name": "Split Prover Zero-Knowledge SNARKs",
+      "url": "https://eprint.iacr.org/2025/373",
+      "type": "论文",
+      "tags": [
+        "Sanjam Garg",
+        "Groth16"
+      ],
+      "summary": "Garg et al. proposed split prover zkSNARKs in paper {{name}}, allowing Alice to delegate part of the zkSNARK computation tasks to helper Bob, while ensuring data privacy and proof indistinguishability."
+    }
+  ]
+}

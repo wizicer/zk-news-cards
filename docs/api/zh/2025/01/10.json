@@ -1,34 +1,27 @@
-[
-  {
-    "date": "2025-01-10",
-    "projects": [
-      {
-        "name": "The Era of Provable Software",
-        "url": "https://writings.succinct.xyz/provable",
-        "type": "博客",
-        "tags": [
-          "Succinct",
-          "Provable Software",
-          "Cryptography"
-        ],
-        "summary": "@SuccinctLabs 在博客{{name}}中讨论了可证明软件时代，强调了ZK密码学的进步使得通过通用zkVM验证任意程序执行成为可能，这将推动区块链和计算领域的新应用。"
-      },
-      {
-        "name": "Try NoirLang quest at NodeGuardians",
-        "url": "https://x.com/cryptobuilder_/status/1877385090231316820",
-        "type": "活动",
-        "tags": [
-          "Lisa Akselrod",
-          "NodeGuardians",
-          "编程游戏"
-        ],
-        "summary": "@cryptobuilder_ 推荐尝试 @nodeguardians 的 @NoirLang 任务，通过游戏学习ZK的概念，无需了解ZK工作原理，即可学习如何证明程序并验证证据。"
-      }
-    ],
-    "year": "2025",
-    "month": "01",
-    "day": "10",
-    "weekday": "星期五",
-    "weekdayNumber": 5
-  }
-]
+{
+  "date": "2025-01-10",
+  "projects": [
+    {
+      "name": "The Era of Provable Software",
+      "url": "https://writings.succinct.xyz/provable",
+      "type": "博客",
+      "tags": [
+        "Succinct",
+        "Provable Software",
+        "Cryptography"
+      ],
+      "summary": "@SuccinctLabs 在博客{{name}}中讨论了可证明软件时代，强调了ZK密码学的进步使得通过通用zkVM验证任意程序执行成为可能，这将推动区块链和计算领域的新应用。"
+    },
+    {
+      "name": "Try NoirLang quest at NodeGuardians",
+      "url": "https://x.com/cryptobuilder_/status/1877385090231316820",
+      "type": "活动",
+      "tags": [
+        "Lisa Akselrod",
+        "NodeGuardians",
+        "编程游戏"
+      ],
+      "summary": "@cryptobuilder_ 推荐尝试 @nodeguardians 的 @NoirLang 任务，通过游戏学习ZK的概念，无需了解ZK工作原理，即可学习如何证明程序并验证证据。"
+    }
+  ]
+}

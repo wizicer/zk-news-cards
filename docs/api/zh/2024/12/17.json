@@ -1,34 +1,27 @@
-[
-  {
-    "date": "2024-12-17",
-    "projects": [
-      {
-        "name": "OpenVM: A Performant and Modular zkVM Framework",
-        "url": "https://github.com/openvm-org/openvm",
-        "type": "开源",
-        "tags": [
-          "Axiom",
-          "Scroll",
-          "zkVM"
-        ],
-        "summary": "Axiom, Scroll等团队发布了OpenVM开源项目，这是一个优先考虑模块化和可扩展性的zkVM框架，支持开发者添加自定义操作码、电路和证明系统。"
-      },
-      {
-        "name": "PoneglyphDB: Efficient Non-interactive Zero-Knowledge Proofs for Arbitrary SQL-Query Verification",
-        "url": "https://arxiv.org/abs/2411.15031",
-        "type": "论文",
-        "tags": [
-          "Binbin Gu",
-          "Unversity of California",
-          "SQL"
-        ],
-        "summary": "Gu等人在{{name}}论文中提出了PoneglyphDB，通过非交互式零知识证明（ZKP）支持数据保密性和查询处理的可验证性。"
-      }
-    ],
-    "year": "2024",
-    "month": "12",
-    "day": "17",
-    "weekday": "星期二",
-    "weekdayNumber": 2
-  }
-]
+{
+  "date": "2024-12-17",
+  "projects": [
+    {
+      "name": "OpenVM: A Performant and Modular zkVM Framework",
+      "url": "https://github.com/openvm-org/openvm",
+      "type": "开源",
+      "tags": [
+        "Axiom",
+        "Scroll",
+        "zkVM"
+      ],
+      "summary": "Axiom, Scroll等团队发布了OpenVM开源项目，这是一个优先考虑模块化和可扩展性的zkVM框架，支持开发者添加自定义操作码、电路和证明系统。"
+    },
+    {
+      "name": "PoneglyphDB: Efficient Non-interactive Zero-Knowledge Proofs for Arbitrary SQL-Query Verification",
+      "url": "https://arxiv.org/abs/2411.15031",
+      "type": "论文",
+      "tags": [
+        "Binbin Gu",
+        "Unversity of California",
+        "SQL"
+      ],
+      "summary": "Gu等人在{{name}}论文中提出了PoneglyphDB，通过非交互式零知识证明（ZKP）支持数据保密性和查询处理的可验证性。"
+    }
+  ]
+}

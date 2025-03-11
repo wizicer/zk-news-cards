@@ -1,0 +1,30 @@
+{
+  "10": {
+    "date": "2025-03-10",
+    "projects": [
+      "A gentle introduction to shielded transactions",
+      "Split Prover Zero-Knowledge SNARKs"
+    ]
+  },
+  "07": {
+    "date": "2025-03-07",
+    "projects": [
+      "Diamond iO: A Straightforward Construction of Indistinguishability Obfuscation from Lattices",
+      "The Barrett-Montgomery duality and a new multi-precision modular reduction scheme with only $n^2+1$ digit multiplications"
+    ]
+  },
+  "08": {
+    "date": "2025-03-08",
+    "projects": [
+      "Polynomial Protocols for R1CS String Manipulation",
+      "Nexus Specification"
+    ]
+  },
+  "09": {
+    "date": "2025-03-09",
+    "projects": [
+      "zkVMs benchmarks",
+      "Circom MPC: TL;DR and Retrospective"
+    ]
+  }
+}

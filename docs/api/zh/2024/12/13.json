@@ -1,34 +1,27 @@
-[
-  {
-    "date": "2024-12-13",
-    "projects": [
-      {
-        "name": "Lagrange Introduces the Infinite Proving Layer: Expanding Decentralized Proving to ZK Rollups",
-        "url": "https://www.lagrange.dev/blog/infinite-proving-layer",
-        "type": "新闻",
-        "tags": [
-          "Lagrange",
-          "ZK Rollups"
-        ],
-        "summary": "Lagrange推出了Infinite Proving Layer，扩展了其ZK Prover Network，为ZK rollups提供证明生成。"
-      },
-      {
-        "name": "ZK in Sui",
-        "url": "https://zkv.xyz/zk-in-sui/",
-        "type": "博客",
-        "tags": [
-          "ZKV",
-          "Sui",
-          "zkLogin",
-          "Kelp"
-        ],
-        "summary": "ZKV分享了{{name}}关于Sui上的ZK技术应用，讨论了隐私保护和安全漏洞等关键问题。涉及到zkLogin登录和Kelp账户恢复等应用。"
-      }
-    ],
-    "year": "2024",
-    "month": "12",
-    "day": "13",
-    "weekday": "星期五",
-    "weekdayNumber": 5
-  }
-]
+{
+  "date": "2024-12-13",
+  "projects": [
+    {
+      "name": "Lagrange Introduces the Infinite Proving Layer: Expanding Decentralized Proving to ZK Rollups",
+      "url": "https://www.lagrange.dev/blog/infinite-proving-layer",
+      "type": "新闻",
+      "tags": [
+        "Lagrange",
+        "ZK Rollups"
+      ],
+      "summary": "Lagrange推出了Infinite Proving Layer，扩展了其ZK Prover Network，为ZK rollups提供证明生成。"
+    },
+    {
+      "name": "ZK in Sui",
+      "url": "https://zkv.xyz/zk-in-sui/",
+      "type": "博客",
+      "tags": [
+        "ZKV",
+        "Sui",
+        "zkLogin",
+        "Kelp"
+      ],
+      "summary": "ZKV分享了{{name}}关于Sui上的ZK技术应用，讨论了隐私保护和安全漏洞等关键问题。涉及到zkLogin登录和Kelp账户恢复等应用。"
+    }
+  ]
+}

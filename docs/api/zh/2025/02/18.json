@@ -1,43 +1,36 @@
-[
-  {
-    "date": "2025-02-18",
-    "projects": [
-      {
-        "name": "On the Power of Polynomial Preprocessing",
-        "url": "https://eprint.iacr.org/2025/238",
-        "type": "论文",
-        "tags": [
-          "Matteo Campanelli",
-          "Sublinear",
-          "UC"
-        ],
-        "summary": "Campanelli等人在{{name}}论文中研究了具有次线性证明时间的密码学证明系统。作者提出了一种基于向量承诺和快速多项式评估预处理技术的简单多项式承诺构造。主要应用包括构建“索引高效”的SNARKs，使证明者在预处理后对索引大小具有次线性复杂度，并首次实现了对非结构化表的次线性证明者查找论证。"
-      },
-      {
-        "name": "Introducing bugs.zksecurity.xyz",
-        "url": "https://www.zksecurity.xyz/blog/posts/zkbugs-website/",
-        "type": "博客",
-        "tags": [
-          "zksecurity.xyz",
-          "Vulnerabilities"
-        ],
-        "summary": "@zksecurityXYZ 团队在博客{{name}}中分享了zkBugs网站的启动，该网站致力于记录和分析ZK电路中的历史漏洞，包括漏洞目录、复现报告、安全工具列表和工具评估等内容。"
-      }
-    ],
-    "insights": [
-      {
-        "title": "如何在饭桌上一分钟说清楚零知识证明",
-        "type": "original",
-        "slogan": "用筷子讲ZKP",
-        "images": [
-          "./images/2025-02-18.drawio.svg"
-        ]
-      }
-    ],
-    "year": "2025",
-    "month": "02",
-    "day": "18",
-    "weekday": "星期二",
-    "weekdayNumber": 2
-  }
-]
+{
+  "date": "2025-02-18",
+  "projects": [
+    {
+      "name": "On the Power of Polynomial Preprocessing",
+      "url": "https://eprint.iacr.org/2025/238",
+      "type": "论文",
+      "tags": [
+        "Matteo Campanelli",
+        "Sublinear",
+        "UC"
+      ],
+      "summary": "Campanelli等人在{{name}}论文中研究了具有次线性证明时间的密码学证明系统。作者提出了一种基于向量承诺和快速多项式评估预处理技术的简单多项式承诺构造。主要应用包括构建“索引高效”的SNARKs，使证明者在预处理后对索引大小具有次线性复杂度，并首次实现了对非结构化表的次线性证明者查找论证。"
+    },
+    {
+      "name": "Introducing bugs.zksecurity.xyz",
+      "url": "https://www.zksecurity.xyz/blog/posts/zkbugs-website/",
+      "type": "博客",
+      "tags": [
+        "zksecurity.xyz",
+        "Vulnerabilities"
+      ],
+      "summary": "@zksecurityXYZ 团队在博客{{name}}中分享了zkBugs网站的启动，该网站致力于记录和分析ZK电路中的历史漏洞，包括漏洞目录、复现报告、安全工具列表和工具评估等内容。"
+    }
+  ],
+  "insights": [
+    {
+      "title": "如何在饭桌上一分钟说清楚零知识证明",
+      "type": "original",
+      "slogan": "用筷子讲ZKP",
+      "images": [
+        "./images/2025-02-18.drawio.svg"
+      ]
+    }
+  ]
+}

@@ -1,34 +1,27 @@
-[
-  {
-    "date": "2024-12-18",
-    "projects": [
-      {
-        "name": "Announcing Valida 0.7.0",
-        "url": "https://www.lita.foundation/blog/announcing-valida-0-7-0",
-        "type": "新闻",
-        "tags": [
-          "Lita Team",
-          "WASM",
-          "zkVM"
-        ],
-        "summary": "Lita团队发布了Valida 0.7.0更新，首次支持WASM编译器工具链，并增强了zkVM堆栈的开发体验。"
-      },
-      {
-        "name": "Mira: Generic Accumulation Scheme for Special-Sound Protocols",
-        "url": "https://blog.beal.io/posts/mira/",
-        "type": "博客",
-        "tags": [
-          "Josh Beal",
-          "accumulation",
-          "Folding"
-        ],
-        "summary": "Josh Beal在博客{{name}}中提出了一种通用的累积方案，适用于特殊可靠性的协议（类Protostar），显著提高了配对基论证的折叠效率。"
-      }
-    ],
-    "year": "2024",
-    "month": "12",
-    "day": "18",
-    "weekday": "星期三",
-    "weekdayNumber": 3
-  }
-]
+{
+  "date": "2024-12-18",
+  "projects": [
+    {
+      "name": "Announcing Valida 0.7.0",
+      "url": "https://www.lita.foundation/blog/announcing-valida-0-7-0",
+      "type": "新闻",
+      "tags": [
+        "Lita Team",
+        "WASM",
+        "zkVM"
+      ],
+      "summary": "Lita团队发布了Valida 0.7.0更新，首次支持WASM编译器工具链，并增强了zkVM堆栈的开发体验。"
+    },
+    {
+      "name": "Mira: Generic Accumulation Scheme for Special-Sound Protocols",
+      "url": "https://blog.beal.io/posts/mira/",
+      "type": "博客",
+      "tags": [
+        "Josh Beal",
+        "accumulation",
+        "Folding"
+      ],
+      "summary": "Josh Beal在博客{{name}}中提出了一种通用的累积方案，适用于特殊可靠性的协议（类Protostar），显著提高了配对基论证的折叠效率。"
+    }
+  ]
+}

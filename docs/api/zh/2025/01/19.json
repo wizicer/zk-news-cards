@@ -1,35 +1,28 @@
-[
-  {
-    "date": "2025-01-19",
-    "projects": [
-      {
-        "name": "零知识证明 - RISC0 zkVM源代码入门",
-        "url": "https://mp.weixin.qq.com/s/E6GbCexZ6QNFe6_K2i_J9w",
-        "type": "博客",
-        "tags": [
-          "Star Li",
-          "zkVM",
-          "RISC0",
-          "Zirgen"
-        ],
-        "summary": "Star Li 分享了RISC0 zkVM的源代码结构，包括Bonsai证明服务、Groth16证明实现、电路接口等，展示了zkVM如何通过Rust语言实现复杂的业务逻辑。"
-      },
-      {
-        "name": "Extending Groth16 for Disjunctive Statements",
-        "url": "https://eprint.iacr.org/2025/028",
-        "type": "论文",
-        "tags": [
-          "Xudong Zhu",
-          "析取表达",
-          "逻辑组合"
-        ],
-        "summary": "Zhu等人在{{name}}论文中提出了CompGroth16，一个Groth16的变体，旨在支持包含代数和算术组件的析取语句证明，提高了表达能力和证明效率，但验证成本变高了。"
-      }
-    ],
-    "year": "2025",
-    "month": "01",
-    "day": "19",
-    "weekday": "星期日",
-    "weekdayNumber": 0
-  }
-]
+{
+  "date": "2025-01-19",
+  "projects": [
+    {
+      "name": "零知识证明 - RISC0 zkVM源代码入门",
+      "url": "https://mp.weixin.qq.com/s/E6GbCexZ6QNFe6_K2i_J9w",
+      "type": "博客",
+      "tags": [
+        "Star Li",
+        "zkVM",
+        "RISC0",
+        "Zirgen"
+      ],
+      "summary": "Star Li 分享了RISC0 zkVM的源代码结构，包括Bonsai证明服务、Groth16证明实现、电路接口等，展示了zkVM如何通过Rust语言实现复杂的业务逻辑。"
+    },
+    {
+      "name": "Extending Groth16 for Disjunctive Statements",
+      "url": "https://eprint.iacr.org/2025/028",
+      "type": "论文",
+      "tags": [
+        "Xudong Zhu",
+        "析取表达",
+        "逻辑组合"
+      ],
+      "summary": "Zhu等人在{{name}}论文中提出了CompGroth16，一个Groth16的变体，旨在支持包含代数和算术组件的析取语句证明，提高了表达能力和证明效率，但验证成本变高了。"
+    }
+  ]
+}

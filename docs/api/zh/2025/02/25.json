@@ -1,44 +1,37 @@
-[
-  {
-    "date": "2025-02-25",
-    "projects": [
-      {
-        "name": "Surveyor R1CS binary format to Lean extractor",
-        "url": "https://github.com/NethermindEth/Surveyor",
-        "type": "开源",
-        "tags": [
-          "NethermindEth",
-          "R1CS",
-          "Lean",
-          "Haskell"
-        ],
-        "summary": "@NethermindEth 团队开源了Surveyor项目，支持将R1CS二进制格式转换为Lean提取器，依赖Haskell，用于对R1CS进行形式化证明。"
-      },
-      {
-        "name": "Tornado Anonymity Revoker Design",
-        "url": "https://np.engineering/posts/tornado-anonymity-revoker-design/",
-        "type": "博客",
-        "tags": [
-          "Antonio Mejías Gil",
-          "Tornado Cash"
-        ],
-        "summary": "Antonio Mejías Gil在博客{{name}}中讨论了Tornado Cash协议的匿名撤销设计，提出了一种允许特定实体撤销用户匿名性的修改方案。"
-      }
-    ],
-    "insights": [
-      {
-        "title": "zkSDK vs zkDSL vs zkVM",
-        "type": "original",
-        "slogan": "高性能与易用性的角逐",
-        "images": [
-          "./images/2025/02/25.drawio.svg"
-        ]
-      }
-    ],
-    "year": "2025",
-    "month": "02",
-    "day": "25",
-    "weekday": "星期二",
-    "weekdayNumber": 2
-  }
-]
+{
+  "date": "2025-02-25",
+  "projects": [
+    {
+      "name": "Surveyor R1CS binary format to Lean extractor",
+      "url": "https://github.com/NethermindEth/Surveyor",
+      "type": "开源",
+      "tags": [
+        "NethermindEth",
+        "R1CS",
+        "Lean",
+        "Haskell"
+      ],
+      "summary": "@NethermindEth 团队开源了Surveyor项目，支持将R1CS二进制格式转换为Lean提取器，依赖Haskell，用于对R1CS进行形式化证明。"
+    },
+    {
+      "name": "Tornado Anonymity Revoker Design",
+      "url": "https://np.engineering/posts/tornado-anonymity-revoker-design/",
+      "type": "博客",
+      "tags": [
+        "Antonio Mejías Gil",
+        "Tornado Cash"
+      ],
+      "summary": "Antonio Mejías Gil在博客{{name}}中讨论了Tornado Cash协议的匿名撤销设计，提出了一种允许特定实体撤销用户匿名性的修改方案。"
+    }
+  ],
+  "insights": [
+    {
+      "title": "zkSDK vs zkDSL vs zkVM",
+      "type": "original",
+      "slogan": "高性能与易用性的角逐",
+      "images": [
+        "./images/2025/02/25.drawio.svg"
+      ]
+    }
+  ]
+}

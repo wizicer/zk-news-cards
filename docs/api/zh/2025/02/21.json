@@ -1,36 +1,28 @@
-[
-  {
-    "date": "2025-02-21",
-    "projects": [
-      {
-        "name": "Khatam: Reducing the Communication Complexity of Code-Based SNARKs",
-        "url": "https://eprint.iacr.org/2024/1843",
-        "type": "论文",
-        "tags": [
-          "Hadas Zeilberger",
-          "基于编码",
-          "多线性PC"
-        ],
-        "summary": "Hadas Zeilberger在{{name}}论文中提出了一种降低基于编码的SNARKs通信复杂性的方法，利用线性码的“相关一致性”性质，证明当向量𝜋𝐿 + 𝑟𝜋𝑅接近某个码字时，𝜋𝐿、𝜋𝑅和𝜋𝐿 + 𝑟𝜋𝑅在特定位置上也与码字一致。这一性质能显著降低了通信复杂性。"
-      },
-      {
-        "name": "Neo: Lattice-based folding scheme for CCS over small fields and pay-per-bit commitments",
-        "url": "https://eprint.iacr.org/2025/294",
-        "type": "论文",
-        "tags": [
-          "Wilson Nguyen",
-          "Srinath Setty",
-          "格",
-          "折叠"
-        ],
-        "summary": "Wilson Nguyen和Srinath Setty在{{name}}论文中提出了Neo，一种新的基于格的折叠方案，适用于CCS。Neo通过适应HyperNova的折叠方案到格设置，解决了LatticeFold的局限性，提供了后量子安全性，并引入了按位付费的承诺成本。"
-      }
-    ],
-    "insights": [],
-    "year": "2025",
-    "month": "02",
-    "day": "21",
-    "weekday": "星期五",
-    "weekdayNumber": 5
-  }
-]
+{
+  "date": "2025-02-21",
+  "projects": [
+    {
+      "name": "Khatam: Reducing the Communication Complexity of Code-Based SNARKs",
+      "url": "https://eprint.iacr.org/2024/1843",
+      "type": "论文",
+      "tags": [
+        "Hadas Zeilberger",
+        "基于编码",
+        "多线性PC"
+      ],
+      "summary": "Hadas Zeilberger在{{name}}论文中提出了一种降低基于编码的SNARKs通信复杂性的方法，利用线性码的“相关一致性”性质，证明当向量𝜋𝐿 + 𝑟𝜋𝑅接近某个码字时，𝜋𝐿、𝜋𝑅和𝜋𝐿 + 𝑟𝜋𝑅在特定位置上也与码字一致。这一性质能显著降低了通信复杂性。"
+    },
+    {
+      "name": "Neo: Lattice-based folding scheme for CCS over small fields and pay-per-bit commitments",
+      "url": "https://eprint.iacr.org/2025/294",
+      "type": "论文",
+      "tags": [
+        "Wilson Nguyen",
+        "Srinath Setty",
+        "格",
+        "折叠"
+      ],
+      "summary": "Wilson Nguyen和Srinath Setty在{{name}}论文中提出了Neo，一种新的基于格的折叠方案，适用于CCS。Neo通过适应HyperNova的折叠方案到格设置，解决了LatticeFold的局限性，提供了后量子安全性，并引入了按位付费的承诺成本。"
+    }
+  ]
+}

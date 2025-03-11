@@ -1,34 +1,27 @@
-[
-  {
-    "date": "2024-12-12",
-    "projects": [
-      {
-        "name": "awesome-zkvm",
-        "url": "https://github.com/rkdud007/awesome-zkvm",
-        "type": "开源",
-        "tags": [
-          "rkdud007",
-          "awesome",
-          "zkVM"
-        ],
-        "summary": "rkdud007发布了awesome-zkvm开源zkVM列表，涵盖了多个项目和资源，支持并行证明和GPU证明的横向对比等功能。"
-      },
-      {
-        "name": "An Update on Folding",
-        "url": "https://www.youtube.com/watch?v=4alOna5X3ro",
-        "type": "视频",
-        "tags": [
-          "ZK Hack",
-          "Albert Garreta",
-          "Folding"
-        ],
-        "summary": "视频详细介绍了折叠方案的定义、特性、应用及其在Nova方案后的进展，特别是Hypernova的定义和协议。"
-      }
-    ],
-    "year": "2024",
-    "month": "12",
-    "day": "12",
-    "weekday": "星期四",
-    "weekdayNumber": 4
-  }
-]
+{
+  "date": "2024-12-12",
+  "projects": [
+    {
+      "name": "awesome-zkvm",
+      "url": "https://github.com/rkdud007/awesome-zkvm",
+      "type": "开源",
+      "tags": [
+        "rkdud007",
+        "awesome",
+        "zkVM"
+      ],
+      "summary": "rkdud007发布了awesome-zkvm开源zkVM列表，涵盖了多个项目和资源，支持并行证明和GPU证明的横向对比等功能。"
+    },
+    {
+      "name": "An Update on Folding",
+      "url": "https://www.youtube.com/watch?v=4alOna5X3ro",
+      "type": "视频",
+      "tags": [
+        "ZK Hack",
+        "Albert Garreta",
+        "Folding"
+      ],
+      "summary": "视频详细介绍了折叠方案的定义、特性、应用及其在Nova方案后的进展，特别是Hypernova的定义和协议。"
+    }
+  ]
+}

@@ -1,34 +1,27 @@
-[
-  {
-    "date": "2025-01-23",
-    "projects": [
-      {
-        "name": "Auto-Accelerated Circuits in powdrVM",
-        "url": "https://www.powdr.org/blog/auto-acc-circuits",
-        "type": "博客",
-        "tags": [
-          "powdr labs",
-          "zkVM",
-          "电路优化"
-        ],
-        "summary": "@powdr_labs 在{{name}}博客中介绍了powdrVM的最新实验性功能：自动生成加速电路以优化Rust程序的性能，展示了如何通过静态和运行时分析选择加速块，并自动生成优化电路。"
-      },
-      {
-        "name": "FRI and Proximity Proofs (Part.2)",
-        "url": "https://www.youtube.com/watch?v=CWbx_rnj7LI",
-        "type": "视频",
-        "tags": [
-          "Dan Boneh",
-          "ZK Hack",
-          "FRI"
-        ],
-        "summary": "@danboneh 教授在 @__zkhack__ Whiteboard Sessions 中详细讲解了FRI协议及其分析，包括两阶段协议（提交和查询）和多种验证方法，以及FRI的变体和未来SNARK发展的潜在替代方案。"
-      }
-    ],
-    "year": "2025",
-    "month": "01",
-    "day": "23",
-    "weekday": "星期四",
-    "weekdayNumber": 4
-  }
-]
+{
+  "date": "2025-01-23",
+  "projects": [
+    {
+      "name": "Auto-Accelerated Circuits in powdrVM",
+      "url": "https://www.powdr.org/blog/auto-acc-circuits",
+      "type": "博客",
+      "tags": [
+        "powdr labs",
+        "zkVM",
+        "电路优化"
+      ],
+      "summary": "@powdr_labs 在{{name}}博客中介绍了powdrVM的最新实验性功能：自动生成加速电路以优化Rust程序的性能，展示了如何通过静态和运行时分析选择加速块，并自动生成优化电路。"
+    },
+    {
+      "name": "FRI and Proximity Proofs (Part.2)",
+      "url": "https://www.youtube.com/watch?v=CWbx_rnj7LI",
+      "type": "视频",
+      "tags": [
+        "Dan Boneh",
+        "ZK Hack",
+        "FRI"
+      ],
+      "summary": "@danboneh 教授在 @__zkhack__ Whiteboard Sessions 中详细讲解了FRI协议及其分析，包括两阶段协议（提交和查询）和多种验证方法，以及FRI的变体和未来SNARK发展的潜在替代方案。"
+    }
+  ]
+}

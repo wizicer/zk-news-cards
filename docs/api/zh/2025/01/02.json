@@ -1,32 +1,25 @@
-[
-  {
-    "date": "2025-01-02",
-    "projects": [
-      {
-        "name": "ANON.WORLD",
-        "url": "https://anon.world/",
-        "type": "应用",
-        "tags": [
-          "ANON.WORLD",
-          "匿名社交"
-        ],
-        "summary": "@Slokh 发布了匿名社交网络 @anondotworld，使用ZKP生成匿名凭证，用户发帖时可附加多个凭证，社区由共享凭证的用户组成，成员可代表社区进行匿名操作。"
-      },
-      {
-        "name": "If you want to learn ZK in 2025",
-        "url": "https://x.com/Jeyffre/status/1874654453191815396",
-        "type": "博客",
-        "tags": [
-          "Jeffrey Scholz",
-          "RareSkills"
-        ],
-        "summary": "@Jeyffre 分享了RareSkills ZK Book的学习方法，强调通过按顺序学习ZK，提高学习效率。"
-      }
-    ],
-    "year": "2025",
-    "month": "01",
-    "day": "02",
-    "weekday": "星期四",
-    "weekdayNumber": 4
-  }
-]
+{
+  "date": "2025-01-02",
+  "projects": [
+    {
+      "name": "ANON.WORLD",
+      "url": "https://anon.world/",
+      "type": "应用",
+      "tags": [
+        "ANON.WORLD",
+        "匿名社交"
+      ],
+      "summary": "@Slokh 发布了匿名社交网络 @anondotworld，使用ZKP生成匿名凭证，用户发帖时可附加多个凭证，社区由共享凭证的用户组成，成员可代表社区进行匿名操作。"
+    },
+    {
+      "name": "If you want to learn ZK in 2025",
+      "url": "https://x.com/Jeyffre/status/1874654453191815396",
+      "type": "博客",
+      "tags": [
+        "Jeffrey Scholz",
+        "RareSkills"
+      ],
+      "summary": "@Jeyffre 分享了RareSkills ZK Book的学习方法，强调通过按顺序学习ZK，提高学习效率。"
+    }
+  ]
+}

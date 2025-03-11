@@ -1,25 +1,18 @@
-[
-  {
-    "date": "2024-12-23",
-    "projects": [
-      {
-        "name": "Wait, Why Do We Need Consensus Again?",
-        "url": "https://pod.network/blog/wait-why-do-we-need-consensus-again",
-        "type": "博客",
-        "tags": [
-          "POD.NETWORK",
-          "Consensus",
-          "Blockchain",
-          "Decentralization",
-          "Double-Spending"
-        ],
-        "summary": "POD.NETWORK讨论了区块链中共识的必要性，指出共识并非构建去中心化支付的必需，通过无共识协议可以实现更快的交易确认。"
-      }
-    ],
-    "year": "2024",
-    "month": "12",
-    "day": "23",
-    "weekday": "星期一",
-    "weekdayNumber": 1
-  }
-]
+{
+  "date": "2024-12-23",
+  "projects": [
+    {
+      "name": "Wait, Why Do We Need Consensus Again?",
+      "url": "https://pod.network/blog/wait-why-do-we-need-consensus-again",
+      "type": "博客",
+      "tags": [
+        "POD.NETWORK",
+        "Consensus",
+        "Blockchain",
+        "Decentralization",
+        "Double-Spending"
+      ],
+      "summary": "POD.NETWORK讨论了区块链中共识的必要性，指出共识并非构建去中心化支付的必需，通过无共识协议可以实现更快的交易确认。"
+    }
+  ]
+}

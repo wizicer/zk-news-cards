@@ -1,42 +1,34 @@
-[
-  {
-    "date": "2025-03-04",
-    "projects": [
-      {
-        "name": "Unearthing the Reality of zkTLS: A Benchmarking and Cryptanalysis Report",
-        "url": "https://hackmd.io/@-fI_Eu_rR8qs02aOhOPWNg/HkRyz5OF1g",
-        "type": "博客",
-        "tags": [
-          "Xiang Xie",
-          "Xiao Wang",
-          "zkTLS",
-          "QuickSilver"
-        ],
-        "urls": [
-          {
-            "name": "源代码",
-            "url": "https://github.com/primus-labs/zktls-bench"
-          }
-        ],
-        "summary": "@xxiang_xie 和Xiao Wang分享了关于zkTLS的基准测试和密码分析报告，包括MPC-TLS和Proxy-TLS两种主要方法的性能比较，并指出了 @reclaimprotocol 中的问题，最后展示了Primus的garble-then-prove系统的显著速度优势。"
-      },
-      {
-        "name": "Making Airdrops More Human with ZKEmail",
-        "url": "https://x.com/zkemail/status/1896599253117530500",
-        "type": "博客",
-        "tags": [
-          "@zkemail",
-          "Airdrops",
-          "Email"
-        ],
-        "summary": "@zkemail 团队分享了如何通过ZKEmail使空投更加人性化的博客{{name}}，讨论了使用ZK技术验证资格并通过邮箱领取代币的方法。并表示他们已经与 @JupiterExchange 展开了合作。"
-      }
-    ],
-    "insights": [],
-    "year": "2025",
-    "month": "03",
-    "day": "04",
-    "weekday": "星期二",
-    "weekdayNumber": 2
-  }
-]
+{
+  "date": "2025-03-04",
+  "projects": [
+    {
+      "name": "Unearthing the Reality of zkTLS: A Benchmarking and Cryptanalysis Report",
+      "url": "https://hackmd.io/@-fI_Eu_rR8qs02aOhOPWNg/HkRyz5OF1g",
+      "urls": [
+        {
+          "name": "源代码",
+          "url": "https://github.com/primus-labs/zktls-bench"
+        }
+      ],
+      "type": "博客",
+      "tags": [
+        "Xiang Xie",
+        "Xiao Wang",
+        "zkTLS",
+        "QuickSilver"
+      ],
+      "summary": "@xxiang_xie 和Xiao Wang分享了关于zkTLS的基准测试和密码分析报告，包括MPC-TLS和Proxy-TLS两种主要方法的性能比较，并指出了 @reclaimprotocol 中的问题，最后展示了Primus的garble-then-prove系统的显著速度优势。"
+    },
+    {
+      "name": "Making Airdrops More Human with ZKEmail",
+      "url": "https://x.com/zkemail/status/1896599253117530500",
+      "type": "博客",
+      "tags": [
+        "@zkemail",
+        "Airdrops",
+        "Email"
+      ],
+      "summary": "@zkemail 团队分享了如何通过ZKEmail使空投更加人性化的博客{{name}}，讨论了使用ZK技术验证资格并通过邮箱领取代币的方法。并表示他们已经与 @JupiterExchange 展开了合作。"
+    }
+  ]
+}

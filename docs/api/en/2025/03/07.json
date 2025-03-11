@@ -1,0 +1,28 @@
+{
+  "date": "2025-03-07",
+  "projects": [
+    {
+      "name": "Diamond iO: A Straightforward Construction of Indistinguishability Obfuscation from Lattices",
+      "url": "https://eprint.iacr.org/2025/236",
+      "type": "论文",
+      "tags": [
+        "Sora Suegami",
+        "Enrico Bottazzi",
+        "iO",
+        "Lattice"
+      ],
+      "summary": "Suegami and Bottazzi proposed diamond iO in {{name}}, a new iO construction based on lattices that replaces expensive recursive encryption with lightweight matrix operations, significantly reducing complexity."
+    },
+    {
+      "name": "The Barrett-Montgomery duality and a new multi-precision modular reduction scheme with only $n^2+1$ digit multiplications",
+      "url": "https://hackmd.io/@Ingonyama/Barret-Montgomery",
+      "type": "博客",
+      "tags": [
+        "Modular Reduction",
+        "Barrett",
+        "Montgomery"
+      ],
+      "summary": "Yuval Domb explored the duality of Barrett and Montgomery modular reduction algorithms in {{name}}, proposing a new multi-precision modular reduction scheme that requires only $n^2+1$ digit multiplications, significantly improving computational efficiency."
+    }
+  ]
+}

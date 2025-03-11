@@ -1,35 +1,28 @@
-[
-  {
-    "date": "2024-12-09",
-    "projects": [
-      {
-        "name": "Zeam: Ethereum beam client in Zig",
-        "url": "https://github.com/blockblaz/zeam",
-        "type": "开源",
-        "tags": [
-          "Blockblaz",
-          "Ethereum",
-          "Github"
-        ],
-        "summary": "Blockblaz团队发布了Zeam开源项目，这是Zig实现的Beam客户端的生产级实现，旨在通过ZK-VMs大规模扩展和去中心化以太坊共识协议。"
-      },
-      {
-        "name": "Play-by-email provable games",
-        "url": "https://blog.hyle.eu/podcast-1-matteo-zkchess/",
-        "type": "博客",
-        "tags": [
-          "Hylé",
-          "Matteo",
-          "zkEmail",
-          "RISC0"
-        ],
-        "summary": "Hylé博客{{name}}讨论了zkChess，一个使用zkEmail和RISC0构建的邮件可验证游戏引擎，探讨了zkEmail的酷炫之处及其在加密领域的应用。"
-      }
-    ],
-    "year": "2024",
-    "month": "12",
-    "day": "09",
-    "weekday": "星期一",
-    "weekdayNumber": 1
-  }
-]
+{
+  "date": "2024-12-09",
+  "projects": [
+    {
+      "name": "Zeam: Ethereum beam client in Zig",
+      "url": "https://github.com/blockblaz/zeam",
+      "type": "开源",
+      "tags": [
+        "Blockblaz",
+        "Ethereum",
+        "Github"
+      ],
+      "summary": "Blockblaz团队发布了Zeam开源项目，这是Zig实现的Beam客户端的生产级实现，旨在通过ZK-VMs大规模扩展和去中心化以太坊共识协议。"
+    },
+    {
+      "name": "Play-by-email provable games",
+      "url": "https://blog.hyle.eu/podcast-1-matteo-zkchess/",
+      "type": "博客",
+      "tags": [
+        "Hylé",
+        "Matteo",
+        "zkEmail",
+        "RISC0"
+      ],
+      "summary": "Hylé博客{{name}}讨论了zkChess，一个使用zkEmail和RISC0构建的邮件可验证游戏引擎，探讨了zkEmail的酷炫之处及其在加密领域的应用。"
+    }
+  ]
+}

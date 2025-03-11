@@ -1,34 +1,26 @@
-[
-  {
-    "date": "2024-12-08",
-    "projects": [
-      {
-        "name": "Aligned Foundation Genesis Airdrop",
-        "url": "https://genesis.alignedfoundation.org",
-        "type": "新闻",
-        "icon": "✈️",
-        "tags": [
-          "Aligned Foundation",
-          "空投",
-          "Github"
-        ],
-        "summary": "Aligned Foundation感谢Ethereum和ZK领域的工程师和研究人员，并邀请他们通过其网站检查空投资格。"
-      },
-      {
-        "name": "Scribe: Low-memory SNARKs via Read-Write Streaming",
-        "url": "https://eprint.iacr.org/2024/1970",
-        "type": "论文",
-        "tags": [
-          "University of Pennsylvania",
-          "低内存"
-        ],
-        "summary": "Baweja等人在论文{{name}}中提出了Scribe，一种低内存SNARK，通过利用磁盘存储在廉价设备上高效证明大称述，显著减少内存需求并优化I/O成本。"
-      }
-    ],
-    "year": "2024",
-    "month": "12",
-    "day": "08",
-    "weekday": "星期日",
-    "weekdayNumber": 0
-  }
-]
+{
+  "date": "2024-12-08",
+  "projects": [
+    {
+      "name": "Aligned Foundation Genesis Airdrop",
+      "url": "https://genesis.alignedfoundation.org",
+      "type": "新闻",
+      "tags": [
+        "Aligned Foundation",
+        "空投",
+        "Github"
+      ],
+      "summary": "Aligned Foundation感谢Ethereum和ZK领域的工程师和研究人员，并邀请他们通过其网站检查空投资格。"
+    },
+    {
+      "name": "Scribe: Low-memory SNARKs via Read-Write Streaming",
+      "url": "https://eprint.iacr.org/2024/1970",
+      "type": "论文",
+      "tags": [
+        "University of Pennsylvania",
+        "低内存"
+      ],
+      "summary": "Baweja等人在论文{{name}}中提出了Scribe，一种低内存SNARK，通过利用磁盘存储在廉价设备上高效证明大称述，显著减少内存需求并优化I/O成本。"
+    }
+  ]
+}

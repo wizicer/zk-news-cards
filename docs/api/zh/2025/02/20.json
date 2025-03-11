@@ -1,56 +1,48 @@
-[
-  {
-    "date": "2025-02-20",
-    "projects": [
-      {
-        "name": "Aleo Mainnet Inflation Bug Discovery and Fix",
-        "url": "https://www.zksecurity.xyz/blog/posts/aleo-bug/",
-        "type": "博客",
-        "tags": [
-          "zksecurity.xyz",
-          "Aleo",
-          "Bug Fix"
-        ],
-        "summary": "@zksecurityXYZ 团队通过博客{{name}}分享了在Aleo主网中发现的一个通胀漏洞，详细描述了漏洞的背景、可能的利用方式以及修复过程。"
-      },
-      {
-        "name": "You should not build Tornado Cash with FHE",
-        "url": "https://www.leku.blog/tornado/",
-        "type": "博客",
-        "tags": [
-          "Leku",
-          "Tornado Cash",
-          "FHE"
-        ],
-        "summary": "Leku在{{name}}博客中讨论了使用FHE构建Tornado Cash的可行性，比较了ZK和FHE在隐私保护应用中的差异，并指出FHE在匿名性、金额隐私和安全性方面表现不如ZK版本。"
-      },
-      {
-        "name": "Sindri: A Platform for Zero-Knowledge Proof Development",
-        "url": "https://sindri.app/",
-        "type": "新闻",
-        "tags": [
-          "Sindri",
-          "开发平台",
-          "zkSNARK"
-        ],
-        "summary": "@SindriLabs 为开发者提供了一个云平台，专注于零知识证明的开发，支持zkSNARK等技术，旨在简化ZKP应用的创建和部署过程。"
-      },
-      {
-        "name": "SuiOverflow 2025 Hackathon",
-        "url": "https://x.com/SuiNetwork/status/1889851281059225898",
-        "type": "活动",
-        "tags": [
-          "SuiNetwork",
-          "Hackathon"
-        ],
-        "summary": "@SuiNetwork 宣布了SuiOverflow 2025黑客马拉松，提供超过$500,000的奖金，涵盖DeFi、AI、密码学技术等8个赛道，鼓励开发者基于Sui平台进行创新。ZK相关的项目也可以参与。"
-      }
-    ],
-    "insights": [],
-    "year": "2025",
-    "month": "02",
-    "day": "20",
-    "weekday": "星期四",
-    "weekdayNumber": 4
-  }
-]
+{
+  "date": "2025-02-20",
+  "projects": [
+    {
+      "name": "Aleo Mainnet Inflation Bug Discovery and Fix",
+      "url": "https://www.zksecurity.xyz/blog/posts/aleo-bug/",
+      "type": "博客",
+      "tags": [
+        "zksecurity.xyz",
+        "Aleo",
+        "Bug Fix"
+      ],
+      "summary": "@zksecurityXYZ 团队通过博客{{name}}分享了在Aleo主网中发现的一个通胀漏洞，详细描述了漏洞的背景、可能的利用方式以及修复过程。"
+    },
+    {
+      "name": "You should not build Tornado Cash with FHE",
+      "url": "https://www.leku.blog/tornado/",
+      "type": "博客",
+      "tags": [
+        "Leku",
+        "Tornado Cash",
+        "FHE"
+      ],
+      "summary": "Leku在{{name}}博客中讨论了使用FHE构建Tornado Cash的可行性，比较了ZK和FHE在隐私保护应用中的差异，并指出FHE在匿名性、金额隐私和安全性方面表现不如ZK版本。"
+    },
+    {
+      "name": "Sindri: A Platform for Zero-Knowledge Proof Development",
+      "url": "https://sindri.app/",
+      "type": "新闻",
+      "tags": [
+        "Sindri",
+        "开发平台",
+        "zkSNARK"
+      ],
+      "summary": "@SindriLabs 为开发者提供了一个云平台，专注于零知识证明的开发，支持zkSNARK等技术，旨在简化ZKP应用的创建和部署过程。"
+    },
+    {
+      "name": "SuiOverflow 2025 Hackathon",
+      "url": "https://x.com/SuiNetwork/status/1889851281059225898",
+      "type": "活动",
+      "tags": [
+        "SuiNetwork",
+        "Hackathon"
+      ],
+      "summary": "@SuiNetwork 宣布了SuiOverflow 2025黑客马拉松，提供超过$500,000的奖金，涵盖DeFi、AI、密码学技术等8个赛道，鼓励开发者基于Sui平台进行创新。ZK相关的项目也可以参与。"
+    }
+  ]
+}
