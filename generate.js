@@ -37,12 +37,42 @@ function groupNewsByDate(newsItems) {
 
 // Extract summary data for month index
 function extractSummaryData(item, language) {
-  return {
-    date: item.date,
-    projects: item.projects.map(project => 
-      typeof project === 'string' ? project : project.name
-    )
+  const result = {
+    date: item.date
   };
+  
+  // Extract project names
+  const projects = item.projects ? item.projects.map(project => 
+    typeof project === 'string' ? project : project.name
+  ) : [];
+  
+  // Extract insight slogans (only the slogan string)
+  const insights = item.insights ? item.insights.map(insight => {
+    if (typeof insight === 'string') {
+      return insight;
+    } else if (insight.slogan) {
+      return typeof insight.slogan === 'string' ? 
+        insight.slogan : 
+        (insight.slogan[language] || insight.slogan.zh || '');
+    } else {
+      return insight[language] || insight.zh || '';
+    }
+  }) : [];
+  
+  // Set projects and insights as undefined if they have no elements
+  if (projects.length > 0) {
+    result.projects = projects;
+  } else {
+    result.projects = undefined;
+  }
+  
+  if (insights.length > 0) {
+    result.insights = insights;
+  } else {
+    result.insights = undefined;
+  }
+  
+  return result;
 }
 
 // Process project data for language-specific content
@@ -51,7 +81,7 @@ function processProjectData(project, language) {
     return project;
   }
   
-  const { name, url, type, tags, summary } = project;
+  const { name, url, urls, type, tags, summary, notes } = project;
   
   const processedTags = tags ? tags.map(tag => {
     if (typeof tag === 'string') {
@@ -68,13 +98,19 @@ function processProjectData(project, language) {
     (typeof summary === 'string' ? summary : (summary[language] || summary.zh)) : 
     '';
   
-  return {
+  const processedNotes = notes || undefined;
+  
+  const result = {
     name,
-    url,
+    ...(url && { url }),
+    ...(urls && { urls }),
     type,
-    tags: processedTags,
-    summary: processedSummary
+    ...(processedTags.length > 0 && { tags: processedTags }),
+    summary: processedSummary,
+    ...(processedNotes && { notes: processedNotes })
   };
+  
+  return result;
 }
 
 // Process language-specific data
@@ -92,11 +128,19 @@ function processLanguageData(item, language) {
     }) : 
     [];
   
-  return {
+  const result = {
     date: item.date,
     projects: processedProjects,
-    insights: processedInsights
   };
+  
+  // Set insights as undefined if empty
+  if (processedInsights.length > 0) {
+    result.insights = processedInsights;
+  } else {
+    result.insights = undefined;
+  }
+  
+  return result;
 }
 
 // Generate index files with original structure
@@ -211,7 +255,7 @@ function generateIndexFiles(groupedData, language) {
 }
 
 // Main function to generate API files
-async function generateAPI() {
+export async function generateAPI() {
   try {
     console.log('Generating API files...');
     
@@ -243,5 +287,7 @@ async function generateAPI() {
   }
 }
 
-// Execute the main function
-generateAPI();
+// Execute the main function when run directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  generateAPI();
+}

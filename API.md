@@ -61,7 +61,8 @@ Returns a mapping of days to summary data:
 {
   "01": {
     "date": "2025-01-01",
-    "projects": ["Project A", "Project B"]
+    "projects": ["Project A", "Project B"],
+    "insights": ["Key insight about the industry", "Another observation"]
   },
   "05": {
     "date": "2025-01-05",
@@ -69,6 +70,8 @@ Returns a mapping of days to summary data:
   }
 }
 ```
+
+Note: Both `projects` and `insights` fields will be `undefined` if they have no elements.
 
 ### Day Content
 
@@ -83,9 +86,11 @@ Returns detailed content for a specific day:
     {
       "name": "Project A",
       "url": "https://example.com/project-a",
+      "urls": ["https://example.com/project-a", "https://github.com/project-a"],
       "type": "开源",
       "tags": ["AI", "Blockchain"],
-      "summary": "Project A is a new open-source AI project..."
+      "summary": "Project A is a new open-source AI project...",
+      "notes": ["Important implementation detail", "Key feature description"]
     },
     {
       "name": "Project B",
@@ -101,6 +106,12 @@ Returns detailed content for a specific day:
   ]
 }
 ```
+
+Note: 
+- The `urls` field is optional and only present if a project has multiple URLs.
+- The `notes` field is optional and only present if a project has additional notes.
+- The `insights` field will be `undefined` if there are no insights.
+- Fields like `tags` will be `undefined` if they have no elements.
 
 ## Data Processing
 
