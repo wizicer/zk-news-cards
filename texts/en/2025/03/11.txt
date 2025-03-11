@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-11 Tuesday
+
+📝 Exploring GKR: An Interactive Proof Scheme for Reducing Cryptographic Overhead
+- https://taueflambda.dev/posts/gkr/
+- timofey explored GKR in blog, a class of interactive proof schemes based on multilinear extensions, evaluated by the author as a scheme addresses cryptographic overhead differently—by nearly avoiding commitments in the first place.
+
+📝 Pairings coming out
+- https://mirror.xyz/lisaakselrod.eth/5XJlZub-PJUpTXH7_shIEjr_z-R61-X_JfjXxnmIwEM
+- Lisa Akselrod explored the mathematical principles of pairings in blog, including the basic properties of elliptic curves, group laws, and rational functions, eventually leading to Weil Pairing.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/11.html
+🪶 Collected by @icerdesign

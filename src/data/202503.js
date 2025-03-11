@@ -298,6 +298,42 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-11",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Exploring GKR: An Interactive Proof Scheme for Reducing Cryptographic Overhead",
+        "url": "https://taueflambda.dev/posts/gkr/",
+        "type": "博客",
+        "tags": [
+          "timofey",
+          "GKR",
+          "Sumcheck",
+        ],
+        "summary": {
+          zh: "timofey在博客{{name}}中探讨了GKR，一类通过多线性扩展实现的交互式证明方案，被作者评价为：通过主要避免承诺来减少开销的一种方案。",
+          en: "timofey explored GKR in blog{{name}}, a class of interactive proof schemes based on multilinear extensions, evaluated by the author as a scheme addresses cryptographic overhead differently—by nearly avoiding commitments in the first place."
+        }
+      },
+      {
+        "name": "Pairings coming out",
+        "url": "https://mirror.xyz/lisaakselrod.eth/5XJlZub-PJUpTXH7_shIEjr_z-R61-X_JfjXxnmIwEM",
+        "type": "博客",
+        "tags": [
+          "Lisa Akselrod",
+          "Pairings",
+          "Elliptic Curves",
+        ],
+        "summary": { 
+          zh: "Lisa Akselrod在博客{{name}}中深入探讨了配对（Pairings）的数学原理，包括椭圆曲线的基本性质、群定律以及有理函数等概念，最终导到Weil Pairing。",
+          en: "Lisa Akselrod explored the mathematical principles of pairings in blog{{name}}, including the basic properties of elliptic curves, group laws, and rational functions, eventually leading to Weil Pairing."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [
