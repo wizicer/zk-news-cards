@@ -334,6 +334,45 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-12",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "The path to secure and efficient zkVMs",
+        "url": "https://a16zcrypto.com/posts/article/secure-efficient-zkvms-progress/",
+        "type": "博客",
+        "tags": [
+          "a16z",
+          "Justin Thaler",
+          "zkVM",
+          {zh: "进展", en: "Progress"}
+        ],
+        "summary": { 
+          zh: "@a16zcrypto 的 @SuccinctJT 在博客{{name}}中讨论了zkVM的安全性和性能挑战，提出了实现安全高效zkVM的阶段目标，包括协议正确性、验证器和证明器实现的正式验证。",
+          en: "@a16zcrypto's @SuccinctJT discussed the security and performance challenges of zkVMs in blog{{name}}, proposing a phased approach to achieving secure and efficient zkVMs."
+        },
+        "notes": {
+          zh: [
+            "作者预见了zkVM发展中的安全发展阶段和性能发展阶段。",
+            "安全阶段：1. 协议正确，2. 验证器实现正确，3. 证明器实现正确。",
+            "性能阶段：1. 合理的验证成本，2. 至多256k证据及16ms验证时间。",
+            "目前为性能阶段1，安全阶段1尚未达到。",
+            "虽然近两年有可能达到性能阶段2，但可能是以牺牲安全性为前提的，安全阶段的提升，可能会伴随性能阶段的降低。"
+          ],
+          en: [
+            "The author foresaw the development of zkVMs in terms of security and performance stages.",
+            "Security stage: 1. Protocol correctness, 2. Verifier implementation correctness, 3. Prover implementation correctness.",
+            "Performance stage: 1. Reasonable verification cost, 2. At most 256k proof and 16ms verification time.",
+            "Currently at performance stage 1, security stage 1 has not been reached.",
+            "Although it is hope to reach performance stage 2 within two years, it may be at the cost of sacrificing security. A security stage upgrade may come with a performance stage downgrade."
+          ]
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [

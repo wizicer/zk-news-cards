@@ -1,0 +1,15 @@
+🚀zkDaily Frontier Tracker 2025-03-12 Wednesday
+
+📝 The path to secure and efficient zkVMs
+- https://a16zcrypto.com/posts/article/secure-efficient-zkvms-progress/
+- @a16zcrypto's @SuccinctJT discussed the security and performance challenges of zkVMs in blog, proposing a phased approach to achieving secure and efficient zkVMs.
+- Notes:
+  - The author foresaw the development of zkVMs in terms of security and performance stages.
+  - Security stage: 1. Protocol correctness, 2. Verifier implementation correctness, 3. Prover implementation correctness.
+  - Performance stage: 1. Reasonable verification cost, 2. At most 256k proof and 16ms verification time.
+  - Currently at performance stage 1, security stage 1 has not been reached.
+  - Although it is hope to reach performance stage 2 within two years, it may be at the cost of sacrificing security. A security stage upgrade may come with a performance stage downgrade.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/12.html
+🪶 Collected by @icerdesign

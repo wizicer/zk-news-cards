@@ -1,0 +1,15 @@
+🚀zkDaily 前沿热点追踪 2025-03-12 星期三
+
+📝 The path to secure and efficient zkVMs
+- https://a16zcrypto.com/posts/article/secure-efficient-zkvms-progress/
+- @a16zcrypto 的 @SuccinctJT 在博客中讨论了zkVM的安全性和性能挑战，提出了实现安全高效zkVM的阶段目标，包括协议正确性、验证器和证明器实现的正式验证。
+- Notes:
+  - 作者预见了zkVM发展中的安全发展阶段和性能发展阶段。
+  - 安全阶段：1. 协议正确，2. 验证器实现正确，3. 证明器实现正确。
+  - 性能阶段：1. 合理的验证成本，2. 至多256k证据及16ms验证时间。
+  - 目前为性能阶段1，安全阶段1尚未达到。
+  - 虽然近两年有可能达到性能阶段2，但可能是以牺牲安全性为前提的，安全阶段的提升，可能会伴随性能阶段的降低。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/12.html
+🪶 由 @icerdesign 收集
