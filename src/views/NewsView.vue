@@ -68,10 +68,14 @@
               </div>
             </div>
           </div>
-          <div class="project-notes" v-if="project.notes && project.notes.length > 0">
+          <div class="project-notes" v-if="project.notes">
             <h4 class="notes-title">Notes</h4>
             <ul class="notes-list">
-              <li v-for="(note, nIndex) in project.notes" :key="nIndex" class="note-item" v-html="parseMathMarkdown(note)">
+              <li v-for="(note, nIndex) in (typeof project.notes === 'object' && Array.isArray(project.notes[language]) ? project.notes[language] : 
+                                          Array.isArray(project.notes) ? project.notes : [])" 
+                  :key="nIndex" 
+                  class="note-item" 
+                  v-html="parseMathMarkdown(note)">
               </li>
             </ul>
           </div>

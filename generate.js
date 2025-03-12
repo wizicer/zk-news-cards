@@ -98,7 +98,10 @@ function processProjectData(project, language) {
     (typeof summary === 'string' ? summary : (summary[language] || summary.zh)) : 
     '';
   
-  const processedNotes = notes || undefined;
+  // Process notes based on language if it's an object with language keys
+  const processedNotes = notes ? 
+    (typeof notes === 'object' && notes[language] ? notes[language] : notes) : 
+    undefined;
   
   const result = {
     name,

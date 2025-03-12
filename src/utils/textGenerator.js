@@ -85,7 +85,28 @@ export const generateTextContent = (cards, language = 'zh') => {
           }
         }
         
-        text += `- ${summary.replace(/{{name}}/g, '')}\n\n`
+        text += `- ${summary.replace(/{{name}}/g, '')}\n`
+        
+        // Add notes if they exist
+        if (project.notes) {
+          let notesToDisplay = [];
+          
+          // Handle language-specific notes
+          if (typeof project.notes === 'object' && Array.isArray(project.notes[language])) {
+            notesToDisplay = project.notes[language];
+          } else if (Array.isArray(project.notes)) {
+            notesToDisplay = project.notes;
+          }
+          
+          if (notesToDisplay.length > 0) {
+            text += `- Notes:\n`;
+            notesToDisplay.forEach(note => {
+              text += `  - ${note}\n`;
+            });
+          }
+        }
+        
+        text += '\n'
       })
     }
     
