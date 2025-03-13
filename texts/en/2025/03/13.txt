@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-13 Thursday
+
+📰 Announcing DeepProve: zkML to Keep AI in Check
+- https://www.lagrange.dev/blog/announcing-deepprove-zkml
+- @lagrangedev announced DeepProve, a zkML library, aiming to achieve verifiable AI inference, claiming 158x faster than previous methods, marking the convergence of AI and ZK technology.
+
+📰 EZKL Benchmark of DeepProve
+- https://x.com/CamutoDante/status/1899901570461941881
+- @CamutoDante posted a long thread indicating that DeepProve's benchmark results did not match their claims, providing specific benchmark data, and pointing out that DeepProve's speed may be due to compromises in accuracy and proof size.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/13.html
+🪶 Collected by @icerdesign

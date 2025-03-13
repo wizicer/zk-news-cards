@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-13 星期四
+
+📰 Announcing DeepProve: zkML to Keep AI in Check
+- https://www.lagrange.dev/blog/announcing-deepprove-zkml
+- @lagrangedev 发布了DeepProve，一个zkML库，旨在实现可验证的AI推理，声称比以往快158倍，标志着AI与ZK技术的结合。
+
+📰 EZKL Benchmark of DeepProve
+- https://x.com/CamutoDante/status/1899901570461941881
+- @CamutoDante 发布长推表示DeepProve的基准测试结果并没有他们声称的那么快，并给出了具体的测试数据，同时还指出DeepProve的快速可能是由于对正确性和证明大小的妥协。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/13.html
+🪶 由 @icerdesign 收集

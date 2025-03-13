@@ -373,6 +373,42 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-13",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Announcing DeepProve: zkML to Keep AI in Check",
+        "url": "https://www.lagrange.dev/blog/announcing-deepprove-zkml",
+        "type": "新闻",
+        "tags": [
+          "LAGRANGE",
+          "zkML",
+          "AI",
+        ],
+        "summary": { 
+          zh: "@lagrangedev 发布了DeepProve，一个zkML库，旨在实现可验证的AI推理，声称比以往快158倍，标志着AI与ZK技术的结合。",
+          en: "@lagrangedev announced DeepProve, a zkML library, aiming to achieve verifiable AI inference, claiming 158x faster than previous methods, marking the convergence of AI and ZK technology."
+        }
+      },
+      {
+        "name": "EZKL Benchmark of DeepProve",
+        "url": "https://x.com/CamutoDante/status/1899901570461941881",
+        "type": "新闻",
+        "tags": [
+          "Dante",
+          "zkML",
+          "AI",
+        ],
+        "summary": { 
+          zh: "@CamutoDante 发布长推表示DeepProve的基准测试结果并没有他们声称的那么快，并给出了具体的测试数据，同时还指出DeepProve的快速可能是由于对正确性和证明大小的妥协。",
+          en: "@CamutoDante posted a long thread indicating that DeepProve's benchmark results did not match their claims, providing specific benchmark data, and pointing out that DeepProve's speed may be due to compromises in accuracy and proof size."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [
