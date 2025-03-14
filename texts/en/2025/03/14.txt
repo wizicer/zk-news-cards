@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-14 Friday
+
+💻 ZKP System Solidity Gas Estimation Report Executive Summary
+- https://github.com/wizicer/zkp-solidity-gas
+- @icerdesign published a ZKP system Solidity Gas estimation report, analyzing the Gas consumption of different ZKP frameworks (including SnarkJs, Noir, gnark, halo2, etc.) and patterns in Solidity, including deployment costs, verification costs, etc.
+
+📝 How to Prove False Statements: Part 1
+- https://blog.cryptographyengineering.com/2025/02/04/how-to-prove-false-statements-part-1/
+- Matthew Green discussed the Random Oracle Model (ROM) and its applications in cryptography in blog, particularly highlighting the actual attacks on Fiat-Shamir transformations, emphasizing the complexity between theoretical models and security proofs.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/14.html
+🪶 Collected by @icerdesign

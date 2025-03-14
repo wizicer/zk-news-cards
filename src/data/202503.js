@@ -409,6 +409,41 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-14",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "ZKP System Solidity Gas Estimation Report Executive Summary",
+        "url": "https://github.com/wizicer/zkp-solidity-gas",
+        "type": "开源",
+        "tags": [
+          "icerdesign",
+          "Solidity",
+          "Gas",
+        ],
+        "summary": {
+          zh: "@icerdesign 发布了ZKP系统Solidity Gas估算报告，详细分析了不同ZKP框架（包括SnarkJs, Noir, gnark, halo2等）和模式在Solidity中的Gas消耗，包括部署成本、验证成本等。",
+          en: "@icerdesign published a ZKP system Solidity Gas estimation report, analyzing the Gas consumption of different ZKP frameworks (including SnarkJs, Noir, gnark, halo2, etc.) and patterns in Solidity, including deployment costs, verification costs, etc."
+        }
+      },
+      {
+        "name": "How to Prove False Statements: Part 1",
+        "url": "https://blog.cryptographyengineering.com/2025/02/04/how-to-prove-false-statements-part-1/",
+        "type": "博客",
+        "tags": [
+          "Matthew Green",
+          {zh: "随机预言模型", en: "Random Oracle Model"},
+        ],
+        "summary": { 
+          zh: "Matthew Green在博客{{name}}中讨论了随机预言模型(ROM)及其在密码学中的应用，特别是对Fiat-Shamir变换的实际攻击，强调了理论模型与安全证明之间的复杂关系。",
+          en: "Matthew Green discussed the Random Oracle Model (ROM) and its applications in cryptography in blog{{name}}, particularly highlighting the actual attacks on Fiat-Shamir transformations, emphasizing the complexity between theoretical models and security proofs."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [
