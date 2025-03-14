@@ -428,7 +428,7 @@ export default [
         }
       },
       {
-        "name": "How to Prove False Statements: Part 1",
+        "name": "How to Prove False Statements",
         "url": "https://blog.cryptographyengineering.com/2025/02/04/how-to-prove-false-statements-part-1/",
         "type": "博客",
         "tags": [
