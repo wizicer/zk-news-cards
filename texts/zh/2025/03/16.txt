@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-16 星期日
+
+🎪 ETHGlobal Trifecta
+- https://ethglobal.com/events/trifecta
+- ethGlobal Trifecta活动将在3月21日开始72小时的线上黑客松，该活动是一个高水平的黑客松，要求是过去ethGlobal的获奖者才能参加。活动将围绕三个主题进行竞争：AI Agents、TEEs 和 ZK。
+
+📄 zkAML: Zero-knowledge Anti Money Laundering in Smart Contracts with whitelist approach
+- https://eprint.iacr.org/2025/465
+- Oh等人在论文中提出zkAML框架，利用zkSNARK技术实现智能合约中的反洗钱合规，无需暴露敏感信息，该工作是与韩国银行合作完成的。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/16.html
+🪶 由 @icerdesign 收集

@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-16 Sunday
+
+🎪 ETHGlobal Trifecta
+- https://ethglobal.com/events/trifecta
+- ethGlobal Trifecta will take place from 3/21 as a 72-hour online hackathon, targeting high-level participants who have won past ethGlobal events. The competition will focus on three topics: AI Agents, TEEs, and ZK.
+
+📄 zkAML: Zero-knowledge Anti Money Laundering in Smart Contracts with whitelist approach
+- https://eprint.iacr.org/2025/465
+- Oh et al. proposed zkAML framework in paper , utilizing zkSNARK technology to implement anti-money laundering compliance in smart contracts, without exposing sensitive information, this work is jointly completed with the Bank of Korea.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/16.html
+🪶 Collected by @icerdesign

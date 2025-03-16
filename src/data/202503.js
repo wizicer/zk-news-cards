@@ -444,7 +444,57 @@ export default [
     insights: [
     ]
   },
+  {
+    date: "2025-03-16",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "ETHGlobal Trifecta",
+        "url": "https://ethglobal.com/events/trifecta",
+        "type": "活动",
+        "tags": [
+          "ethGlobal",
+          {zh: "黑客松", en: "Hackathon"},
+          "Trifecta"
+        ],
+        "summary": { 
+          zh: "ethGlobal Trifecta活动将在3月21日开始72小时的线上黑客松，该活动是一个高水平的黑客松，要求是过去ethGlobal的获奖者才能参加。活动将围绕三个主题进行竞争：AI Agents、TEEs 和 ZK。",
+          en: "ethGlobal Trifecta will take place from 3/21 as a 72-hour online hackathon, targeting high-level participants who have won past ethGlobal events. The competition will focus on three topics: AI Agents, TEEs, and ZK."
+        }
+      },
+      {
+        "name": "zkAML: Zero-knowledge Anti Money Laundering in Smart Contracts with whitelist approach",
+        "url": "https://eprint.iacr.org/2025/465",
+        "type": "论文",
+        "tags": [
+          "Donghwan Oh",
+          "AML",
+          {zh: "韩国银行", en: "Bank of Korea"}
+        ],
+        "summary": { 
+          zh: "Oh等人在论文{{name}}中提出zkAML框架，利用zkSNARK技术实现智能合约中的反洗钱合规，无需暴露敏感信息，该工作是与韩国银行合作完成的。",
+          en: "Oh et al. proposed zkAML framework in paper {{name}}, utilizing zkSNARK technology to implement anti-money laundering compliance in smart contracts, without exposing sensitive information, this work is jointly completed with the Bank of Korea."
+        }
+      },
+    ],
+    insights: [
+    ]
+  },
 ];
 
 const others = [
+      {
+        "name": "Still confused by Plonk's permutation?",
+        "url": "https://www.cryptologie.net/article/627/still-confused-by-plonks-permutation/",
+        "type": "博客",
+        "tags": [
+          "cryptologie.net",
+          "David Wong",
+          {zh: "置换论证", en: "Permutation Argument"}
+        ],
+        "summary": {
+          zh: "@cryptodavidw 在博客{{name}}中分享了Plonk的置换参数视觉解释，通过颜色编码和表格展示，帮助理解Plonk协议中如何通过不同cosets和挑战压缩技术实现置换。",
+          en: "@cryptodavidw shared a visual explanation of Plonk's permutation argument in blog{{name}}, using color coding and tables to help understand how Plonk protocol achieves permutation through different cosets and challenge compression."
+        }
+      }
 ];
