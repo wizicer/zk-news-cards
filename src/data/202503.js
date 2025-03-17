@@ -480,9 +480,10 @@ export default [
     insights: [
     ]
   },
-];
-
-const others = [
+  {
+    date: "2025-03-17",
+    languages: ['zh', 'en'],
+    projects: [
       {
         "name": "Still confused by Plonk's permutation?",
         "url": "https://www.cryptologie.net/article/627/still-confused-by-plonks-permutation/",
@@ -496,5 +497,27 @@ const others = [
           zh: "@cryptodavidw 在博客{{name}}中分享了Plonk的置换参数视觉解释，通过颜色编码和表格展示，帮助理解Plonk协议中如何通过不同cosets和挑战压缩技术实现置换。",
           en: "@cryptodavidw shared a visual explanation of Plonk's permutation argument in blog{{name}}, using color coding and tables to help understand how Plonk protocol achieves permutation through different cosets and challenge compression."
         }
+      },
+      {
+        "name": "Scroll Sepolia's Major Upgrade to zkVM",
+        "url": "https://x.com/lispcz/status/1901187824759771356",
+        "type": "新闻",
+        "tags": [
+          "Zhuo Zhang",
+          "zkVM",
+          "zkEVM",
+          "REVM"
+        ],
+        "summary": {
+          zh: "@Scroll_ZKP Sepolia最近进行了重大升级，从zkEVM过渡到zkVM，使用REVM实现EVM兼容性，并将底层框架从Halo2迁移到OpenVM，降低电路复杂度，提高小团队自行部署zkRollup的能力。",
+          en: "@Scroll_ZKP Sepolia recently underwent a major upgrade, switching from zkEVM to zkVM, using REVM for EVM compatibility, and migrating the underlying framework from Halo2 to OpenVM, reducing circuit complexity and enhancing the ability of small teams to deploy zkRollup independently."
+        }
       }
+    ],
+    insights: [
+    ]
+  }
+];
+
+const others = [
 ];

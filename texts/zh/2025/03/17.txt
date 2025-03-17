@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-17 星期一
+
+📝 Still confused by Plonk's permutation?
+- https://www.cryptologie.net/article/627/still-confused-by-plonks-permutation/
+- @cryptodavidw 在博客中分享了Plonk的置换参数视觉解释，通过颜色编码和表格展示，帮助理解Plonk协议中如何通过不同cosets和挑战压缩技术实现置换。
+
+📰 Scroll Sepolia's Major Upgrade to zkVM
+- https://x.com/lispcz/status/1901187824759771356
+- @Scroll_ZKP Sepolia最近进行了重大升级，从zkEVM过渡到zkVM，使用REVM实现EVM兼容性，并将底层框架从Halo2迁移到OpenVM，降低电路复杂度，提高小团队自行部署zkRollup的能力。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/17.html
+🪶 由 @icerdesign 收集

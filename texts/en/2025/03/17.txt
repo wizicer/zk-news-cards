@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-17 Monday
+
+📝 Still confused by Plonk's permutation?
+- https://www.cryptologie.net/article/627/still-confused-by-plonks-permutation/
+- @cryptodavidw shared a visual explanation of Plonk's permutation argument in blog, using color coding and tables to help understand how Plonk protocol achieves permutation through different cosets and challenge compression.
+
+📰 Scroll Sepolia's Major Upgrade to zkVM
+- https://x.com/lispcz/status/1901187824759771356
+- @Scroll_ZKP Sepolia recently underwent a major upgrade, switching from zkEVM to zkVM, using REVM for EVM compatibility, and migrating the underlying framework from Halo2 to OpenVM, reducing circuit complexity and enhancing the ability of small teams to deploy zkRollup independently.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/17.html
+🪶 Collected by @icerdesign
