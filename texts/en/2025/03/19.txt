@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-19 Wednesday
+
+💻 zkEngine: An (NIVC) zkWASM Implementation
+- https://github.com/ICME-Lab/zkEngine_dev
+- ICME-Lab released zkEngine, an (NIVC) zkWASM implementation based on Nebula proof system, aiming to provide memory-efficient and portable local verifiable computing and privacy protection for resource-constrained environments.
+
+📝 Privacy 2.0: PETs and the Promise of Private Shared State
+- https://x.com/archetypevc/status/1899869844230623274
+- Aadharsh Pannirselvam from @archetypevc discussed the privacy 2.0 era in blog, including the potential of privacy-enhancing technologies (PETs) such as TEEs, MPC, FHE, and ZK, and the potential issues.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/19.html
+🪶 Collected by @icerdesign

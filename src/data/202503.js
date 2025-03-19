@@ -516,6 +516,42 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-03-19",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "zkEngine: An (NIVC) zkWASM Implementation",
+        "url": "https://github.com/ICME-Lab/zkEngine_dev",
+        "type": "开源",
+        "tags": [
+          "ICME-Lab",
+          "zkWASM",
+          "Nebula",
+        ],
+        "summary": {
+          zh: "ICME-Lab开源了zkEngine，一个基于Nebula证明方案的(NIVC) zkWASM实现，旨在为受限环境提供内存高效和高便携性的本地可验证计算和隐私保护。",
+          en: "ICME-Lab released zkEngine, an (NIVC) zkWASM implementation based on Nebula proof system, aiming to provide memory-efficient and portable local verifiable computing and privacy protection for resource-constrained environments."
+        }
+      },
+      {
+        "name": "Privacy 2.0: PETs and the Promise of Private Shared State",
+        "url": "https://x.com/archetypevc/status/1899869844230623274",
+        "type": "博客",
+        "tags": [
+          "Aadharsh Pannirselvam",
+          "archetypevc",
+          "PETs",
+        ],
+        "summary": {
+          zh: "@archetypevc 的 Aadharsh Pannirselvam 在博客{{name}}中讨论了隐私2.0时代，包括隐私增强技术（PETs）如TEEs、MPC、FHE和ZK的潜力及潜在问题。",
+          en: "Aadharsh Pannirselvam from @archetypevc discussed the privacy 2.0 era in blog{{name}}, including the potential of privacy-enhancing technologies (PETs) such as TEEs, MPC, FHE, and ZK, and the potential issues."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

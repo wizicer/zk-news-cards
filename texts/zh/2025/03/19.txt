@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-19 星期三
+
+💻 zkEngine: An (NIVC) zkWASM Implementation
+- https://github.com/ICME-Lab/zkEngine_dev
+- ICME-Lab开源了zkEngine，一个基于Nebula证明方案的(NIVC) zkWASM实现，旨在为受限环境提供内存高效和高便携性的本地可验证计算和隐私保护。
+
+📝 Privacy 2.0: PETs and the Promise of Private Shared State
+- https://x.com/archetypevc/status/1899869844230623274
+- @archetypevc 的 Aadharsh Pannirselvam 在博客中讨论了隐私2.0时代，包括隐私增强技术（PETs）如TEEs、MPC、FHE和ZK的潜力及潜在问题。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/19.html
+🪶 由 @icerdesign 收集
