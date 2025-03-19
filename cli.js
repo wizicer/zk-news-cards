@@ -216,13 +216,13 @@ async function sendTelegramNotification(imagePath, textPath, language = 'zh') {
         
         if (imagePath) {
             for (const { chatId, threadId } of chatConfigs) {
-                try {
+                await retrySend(async () => {
                     const options = threadId ? { message_thread_id: threadId } : {};
                     await bot.sendPhoto(chatId, imagePath, options);
                     console.log(`Image sent successfully to Telegram chat ${chatId}${threadId ? ' thread ' + threadId : ''} (${language})`);
-                } catch (telegramError) {
+                }).catch(telegramError => {
                     console.error(`Error sending image to Telegram chat ${chatId}${threadId ? ' thread ' + threadId : ''} (${language}):`, telegramError);
-                }
+                });
             }
         }
         
@@ -230,18 +230,34 @@ async function sendTelegramNotification(imagePath, textPath, language = 'zh') {
             const textContent = fs.readFileSync(textPath, 'utf-8');
             
             for (const { chatId, threadId } of chatConfigs) {
-                try {
+                await retrySend(async () => {
                     const options = threadId ? { message_thread_id: threadId } : {};
                     await bot.sendMessage(chatId, textContent, options);
                     console.log(`Text content sent successfully to Telegram chat ${chatId}${threadId ? ' thread ' + threadId : ''} (${language})`);
-                } catch (telegramError) {
+                }).catch(telegramError => {
                     console.error(`Error sending text to Telegram chat ${chatId}${threadId ? ' thread ' + threadId : ''} (${language}):`, telegramError);
-                }
+                });
             }
         }
     } catch (error) {
         console.error('Failed to send Telegram notification:', error.message);
         throw error;
+    }
+}
+
+// Function to retry sending a message or photo
+async function retrySend(action, maxRetries = 3) {
+    let attempts = 0;
+    while (attempts < maxRetries) {
+        try {
+            await action();
+            return;
+        } catch (error) {
+            attempts++;
+            if (attempts >= maxRetries) {
+                throw error;
+            }
+        }
     }
 }
 
