@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-20 Thursday
+
+🎪 zkVM HackerHouse
+- https://mp.weixin.qq.com/s/yNH87nAUHxQBBFc_ywdB6Q
+- Coset and SECBIT Labs will host the zkVM HackerHouse in Suzhou from April 14 to 27, providing free accommodation and focusing on zkVM and hardware acceleration.
+
+📝 Kimchi Proof System vs KZG Commitments
+- https://blockofchain.medium.com/kimchi-proof-system-vs-kzg-commitments-cbd86032fda5
+- Alperen Tunçkıran compared Kimchi proof system with KZG commitments in blog, providing a detailed introduction to Kimchi's technical architecture, innovations, and its application in the Mina blockchain.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/20.html
+🪶 Collected by @icerdesign

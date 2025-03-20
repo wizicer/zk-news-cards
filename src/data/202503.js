@@ -552,6 +552,42 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-03-20",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "zkVM HackerHouse",
+        "url": "https://mp.weixin.qq.com/s/yNH87nAUHxQBBFc_ywdB6Q",
+        "type": "活动",
+        "tags": [
+          "Coset",
+          "zkVM",
+          "HackerHouse",
+        ],
+        "summary": {
+          zh: "Coset与SECBIT Labs将于2025年4月14日至27日在苏州举办zkVM HackerHouse，提供免费住宿，聚焦zkVM与硬件加速技术，欢迎报名参加。",
+          en: "Coset and SECBIT Labs will host the zkVM HackerHouse in Suzhou from April 14 to 27, providing free accommodation and focusing on zkVM and hardware acceleration."
+        }
+      },
+      {
+        "name": "Kimchi Proof System vs KZG Commitments",
+        "url": "https://blockofchain.medium.com/kimchi-proof-system-vs-kzg-commitments-cbd86032fda5",
+        "type": "博客",
+        "tags": [
+          "Alperen Tunçkıran",
+          { en: "KZG Commitments", zh: "KZG承诺" },
+          "Mina",
+        ],
+        "summary": {
+          zh: "Alperen Tunçkıran在博客{{name}}中比较了Kimchi证明系统与KZG承诺，详细介绍了Kimchi的技术架构、创新点及其在Mina区块链中的应用。",
+          en: "Alperen Tunçkıran compared Kimchi proof system with KZG commitments in blog{{name}}, providing a detailed introduction to Kimchi's technical architecture, innovations, and its application in the Mina blockchain."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 
