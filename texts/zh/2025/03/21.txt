@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-21 星期五
+
+📄 SoK: Understanding zk-SNARKs: The Gap Between Research and Practice
+- https://arxiv.org/abs/2502.02387
+- Junkai Liang等人在论文中深入研究了zk-SNARKs，从理论到实践全面分析了研究与实践之间的差距，提出了统一的“主配方”，并对现有zk-SNARKs进行了分类。
+
+💻 hash-circuits
+- https://github.com/bkomuves/hash-circuits
+- Balazs Komuves发布了hash-circuits开源项目，包含多种流行哈希函数的circom实现，如SHA2、Keccak/SHA3、Blake2、Poseidon2、Griffin和MiMC，并提供了约束数量比较。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/21.html
+🪶 由 @icerdesign 收集

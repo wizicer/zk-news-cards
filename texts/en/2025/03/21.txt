@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-21 Friday
+
+📄 SoK: Understanding zk-SNARKs: The Gap Between Research and Practice
+- https://arxiv.org/abs/2502.02387
+- Junkai Liang, et al. in paper delved into zk-SNARKs, providing a comprehensive analysis of the gap between research and practice, proposing a unified 'master recipe', and categorizing existing zk-SNARKs.
+
+💻 hash-circuits
+- https://github.com/bkomuves/hash-circuits
+- Balazs Komuves released the hash-circuits open-source project, containing multiple popular hash function circom implementations, such as SHA2, Keccak/SHA3, Blake2, Poseidon2, Griffin, and MiMC, and providing constraint comparison.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/21.html
+🪶 Collected by @icerdesign

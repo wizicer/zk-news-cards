@@ -588,6 +588,39 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-03-21",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "SoK: Understanding zk-SNARKs: The Gap Between Research and Practice",
+        "url": "https://arxiv.org/abs/2502.02387",
+        "type": "论文",
+        "tags": [
+          "Junkai Liang",
+          "Research",
+        ],
+        "summary": {
+          zh: "Junkai Liang等人在{{name}}论文中深入研究了zk-SNARKs，从理论到实践全面分析了研究与实践之间的差距，提出了统一的“主配方”，并对现有zk-SNARKs进行了分类。",
+          en: "Junkai Liang, et al. in {{name}}paper delved into zk-SNARKs, providing a comprehensive analysis of the gap between research and practice, proposing a unified 'master recipe', and categorizing existing zk-SNARKs."
+        }
+      },
+      {
+        "name": "hash-circuits",
+        "url": "https://github.com/bkomuves/hash-circuits",
+        "type": "开源",
+        "tags": [
+          "Balazs Komuves",
+          "circom",
+          "hash",
+        ],
+        "summary": {
+          zh: "Balazs Komuves发布了hash-circuits开源项目，包含多种流行哈希函数的circom实现，如SHA2、Keccak/SHA3、Blake2、Poseidon2、Griffin和MiMC，并提供了约束数量比较。",
+          en: "Balazs Komuves released the hash-circuits open-source project, containing multiple popular hash function circom implementations, such as SHA2, Keccak/SHA3, Blake2, Poseidon2, Griffin, and MiMC, and providing constraint comparison."
+        }
+      }
+    ]
   }
 ];
 
