@@ -621,6 +621,40 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-03-24",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Transpiling a Halo2 circuit into CCS",
+        "url": "https://ethresear.ch/t/transpiling-a-halo2-circuit-into-ccs/21963",
+        "type": "博客",
+        "tags": [
+          "pnyda2",
+          "Halo2",
+          "CCS",
+          "Plonkish",
+        ],
+        "summary": {
+          zh: "pnyda2发布了halo2 ccs+，一个将zcash/halo2电路转换为CCS电路的转译器，并以poseidon hash为例给出了基准测试结果。",
+          en: "pnyda2 released halo2 ccs+, a transpiler that converts zcash/halo2 circuits to CCS circuits, and provided a benchmark result with poseidon hash."
+        }
+      },
+      {
+        "name": "Zero-Knowledge Proofs",
+        "url": "https://vasekrozhon.wordpress.com/2025/03/17/zero-knowledge-proofs/",
+        "type": "博客",
+        "tags": [
+          "Václav Rozhoň",
+          { en: "Beginner", zh: "入门" }
+        ],
+        "summary": {
+          zh: "Václav Rozhoň发布了关于零知识证明的入门讲解，有趣的是利用彩色电路讲解零知识证明中的可满足性问题。",
+          en: "Václav Rozhoň released an introduction to zero-knowledge proofs, interestingly explaining the satisfiability problem in zero-knowledge proofs using colored circuits."
+        }
+      }
+    ]
   }
 ];
 

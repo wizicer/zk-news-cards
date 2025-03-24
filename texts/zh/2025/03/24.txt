@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-24 星期一
+
+📝 Transpiling a Halo2 circuit into CCS
+- https://ethresear.ch/t/transpiling-a-halo2-circuit-into-ccs/21963
+- pnyda2发布了halo2 ccs+，一个将zcash/halo2电路转换为CCS电路的转译器，并以poseidon hash为例给出了基准测试结果。
+
+📝 Zero-Knowledge Proofs
+- https://vasekrozhon.wordpress.com/2025/03/17/zero-knowledge-proofs/
+- Václav Rozhoň发布了关于零知识证明的入门讲解，有趣的是利用彩色电路讲解零知识证明中的可满足性问题。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/24.html
+🪶 由 @icerdesign 收集

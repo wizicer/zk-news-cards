@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-24 Monday
+
+📝 Transpiling a Halo2 circuit into CCS
+- https://ethresear.ch/t/transpiling-a-halo2-circuit-into-ccs/21963
+- pnyda2 released halo2 ccs+, a transpiler that converts zcash/halo2 circuits to CCS circuits, and provided a benchmark result with poseidon hash.
+
+📝 Zero-Knowledge Proofs
+- https://vasekrozhon.wordpress.com/2025/03/17/zero-knowledge-proofs/
+- Václav Rozhoň released an introduction to zero-knowledge proofs, interestingly explaining the satisfiability problem in zero-knowledge proofs using colored circuits.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/24.html
+🪶 Collected by @icerdesign
