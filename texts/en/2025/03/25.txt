@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-25 Tuesday
+
+📄 On Extractability of the KZG Family of Polynomial Commitment Schemes
+- https://eprint.iacr.org/2025/514
+- Belohorec et al. proposed a unified framework in  for proving the soundness of KZG class polynomial commitment schemes, covering both single and multi-variable variants. By conceptualizing the proof technique of Lipmaa et al., they demonstrated the completeness and soundness of the integrity assumptions, allowing black-box extraction of multi-variable KZG schemes.
+
+📝 Benchmarking in-browser P256 ECDSA proving systems
+- https://blog.hyle.eu/benchmarking-in-browser-p256-ecdsa-proving-systems/
+- Hylé team shared benchmarking results of P256 ECDSA proving systems in the browser, focusing on comparing the performance and user experience of Noir, Circom, Halo2, and Cairo.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/25.html
+🪶 Collected by @icerdesign

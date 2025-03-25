@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-25 星期二
+
+📄 On Extractability of the KZG Family of Polynomial Commitment Schemes
+- https://eprint.iacr.org/2025/514
+- Belohorec等人在论文中提出了一个统一框架，用于证明KZG类多项式承诺方案的知识健全性，涵盖单变量和多变量变体。通过概念化Lipmaa等人的证明技术，他们展示了工具和可证伪的完整性假设，允许黑盒提取多变量KZG方案。
+
+📝 Benchmarking in-browser P256 ECDSA proving systems
+- https://blog.hyle.eu/benchmarking-in-browser-p256-ecdsa-proving-systems/
+- Hylé团队分享了在浏览器中验证P256 ECDSA签名的证明系统基准测试结果，重点比较了Noir、Circom、Halo2和Cairo的性能和用户体验。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/25.html
+🪶 由 @icerdesign 收集

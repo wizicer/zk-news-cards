@@ -655,7 +655,41 @@ export default [
         }
       }
     ]
-  }
+  },
+  {
+    date: "2025-03-25",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "On Extractability of the KZG Family of Polynomial Commitment Schemes",
+        "url": "https://eprint.iacr.org/2025/514",
+        "type": "论文",
+        "tags": [
+          "Juraj Belohorec",
+          "KZG",
+          { en: "Extractability", zh: "提取性" }
+        ],
+        "summary": {
+          zh: "Belohorec等人在{{name}}论文中提出了一个统一框架，用于证明KZG类多项式承诺方案的知识健全性，涵盖单变量和多变量变体。通过概念化Lipmaa等人的证明技术，他们展示了工具和可证伪的完整性假设，允许黑盒提取多变量KZG方案。",
+          en: "Belohorec et al. proposed a unified framework in {{name}} for proving the soundness of KZG class polynomial commitment schemes, covering both single and multi-variable variants. By conceptualizing the proof technique of Lipmaa et al., they demonstrated the completeness and soundness of the integrity assumptions, allowing black-box extraction of multi-variable KZG schemes."
+        }
+      },
+      {
+        "name": "Benchmarking in-browser P256 ECDSA proving systems",
+        "url": "https://blog.hyle.eu/benchmarking-in-browser-p256-ecdsa-proving-systems/",
+        "type": "博客",
+        "tags": [
+          "Hylé",
+          "p256",
+          "zkVM",
+        ],
+        "summary": {
+          zh: "Hylé团队分享了在浏览器中验证P256 ECDSA签名的证明系统基准测试结果，重点比较了Noir、Circom、Halo2和Cairo的性能和用户体验。",
+          en: "Hylé team shared benchmarking results of P256 ECDSA proving systems in the browser, focusing on comparing the performance and user experience of Noir, Circom, Halo2, and Cairo."
+        }
+      }
+    ]
+  },
 ];
 
 const others = [
