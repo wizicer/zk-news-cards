@@ -690,6 +690,39 @@ export default [
       }
     ]
   },
+  {
+    date: "2025-03-26",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "ZKarnage: Stress Testing ZK Systems Through Maximum Pain",
+        "url": "https://github.com/yourbuddyconner/zkarnage",
+        "type": "开源",
+        "tags": [
+          "Conner Swann",
+          { en: "Stress Testing", zh: "压力测试" }
+        ],
+        "summary": {
+          zh: "@yourbuddyconner 开源了ZKarnage项目，旨在通过最差情况攻击，测试Ethproof provers的性能极限。",
+          en: "@yourbuddyconner opened source ZKarnage, aiming to test the performance limits of Ethproof provers through worst-case attacks."
+        },
+        "notes": {
+          zh: [
+            "构造最差情况(worst case)，迫使EVM加载大型合约来增加计算负担。",
+            "使用`EXTCODESIZE`字节码迫使EVM加载合约字节码，增加ZK电路的复杂度。`EXTCODECOPY`也是类似的。",
+            "该操作消耗最小的gas（~408 gas/KB），但在ZK电路中非常复杂。",
+            "该代码库提供了构造这类最差情况的工具"
+          ],
+          en: [
+            "Construct worst case, forcing EVM to load large contracts to increase proving burden.",
+            "Use `EXTCODESIZE` bytecode to force EVM to load contract bytecode, increasing ZK circuit complexity. `EXTCODECOPY` is similar.",
+            "This operation consumes the least gas (~408 gas/KB), but is very complex in ZK circuits.",
+            "This repo provides tools to construct such worst cases."
+          ]
+        }
+      },
+    ]
+  },
 ];
 
 const others = [
