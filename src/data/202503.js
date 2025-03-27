@@ -723,6 +723,62 @@ export default [
       },
     ]
   },
+  {
+    date: "2025-03-27",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "I can prove I’ve solved this Sudoku without revealing it",
+        "url": "https://www.youtube.com/watch?v=Otvcbw6k4eo",
+        "type": "视频",
+        "tags": [
+          "Polylog",
+          { en: "Sudoku", zh: "数独" }
+        ],
+        "summary": {
+          zh: "Polylog团队发布的视频探讨了如何使用零知识证明技术在不透露解决方案的情况下证明解决了数独问题。",
+          en: "Polylog team's video discusses how to use zero-knowledge proofs to prove a solution to a Sudoku puzzle without revealing the solution."
+        }
+      },
+      {
+        "name": "zkTLS is proving real utility by creating a trustless bridge for data verifiability b/w web2 & web3 while preserving privacy",
+        "url": "https://x.com/0xShivani/status/1904165256416370950",
+        "type": "博客",
+        "tags": [
+          "@0xShivani",
+          "zkTLS",
+        ],
+        "summary": {
+          zh: "@0xShivani 在长推中讨论了zkTLS，讲解了几种常见的zkTLS方案，及其产品场景，并介绍了zkTLS当前遇到的问题和挑战。",
+          en: "@0xShivani discussed zkTLS in a thread, explaining several common zkTLS schemes, their products, and introduced the challenges of zkTLS."
+        }
+      }
+    ],
+    insights: [
+      {
+        "language": "zh",
+        "title": "用筷子讲清楚零知识证明",
+        "type": "original",
+        "slogan": "用筷子讲ZKP",
+        "quotes": [
+        ],
+        "images": [
+          "./images/2025/03/27zh.png"
+        ],
+      },
+      {
+        "language": "en",
+        "title": "How to Explain ZKP with the Chopsticks",
+        "type": "original",
+        "slogan": "Chopsticks ZKP",
+        "quotes": [
+        ],
+        "images": [
+          "./images/2025/03/27en.png"
+        ],
+      }
+    ]
+  },
 ];
 
 const others = [
