@@ -3,7 +3,7 @@
     <div class="insight-header">
       <div class="insight-title-section">
         <div v-if="false" class="insight-website"><a href="https://www.zkshanghai.xyz" target="_blank">www.zkshanghai.xyz</a></div>
-        <div class="insight-main-title">每日ZKP见解</div>
+        <div class="insight-main-title">{{ language === 'zh' ? '每日ZKP见解' : 'ZKP Insight' }}</div>
       </div>
       <div class="insight-subtitle-section">
         <div class="insight-slogan">{{ insight.slogan }}</div>
@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="insight-footer">
-      <span class="insight-copyright">
+      <span v-if="language === 'zh'" class="insight-copyright">
         由
         <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a>
         <span v-if="insight.type == 'reprint'">
@@ -53,6 +53,15 @@
         <span v-else>
           创作
         </span>
+      </span>
+      <span v-else class="insight-copyright">
+        <span v-if="insight.type == 'reprint'">
+          Collected by
+        </span>
+        <span v-else>
+          Created by
+        </span>
+        <a href="https://x.com/icerdesign" target="_blank">@icerdesign</a>
       </span>
     </div>
   </div>
@@ -70,6 +79,10 @@ const props = defineProps({
   date: {
     type: String,
     required: true
+  },
+  language: {
+    type: String,
+    default: 'zh'
   }
 })
 

@@ -150,7 +150,9 @@ const displayedCards = computed(() => {
   })
 })
 const displayedInsights = computed(() => {
-  return selectedItems.value.flatMap(card => card.insights)
+  return selectedItems.value.flatMap(card => 
+    card.insights?.filter(insight => !insight.language || insight.language === language.value) || []
+  )
 })
 
 const weekdayColor = computed(() => {
