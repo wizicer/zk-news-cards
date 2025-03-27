@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-27 Thursday
+
+🎥 I can prove I’ve solved this Sudoku without revealing it
+- https://www.youtube.com/watch?v=Otvcbw6k4eo
+- Polylog team's video discusses how to use zero-knowledge proofs to prove a solution to a Sudoku puzzle without revealing the solution.
+
+📝 zkTLS is proving real utility by creating a trustless bridge for data verifiability b/w web2 & web3 while preserving privacy
+- https://x.com/0xShivani/status/1904165256416370950
+- @0xShivani discussed zkTLS in a thread, explaining several common zkTLS schemes, their products, and introduced the challenges of zkTLS.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/27.html
+🪶 Collected by @icerdesign

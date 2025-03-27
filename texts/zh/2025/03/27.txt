@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-27 星期四
+
+🎥 I can prove I’ve solved this Sudoku without revealing it
+- https://www.youtube.com/watch?v=Otvcbw6k4eo
+- Polylog团队发布的视频探讨了如何使用零知识证明技术在不透露解决方案的情况下证明解决了数独问题。
+
+📝 zkTLS is proving real utility by creating a trustless bridge for data verifiability b/w web2 & web3 while preserving privacy
+- https://x.com/0xShivani/status/1904165256416370950
+- @0xShivani 在长推中讨论了zkTLS，讲解了几种常见的zkTLS方案，及其产品场景，并介绍了zkTLS当前遇到的问题和挑战。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/27.html
+🪶 由 @icerdesign 收集
