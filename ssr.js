@@ -31,7 +31,7 @@ async function generateStaticHTML(language = 'zh') {
     await router.push(`/?lang=${language}`)
     await router.isReady()
     let appContent = await renderToString(app)
-    appContent = appContent.replace(/"\.\/images\/.*"/g, m => `"../.${m.slice(1)}"`)
+    appContent = appContent.replace(/"\.\/images\/.*"/g, m => `"../../.${m.slice(1)}"`)
 
     // Ensure directories exist - use language-specific subdirectories
     const htmlDir = path.join(__dirname, 'docs', language, year, month)
