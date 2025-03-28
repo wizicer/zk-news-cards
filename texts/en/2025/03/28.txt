@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-28 Friday
+
+📝 clean: An Embedded DSL and Formal Verification Framework for ZK Circuits in Lean4
+- https://blog.zksecurity.xyz/posts/clean/
+- @zksecurityXYZ shared a blog post about clean, introducing an embedded DSL and formal verification framework for ZK circuits in Lean4, aimed at enhancing confidence in ZK circuit correctness.
+
+💻 Introducing Coinbase's Open Source MPC Cryptography Library
+- https://www.coinbase.com/blog/introducing-coinbases-open-source-mpc-cryptography-library
+- @coinbase opened source its MPC cryptography library, which includes ECDSA and EdDSA two-party and multi-party signature code, as well as security backup and multi-party key-gen tools, supporting the secure management of cryptocurrency asset keys.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/28.html
+🪶 Collected by @icerdesign

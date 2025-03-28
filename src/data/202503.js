@@ -779,6 +779,40 @@ export default [
       }
     ]
   },
+  {
+    date: "2025-03-28",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "clean: An Embedded DSL and Formal Verification Framework for ZK Circuits in Lean4",
+        "url": "https://blog.zksecurity.xyz/posts/clean/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          { en: "Formal Verification", zh: "形式验证" },
+          "Lean4",
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 分享了关于clean的博客{{name}}，介绍了这个基于Lean4的ZK电路设计DSL和形式验证框架，旨在提升ZK电路的正确性信心。",
+          en: "@zksecurityXYZ shared a blog post{{name}} about clean, introducing an embedded DSL and formal verification framework for ZK circuits in Lean4, aimed at enhancing confidence in ZK circuit correctness."
+        }
+      },
+      {
+        "name": "Introducing Coinbase's Open Source MPC Cryptography Library",
+        "url": "https://www.coinbase.com/blog/introducing-coinbases-open-source-mpc-cryptography-library",
+        "type": "开源",
+        "tags": [
+          "Philip Martin",
+          "MPC",
+          "Coinbase"
+        ],
+        "summary": {
+          zh: "@coinbase 开源了其MPC密码学库，该库包括ECDSA和EdDSA的两方及多方签名代码，以及安全备份、多方密钥生成等工具，支持加密货币资产密钥的安全管理。",
+          en: "@coinbase opened source its MPC cryptography library, which includes ECDSA and EdDSA two-party and multi-party signature code, as well as security backup and multi-party key-gen tools, supporting the secure management of cryptocurrency asset keys."
+        }
+      }
+    ]
+  }
 ];
 
 const others = [

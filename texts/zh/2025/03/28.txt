@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-28 星期五
+
+📝 clean: An Embedded DSL and Formal Verification Framework for ZK Circuits in Lean4
+- https://blog.zksecurity.xyz/posts/clean/
+- @zksecurityXYZ 分享了关于clean的博客，介绍了这个基于Lean4的ZK电路设计DSL和形式验证框架，旨在提升ZK电路的正确性信心。
+
+💻 Introducing Coinbase's Open Source MPC Cryptography Library
+- https://www.coinbase.com/blog/introducing-coinbases-open-source-mpc-cryptography-library
+- @coinbase 开源了其MPC密码学库，该库包括ECDSA和EdDSA的两方及多方签名代码，以及安全备份、多方密钥生成等工具，支持加密货币资产密钥的安全管理。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/28.html
+🪶 由 @icerdesign 收集
