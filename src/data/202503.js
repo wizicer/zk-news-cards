@@ -812,6 +812,40 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-03-29",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Advisory for a bug in Plonky3's FRI verifier",
+        "url": "https://x.com/dlubarov/status/1905670415160410470",
+        "type": "新闻",
+        "tags": [
+          "Daniel Lubarov",
+          "Plonky3",
+          "FRI",
+        ],
+        "summary": {
+          zh: "@dlubarov 发布了关于Plonky3的FRI验证器中一个bug的公告，在此推下面还有一些关于如何找到证明系统中漏洞的方法和讨论。",
+          en: "@dlubarov shared an advisory about a bug in Plonky3's FRI verifier, and in this thread are some discussions about how to find vulnerabilities in proof systems."
+        }
+      },
+      {
+        "name": "OP Kailua Validity Mode: The Full ZK Experience",
+        "url": "https://risczero.com/blog/RISC-Zero-OP-Kailua",
+        "type": "博客",
+        "tags": [
+          "RISC Zero",
+          "ZK Rollup",
+          "OP Kailua",
+        ],
+        "summary": {
+          zh: "@RiscZero 分享了OP Kailua Validity Mode的详细信息，允许OP Rollups从Optimistic过渡到Hybrid再到Validity模式，提供最高安全性和1小时最终性。",
+          en: "@RiscZero shared details about OP Kailua Validity Mode, allowing OP Rollups to transition from Optimistic to Hybrid to Validity mode, providing maximum security and 1-hour finality."
+        }
+      },
+    ]
   }
 ];
 

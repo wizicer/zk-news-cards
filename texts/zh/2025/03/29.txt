@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-29 星期六
+
+📰 Advisory for a bug in Plonky3's FRI verifier
+- https://x.com/dlubarov/status/1905670415160410470
+- @dlubarov 发布了关于Plonky3的FRI验证器中一个bug的公告，在此推下面还有一些关于如何找到证明系统中漏洞的方法和讨论。
+
+📝 OP Kailua Validity Mode: The Full ZK Experience
+- https://risczero.com/blog/RISC-Zero-OP-Kailua
+- @RiscZero 分享了OP Kailua Validity Mode的详细信息，允许OP Rollups从Optimistic过渡到Hybrid再到Validity模式，提供最高安全性和1小时最终性。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/29.html
+🪶 由 @icerdesign 收集

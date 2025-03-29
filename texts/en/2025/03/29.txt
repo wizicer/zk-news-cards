@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-29 Saturday
+
+📰 Advisory for a bug in Plonky3's FRI verifier
+- https://x.com/dlubarov/status/1905670415160410470
+- @dlubarov shared an advisory about a bug in Plonky3's FRI verifier, and in this thread are some discussions about how to find vulnerabilities in proof systems.
+
+📝 OP Kailua Validity Mode: The Full ZK Experience
+- https://risczero.com/blog/RISC-Zero-OP-Kailua
+- @RiscZero shared details about OP Kailua Validity Mode, allowing OP Rollups to transition from Optimistic to Hybrid to Validity mode, providing maximum security and 1-hour finality.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/29.html
+🪶 Collected by @icerdesign
