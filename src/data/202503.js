@@ -846,6 +846,40 @@ export default [
         }
       },
     ]
+  },
+  {
+    date: "2025-03-30",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Attacking soundness for an optimization of the Gemini Polynomial Commitment Scheme",
+        "url": "https://eprint.iacr.org/2025/565",
+        "type": "论文",
+        "tags": [
+          "Lydia Garms",
+          "PCS",
+          { zh: "多线性", en: "Multilinear" },
+        ],
+        "summary": {
+          zh: "Garms等人在{{name}}论文中揭示了对Gemini多线性多项式承诺方案优化的攻击，允许恶意证明者虚假声明多项式在任何输入点的值。",
+          en: "Garms et al. revealed an attack on the Gemini multilinear polynomial commitment scheme optimization in paper{{name}}, allowing malicious provers to falsely claim the value of a polynomial at any input point."
+        }
+      },
+      {
+        "name": "libZK: a zero-knowledge proof library",
+        "url": "https://www.ietf.org/archive/id/draft-google-cfrg-libzk-00.html",
+        "type": "博客",
+        "tags": [
+          "M. Frigo",
+          "libZK",
+          "MPC-in-the-head",
+        ],
+        "summary": {
+          zh: "Frigo等人在IETF标准中提出{{name}}，一个结合MPC-in-the-head方法和基于sumcheck的可验证计算协议的ZK证明库，旨在生成简洁的非交互式零知识证明。",
+          en: "Frigo et al. proposed libZK in IETF draft{{name}}, a zero-knowledge proof library that combines MPC-in-the-head method and sumcheck-based verifiable computation protocol, designed to generate concise non-interactive zero-knowledge proofs."
+        }
+      }
+    ]
   }
 ];
 

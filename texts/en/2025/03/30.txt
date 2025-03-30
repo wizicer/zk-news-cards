@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-30 Sunday
+
+📄 Attacking soundness for an optimization of the Gemini Polynomial Commitment Scheme
+- https://eprint.iacr.org/2025/565
+- Garms et al. revealed an attack on the Gemini multilinear polynomial commitment scheme optimization in paper, allowing malicious provers to falsely claim the value of a polynomial at any input point.
+
+📝 libZK: a zero-knowledge proof library
+- https://www.ietf.org/archive/id/draft-google-cfrg-libzk-00.html
+- Frigo et al. proposed libZK in IETF draft, a zero-knowledge proof library that combines MPC-in-the-head method and sumcheck-based verifiable computation protocol, designed to generate concise non-interactive zero-knowledge proofs.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/30.html
+🪶 Collected by @icerdesign

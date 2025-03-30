@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-03-30 星期日
+
+📄 Attacking soundness for an optimization of the Gemini Polynomial Commitment Scheme
+- https://eprint.iacr.org/2025/565
+- Garms等人在论文中揭示了对Gemini多线性多项式承诺方案优化的攻击，允许恶意证明者虚假声明多项式在任何输入点的值。
+
+📝 libZK: a zero-knowledge proof library
+- https://www.ietf.org/archive/id/draft-google-cfrg-libzk-00.html
+- Frigo等人在IETF标准中提出，一个结合MPC-in-the-head方法和基于sumcheck的可验证计算协议的ZK证明库，旨在生成简洁的非交互式零知识证明。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/03/30.html
+🪶 由 @icerdesign 收集
