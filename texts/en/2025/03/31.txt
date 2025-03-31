@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-03-31 Monday
+
+📰 Pessimistic Proof — a real-world zk workload benchmarked across zkVMs
+- https://x.com/BrianSeong99/status/1905394415461695872
+- @BrianSeong99 published Pessimistic Proof benchmark test, comparing SP1, Risc0, and Pico from @SuccinctLabs, @RiscZero, and @brevis_zk in zkVMs, focusing on execution time and proof efficiency.
+
+📝 Machine Learning should be Verifiable
+- https://blog.ezkl.xyz/post/verifiableml/
+- @ezklxyz team discussed the importance of verifiable machine learning in blog, including how to extend the security and privacy of Face ID and other technologies using zero-knowledge proof technology, making it support any programmable machine learning model.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/03/31.html
+🪶 Collected by @icerdesign

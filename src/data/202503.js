@@ -880,6 +880,39 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-03-31",
+    languages: ['zh', 'en'],
+    projects: [
+      {
+        "name": "Pessimistic Proof — a real-world zk workload benchmarked across zkVMs",
+        "url": "https://x.com/BrianSeong99/status/1905394415461695872",
+        "type": "新闻",
+        "tags": [
+          "BrianSeong99",
+          "zkVMs",
+          "benchmark",
+        ],
+        "summary": {
+          zh: "@BrianSeong99 发布了Pessimistic Proof基准测试，比较了@SuccinctLabs的SP1、@RiscZero的Risc0和@brevis_zk的Pico在zkVMs上的性能，重点关注了执行时间和证明效率。",
+          en: "@BrianSeong99 published Pessimistic Proof benchmark test, comparing SP1, Risc0, and Pico from @SuccinctLabs, @RiscZero, and @brevis_zk in zkVMs, focusing on execution time and proof efficiency."
+        }
+      },
+      {
+        "name": "Machine Learning should be Verifiable",
+        "url": "https://blog.ezkl.xyz/post/verifiableml/",
+        "type": "博客",
+        "tags": [
+          "EZKL",
+          "zkML"
+        ],
+        "summary": {
+          zh: "@ezklxyz 团队在博客{{name}}中讨论了可验证机器学习的重要性，包括如何通过零知识证明技术扩展Face ID等技术的安全性和隐私保护，使其支持任意可编程的机器学习模型。",
+          en: "@ezklxyz team discussed the importance of verifiable machine learning in blog{{name}}, including how to extend the security and privacy of Face ID and other technologies using zero-knowledge proof technology, making it support any programmable machine learning model."
+        }
+      }
+    ]
   }
 ];
 
