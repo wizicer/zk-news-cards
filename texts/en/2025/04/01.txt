@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-01 Tuesday
+
+🎪 ZKProof7 Conference in Sofia
+- https://zkproof.org/events/zkproof-7-sofia/
+- The ZKProof community held the ZKProof7 conference in Sofia from March 23-25, focusing on the latest progress in ZK technology, with all recordings and slides now available.
+
+📝 GKR Protocol: A Step-by-Step Example
+- https://blog.lambdaclass.com/gkr-protocol-a-step-by-step-example/
+- @class_lambda explained the GKR protocol in a blog post, demonstrating how to efficiently verify the correctness of arithmetic circuits using interactive proofs and sum-check protocols.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/01.html
+🪶 Collected by @icerdesign

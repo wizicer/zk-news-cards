@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-01 星期二
+
+🎪 ZKProof7 Conference in Sofia
+- https://zkproof.org/events/zkproof-7-sofia/
+- ZKProof社区于2025年3月23日至25日在保加利亚索菲亚举办了ZKProof7会议，聚焦ZK技术的最新进展，已发布所有会议录屏和演讲材料。
+
+📝 GKR Protocol: A Step-by-Step Example
+- https://blog.lambdaclass.com/gkr-protocol-a-step-by-step-example/
+- @class_lambda 在博客中详细解释了GKR协议的工作原理，通过一个具体的例子展示了如何利用交互式证明和sum-check协议来高效验证算术电路的正确性。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/01.html
+🪶 由 @icerdesign 收集
