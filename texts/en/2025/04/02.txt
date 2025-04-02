@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-02 Wednesday
+
+📄 Plonkify: R1CS-to-Plonk transpiler
+- https://eprint.iacr.org/2025/534
+- Zhu et al. proposed Plonkify in paper, a tool that converts R1CS arithmetic circuits to Plonk circuits, supporting standard gates and custom gates, significantly reducing the number of constraints.
+
+📄 VeRange: Verification-efficient Zero-knowledge Range Arguments with Transparent Setup for Blockchain Applications and More
+- https://eprint.iacr.org/2025/528
+- Zhou et al. proposed VeRange in paper, a verification-efficient zero-knowledge range argument scheme without trusted setup, significantly reducing the computational overhead and gas costs of verification.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/02.html
+🪶 Collected by @icerdesign

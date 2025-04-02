@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-02 星期三
+
+📄 Plonkify: R1CS-to-Plonk transpiler
+- https://eprint.iacr.org/2025/534
+- Zhu等人在论文中提出了Plonkify工具，能够将R1CS算术化电路转换为Plonk电路，支持普通门和自定义门，显著减少了约束数量。
+
+📄 VeRange: Verification-efficient Zero-knowledge Range Arguments with Transparent Setup for Blockchain Applications and More
+- https://eprint.iacr.org/2025/528
+- Zhou等人在论文中提出了VeRange，一种验证高效的零知识范围论证方案，无需可信设置，显著降低了验证的计算开销和gas成本。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/02.html
+🪶 由 @icerdesign 收集
