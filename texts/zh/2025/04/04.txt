@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-04 星期五
+
+📰 Privacy Pools Mainnet Launch
+- https://x.com/0xbowio/status/1906784481496719749
+- @0xbowio 宣布Privacy Pools主网上线，以太坊用户现可实现链上隐私，同时与非法资金分离，旨在推动隐私正常化。与Tornado Cash的最主要区别是具有资金审核机制，避免非法资金进入匿名池，增强合规性。
+
+📄 Tangram: Encryption-friendly SNARK framework under Pedersen committed engines
+- https://eprint.iacr.org/2025/540
+- Jeong等人在论文中提出了Tangram，一个加密友好的SNARK框架，支持使用Pedersen-like密文构建系统，显著提高了加密证明的效率。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/04.html
+🪶 由 @icerdesign 收集

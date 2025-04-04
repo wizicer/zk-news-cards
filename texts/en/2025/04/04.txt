@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-04 Friday
+
+📰 Privacy Pools Mainnet Launch
+- https://x.com/0xbowio/status/1906784481496719749
+- @0xbowio announced the launch of Privacy Pools mainnet, allowing Ethereum users to achieve on-chain privacy while separating illegal funds, aiming to normalize privacy. The main difference from Tornado Cash is the presence of a fund audit mechanism, preventing illegal funds from entering the anonymous pool, enhancing compliance.
+
+📄 Tangram: Encryption-friendly SNARK framework under Pedersen committed engines
+- https://eprint.iacr.org/2025/540
+- Jeong et al. proposed Tangram in paper, an encryption-friendly SNARK framework that supports Pedersen-like ciphertext construction, significantly improving the efficiency of encryption proofs.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/04.html
+🪶 Collected by @icerdesign

@@ -68,6 +68,39 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-04",
+    projects: [
+      {
+        "name": "Privacy Pools Mainnet Launch",
+        "url": "https://x.com/0xbowio/status/1906784481496719749",
+        "type": "新闻",
+        "tags": [
+          "0xbow.io",
+          "Tornado Cash",
+        ],
+        "summary": {
+          zh: "@0xbowio 宣布Privacy Pools主网上线，以太坊用户现可实现链上隐私，同时与非法资金分离，旨在推动隐私正常化。与Tornado Cash的最主要区别是具有资金审核机制，避免非法资金进入匿名池，增强合规性。",
+          en: "@0xbowio announced the launch of Privacy Pools mainnet, allowing Ethereum users to achieve on-chain privacy while separating illegal funds, aiming to normalize privacy. The main difference from Tornado Cash is the presence of a fund audit mechanism, preventing illegal funds from entering the anonymous pool, enhancing compliance."
+        }
+      },
+      {
+        "name": "Tangram: Encryption-friendly SNARK framework under Pedersen committed engines",
+        "url": "https://eprint.iacr.org/2025/540",
+        "type": "论文",
+        "tags": [
+          "Gweonho Jeong",
+          "Pedersen commitment",
+        ],
+        "summary": {
+          zh: "Jeong等人在{{name}}论文中提出了Tangram，一个加密友好的SNARK框架，支持使用Pedersen-like密文构建系统，显著提高了加密证明的效率。",
+          en: "Jeong et al. proposed Tangram in paper{{name}}, an encryption-friendly SNARK framework that supports Pedersen-like ciphertext construction, significantly improving the efficiency of encryption proofs."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 
