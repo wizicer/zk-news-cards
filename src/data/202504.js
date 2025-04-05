@@ -101,6 +101,41 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-05",
+    projects: [
+      {
+        "name": "Unlocking New Possibilities: zkTLS, TEE, and zkVM in Action",
+        "url": "https://x.com/primus_labs/status/1908193205537194090",
+        "type": "博客",
+        "tags": [
+          "@primus_labs",
+          "zkTLS",
+          "TEE",
+        ],
+        "summary": { 
+          zh: "@primus_labs 、 @SuccinctLabs 和 @PhalaNetwork 共同撰写的博客{{name}}探讨了zkTLS、TEE和zkVM如何结合，为链上应用提供可验证的Web2数据，同时保护用户隐私和安全性。",
+          en: "@primus_labs, @SuccinctLabs, and @PhalaNetwork co-authored the blog{{name}} discussing how zkTLS, TEE, and zkVM can be combined to provide verifiable Web2 data for blockchain applications while protecting user privacy and security."
+        }
+      },
+      {
+        "name": "Soloist: Distributed SNARKs for Rank-One Constraint System",
+        "url": "https://eprint.iacr.org/2025/557",
+        "type": "论文",
+        "tags": [
+          "Weihan Li",
+          { zh: "分布式证明", en: "distributed proof" },
+          "KZG",
+        ],
+        "summary": { 
+          zh: "Li等人在{{name}}论文中提出了Soloist，一种针对R1CS的优化分布式SNARK。Soloist实现了恒定的证明大小、恒定的摊销通信复杂度和恒定的验证复杂度，显著提升了zkRollups的效率。",
+          en: "Li et al. proposed Soloist in the paper{{name}}, an optimized distributed SNARK for R1CS that achieves constant proof size, constant amortized communication complexity, and constant verification complexity, significantly improving the efficiency of zkRollups."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

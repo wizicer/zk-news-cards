@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-05 星期六
+
+📝 Unlocking New Possibilities: zkTLS, TEE, and zkVM in Action
+- https://x.com/primus_labs/status/1908193205537194090
+- @primus_labs 、 @SuccinctLabs 和 @PhalaNetwork 共同撰写的博客探讨了zkTLS、TEE和zkVM如何结合，为链上应用提供可验证的Web2数据，同时保护用户隐私和安全性。
+
+📄 Soloist: Distributed SNARKs for Rank-One Constraint System
+- https://eprint.iacr.org/2025/557
+- Li等人在论文中提出了Soloist，一种针对R1CS的优化分布式SNARK。Soloist实现了恒定的证明大小、恒定的摊销通信复杂度和恒定的验证复杂度，显著提升了zkRollups的效率。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/05.html
+🪶 由 @icerdesign 收集

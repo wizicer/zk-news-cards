@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-05 Saturday
+
+📝 Unlocking New Possibilities: zkTLS, TEE, and zkVM in Action
+- https://x.com/primus_labs/status/1908193205537194090
+- @primus_labs, @SuccinctLabs, and @PhalaNetwork co-authored the blog discussing how zkTLS, TEE, and zkVM can be combined to provide verifiable Web2 data for blockchain applications while protecting user privacy and security.
+
+📄 Soloist: Distributed SNARKs for Rank-One Constraint System
+- https://eprint.iacr.org/2025/557
+- Li et al. proposed Soloist in the paper, an optimized distributed SNARK for R1CS that achieves constant proof size, constant amortized communication complexity, and constant verification complexity, significantly improving the efficiency of zkRollups.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/05.html
+🪶 Collected by @icerdesign
