@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-06 星期日
+
+📄 Zinnia: An Expressive and Efficient Tensor-Oriented Zero-Knowledge Programming Framework
+- https://eprint.iacr.org/2025/572
+- Xue等人在论文中提出了Zinnia，一个面向张量的高效ZK编程框架，通过高级编程语言和符号执行方法简化ZKP程序编写，显著提升开发效率和证明速度。
+
+📰 SP1-2FA: Enhancing zkVM Security with TEEs
+- https://blog.succinct.xyz/sp1-2fa/
+- @SuccinctLabs 宣布推出SP1-2FA，为Succinct Prover Network增加通过可信执行环境(TEEs)的第二层保护，进一步强化zkVM的安全性。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/06.html
+🪶 由 @icerdesign 收集

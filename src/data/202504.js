@@ -136,6 +136,41 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-06",
+    projects: [
+      {
+        "name": "Zinnia: An Expressive and Efficient Tensor-Oriented Zero-Knowledge Programming Framework",
+        "url": "https://eprint.iacr.org/2025/572",
+        "type": "论文",
+        "tags": [
+          "Zhantong Xue",
+          {zh: "编译器", en: "compiler"},
+          "DSL",
+        ],
+        "summary": {
+          zh: "Xue等人在{{name}}论文中提出了Zinnia，一个面向张量的高效ZK编程框架，通过高级编程语言和符号执行方法简化ZKP程序编写，显著提升开发效率和证明速度。",
+          en: "Xue et al. proposed Zinnia in the paper{{name}}, an efficient ZK programming framework for tensor-oriented applications, simplifying ZKP program development and significantly improving proof efficiency."
+        }
+      },
+      {
+        "name": "SP1-2FA: Enhancing zkVM Security with TEEs",
+        "url": "https://blog.succinct.xyz/sp1-2fa/",
+        "type": "新闻",
+        "tags": [
+          "Succinct",
+          "zkVM",
+          "TEE",
+        ],
+        "summary": {
+          zh: "@SuccinctLabs 宣布推出SP1-2FA，为Succinct Prover Network增加通过可信执行环境(TEEs)的第二层保护，进一步强化zkVM的安全性。",
+          en: "@SuccinctLabs announced the release of SP1-2FA, adding a second layer of protection to the Succinct Prover Network through TEEs, further enhancing the security of zkVMs."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 
