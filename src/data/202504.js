@@ -171,6 +171,41 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-07",
+    projects: [
+      {
+        "name": "Veridise develop LLZK: A new IR for ZK languages",
+        "url": "https://medium.com/veridise/veridise-secures-ethereum-foundation-grant-to-develop-llzk-a-new-intermediate-representation-ir-224c0e71f4d5",
+        "type": "博客",
+        "tags": [
+          "Veridise",
+          "IR",
+          "LLZK",
+        ],
+        "summary": {
+          zh: "@VeridiseInc 获得以太坊基金会资助，开发LLZK，一种针对ZK语言的中介表示（IR），旨在统一和简化电路编译，提高ZK领域的可维护性和安全性。该框架可以将Circom、Zirgen和Gnark转换为LLZK，并作进一步分析优化。",
+          en: "@VeridiseInc received an Ethereum Foundation grant to develop LLZK, an intermediate representation (IR) for ZK languages, aiming to unify and simplify circuit compilation, improve the maintainability and security of the ZK domain. The framework converts Circom, Zirgen, and Gnark to LLZK and further analyzes and optimizes it."
+        }
+      },
+      {
+        "name": "Efficient SNARKs for Boolean Circuits via Sumcheck over Tower Fields",
+        "url": "https://eprint.iacr.org/2025/594",
+        "type": "论文",
+        "tags": [
+          "Tianyi Liu", "Yupeng Zhang",
+          {zh: "塔域", en: "Tower of fields"},
+          "Sumcheck"
+        ],
+        "summary": {
+          zh: "Liu等人在{{name}}论文中提出了一种针对布尔电路的高效SNARKs，通过新颖的塔式sumcheck协议和塔式零检查协议显著提高了证明者效率。",
+          en: "Liu et al. proposed an efficient SNARK for Boolean circuits in the paper{{name}}, using novel tower sumcheck and tower zero-check protocols, significantly improving prover efficiency."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

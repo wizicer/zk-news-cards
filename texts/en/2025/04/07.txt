@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-07 Monday
+
+📝 Veridise develop LLZK: A new IR for ZK languages
+- https://medium.com/veridise/veridise-secures-ethereum-foundation-grant-to-develop-llzk-a-new-intermediate-representation-ir-224c0e71f4d5
+- @VeridiseInc received an Ethereum Foundation grant to develop LLZK, an intermediate representation (IR) for ZK languages, aiming to unify and simplify circuit compilation, improve the maintainability and security of the ZK domain. The framework converts Circom, Zirgen, and Gnark to LLZK and further analyzes and optimizes it.
+
+📄 Efficient SNARKs for Boolean Circuits via Sumcheck over Tower Fields
+- https://eprint.iacr.org/2025/594
+- Liu et al. proposed an efficient SNARK for Boolean circuits in the paper, using novel tower sumcheck and tower zero-check protocols, significantly improving prover efficiency.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/07.html
+🪶 Collected by @icerdesign
