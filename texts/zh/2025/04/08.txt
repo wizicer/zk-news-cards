@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-08 星期二
+
+🎪 NoirHack - Deadline April 8th
+- https://www.noirhack.com/
+- NoirHack是一个为期4周的完全在线项目，开发者可以掌握Noir这一通用零知识语言，并构建跨多个区块链部署的隐私保护应用。项目包括两周的学习和两周的构建，最终在5月12日进行Demo Day展示。
+
+📝 Code Optimizations in the Landscape of Post-Quantum Cryptography
+- https://mirror.xyz/privacy-scaling-explorations.eth/BKI3tyauHIiUCYHgma-EHeSRXNTNDtLUQV9VNGQWLUg
+- @PrivacyScaling 研究员Miha Stopar在博客中探讨了后量子密码学中的代码优化，重点比较了基于格和基于同源的密码学在向量化方面的潜力。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/08.html
+🪶 由 @icerdesign 收集

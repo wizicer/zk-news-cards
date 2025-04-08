@@ -206,6 +206,39 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-08",
+    projects: [
+      {
+        "name": "NoirHack - Deadline April 8th",
+        "url": "https://www.noirhack.com/",
+        "type": "活动",
+        "tags": [
+          "NoirHack",
+          "Noir",
+        ],
+        "summary": {
+          zh: "NoirHack是一个为期4周的完全在线项目，开发者可以掌握Noir这一通用零知识语言，并构建跨多个区块链部署的隐私保护应用。项目包括两周的学习和两周的构建，最终在5月12日进行Demo Day展示。",
+          en: "NoirHack is a 4-week online project where developers can learn and build privacy-protecting applications across multiple blockchains using the Noir. The project includes two weeks of learning and two weeks of building, culminating in a Demo Day on May 12th."
+        }
+      },
+      {
+        "name": "Code Optimizations in the Landscape of Post-Quantum Cryptography",
+        "url": "https://mirror.xyz/privacy-scaling-explorations.eth/BKI3tyauHIiUCYHgma-EHeSRXNTNDtLUQV9VNGQWLUg",
+        "type": "博客",
+        "tags": [
+          "PSE",
+          {zh: "后量子密码学", en: "Post-Quantum Cryptography"},
+        ],
+        "summary": {
+          zh: "@PrivacyScaling 研究员Miha Stopar在博客{{name}}中探讨了后量子密码学中的代码优化，重点比较了基于格和基于同源的密码学在向量化方面的潜力。",
+          en: "Miha Stopar, a researcher at @PrivacyScaling, discussed code optimizations in the landscape of post-quantum cryptography in the blog{{name}}, focusing on comparing the potential of lattice-based and isogeny-based cryptography in vectorization."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

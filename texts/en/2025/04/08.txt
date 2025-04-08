@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-08 Tuesday
+
+🎪 NoirHack - Deadline April 8th
+- https://www.noirhack.com/
+- NoirHack is a 4-week online project where developers can learn and build privacy-protecting applications across multiple blockchains using the Noir. The project includes two weeks of learning and two weeks of building, culminating in a Demo Day on May 12th.
+
+📝 Code Optimizations in the Landscape of Post-Quantum Cryptography
+- https://mirror.xyz/privacy-scaling-explorations.eth/BKI3tyauHIiUCYHgma-EHeSRXNTNDtLUQV9VNGQWLUg
+- Miha Stopar, a researcher at @PrivacyScaling, discussed code optimizations in the landscape of post-quantum cryptography in the blog, focusing on comparing the potential of lattice-based and isogeny-based cryptography in vectorization.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/08.html
+🪶 Collected by @icerdesign
