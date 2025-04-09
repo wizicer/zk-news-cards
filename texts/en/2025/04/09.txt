@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-09 Wednesday
+
+📄 ColliderVM: Stateful Computation on Bitcoin
+- https://eprint.iacr.org/2025/591
+- Kolobov et al. proposed ColliderVM in the paper, a new method for executing stateful computations on Bitcoin, replacing traditional signature storage components with hash collision commitments, significantly reducing the length of STARK proof verification scripts.
+
+📄 zkPyTorch: A Hierarchical Optimized Compiler for Zero-Knowledge Machine Learning
+- https://eprint.iacr.org/2025/535
+- Xie et al. proposed zkPyTorch in the paper, a compiler that seamlessly integrates ML frameworks like PyTorch with ZKP engines like Expander, simplifying ZKML development. It automates ML operations to optimize ZKP circuits through three key components.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/09.html
+🪶 Collected by @icerdesign

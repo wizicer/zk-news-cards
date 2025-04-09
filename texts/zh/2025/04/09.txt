@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-09 星期三
+
+📄 ColliderVM: Stateful Computation on Bitcoin
+- https://eprint.iacr.org/2025/591
+- Kolobov等人在论文中提出了ColliderVM，一种在比特币上执行状态计算的新方法，通过基于哈希碰撞的承诺替代传统签名存储组件，显著缩短了STARK证明验证的脚本长度。
+
+📄 zkPyTorch: A Hierarchical Optimized Compiler for Zero-Knowledge Machine Learning
+- https://eprint.iacr.org/2025/535
+- Xie等人在论文中提出了zkPyTorch，一个将ML框架如PyTorch与ZKP引擎如Expander无缝集成的编译器，简化了ZKML的开发。通过三个关键组件自动化ML操作到优化ZKP电路的转换。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/09.html
+🪶 由 @icerdesign 收集

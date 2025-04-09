@@ -239,6 +239,41 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-09",
+    projects: [
+      {
+        "name": "ColliderVM: Stateful Computation on Bitcoin",
+        "url": "https://eprint.iacr.org/2025/591",
+        "type": "论文",
+        "tags": [
+          "Victor I. Kolobov",
+          {zh: "比特币", en: "Bitcoin"},
+          "BitVM",
+        ],
+        "summary": {
+          zh: "Kolobov等人在{{name}}论文中提出了ColliderVM，一种在比特币上执行状态计算的新方法，通过基于哈希碰撞的承诺替代传统签名存储组件，显著缩短了STARK证明验证的脚本长度。",
+          en: "Kolobov et al. proposed ColliderVM in the paper{{name}}, a new method for executing stateful computations on Bitcoin, replacing traditional signature storage components with hash collision commitments, significantly reducing the length of STARK proof verification scripts."
+        }
+      },
+      {
+        "name": "zkPyTorch: A Hierarchical Optimized Compiler for Zero-Knowledge Machine Learning",
+        "url": "https://eprint.iacr.org/2025/535",
+        "type": "论文",
+        "tags": [
+          "Tiancheng Xie",
+          "zkML",
+          "PyTorch"
+        ],
+        "summary": {
+          zh: "Xie等人在{{name}}论文中提出了zkPyTorch，一个将ML框架如PyTorch与ZKP引擎如Expander无缝集成的编译器，简化了ZKML的开发。通过三个关键组件自动化ML操作到优化ZKP电路的转换。",
+          en: "Xie et al. proposed zkPyTorch in the paper{{name}}, a compiler that seamlessly integrates ML frameworks like PyTorch with ZKP engines like Expander, simplifying ZKML development. It automates ML operations to optimize ZKP circuits through three key components."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 
