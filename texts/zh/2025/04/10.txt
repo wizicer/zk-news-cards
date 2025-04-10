@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-10 星期四
+
+📝 Confidential Balances: Empowering Confidentiality in the Solana Ecosystem
+- https://www.helius.dev/blog/confidential-balances
+- Kelvin Bonilla在博客中探讨了Solana生态系统中的Confidential Balances，这是一种通过同态加密和零知识证明技术增强令牌隐私和合规性的扩展功能。
+
+💻 WHIR 🌪️
+- https://github.com/WizardOfMenlo/whir
+- Arnon等人开源了WHIR库，基于arkworks生态系统开发，支持PCS或LDT协议运行，提供多种安全级别和配置选项，该仓库与其论文内容对应。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/10.html
+🪶 由 @icerdesign 收集

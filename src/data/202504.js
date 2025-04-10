@@ -274,6 +274,39 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-10",
+    projects: [
+      {
+        "name": "Confidential Balances: Empowering Confidentiality in the Solana Ecosystem",
+        "url": "https://www.helius.dev/blog/confidential-balances",
+        "type": "博客",
+        "tags": [
+          "Kelvin Bonilla",
+          "Solana",
+        ],
+        "summary": { 
+          zh: "Kelvin Bonilla在{{name}}博客中探讨了Solana生态系统中的Confidential Balances，这是一种通过同态加密和零知识证明技术增强令牌隐私和合规性的扩展功能。",
+          en: "Kelvin Bonilla discussed Confidential Balances in the Solana ecosystem in the blog{{name}}, a privacy and compliance extension function that enhances token privacy and compliance through homomorphic encryption and zero-knowledge proofs."
+        }
+      },
+      {
+        "name": "WHIR 🌪️",
+        "url": "https://github.com/WizardOfMenlo/whir",
+        "type": "开源",
+        "tags": [
+          "Gal Arnon", "Alessandro Chiesa",
+          "WHIR",
+        ],
+        "summary": {
+          zh: "Arnon等人开源了WHIR库，基于arkworks生态系统开发，支持PCS或LDT协议运行，提供多种安全级别和配置选项，该仓库与其论文内容对应。",
+          en: "Arnon et al. open-sourced the WHIR library, which is built on the arkworks ecosystem and supports running PCS or LDT protocols, providing multiple security levels and configuration options, and is implemented according to the corresponding paper."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

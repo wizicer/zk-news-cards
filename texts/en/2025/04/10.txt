@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-10 Thursday
+
+📝 Confidential Balances: Empowering Confidentiality in the Solana Ecosystem
+- https://www.helius.dev/blog/confidential-balances
+- Kelvin Bonilla discussed Confidential Balances in the Solana ecosystem in the blog, a privacy and compliance extension function that enhances token privacy and compliance through homomorphic encryption and zero-knowledge proofs.
+
+💻 WHIR 🌪️
+- https://github.com/WizardOfMenlo/whir
+- Arnon et al. open-sourced the WHIR library, which is built on the arkworks ecosystem and supports running PCS or LDT protocols, providing multiple security levels and configuration options, and is implemented according to the corresponding paper.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/10.html
+🪶 Collected by @icerdesign
