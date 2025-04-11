@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-11 星期五
+
+📝 A maximally simple L1 privacy roadmap
+- https://ethereum-magicians.org/t/a-maximally-simple-l1-privacy-roadmap/23459
+- @VitalikButerin 在博客中分享了关于如何实际改善以太坊用户隐私状态的当前思考，提出了一个轻量级的以太坊共识变更路线图，包括支付隐私、应用内活动匿名化、链上读取隐私和网络级匿名化等关键隐私形式。
+
+📝 Introducing R0VM 2.0
+- https://risczero.com/blog/introducing-R0VM-2.0
+- @RiscZero 在博客中介绍了R0VM 2.0，这是专为现代区块链应用设计的最快、最安全的zkVM，标志着零知识计算进入实时时代。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/11.html
+🪶 由 @icerdesign 收集

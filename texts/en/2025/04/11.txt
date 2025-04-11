@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-11 Friday
+
+📝 A maximally simple L1 privacy roadmap
+- https://ethereum-magicians.org/t/a-maximally-simple-l1-privacy-roadmap/23459
+- @VitalikButerin shared his current thoughts on how to actually improve the privacy of Ethereum users in the blog, proposing a lightweight Ethereum consensus change roadmap, including payment privacy, anonymous activities within applications, privacy on-chain, and network-level anonymity.
+
+📝 Introducing R0VM 2.0
+- https://risczero.com/blog/introducing-R0VM-2.0
+- @RiscZero introduced R0VM 2.0 in the blog, which is the fastest and most secure zkVM designed for modern blockchain applications, marking the arrival of real-time zero-knowledge computing.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/11.html
+🪶 Collected by @icerdesign

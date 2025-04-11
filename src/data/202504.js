@@ -307,6 +307,43 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-11",
+    projects: [
+      {
+        "name": "A maximally simple L1 privacy roadmap",
+        "url": "https://ethereum-magicians.org/t/a-maximally-simple-l1-privacy-roadmap/23459",
+        "type": "博客",
+        "tags": [
+          "Vitalik Buterin",
+          "L1",
+          "FOCIL",
+          "TEE",
+        ],
+        "summary": {
+          zh: "@VitalikButerin 在{{name}}博客中分享了关于如何实际改善以太坊用户隐私状态的当前思考，提出了一个轻量级的以太坊共识变更路线图，包括支付隐私、应用内活动匿名化、链上读取隐私和网络级匿名化等关键隐私形式。",
+          en: "@VitalikButerin shared his current thoughts on how to actually improve the privacy of Ethereum users in the{{name}} blog, proposing a lightweight Ethereum consensus change roadmap, including payment privacy, anonymous activities within applications, privacy on-chain, and network-level anonymity."
+        }
+      },
+      {
+        "name": "Introducing R0VM 2.0",
+        "url": "https://risczero.com/blog/introducing-R0VM-2.0",
+        "type": "博客",
+        "tags": [
+          "RISC Zero",
+          "zkVM",
+          {zh: "实时证明", en: "Real-Time Proving"},
+        ],
+        "summary": {
+          zh: "@RiscZero 在{{name}}博客中介绍了R0VM 2.0，这是专为现代区块链应用设计的最快、最安全的zkVM，标志着零知识计算进入实时时代。",
+          en: "@RiscZero introduced R0VM 2.0 in the{{name}} blog, which is the fastest and most secure zkVM designed for modern blockchain applications, marking the arrival of real-time zero-knowledge computing."
+        }
+      }
+    ],
+    insights: [
+    ]
+
   }
 ];
 
