@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-13 Sunday
+
+📄 Proving CPU Executions in Small Space
+- https://eprint.iacr.org/2025/611
+- Nair et al. proposed a Jolt zkVM implementation in the paper, which reduces memory usage and has lower runtime overhead compared to existing recursive techniques.
+
+📄 Need for zkSpeed: Accelerating HyperPlonk for Zero-Knowledge Proofs
+- https://eprint.iacr.org/2025/620
+- Daftardar et al. proposed zkSpeed in the paper, a hardware accelerator for HyperPlonk that supports one-time universal setup and small proof sizes, achieving a geometric mean acceleration ratio of 801.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/13.html
+🪶 Collected by @icerdesign

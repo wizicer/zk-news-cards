@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-13 星期日
+
+📄 Proving CPU Executions in Small Space
+- https://eprint.iacr.org/2025/611
+- Nair等人在论文中提出了一种减少内存占用的Jolt zkVM实现，不依赖SNARK递归，且运行时开销较低，相比现有递归技术具有优势。
+
+📄 Need for zkSpeed: Accelerating HyperPlonk for Zero-Knowledge Proofs
+- https://eprint.iacr.org/2025/620
+- Daftardar等人在论文中提出了zkSpeed，一个用于加速HyperPlonk的硬件加速器，支持一次性通用设置和小证明尺寸，实现了801倍的几何平均加速比。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/13.html
+🪶 由 @icerdesign 收集

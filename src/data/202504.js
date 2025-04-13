@@ -343,8 +343,42 @@ export default [
     ],
     insights: [
     ]
-
+  },
+  {
+    date: "2025-04-13",
+    projects: [
+      {
+        "name": "Proving CPU Executions in Small Space",
+        "url": "https://eprint.iacr.org/2025/611",
+        "type": "论文",
+        "tags": [
+          "Vineet Nair", "Justin Thaler",
+          "zkVMs",
+        ],
+        "summary": {
+          zh: "Nair等人在{{name}}论文中提出了一种减少内存占用的Jolt zkVM实现，不依赖SNARK递归，且运行时开销较低，相比现有递归技术具有优势。",
+          en: "Nair et al. proposed a Jolt zkVM implementation in the{{name}} paper, which reduces memory usage and has lower runtime overhead compared to existing recursive techniques."
+        }
+      },
+      {
+        "name": "Need for zkSpeed: Accelerating HyperPlonk for Zero-Knowledge Proofs",
+        "url": "https://eprint.iacr.org/2025/620",
+        "type": "论文",
+        "tags": [
+          "Alhad Daftardar",
+          "HyperPlonk",
+          "ASIC",
+        ],
+        "summary": {
+          zh: "Daftardar等人在{{name}}论文中提出了zkSpeed，一个用于加速HyperPlonk的硬件加速器，支持一次性通用设置和小证明尺寸，实现了801倍的几何平均加速比。",
+          en: "Daftardar et al. proposed zkSpeed in the{{name}} paper, a hardware accelerator for HyperPlonk that supports one-time universal setup and small proof sizes, achieving a geometric mean acceleration ratio of 801."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
+
 ];
 
 const others = [
