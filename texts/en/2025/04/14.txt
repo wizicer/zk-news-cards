@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-14 Monday
+
+📝 Spartan: A Sum-Check-Based zkSNARK with Efficient Prover
+- https://hackmd.io/@srinathsetty/spartan
+- @srinathtv summarized the sum-check-based zkSNARK protocol Spartan in the blog, which has efficient prover performance and currently provides a foundation for Jolt zkVM.
+
+📝 Why I support privacy
+- https://vitalik.eth.limo/general/2025/04/14/privacy.html
+- @VitalikButerin discussed the importance of privacy in the Ethereum ecosystem in the blog, highlighting the role of ZK-SNARKs and FHE in protecting privacy and emphasizing the key value of privacy for freedom, order, and progress.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/14.html
+🪶 Collected by @icerdesign

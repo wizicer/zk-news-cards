@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-14 星期一
+
+📝 Spartan: A Sum-Check-Based zkSNARK with Efficient Prover
+- https://hackmd.io/@srinathsetty/spartan
+- @srinathtv 在博客中总结了sum-check的zkSNARK协议Spartan，具有高效的证明者性能，目前为Jolt zkVM提供了底层支持。
+
+📝 Why I support privacy
+- https://vitalik.eth.limo/general/2025/04/14/privacy.html
+- @VitalikButerin 在博客中讨论了隐私在以太坊生态系统中的重要性，强调了ZK-SNARKs和FHE等技术在保护隐私方面的作用，以及隐私对于自由、秩序和进步的关键价值。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/14.html
+🪶 由 @icerdesign 收集

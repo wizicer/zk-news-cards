@@ -375,7 +375,63 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-04-14",
+    projects: [
+      {
+        "name": "Spartan: A Sum-Check-Based zkSNARK with Efficient Prover",
+        "url": "https://hackmd.io/@srinathsetty/spartan",
+        "type": "博客",
+        "tags": [
+          "Srinath Setty",
+          "Sum-Check",
+        ],
+        "summary": {
+          zh: "@srinathtv 在{{name}}博客中总结了sum-check的zkSNARK协议Spartan，具有高效的证明者性能，目前为Jolt zkVM提供了底层支持。",
+          en: "@srinathtv summarized the sum-check-based zkSNARK protocol Spartan in the{{name}} blog, which has efficient prover performance and currently provides a foundation for Jolt zkVM."
+        }
+      },
+      {
+        "name": "Why I support privacy",
+        "url": "https://vitalik.eth.limo/general/2025/04/14/privacy.html",
+        "type": "博客",
+        "tags": [
+          "Vitalik Buterin",
+          "Privacy",
+          {zh: "去中心化", en: "Decentralization"}
+        ],
+        "summary": {
+          zh: "@VitalikButerin 在博客{{name}}中讨论了隐私在以太坊生态系统中的重要性，强调了ZK-SNARKs和FHE等技术在保护隐私方面的作用，以及隐私对于自由、秩序和进步的关键价值。",
+          en: "@VitalikButerin discussed the importance of privacy in the Ethereum ecosystem in the{{name}} blog, highlighting the role of ZK-SNARKs and FHE in protecting privacy and emphasizing the key value of privacy for freedom, order, and progress."
+        }
+      },
+    ],
     insights: [
+      {
+        "url": "https://x.com/francescoswiss/status/1911754272535990605",
+        "language": "zh",
+        "title": "Vitalik: 为什么我支持隐私",
+        "type": "reprint",
+        "slogan": "重要的隐私",
+        "quotes": [
+        ],
+        "images": [
+          "./images/2025/04/14.png"
+        ],
+      },
+      {
+        "url": "https://x.com/francescoswiss/status/1911754272535990605",
+        "language": "en",
+        "title": "Vitalik: Why I support privacy",
+        "type": "reprint",
+        "slogan": "Privacy",
+        "quotes": [
+        ],
+        "images": [
+          "./images/2025/04/14.png"
+        ],
+      },
     ]
   }
 
