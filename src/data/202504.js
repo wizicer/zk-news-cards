@@ -435,7 +435,7 @@ export default [
     ]
   },
   {
-    date: "2025-04-15",
+    date: "2025-04-16",
     projects: [
       {
         "name": "Halo2 soundness issues",

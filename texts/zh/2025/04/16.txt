@@ -1,4 +1,4 @@
-🚀zkDaily 前沿热点追踪 2025-04-15 星期二
+🚀zkDaily 前沿热点追踪 2025-04-16 星期三
 
 💻 Halo2 soundness issues
 - https://github.com/teddav/halo2-soundness-bugs
@@ -9,5 +9,5 @@
 - @NovaNet_zkp 组织了zkp.fun活动，邀请用户通过MetaMask登录，参与ZK挑战，同时有机会获得NovaNet的奖励。
 
 ---
-📄 网页查看： https://news.plonk.pro/zh/2025/04/15.html
+📄 网页查看： https://news.plonk.pro/zh/2025/04/16.html
 🪶 由 @icerdesign 收集
