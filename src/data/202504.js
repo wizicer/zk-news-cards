@@ -433,8 +433,42 @@ export default [
         ],
       },
     ]
+  },
+  {
+    date: "2025-04-15",
+    projects: [
+      {
+        "name": "Halo2 soundness issues",
+        "url": "https://github.com/teddav/halo2-soundness-bugs",
+        "type": "开源",
+        "tags": [
+          "teddav",
+          "Halo2",
+          {en:"vulnerabilities", zh:"漏洞"}
+        ],
+        "summary": {
+          zh: "@0xteddav 在GitHub上开源了Halo2 soundness bugs项目，展示了Halo2编写电路时的潜在漏洞，包括未约束变量和范围检查问题。",
+          en: "@0xteddav opened source for the Halo2 soundness bugs project, showcasing potential vulnerabilities in Halo2 circuit writing, including unconstrained variables and range checks."
+        }
+      },
+      {
+        "name": "Proof Party | Have fun using zero-knowledge proofs with your friends.",
+        "url": "https://zkp.fun/",
+        "type": "活动",
+        "tags": [
+          "zkp.fun",
+          "Privacy",
+          "CTF"
+        ],
+        "summary": {
+          zh: "@NovaNet_zkp 组织了zkp.fun活动，邀请用户通过MetaMask登录，参与ZK挑战，同时有机会获得NovaNet的奖励。",
+          en: "@NovaNet_zkp organized the zkp.fun event, inviting users to log in through MetaMask, participate in ZK challenges, and potentially win rewards from NovaNet."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
-
 ];
 
 const others = [
