@@ -468,6 +468,40 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-17",
+    projects: [
+      {
+        "name": "zkMarek Session 1",
+        "url": "https://www.youtube.com/watch?v=_JiPcvtr8sY&list=PLj0C1OnlNNly58s-JI_bDAdCY7JLgcy5I",
+        "type": "视频",
+        "tags": [
+          "zkMarek",
+          {zh: "椭圆曲线", en: "Elliptic Curves"},
+        ],
+        "summary": {
+          zh: "@zkMarek 发布了第一季视频，目的是以直观的方式解释椭圆曲线、ECDSA、可信设置、KZG和向量承诺、Blob、Merkle和Verkle树等主题。",
+          en: "@zkMarek released the first season video, explaining elliptic curves, ECDSA, trusted setup, KZG and vector commitments, Blob, Merkle, and Verkle trees in a visual way."
+        }
+      },
+      {
+        "name": "ONPROVER: The End of Trusted Data, The Start of Verifiable Data",
+        "url": "https://orochi.network/blog/ONPROVER-The-End-of-Trusted-Data-The-Start-of-Verifiable-Data",
+        "type": "博客",
+        "tags": [
+          "Orochi Network",
+          "Testnet",
+          {zh: "激励", en: "Incentive"},
+        ],
+        "summary": {
+          zh: "@OrochiNetwork 在博客{{name}}中讨论了ONPROVER的概念，并且表明testnet已经上线，并提供了如何在测试网上通过在浏览器中进行证明获得奖励的方法。",
+          en: "@OrochiNetwork discussed the concept of ONPROVER in the{{name}} blog, indicating that the testnet has been launched and provided a method for earning rewards on the testnet through proofs generated in the browser."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

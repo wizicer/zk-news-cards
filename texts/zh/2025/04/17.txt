@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-17 星期四
+
+🎥 zkMarek Session 1
+- https://www.youtube.com/watch?v=_JiPcvtr8sY&list=PLj0C1OnlNNly58s-JI_bDAdCY7JLgcy5I
+- @zkMarek 发布了第一季视频，目的是以直观的方式解释椭圆曲线、ECDSA、可信设置、KZG和向量承诺、Blob、Merkle和Verkle树等主题。
+
+📝 ONPROVER: The End of Trusted Data, The Start of Verifiable Data
+- https://orochi.network/blog/ONPROVER-The-End-of-Trusted-Data-The-Start-of-Verifiable-Data
+- @OrochiNetwork 在博客中讨论了ONPROVER的概念，并且表明testnet已经上线，并提供了如何在测试网上通过在浏览器中进行证明获得奖励的方法。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/17.html
+🪶 由 @icerdesign 收集

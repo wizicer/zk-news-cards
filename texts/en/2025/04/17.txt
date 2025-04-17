@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-17 Thursday
+
+🎥 zkMarek Session 1
+- https://www.youtube.com/watch?v=_JiPcvtr8sY&list=PLj0C1OnlNNly58s-JI_bDAdCY7JLgcy5I
+- @zkMarek released the first season video, explaining elliptic curves, ECDSA, trusted setup, KZG and vector commitments, Blob, Merkle, and Verkle trees in a visual way.
+
+📝 ONPROVER: The End of Trusted Data, The Start of Verifiable Data
+- https://orochi.network/blog/ONPROVER-The-End-of-Trusted-Data-The-Start-of-Verifiable-Data
+- @OrochiNetwork discussed the concept of ONPROVER in the blog, indicating that the testnet has been launched and provided a method for earning rewards on the testnet through proofs generated in the browser.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/17.html
+🪶 Collected by @icerdesign
