@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-18 星期五
+
+🎥 ZK Learning Group: Interactive Oracle Proofs (IOPs)
+- https://www.youtube.com/watch?v=HSUcpGCajE0
+- ZK Learning Group 发布了Daniel Szego关于Interactive Oracle Proofs (IOPs)的讲解学习视频，并以Plonk为例介绍了IOPs的实现原理。
+
+📃 ZK App Development Platform
+- https://platforms.ligetron.com/
+- @ligero_inc 发布的ZK App Development Platform支持在Ligetron平台上构建和部署ZK Web应用，包括使用C/C++、CIRCOM或Rust编写NP语句，编译为WASM，生成和验证证明的流程。并提供了浏览器中的证明速度测试。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/18.html
+🪶 由 @icerdesign 收集

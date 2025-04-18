@@ -502,6 +502,40 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-18",
+    projects: [
+      {
+        "name": "ZK Learning Group: Interactive Oracle Proofs (IOPs)",
+        "url": "https://www.youtube.com/watch?v=HSUcpGCajE0",
+        "type": "视频",
+        "tags": [
+          "Daniel Szego",
+          "IOP"
+        ],
+        "summary": {
+          zh: "ZK Learning Group 发布了Daniel Szego关于Interactive Oracle Proofs (IOPs)的讲解学习视频，并以Plonk为例介绍了IOPs的实现原理。",
+          en: "ZK Learning Group published a lecture on Interactive Oracle Proofs (IOPs) by Daniel Szego, introducing the implementation principles of IOPs with Plonk as an example."
+        }
+      },
+      {
+        "name": "ZK App Development Platform",
+        "url": "https://platforms.ligetron.com/",
+        "type": "信息",
+        "tags": [
+          "Ligero, Inc",
+          "WASM",
+          "SNARKs",
+        ],
+        "summary": {
+          zh: "@ligero_inc 发布的ZK App Development Platform支持在Ligetron平台上构建和部署ZK Web应用，包括使用C/C++、CIRCOM或Rust编写NP语句，编译为WASM，生成和验证证明的流程。并提供了浏览器中的证明速度测试。",
+          en: "@ligero_inc published the ZK App Development Platform, which supports building and deploying ZK Web applications on Ligetron, including using C/C++, CIRCOM, or Rust to write NP statements, compiling to WASM, and generating and verifying proofs. It also provides a proof speed test in the browser."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

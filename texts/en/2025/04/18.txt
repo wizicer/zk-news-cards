@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-18 Friday
+
+🎥 ZK Learning Group: Interactive Oracle Proofs (IOPs)
+- https://www.youtube.com/watch?v=HSUcpGCajE0
+- ZK Learning Group published a lecture on Interactive Oracle Proofs (IOPs) by Daniel Szego, introducing the implementation principles of IOPs with Plonk as an example.
+
+📃 ZK App Development Platform
+- https://platforms.ligetron.com/
+- @ligero_inc published the ZK App Development Platform, which supports building and deploying ZK Web applications on Ligetron, including using C/C++, CIRCOM, or Rust to write NP statements, compiling to WASM, and generating and verifying proofs. It also provides a proof speed test in the browser.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/18.html
+🪶 Collected by @icerdesign
