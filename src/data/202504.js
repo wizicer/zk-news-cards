@@ -536,6 +536,40 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-20",
+    projects: [
+      {
+        "name": "Every mainnet (Ethereum) block is being ZK-proven—by ZkCloud",
+        "url": "https://x.com/thezkcloud/status/1912105857921282134",
+        "type": "新闻",
+        "tags": [
+          "ZkCloud",
+          "Succinct Lab",
+        ],
+        "summary": {
+          zh: "@thezkcloud 宣布加入ETHProof的证明器队列，对每个区块进行证明。其使用 @SuccinctLabs 的RSP证明器进行证明，硬件使用ZkCloud上的云主机。",
+          en: "@thezkcloud announced its participation in ETHProof's prover, proving each block. It uses @SuccinctLabs ' RSP prover and cloud hosts from ZkCloud."
+        }
+      },
+      {
+        "name": "Fairgate, RootstockLabs, and Input | Output Launch BitVMX FORCE to Advance Bitcoin's Scalability",
+        "url": "https://bitvmx.org/force/press",
+        "type": "新闻",
+        "tags": [
+          "Fairgate", "RootstockLabs", "Input | Output",
+          "Bitcoin",
+          "BitVMX",
+        ],
+        "summary": {
+          zh: "@FairGateLabs 、@RootstockLabs 和 @InputOutputHK 联合组建BitVMX FORCE战略联盟，旨在通过BitVMX框架提升比特币的可扩展性和创新性，支持复杂的可争议计算操作。",
+          en: "@FairGateLabs 、@RootstockLabs and @InputOutputHK jointly founded the BitVMX FORCE strategic alliance, aiming to enhance Bitcoin's scalability and innovation through the BitVMX framework, supporting complex disputeable computations."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-20 星期日
+
+📰 Every mainnet (Ethereum) block is being ZK-proven—by ZkCloud
+- https://x.com/thezkcloud/status/1912105857921282134
+- @thezkcloud 宣布加入ETHProof的证明器队列，对每个区块进行证明。其使用 @SuccinctLabs 的RSP证明器进行证明，硬件使用ZkCloud上的云主机。
+
+📰 Fairgate, RootstockLabs, and Input | Output Launch BitVMX FORCE to Advance Bitcoin's Scalability
+- https://bitvmx.org/force/press
+- @FairGateLabs 、@RootstockLabs 和 @InputOutputHK 联合组建BitVMX FORCE战略联盟，旨在通过BitVMX框架提升比特币的可扩展性和创新性，支持复杂的可争议计算操作。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/20.html
+🪶 由 @icerdesign 收集

@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-20 Sunday
+
+📰 Every mainnet (Ethereum) block is being ZK-proven—by ZkCloud
+- https://x.com/thezkcloud/status/1912105857921282134
+- @thezkcloud announced its participation in ETHProof's prover, proving each block. It uses @SuccinctLabs ' RSP prover and cloud hosts from ZkCloud.
+
+📰 Fairgate, RootstockLabs, and Input | Output Launch BitVMX FORCE to Advance Bitcoin's Scalability
+- https://bitvmx.org/force/press
+- @FairGateLabs 、@RootstockLabs and @InputOutputHK jointly founded the BitVMX FORCE strategic alliance, aiming to enhance Bitcoin's scalability and innovation through the BitVMX framework, supporting complex disputeable computations.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/20.html
+🪶 Collected by @icerdesign
