@@ -570,6 +570,40 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-21",
+    projects: [
+      {
+        "name": "Proofs of Useful Work from Arbitrary Matrix Multiplication",
+        "url": "https://eprint.iacr.org/2025/685",
+        "type": "论文",
+        "tags": [
+          "Ilan Komargodski",
+          {zh: "矩阵乘法", en: "Matrix Multiplication"}
+        ],
+        "summary": {
+          zh: "Komargodski等人在{{name}}论文中提出了一种基于任意矩阵乘法的有用工作量证明（PoUW）协议，旨在让比特币挖矿的能源浪费变为支持AI训练和推理的能源来源。该项目也准备发一条新的区块链。",
+          en: "Komargodski et al. proposed a proof of useful work (PoUW) protocol based on arbitrary matrix multiplication in the{{name}} paper, aiming to convert the energy waste of Bitcoin mining into energy sources for AI training and inference. This project also plans to launch a new blockchain."
+        }
+      },
+      {
+        "name": "Efficient Foreign-Field Arithmetic in PLONK",
+        "url": "https://eprint.iacr.org/2025/695",
+        "type": "论文",
+        "tags": [
+          "Miguel Ambrona",
+          "PLONK",
+          {zh: "外域算术", en: "foreign-field arithmetic"}
+        ],
+        "summary": {
+          zh: "Ambrona等人在{{name}}论文中提出了一种在PLONK中高效实现外域算术的方法，显著减少了约束数量，并验证了其在椭圆曲线模拟中的适用性。",
+          en: "Ambrona et al. proposed a method for efficient foreign-field arithmetic in PLONK in the{{name}} paper, significantly reducing the number of constraints and evaluating its applicability in elliptic curve simulations."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

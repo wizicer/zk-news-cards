@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-21 星期一
+
+📄 Proofs of Useful Work from Arbitrary Matrix Multiplication
+- https://eprint.iacr.org/2025/685
+- Komargodski等人在论文中提出了一种基于任意矩阵乘法的有用工作量证明（PoUW）协议，旨在让比特币挖矿的能源浪费变为支持AI训练和推理的能源来源。该项目也准备发一条新的区块链。
+
+📄 Efficient Foreign-Field Arithmetic in PLONK
+- https://eprint.iacr.org/2025/695
+- Ambrona等人在论文中提出了一种在PLONK中高效实现外域算术的方法，显著减少了约束数量，并验证了其在椭圆曲线模拟中的适用性。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/21.html
+🪶 由 @icerdesign 收集

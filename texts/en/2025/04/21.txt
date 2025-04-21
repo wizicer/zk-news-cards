@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-21 Monday
+
+📄 Proofs of Useful Work from Arbitrary Matrix Multiplication
+- https://eprint.iacr.org/2025/685
+- Komargodski et al. proposed a proof of useful work (PoUW) protocol based on arbitrary matrix multiplication in the paper, aiming to convert the energy waste of Bitcoin mining into energy sources for AI training and inference. This project also plans to launch a new blockchain.
+
+📄 Efficient Foreign-Field Arithmetic in PLONK
+- https://eprint.iacr.org/2025/695
+- Ambrona et al. proposed a method for efficient foreign-field arithmetic in PLONK in the paper, significantly reducing the number of constraints and evaluating its applicability in elliptic curve simulations.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/21.html
+🪶 Collected by @icerdesign
