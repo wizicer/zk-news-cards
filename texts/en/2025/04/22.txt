@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-22 Tuesday
+
+📄 Vector Commitment Design, Analysis, and Applications: A Survey
+- https://eprint.iacr.org/2025/667
+- Pathak et al. analyzed the design, properties, and applications of vector commitments (VCs) in the paper, comparing the proof/commitment update information size and complexity of different constructions, and discussing their validity in decentralized and privacy protection technologies.
+
+📄 Breaking ECDSA with Two Affinely Related Nonces
+- https://eprint.iacr.org/2025/705
+- Gilchrist et al. proposed an attack on ECDSA in the paper, recovering the private key using two affinely related nonces, without requiring lattice reduction or brute force search.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/22.html
+🪶 Collected by @icerdesign

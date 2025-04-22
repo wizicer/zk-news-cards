@@ -604,6 +604,40 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-22",
+    projects: [
+      {
+        "name": "Vector Commitment Design, Analysis, and Applications: A Survey",
+        "url": "https://eprint.iacr.org/2025/667",
+        "type": "论文",
+        "tags": [
+          "Vir Pathak",
+          {zh: "向量承诺", en: "Vector Commitment"},
+        ],
+        "summary": {
+          zh: "Pathak等人在{{name}}论文中系统化地分析了向量承诺（VCs）的设计、特性、属性及应用，比较了不同构造的证明/更新信息大小及复杂度，并探讨了其在去中心化和隐私保护技术中的有效性。",
+          en: "Pathak et al. analyzed the design, properties, and applications of vector commitments (VCs) in the{{name}} paper, comparing the proof/commitment update information size and complexity of different constructions, and discussing their validity in decentralized and privacy protection technologies."
+        }
+      },
+      {
+        "name": "Breaking ECDSA with Two Affinely Related Nonces",
+        "url": "https://eprint.iacr.org/2025/705",
+        "type": "论文",
+        "tags": [
+          "Jamie Gilchrist",
+          "ECDSA",
+          {zh: "私钥安全", en: "private key security"},
+        ],
+        "summary": {
+          zh: "Gilchrist等人在{{name}}论文中提出了一种攻击ECDSA的方法，通过两个具有仿射关系的nonce恢复私钥，无需格规约或暴力搜索。",
+          en: "Gilchrist et al. proposed an attack on ECDSA in the{{name}} paper, recovering the private key using two affinely related nonces, without requiring lattice reduction or brute force search."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

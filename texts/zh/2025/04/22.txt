@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-22 星期二
+
+📄 Vector Commitment Design, Analysis, and Applications: A Survey
+- https://eprint.iacr.org/2025/667
+- Pathak等人在论文中系统化地分析了向量承诺（VCs）的设计、特性、属性及应用，比较了不同构造的证明/更新信息大小及复杂度，并探讨了其在去中心化和隐私保护技术中的有效性。
+
+📄 Breaking ECDSA with Two Affinely Related Nonces
+- https://eprint.iacr.org/2025/705
+- Gilchrist等人在论文中提出了一种攻击ECDSA的方法，通过两个具有仿射关系的nonce恢复私钥，无需格规约或暴力搜索。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/22.html
+🪶 由 @icerdesign 收集
