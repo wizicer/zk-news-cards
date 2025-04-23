@@ -1,0 +1,15 @@
+🚀zkDaily Frontier Tracker 2025-04-23 Wednesday
+
+📄 One-Step Schnorr Threshold Identification
+- https://eprint.iacr.org/2025/722
+- Foteinos Mergoupis-Anagnou proposed OSST in the paper, a Schnorr-based threshold zk-identification protocol, which is non-interactive and does not depend on public shares, supporting cheap adoption in untrusted and dynamic environments.
+- Notes:
+  - Threshold zk identification protocol allows `t` members to jointly prove they know a secret
+  - This protocol avoids the registration and authentication of each member's public key, making it suitable for dynamic or untrusted environments
+  - The actual proof content, for example, can be _'we are proving we know the private key x'_
+  - Applications include anonymous group authentication, decentralized identity systems, on-chain multi-signature control, IoT collaboration, cross-organization verification, etc.
+  - OSST protocol is non-interactive and does not depend on public shares, supporting asynchronous communication and dynamic member joining
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/23.html
+🪶 Collected by @icerdesign

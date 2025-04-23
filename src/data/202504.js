@@ -638,6 +638,42 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-23",
+    projects: [
+      {
+        "name": "One-Step Schnorr Threshold Identification",
+        "url": "https://eprint.iacr.org/2025/722",
+        "type": "论文",
+        "tags": [
+          "Foteinos Mergoupis-Anagnou",
+          {zh: "门限", en: "Threshold"},
+        ],
+        "summary": {
+          zh: "Foteinos Mergoupis-Anagnou在{{name}}论文中提出了OSST，一种基于Schnorr的阈值零知识识别协议，无需交互且不依赖公开份额，支持在无需认证过程或基础设施支持的无许可和动态环境中廉价采用。",
+          en: "Foteinos Mergoupis-Anagnou proposed OSST in the{{name}} paper, a Schnorr-based threshold zk-identification protocol, which is non-interactive and does not depend on public shares, supporting cheap adoption in untrusted and dynamic environments."
+        },
+        "notes": {
+          zh: [
+            "门限零知识识别协议让 `t` 个成员联合证明他们共同知道某个秘密",
+            "此类协议避免了对每个成员公钥的注册与认证，适用于动态或去信任环境",
+            "实际证明的内容举例来说，可以是 _“我们这些人联合起来，确实知道某个私钥 x”_",
+            "应用场景包括匿名群体认证、去中心化身份系统、链上多签控制、IoT 协作、跨组织验证等",
+            "OSST 协议是非交互式的，不依赖公开份额，支持异步通信和成员动态加入",
+          ],
+          en: [
+            "Threshold zk identification protocol allows `t` members to jointly prove they know a secret",
+            "This protocol avoids the registration and authentication of each member's public key, making it suitable for dynamic or untrusted environments",
+            "The actual proof content, for example, can be _'we are proving we know the private key x'_",
+            "Applications include anonymous group authentication, decentralized identity systems, on-chain multi-signature control, IoT collaboration, cross-organization verification, etc.",
+            "OSST protocol is non-interactive and does not depend on public shares, supporting asynchronous communication and dynamic member joining",
+          ]
+        }
+      },
+    ],
+    insights: [
+    ]
   }
 ];
 
