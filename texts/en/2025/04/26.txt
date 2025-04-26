@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-26 Saturday
+
+📝 Accelerating ZK Proving with WebGPU: Techniques and Challenges
+- https://blog.zksecurity.xyz/posts/webgpu/
+- @zksecurityXYZ discussed in the blog how to accelerate ZK proving with WebGPU, introducing the challenges of WebGPU itself and in implementing ZKP, and verified its speedup with Stwo integration.
+
+📰 three new zkVMs unveiled on Ethproofs call #1
+- https://x.com/eth_proofs/status/1915801013102968865
+- @eth_proofs unveiled three new zkVMs in the first phone call: @argumentxyz's Ix (Lean 4), @StarkWareLtd's StarkV (RISC-V), and @IrreducibleHW's zCray (inspired by RISC-V).
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/26.html
+🪶 Collected by @icerdesign

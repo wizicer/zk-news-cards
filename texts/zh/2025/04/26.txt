@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-26 星期六
+
+📝 Accelerating ZK Proving with WebGPU: Techniques and Challenges
+- https://blog.zksecurity.xyz/posts/webgpu/
+- @zksecurityXYZ 在博客中讨论了利用WebGPU提升ZK证明性能的方法，介绍了WebGPU本身和在实现ZKP中的挑战，并通过实验验证其与Stwo集成后的提速效果。
+
+📰 three new zkVMs unveiled on Ethproofs call #1
+- https://x.com/eth_proofs/status/1915801013102968865
+- 在 @eth_proofs 的第一次电话会议中，揭晓了三款新的zkVM：@argumentxyz 的Ix（基于Lean 4）、@StarkWareLtd 的StarkV（基于RISC-V）和 @IrreducibleHW 的 zCray（受RISC-V启发）。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/26.html
+🪶 由 @icerdesign 收集

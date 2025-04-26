@@ -674,7 +674,40 @@ export default [
     ],
     insights: [
     ]
-  }
+  },
+  {
+    date: "2025-04-26",
+    projects: [
+      {
+        "name": "Accelerating ZK Proving with WebGPU: Techniques and Challenges",
+        "url": "https://blog.zksecurity.xyz/posts/webgpu/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          "WebGPU",
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 在博客{{name}}中讨论了利用WebGPU提升ZK证明性能的方法，介绍了WebGPU本身和在实现ZKP中的挑战，并通过实验验证其与Stwo集成后的提速效果。",
+          en: "@zksecurityXYZ discussed in the{{name}} blog how to accelerate ZK proving with WebGPU, introducing the challenges of WebGPU itself and in implementing ZKP, and verified its speedup with Stwo integration."
+        }
+      },
+      {
+        "name": "three new zkVMs unveiled on Ethproofs call #1",
+        "url": "https://x.com/eth_proofs/status/1915801013102968865",
+        "type": "新闻",
+        "tags": [
+          "Ethproofs",
+          "zkVM",
+        ],
+        "summary": {
+          zh: "在 @eth_proofs 的第一次电话会议中，揭晓了三款新的zkVM：@argumentxyz 的Ix（基于Lean 4）、@StarkWareLtd 的StarkV（基于RISC-V）和 @IrreducibleHW 的 zCray（受RISC-V启发）。",
+          en: "@eth_proofs unveiled three new zkVMs in the first phone call: @argumentxyz's Ix (Lean 4), @StarkWareLtd's StarkV (RISC-V), and @IrreducibleHW's zCray (inspired by RISC-V)."
+        }
+      }
+    ],
+    insights: [
+    ]
+  },  
 ];
 
 const others = [
