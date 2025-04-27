@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-27 Sunday
+
+📝 The State of ZK Q1-2025
+- https://drive.google.com/file/d/1D1x5uVZSitohado_A3E36zVvm1vmzK0M/view
+- @zkv_xyz published the Q1 2025 ZKV report, analyzing the current ZKV ecosystem status, including major projects, technical progress, and funding.
+
+📝 Hypercube IR: The Foundation of Zero-Knowledge Proof System
+- https://hackmd.io/@Cysic/ByY3_L5hkl
+- @Cysic team proposed HyperCube IR in the blog, an intermediate representation for ZKP and FHE, aiming to solve the problem of high-performance code portability in ZKP system development.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/27.html
+🪶 Collected by @icerdesign

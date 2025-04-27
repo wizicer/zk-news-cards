@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-27 星期日
+
+📝 The State of ZK Q1-2025
+- https://drive.google.com/file/d/1D1x5uVZSitohado_A3E36zVvm1vmzK0M/view
+- @zkv_xyz 发布了2025年第一季度的ZKV报告，分析了当前的ZKV生态系统状态，包括主要项目、技术进展和融资情况等。
+
+📝 Hypercube IR: The Foundation of Zero-Knowledge Proof System
+- https://hackmd.io/@Cysic/ByY3_L5hkl
+- @Cysic 团队在博客中提出了HyperCube IR，一种专为ZKP和FHE设计的中间表示，旨在解决ZKP系统开发中的高性能代码可移植性问题。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/27.html
+🪶 由 @icerdesign 收集

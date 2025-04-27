@@ -708,6 +708,40 @@ export default [
     insights: [
     ]
   },  
+  {
+    date: "2025-04-27",
+    projects: [
+      {
+        "name": "The State of ZK Q1-2025",
+        "url": "https://drive.google.com/file/d/1D1x5uVZSitohado_A3E36zVvm1vmzK0M/view",
+        "type": "博客",
+        "tags": [
+          "ZKV",
+          {zh: "报告", en: "Report"}
+        ],
+        "summary": {
+          zh: "@zkv_xyz 发布了2025年第一季度的ZKV报告，分析了当前的ZKV生态系统状态，包括主要项目、技术进展和融资情况等。",
+          en: "@zkv_xyz published the Q1 2025 ZKV report, analyzing the current ZKV ecosystem status, including major projects, technical progress, and funding."
+        }
+      },
+      {
+        "name": "Hypercube IR: The Foundation of Zero-Knowledge Proof System",
+        "url": "https://hackmd.io/@Cysic/ByY3_L5hkl",
+        "type": "博客",
+        "tags": [
+          "Cysic",
+          "HyperCube IR",
+          "FHE"
+        ],
+        "summary": {
+          zh: "@Cysic 团队在{{name}}博客中提出了HyperCube IR，一种专为ZKP和FHE设计的中间表示，旨在解决ZKP系统开发中的高性能代码可移植性问题。",
+          en: "@Cysic team proposed HyperCube IR in the{{name}} blog, an intermediate representation for ZKP and FHE, aiming to solve the problem of high-performance code portability in ZKP system development."
+        }
+      }
+    ],
+    insights: [
+    ]
+  }
 ];
 
 const others = [
