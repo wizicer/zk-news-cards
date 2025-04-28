@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-04-28 Monday
+
+📄 Linear-Time Accumulation Schemes
+- https://eprint.iacr.org/2025/753
+- Bünz et al. proposed WARP in the paper, the first linear-time accumulator with logarithmic verifier time. The scheme is based on hash, supports unlimited accumulation depth, and has post-quantum security.
+
+📰 ProofLab.dev
+- https://prooflab.dev/
+- ProofLab is currently developing, will provide comprehensive, up-to-date reports and benchmarks for zkVM, currently with RISC0 and SP1 benchmarks.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/04/28.html
+🪶 Collected by @icerdesign

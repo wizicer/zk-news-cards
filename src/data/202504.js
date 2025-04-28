@@ -741,6 +741,39 @@ export default [
     ],
     insights: [
     ]
+  },
+  {
+    date: "2025-04-28",
+    projects: [
+      {
+        "name": "Linear-Time Accumulation Schemes",
+        "url": "https://eprint.iacr.org/2025/753",
+        "type": "论文",
+        "tags": [
+          "Benedikt Bünz", "Alessandro Chiesa",
+          {zh: "累加方案", en: "accumulation schemes"}
+        ],
+        "summary": {
+          zh: "Bünz等人在{{name}}论文中提出了WARP，首个具有线性证明者时间和对数验证者时间的累加方案。该方案基于哈希，支持无限制的累加深度，并具有后量子安全性。",
+          en: "Bünz et al. proposed WARP in the{{name}} paper, the first linear-time accumulator with logarithmic verifier time. The scheme is based on hash, supports unlimited accumulation depth, and has post-quantum security."
+        }
+      },
+      {
+        "name": "ProofLab.dev",
+        "url": "https://prooflab.dev/",
+        "type": "新闻",
+        "tags": [
+          "Prooflab",
+          "zkVM"
+        ],
+        "summary": {
+          zh: "ProofLab正在开发，将提供全面、及时更新的zkVM报告和基准测试，目前已经有RISC0和SP1的基准测试数据。",
+          en: "ProofLab is currently developing, will provide comprehensive, up-to-date reports and benchmarks for zkVM, currently with RISC0 and SP1 benchmarks."
+        }
+      }
+    ],
+    insights: [
+    ]
   }
 ];
 

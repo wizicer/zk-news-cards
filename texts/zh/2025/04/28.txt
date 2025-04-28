@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-28 星期一
+
+📄 Linear-Time Accumulation Schemes
+- https://eprint.iacr.org/2025/753
+- Bünz等人在论文中提出了WARP，首个具有线性证明者时间和对数验证者时间的累加方案。该方案基于哈希，支持无限制的累加深度，并具有后量子安全性。
+
+📰 ProofLab.dev
+- https://prooflab.dev/
+- ProofLab正在开发，将提供全面、及时更新的zkVM报告和基准测试，目前已经有RISC0和SP1的基准测试数据。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/28.html
+🪶 由 @icerdesign 收集
