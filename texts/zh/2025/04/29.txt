@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-04-29 星期二
+
+📰 Andreessen Horowitz leads $25 million bet on Miden, a former Meta engineer’s privacy blockchain
+- https://fortune.com/crypto/2025/04/29/miden-a16z-privacy-blockchain-polygon-labs/
+- Andreessen Horowitz领投2500万美元投资于Miden (zkVM)，这是一个由前Meta工程师Bobbin Threadbare共同创立的隐私区块链项目。
+
+📝 Diamond iO: an implementable iO construction
+- https://machina-io.com/posts/hello_world_first.html
+- @machina_io 团队在博客中介绍了Diamond iO，这是一个格基iO实现，通过简化矩阵操作克服了传统iO方案的复杂性，支持有限的电路功能范围，并给出了基准测试数据。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/04/29.html
+🪶 由 @icerdesign 收集

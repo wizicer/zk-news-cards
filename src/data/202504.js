@@ -772,8 +772,41 @@ export default [
         }
       }
     ],
-    insights: [
-    ]
+  },
+  {
+    date: "2025-04-29",
+    projects: [
+      {
+        "name": "Andreessen Horowitz leads $25 million bet on Miden, a former Meta engineer’s privacy blockchain",
+        "url": "https://fortune.com/crypto/2025/04/29/miden-a16z-privacy-blockchain-polygon-labs/",
+        "type": "新闻",
+        "tags": [
+          "Ben Weiss",
+          "Investment"
+        ],
+        "summary": {
+          zh: "Andreessen Horowitz领投2500万美元投资于Miden (zkVM)，这是一个由前Meta工程师Bobbin Threadbare共同创立的隐私区块链项目。",
+          en: "Andreessen Horowitz led a $25 million investment in Miden (zkVM), a privacy blockchain project co-founded by former Meta engineer Bobbin Threadbare."
+        }
+      },
+      {
+        "name": "Diamond iO: an implementable iO construction",
+        "url": "https://machina-io.com/posts/hello_world_first.html",
+        "type": "博客",
+        "tags": [
+          "Sora Suegami",
+          "iO",
+        ],
+        urls: [
+          createUrlItem("源代码", "https://github.com/MachinaIO/diamond-io"),
+          createUrlItem("论文", "https://eprint.iacr.org/2025/236")
+        ],
+        "summary": {
+          zh: "@machina_io 团队在{{name}}博客中介绍了Diamond iO，这是一个格基iO实现，通过简化矩阵操作克服了传统iO方案的复杂性，支持有限的电路功能范围，并给出了基准测试数据。",
+          en: "@machina_io team introduced Diamond iO in the{{name}} blog, a lattice-based iO implementation, overcoming the complexity of traditional iO schemes by simplifying matrix operations, supporting a limited range of circuit functions, and providing benchmark result."
+        }
+      }
+    ],
   }
 ];
 
