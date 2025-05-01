@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-01 星期四
+
+📝 Exploring KZG Variants for Univariate Polynomials
+- https://blog.zksecurity.xyz/posts/kzg-1/
+- @zksecurityXYZ 在博客中探讨了KZG多项式承诺方案的变体，包括其基本构造和批处理技术，以及如何在zkSNARKs中应用这些技术以提高效率。
+
+🎥 Episode 359: Lattice-Based Cryptography and Zero-Knowledge Systems
+- https://zeroknowledge.fm/podcast/359/
+- ZK Podcast第359集邀请了IBM Research的研究科学家Vadim Lyubashevsky，讨论了基于格的密码学在零知识系统中的作用及其发展。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/01.html
+🪶 由 @icerdesign 收集

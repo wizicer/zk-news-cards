@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-01 Thursday
+
+📝 Exploring KZG Variants for Univariate Polynomials
+- https://blog.zksecurity.xyz/posts/kzg-1/
+- @zksecurityXYZ explored variants of the KZG polynomial commitment scheme in blog, including its basic construction and batch processing techniques, and how to apply these techniques in zkSNARKs to improve efficiency.
+
+🎥 Episode 359: Lattice-Based Cryptography and Zero-Knowledge Systems
+- https://zeroknowledge.fm/podcast/359/
+- ZK Podcast episode 359 invited IBM Research researcher Vadim Lyubashevsky to discuss the role and development of lattice-based cryptography in zero-knowledge systems.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/01.html
+🪶 Collected by @icerdesign
