@@ -1,0 +1,22 @@
+🚀zkDaily Frontier Tracker 2025-05-02 Friday
+
+📰 Google Wallet Age & Identity Verifications
+- https://blog.google/products/google-pay/google-wallet-age-identity-verifications/
+- Google Wallet updates, introducing ZKP technology to support secure and convenient age and identity verification for residents of more UK and US states, expanding to 50 countries.
+
+📰 A New Era for Web3: Introducing Aztec Public Testnet
+- https://aztec.network/blog/a-new-era-for-web3-introducing-aztec-public-testnet
+- @aztecnetwork introduced its new public testnet in blog, highlighting the breakthroughs of PLONK proof systems and Noir programming language in achieving programmable privacy, and how to support developers to build fully privacy-protected applications.
+
+📝 Folding Schemes: Why they matter and how they are not employed in the best way possible (Part 1)
+- https://hackmd.io/@srinathsetty/S1biKMlxxg
+- @srinathtv discussed the importance of folding schemes and their performance issues in practical applications in blog, particularly highlighting the superiority of NeutronNova and Neo folding schemes.
+- Notes:
+  - Folding reduces prover's cost by eliminating significant parts of the prover's work.
+  - Recursive proof composition becomes _practical and efficient_.
+  - Implementation details—especially memory checking and MSM—make or break performance.
+  - Popular elliptic curve libraries often miss optimization opportunities, leaving performance on the table.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/02.html
+🪶 Collected by @icerdesign

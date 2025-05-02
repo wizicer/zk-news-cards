@@ -1,0 +1,22 @@
+🚀zkDaily 前沿热点追踪 2025-05-02 星期五
+
+📰 Google Wallet Age & Identity Verifications
+- https://blog.google/products/google-pay/google-wallet-age-identity-verifications/
+- Google Wallet 更新，引入ZKP技术，支持英国和美国更多州的居民安全便捷地验证年龄和身份，同时扩展至50个国家。
+
+📰 A New Era for Web3: Introducing Aztec Public Testnet
+- https://aztec.network/blog/a-new-era-for-web3-introducing-aztec-public-testnet
+- @aztecnetwork 在博客中介绍了其新推出的公共测试网，强调了PLONK证明系统和Noir编程语言在实现可编程隐私方面的突破，以及如何支持开发者构建完全隐私保护的应用程序。
+
+📝 Folding Schemes: Why they matter and how they are not employed in the best way possible (Part 1)
+- https://hackmd.io/@srinathsetty/S1biKMlxxg
+- @srinathtv 在博客中讨论了折叠方案的重要性及其在实际应用中的性能问题，特别强调了NeutronNova和Neo折叠方案的优越性。
+- Notes:
+  - 折叠方案通过消除证明者工作中的明显部分来降低证明成本。
+  - 递归证明组合变得 _实用且高效_。
+  - 实现细节（尤其是内存检查和MSM）决定了性能。
+  - 流行的椭圆曲线库经常错过优化机会，导致性能不佳。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/02.html
+🪶 由 @icerdesign 收集
