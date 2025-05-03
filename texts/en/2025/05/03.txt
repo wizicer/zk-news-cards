@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-03 Saturday
+
+📄 Trusted Compute Units: A Framework for Chained Verifiable Computations
+- https://arxiv.org/abs/2504.15717
+- Castillo et al. proposed the Trusted Compute Unit (TCU) framework in their paper, integrating zkVMs and TEEs to enable cross-technology verifiable computation composition, allowing decentralized applications (dApps) to offload computation tasks to TCU and obtain correctness proofs while ensuring data privacy and output integrity.
+
+📄 Ligerito: A Small and Concretely Fast Polynomial Commitment Scheme
+- https://angeris.github.io/papers/ligerito.pdf
+- Novakovic et al. proposed Ligerito, a small and concretely fast polynomial commitment scheme supporting univariate/multilinear polynomials, with proof size optimized to $log(N)^2/loglog(N)$ and fast proof generation (2^24-degree polynomial in 1.3 seconds) on consumer-grade hardware (e.g., M1 MacBook Pro).
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/03.html
+🪶 Collected by @icerdesign

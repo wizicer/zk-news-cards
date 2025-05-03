@@ -92,7 +92,38 @@ export default [
         }
       }
     ],
-
+  },
+  {
+    date: "2025-05-03",
+    projects: [
+      {
+        "name": "Trusted Compute Units: A Framework for Chained Verifiable Computations",
+        "url": "https://arxiv.org/abs/2504.15717",
+        "type": "论文",
+        "tags": [
+          "Fernando Castillo",
+          "TEEs",
+          "zkVMs",
+        ],
+        "summary": {
+          zh: "Castillo等人在{{name}}论文中提出了Trusted Compute Unit (TCU)框架，通过整合zkVM和TEE实现跨技术可验证计算组合，允许去中心化应用（dApp）将计算任务卸载至TCU并获取正确性证明，同时保障数据隐私与输出完整性。",
+          en: "Castillo et al. proposed the Trusted Compute Unit (TCU) framework in their paper{{name}}, integrating zkVMs and TEEs to enable cross-technology verifiable computation composition, allowing decentralized applications (dApps) to offload computation tasks to TCU and obtain correctness proofs while ensuring data privacy and output integrity."
+        }
+      },
+      {
+        "name": "Ligerito: A Small and Concretely Fast Polynomial Commitment Scheme",
+        "url": "https://angeris.github.io/papers/ligerito.pdf",
+        "type": "论文",
+        "tags": [
+          "Andrija Novakovic",
+          "PCS",
+        ],
+        "summary": {
+          zh: "Novakovic等人在{{name}}论文中提出了Ligerito，一种高效的多项式承诺与内积方案，支持单变量/多线性多项式，证明大小优化至$\log(N)^2/\log\log(N)$，并在消费级硬件（如M1 MacBook Pro）上实现快速证明生成（2^24项多项式仅需1.3秒）。",
+          en: "Novakovic et al. proposed Ligerito, a small and concretely fast polynomial commitment scheme supporting univariate/multilinear polynomials, with proof size optimized to $\log(N)^2/\log\log(N)$ and fast proof generation (2^24-degree polynomial in 1.3 seconds) on consumer-grade hardware (e.g., M1 MacBook Pro)."
+        }
+      }
+    ],
   }
 ];
 
