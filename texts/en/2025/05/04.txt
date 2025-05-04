@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-04 Sunday
+
+📝 Barrett Tighter Bound
+- https://blog.zksecurity.xyz/posts/barrett-tighter-bound/
+- @zksecurityXYZ discussed that the error bound of Barrett reduction algorithm can be tighter than the traditional assumption, especially on moduli used in cryptography (e.g., NIST curves), with the quotient approximation error being at most 1. This improvement eliminates the need for the second subtraction in practice, resulting in a 14% performance boost in scalar multiplication for RustCrypto p256.
+
+📄 FICS and FACS: Fast IOPPs and Accumulation via Code-Switching
+- https://eprint.iacr.org/2025/737
+- Baweja et al. proposed FICS and FACS in their paper, aiming to improve the efficiency of succinct arguments based on IOPs. FICS reduces the verifier query complexity, and FACS achieves linear prover time, both supporting linear time encodable code classes including systematic LDPC codes and tensor codes.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/04.html
+🪶 Collected by @icerdesign

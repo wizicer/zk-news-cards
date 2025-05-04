@@ -124,6 +124,38 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-05-04",
+    projects: [
+      {
+        "name": "Barrett Tighter Bound",
+        "url": "https://blog.zksecurity.xyz/posts/barrett-tighter-bound/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          "Barrett reduction",
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 在{{name}}博客中讨论了Barrett reduction算法的误差界限可以比传统假设的更紧，特别是在密码学中使用的模数（如NIST曲线）上，商近似误差最多为1。这一改进消除了实践中第二次减法的需要，使RustCrypto p256在标量乘法中实现了14%的性能提升。",
+          en: "@zksecurityXYZ discussed that the error bound of Barrett reduction algorithm can be tighter than the traditional assumption, especially on moduli used in cryptography (e.g., NIST curves), with the quotient approximation error being at most 1. This improvement eliminates the need for the second subtraction in practice, resulting in a 14% performance boost in scalar multiplication for RustCrypto p256."
+        }
+      },
+      {
+        "name": "FICS and FACS: Fast IOPPs and Accumulation via Code-Switching",
+        "url": "https://eprint.iacr.org/2025/737",
+        "type": "论文",
+        "tags": [
+          "Anubhav Baweja",
+          "IOPP",
+          "accumulation schemes",
+        ],
+        "summary": {
+          zh: "Baweja等人在{{name}}论文中提出了FICS和FACS两种方案，旨在提高基于IOP的简洁论证的效率。FICS减少了验证者查询复杂度，FACS实现了线性证明者时间，两者均支持包括系统LDPC码和张量码在内的线性时间可编码码类。",
+          en: "Baweja et al. proposed FICS and FACS in their paper{{name}}, aiming to improve the efficiency of succinct arguments based on IOPs. FICS reduces the verifier query complexity, and FACS achieves linear prover time, both supporting linear time encodable code classes including systematic LDPC codes and tensor codes."
+        }
+      }
+    ],
   }
 ];
 
