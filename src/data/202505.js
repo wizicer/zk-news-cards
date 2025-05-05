@@ -156,8 +156,40 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-05-05",
+    projects: [
+      {
+        "name": "Simplifying the L1",
+        "url": "https://vitalik.eth.limo/general/2025/05/03/simplel1.html",
+        "type": "博客",
+        "tags": [
+          "vitalik.eth",
+          "Ethereum",
+          "RISC-V",
+        ],
+        "summary": {
+          zh: "@VitalikButerin 在{{name}}博客中讨论了简化以太坊L1的愿景，包括共识层和执行层的简化策略，以及如何通过共享协议组件减少复杂性。",
+          en: "@VitalikButerin discussed the vision of simplifying the Ethereum L1 in the{{name}} blog, including simplification strategies for the consensus layer and execution layer, and how to reduce complexity through shared protocol components."
+        }
+      },
+      {
+        "name": "Post Mortem May 2, 2025",
+        "url": "https://solana.com/news/post-mortem-may-2-2025",
+        "type": "漏洞",
+        "tags": [
+          "Solana",
+          "ZK",
+          "ElGamal",
+        ],
+        "summary": {
+          zh: "@solana 基金会报告了ZK ElGamal Proof程序中的一个潜在漏洞，允许构建任意证明。已发布补丁并由安全公司审查，目前无已知利用。",
+          en: "@solana reported a potential vulnerability in the ZK ElGamal Proof program, allowing the construction of arbitrary proofs. A patch has been released and reviewed by a security company, with no known exploits currently."
+        }
+      }
+    ],
   }
 ];
-
 const others = [
 ];

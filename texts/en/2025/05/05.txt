@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-05 Monday
+
+📝 Simplifying the L1
+- https://vitalik.eth.limo/general/2025/05/03/simplel1.html
+- @VitalikButerin discussed the vision of simplifying the Ethereum L1 in the blog, including simplification strategies for the consensus layer and execution layer, and how to reduce complexity through shared protocol components.
+
+🪳 Post Mortem May 2, 2025
+- https://solana.com/news/post-mortem-may-2-2025
+- @solana reported a potential vulnerability in the ZK ElGamal Proof program, allowing the construction of arbitrary proofs. A patch has been released and reviewed by a security company, with no known exploits currently.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/05.html
+🪶 Collected by @icerdesign

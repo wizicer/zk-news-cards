@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-05 星期一
+
+📝 Simplifying the L1
+- https://vitalik.eth.limo/general/2025/05/03/simplel1.html
+- @VitalikButerin 在博客中讨论了简化以太坊L1的愿景，包括共识层和执行层的简化策略，以及如何通过共享协议组件减少复杂性。
+
+🪳 Post Mortem May 2, 2025
+- https://solana.com/news/post-mortem-may-2-2025
+- @solana 基金会报告了ZK ElGamal Proof程序中的一个潜在漏洞，允许构建任意证明。已发布补丁并由安全公司审查，目前无已知利用。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/05.html
+🪶 由 @icerdesign 收集
