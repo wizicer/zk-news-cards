@@ -1,0 +1,15 @@
+🚀zkDaily Frontier Tracker 2025-05-06 Tuesday
+
+📝 Audit of the Rust p256 Crate
+- https://reports.zksecurity.xyz/reports/near-p256/
+- @zksecurityXYZ conducted a security assessment of the Rust p256 crate, finding no major issues, with the codebase being well-tested and architecturally sound. The assessment covered elliptic curve operations, ECDSA signature verification, and field arithmetic. This audit report can serve as a learning reference for p256 curves.
+- Notes:
+  - P-256 optimization: Utilize the a=-3 property to accelerate calculations
+  - ECDSA security: Must use a deterministic nonce (RFC6979)
+  - Performance key: Precomputing 16 points improves signature speed
+  - Important vulnerability: Random number generation may produce invalid values
+  - Optimization tip: Removing redundant operations can speed up by 16%
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/06.html
+🪶 Collected by @icerdesign

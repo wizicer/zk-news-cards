@@ -189,6 +189,42 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-05-06",
+    projects: [
+      {
+        "name": "Audit of the Rust p256 Crate",
+        "url": "https://reports.zksecurity.xyz/reports/near-p256/",
+        "type": "博客",
+        "tags": [
+          "zkSecurity",
+          {zh: "审计", en: "Audit"},
+          "ECDSA"
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 对Rust p256 crate进行了安全评估，未发现重大问题，代码库经过充分测试且架构良好。评估范围包括椭圆曲线操作、ECDSA签名验证和字段算术。本审计报告可以作为p256曲线的学习参考资料。",
+          en: "@zksecurityXYZ conducted a security assessment of the Rust p256 crate, finding no major issues, with the codebase being well-tested and architecturally sound. The assessment covered elliptic curve operations, ECDSA signature verification, and field arithmetic. This audit report can serve as a learning reference for p256 curves."
+        },
+        "notes": {
+          zh: 
+            [
+              "P-256优化：利用a=-3特性加速计算",
+              "ECDSA安全：必须用确定性nonce（RFC6979）",
+              "性能关键：预计算16个点提升签名速度",
+              "重要漏洞：随机数生成可能产生非法值",
+              "优化技巧：删除多余运算可提速16%",
+            ],
+          en: [
+            "P-256 optimization: Utilize the a=-3 property to accelerate calculations",
+            "ECDSA security: Must use a deterministic nonce (RFC6979)",
+            "Performance key: Precomputing 16 points improves signature speed",
+            "Important vulnerability: Random number generation may produce invalid values",
+            "Optimization tip: Removing redundant operations can speed up by 16%",
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [

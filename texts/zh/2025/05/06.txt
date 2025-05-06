@@ -1,0 +1,15 @@
+🚀zkDaily 前沿热点追踪 2025-05-06 星期二
+
+📝 Audit of the Rust p256 Crate
+- https://reports.zksecurity.xyz/reports/near-p256/
+- @zksecurityXYZ 对Rust p256 crate进行了安全评估，未发现重大问题，代码库经过充分测试且架构良好。评估范围包括椭圆曲线操作、ECDSA签名验证和字段算术。本审计报告可以作为p256曲线的学习参考资料。
+- Notes:
+  - P-256优化：利用a=-3特性加速计算
+  - ECDSA安全：必须用确定性nonce（RFC6979）
+  - 性能关键：预计算16个点提升签名速度
+  - 重要漏洞：随机数生成可能产生非法值
+  - 优化技巧：删除多余运算可提速16%
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/06.html
+🪶 由 @icerdesign 收集
