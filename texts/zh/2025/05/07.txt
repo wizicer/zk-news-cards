@@ -1,0 +1,16 @@
+🚀zkDaily 前沿热点追踪 2025-05-07 星期三
+
+📝 Comparing Ligerito and WHIR
+- https://nmohnblatt.github.io/ligerito-and-whir/
+- nmohnblatt在博客中比较了Ligerito和WHIR两种多项式承诺方案，讨论了它们在递归结构、Sumcheck约束和代码使用上的相似性与差异。
+- Notes:
+  - WHIR仅支持RS码，验证简洁；Ligerito支持任意线性码，泛用性强
+  - WHIR利用可折叠性优化，Ligerito采用码切换技术
+  - WHIR验证效率更高，Ligerito证明生成更快
+  - WHIR可能生成更小证明，Ligerito兼容性更好
+  - 选择依据：验证效率选WHIR，灵活性选Ligerito
+  - Blaze是两者的混合方案
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/07.html
+🪶 由 @icerdesign 收集

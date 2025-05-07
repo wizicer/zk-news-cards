@@ -1,0 +1,16 @@
+🚀zkDaily Frontier Tracker 2025-05-07 Wednesday
+
+📝 Comparing Ligerito and WHIR
+- https://nmohnblatt.github.io/ligerito-and-whir/
+- nmohnblatt compares Ligerito and WHIR in the blog, discussing their similarities and differences in recursive structures, Sumcheck constraints, and code usage.
+- Notes:
+  - WHIR supports only RS codes, with concise verification; Ligerito supports arbitrary linear codes, with broader applicability.
+  - WHIR utilizes foldable properties, while Ligerito employs code switching technology.
+  - WHIR has higher verification efficiency, while Ligerito generates proofs faster.
+  - WHIR may produce smaller proofs, while Ligerito has better compatibility.
+  - choose WHIR for verification efficiency, Ligerito for flexibility.
+  - Blaze is a hybrid solution of both.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/07.html
+🪶 Collected by @icerdesign

@@ -225,6 +225,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-07",
+    projects: [
+      {
+        "name": "Comparing Ligerito and WHIR",
+        "url": "https://nmohnblatt.github.io/ligerito-and-whir/",
+        "type": "博客",
+        "tags": [
+          "nmohnblatt",
+          "Ligerito",
+          "WHIR",
+        ],
+        "summary": {
+          zh: "nmohnblatt在博客{{name}}中比较了Ligerito和WHIR两种多项式承诺方案，讨论了它们在递归结构、Sumcheck约束和代码使用上的相似性与差异。",
+          en: "nmohnblatt compares Ligerito and WHIR in the blog{{name}}, discussing their similarities and differences in recursive structures, Sumcheck constraints, and code usage.",
+        },
+        "notes": {
+          zh: [
+            "WHIR仅支持RS码，验证简洁；Ligerito支持任意线性码，泛用性强",
+            "WHIR利用可折叠性优化，Ligerito采用码切换技术",
+            "WHIR验证效率更高，Ligerito证明生成更快",
+            "WHIR可能生成更小证明，Ligerito兼容性更好",
+            "选择依据：验证效率选WHIR，灵活性选Ligerito",
+            "Blaze是两者的混合方案",
+          ],
+          en: [
+            "WHIR supports only RS codes, with concise verification; Ligerito supports arbitrary linear codes, with broader applicability.",
+            "WHIR utilizes foldable properties, while Ligerito employs code switching technology.",
+            "WHIR has higher verification efficiency, while Ligerito generates proofs faster.",
+            "WHIR may produce smaller proofs, while Ligerito has better compatibility.",
+            "choose WHIR for verification efficiency, Ligerito for flexibility.",
+            "Blaze is a hybrid solution of both.",
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [
