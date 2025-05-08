@@ -1,0 +1,17 @@
+🚀zkDaily 前沿热点追踪 2025-05-08 星期四
+
+📄 Lattice-based signature aggregation
+- https://ethresear.ch/t/lattice-based-signature-aggregation/22282
+- David Nevado等人在论文中探讨了格基签名聚合技术，提出了一种在后量子时代替代BLS签名的方法，重点分析了Falcon签名的高效聚合及其验证性能。
+- Notes:
+  - BLS签名在量子计算时代不安全，需后量子替代方案
+  - LaBRADOR是格基方案，可聚合Falcon签名（抗量子）
+  - 10k签名聚合结果：74KB证明，5.95秒生成，2.65秒验证
+  - 验证瓶颈：90%时间在串行步骤simple_reduce
+  - 对比哈希基方案（如STARKs）：验证快(106ms)但证明大(1.7MB)
+  - LaBRADOR优势：小证明体积；劣势：验证慢于哈希方案
+  - 未来方向：优化并行验证或结合委托证明技术
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/08.html
+🪶 由 @icerdesign 收集

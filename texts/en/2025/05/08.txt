@@ -1,0 +1,17 @@
+🚀zkDaily Frontier Tracker 2025-05-08 Thursday
+
+📄 Lattice-based signature aggregation
+- https://ethresear.ch/t/lattice-based-signature-aggregation/22282
+- David Nevado et al. explore lattice-based signature aggregation techniques in the paper , proposing a method to replace BLS signatures in the post-quantum era, with a focus on the efficient aggregation and verification performance of Falcon signatures.
+- Notes:
+  - BLS signatures are insecure in the quantum computing era, requiring post-quantum alternatives.
+  - LaBRADOR is a lattice-based scheme that can aggregate Falcon signatures (quantum-resistant).
+  - 10k signature aggregation results: 74KB proof, 5.95 seconds generation, 2.65 seconds verification.
+  - Verification bottleneck: 90% time spent on serial step simple_reduce.
+  - Compared to hash-based schemes (e.g., STARKs): verification is fast (106ms) but proofs are large (1.7MB).
+  - Advantages of LaBRADOR: small proof size; disadvantages: slower verification than hash schemes.
+  - Future directions: optimize parallel verification or combine with delegated proof techniques.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/08.html
+🪶 Collected by @icerdesign

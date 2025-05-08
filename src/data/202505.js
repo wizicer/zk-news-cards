@@ -262,6 +262,46 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-08",
+    projects: [
+      {
+        "name": "Lattice-based signature aggregation",
+        "url": "https://ethresear.ch/t/lattice-based-signature-aggregation/22282",
+        "type": "论文",
+        "tags": [
+          "David Nevado",
+          { en: "Lattice-based", zh: "格基" },
+          { en: "Signature Aggregation", zh: "签名聚合" },
+        ],
+        "summary": {
+          zh: "David Nevado等人在{{name}}论文中探讨了格基签名聚合技术，提出了一种在后量子时代替代BLS签名的方法，重点分析了Falcon签名的高效聚合及其验证性能。",
+          en: "David Nevado et al. explore lattice-based signature aggregation techniques in the paper {{name}}, proposing a method to replace BLS signatures in the post-quantum era, with a focus on the efficient aggregation and verification performance of Falcon signatures.",
+        },
+        "notes": {
+          zh: [
+            "BLS签名在量子计算时代不安全，需后量子替代方案",
+            "LaBRADOR是格基方案，可聚合Falcon签名（抗量子）",
+            "10k签名聚合结果：74KB证明，5.95秒生成，2.65秒验证",
+            "验证瓶颈：90%时间在串行步骤simple_reduce",
+          "对比哈希基方案（如STARKs）：验证快(106ms)但证明大(1.7MB)",
+          "LaBRADOR优势：小证明体积；劣势：验证慢于哈希方案",
+            "未来方向：优化并行验证或结合委托证明技术"
+          ],
+          en: [
+            "BLS signatures are insecure in the quantum computing era, requiring post-quantum alternatives.",
+            "LaBRADOR is a lattice-based scheme that can aggregate Falcon signatures (quantum-resistant).",
+            "10k signature aggregation results: 74KB proof, 5.95 seconds generation, 2.65 seconds verification.",
+            "Verification bottleneck: 90% time spent on serial step simple_reduce.",
+          "Compared to hash-based schemes (e.g., STARKs): verification is fast (106ms) but proofs are large (1.7MB).",
+          "Advantages of LaBRADOR: small proof size; disadvantages: slower verification than hash schemes.",
+          "Future directions: optimize parallel verification or combine with delegated proof techniques."
+          ]
+        }
+      }
+    ]
+    
   }
 ];
 const others = [
