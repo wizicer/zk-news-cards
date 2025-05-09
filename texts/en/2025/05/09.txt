@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-09 Friday
+
+📰 RISC Zero will generate ZK proofs for @MagicNewton
+- https://x.com/RiscZero/status/1920231237966311545
+- @RiscZero will generate ZK proofs for @MagicNewton, a platform that improves crypto user experience through verifiable AI agents. Each agent runs in a TEE, and RISC Zero generates proofs and posts them onchain for audit.
+
+📰 Private Dating App Built with NoirLang and TACEO's coSNARKS
+- https://x.com/0xteddav/status/1920013742609232081
+- @0xteddav released a unique private dating app that uses privacy-based matching mechanisms, only revealing matches when successful, built using @NoirLang and @TACEO_IO's coSNARKS technology.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/09.html
+🪶 Collected by @icerdesign

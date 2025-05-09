@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-09 星期五
+
+📰 RISC Zero will generate ZK proofs for @MagicNewton
+- https://x.com/RiscZero/status/1920231237966311545
+- @RiscZero 宣布将为 @MagicNewton 平台生成ZK证明，该平台通过可验证的AI代理改善加密用户体验。每个代理在TEE中运行，RISC Zero生成证明并上链，以供审计。
+
+📰 Private Dating App Built with NoirLang and TACEO's coSNARKS
+- https://x.com/0xteddav/status/1920013742609232081
+- @0xteddav 发布了一款独特的私人约会应用，通过隐私的匹配机制，仅在匹配成功时互相知晓，采用 @NoirLang 和 @TACEO_IO 的coSNARKS技术构建。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/09.html
+🪶 由 @icerdesign 收集

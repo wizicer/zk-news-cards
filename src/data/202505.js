@@ -301,7 +301,38 @@ export default [
         }
       }
     ]
-    
+  },
+  {
+    date: "2025-05-09",
+    projects: [
+      {
+        "name": "RISC Zero will generate ZK proofs for @MagicNewton",
+        "url": "https://x.com/RiscZero/status/1920231237966311545",
+        "type": "新闻",
+        "tags": [
+          "RISC0",
+          "TEE",
+        ],
+        "summary": {
+          zh: "@RiscZero 宣布将为 @MagicNewton 平台生成ZK证明，该平台通过可验证的AI代理改善加密用户体验。每个代理在TEE中运行，RISC Zero生成证明并上链，以供审计。",
+          en: "@RiscZero will generate ZK proofs for @MagicNewton, a platform that improves crypto user experience through verifiable AI agents. Each agent runs in a TEE, and RISC Zero generates proofs and posts them onchain for audit."
+        }
+      },
+      {
+        "name": "Private Dating App Built with NoirLang and TACEO's coSNARKS",
+        "url": "https://x.com/0xteddav/status/1920013742609232081",
+        "type": "新闻",
+        "tags": [
+          "@0xteddav",
+          "Noir",
+          "coSNARKS",
+        ],
+        "summary": {
+          zh: "@0xteddav 发布了一款独特的私人约会应用，通过隐私的匹配机制，仅在匹配成功时互相知晓，采用 @NoirLang 和 @TACEO_IO 的coSNARKS技术构建。",
+          en: "@0xteddav released a unique private dating app that uses privacy-based matching mechanisms, only revealing matches when successful, built using @NoirLang and @TACEO_IO's coSNARKS technology."
+        }
+      }
+    ]
   }
 ];
 const others = [
