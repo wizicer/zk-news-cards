@@ -1,0 +1,16 @@
+🚀zkDaily 前沿热点追踪 2025-05-10 星期六
+
+📄 HydraProofs: Optimally Computing All Proofs in a Vector Commitment
+- https://eprint.iacr.org/2025/813
+- Pappas等人在论文中提出了HydraProofs，首个能在O(N)时间内为大小为N的向量生成所有 opening 证明的向量承诺方案，并直接兼容于zkSNARKs家族，显著优化了证明者时间。
+- Notes:
+  - HydraProofs 实现 O(N) 时间生成全部 opening 证明
+  - 直接兼容多项式编码的 zkSNARKs，无需电路中重建
+  - 通过分段与折叠技术将 HyperEval 降至线性时间
+  - 结合 GKR 实现多用户输入的有效验证
+  - 在可验证秘密共享中，生成证明比秘密分发者计算更快
+  - 支持联邦学习中的鲁棒聚合验证，性能开销低
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/10.html
+🪶 由 @icerdesign 收集

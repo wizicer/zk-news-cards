@@ -333,6 +333,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-10",
+    projects: [
+      {
+        "name": "HydraProofs: Optimally Computing All Proofs in a Vector Commitment",
+        "url": "https://eprint.iacr.org/2025/813",
+        "type": "论文",
+        "tags": [
+          "Christodoulos Pappas",
+          {zh: "向量承诺", en: "Vector Commitments"},
+          "GKR",
+        ],
+        "summary": {
+          zh: "Pappas等人在{{name}}论文中提出了HydraProofs，首个能在O(N)时间内为大小为N的向量生成所有 opening 证明的向量承诺方案，并直接兼容于zkSNARKs家族，显著优化了证明者时间。",
+          en: "Pappas et al. proposed HydraProofs in their paper{{name}}, the first vector commitment scheme that can generate all opening proofs for a vector of size N in O(N) time, and is directly compatible with zkSNARKs families, significantly improving prover time."
+        },
+        "notes": {
+          zh: [
+            "HydraProofs 实现 O(N) 时间生成全部 opening 证明",
+            "直接兼容多项式编码的 zkSNARKs，无需电路中重建",
+            "通过分段与折叠技术将 HyperEval 降至线性时间",
+            "结合 GKR 实现多用户输入的有效验证",
+            "在可验证秘密共享中，生成证明比秘密分发者计算更快",
+            "支持联邦学习中的鲁棒聚合验证，性能开销低"
+          ],
+          en: [
+            "HydraProofs generates all opening proofs in O(N) time",
+            "Directly compatible with zkSNARKs using multilinear encodings",
+            "Uses partitioning and folding to reduce HyperEval to linear time",
+            "Supports efficient multi-user verification when combined with GKR",
+            "In verifiable secret sharing, proving is faster than the dealer's computation",
+            "Enables robust aggregation verification in federated learning with low overhead"
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [

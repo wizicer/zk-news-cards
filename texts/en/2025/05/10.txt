@@ -1,0 +1,16 @@
+🚀zkDaily Frontier Tracker 2025-05-10 Saturday
+
+📄 HydraProofs: Optimally Computing All Proofs in a Vector Commitment
+- https://eprint.iacr.org/2025/813
+- Pappas et al. proposed HydraProofs in their paper, the first vector commitment scheme that can generate all opening proofs for a vector of size N in O(N) time, and is directly compatible with zkSNARKs families, significantly improving prover time.
+- Notes:
+  - HydraProofs generates all opening proofs in O(N) time
+  - Directly compatible with zkSNARKs using multilinear encodings
+  - Uses partitioning and folding to reduce HyperEval to linear time
+  - Supports efficient multi-user verification when combined with GKR
+  - In verifiable secret sharing, proving is faster than the dealer's computation
+  - Enables robust aggregation verification in federated learning with low overhead
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/10.html
+🪶 Collected by @icerdesign
