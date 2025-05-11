@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-11 Sunday
+
+📃 Quantum Punks
+- https://quantumpunks.org/
+- Quantum Punks team shares their vision of quantum cryptography, exploring how quantum physics can build more secure systems and unique cryptographic methods, and the potential of quantum cryptography in protecting digital rights.
+
+🎪 The QDay Prize
+- https://www.qdayprize.org/
+- Project Eleven (P11) is hosting the The QDay Prize competition, which will end on April 5, **2026**, aiming to challenge the use of Shor's algorithm on quantum computers to break the largest ECC keys, with a prize of 1 Bitcoin.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/11.html
+🪶 Collected by @icerdesign

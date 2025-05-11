@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-11 星期日
+
+📃 Quantum Punks
+- https://quantumpunks.org/
+- Quantum Punks团队分享了他们对量子密码学的愿景，探讨了如何利用量子物理构建更安全的系统和独特的加密方法，以及量子密码学在保护数字权利方面的潜力。
+
+🎪 The QDay Prize
+- https://www.qdayprize.org/
+- Project Eleven (P11)主办的The QDay Prize竞赛将于**2026年**4月5日截止，旨在挑战使用Shor算法在量子计算机上破解最大ECC密钥，奖金为1比特币。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/11.html
+🪶 由 @icerdesign 收集

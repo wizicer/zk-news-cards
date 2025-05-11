@@ -370,6 +370,38 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-11",
+    projects: [
+      {
+        "name": "Quantum Punks",
+        "url": "https://quantumpunks.org/",
+        "type": "信息",
+        "tags": [
+          "Nicola Greco",
+          {zh: "量子", en: "Quantum"},
+        ],
+        "summary": {
+          zh: "Quantum Punks团队分享了他们对量子密码学的愿景，探讨了如何利用量子物理构建更安全的系统和独特的加密方法，以及量子密码学在保护数字权利方面的潜力。",
+          en: "Quantum Punks team shares their vision of quantum cryptography, exploring how quantum physics can build more secure systems and unique cryptographic methods, and the potential of quantum cryptography in protecting digital rights."
+        }
+      },
+      {
+        "name": "The QDay Prize",
+        "url": "https://www.qdayprize.org/",
+        "type": "活动",
+        "tags": [
+          "Project Eleven (P11)",
+          {zh: "量子", en: "Quantum"},
+          "ECC",
+        ],
+        "summary": {
+          zh: "Project Eleven (P11)主办的The QDay Prize竞赛将于**2026年**4月5日截止，旨在挑战使用Shor算法在量子计算机上破解最大ECC密钥，奖金为1比特币。",
+          en: "Project Eleven (P11) is hosting the The QDay Prize competition, which will end on April 5, **2026**, aiming to challenge the use of Shor's algorithm on quantum computers to break the largest ECC keys, with a prize of 1 Bitcoin."
+        }
+      }
+    ]
   }
 ];
 const others = [
