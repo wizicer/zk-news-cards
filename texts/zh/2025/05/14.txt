@@ -1,0 +1,16 @@
+🚀zkDaily 前沿热点追踪 2025-05-14 星期三
+
+📄 Valida ISA Spec, version 1.0: A zk-Optimized Instruction Set Architecture
+- https://arxiv.org/abs/2505.08114
+- Thomas等人在论文中讲解了Valida指令集架构，专为zkVM实现设计，旨在优化快速高效的执行证明。
+- Notes:
+  - 专为zkVM设计的指令集架构（ISA），优化零知识证明执行效率
+  - 无通用寄存器，直接通过栈偏移访问RAM，减少指令数量
+  - 模块化设计，基础版本由指定芯片组构成
+  - 哈佛架构，32位小端序，仅含FP和PC两个专用寄存器
+  - 通过输入/输出带与外部交互，适合区块链可验证计算场景
+  - 相比RISC-V，显著降低SNARK证明开销，提升性能
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/14.html
+🪶 由 @icerdesign 收集

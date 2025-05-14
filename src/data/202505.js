@@ -402,6 +402,40 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-14",
+    projects: [
+      {
+        "name": "Valida ISA Spec, version 1.0: A zk-Optimized Instruction Set Architecture",
+        "url": "https://arxiv.org/abs/2505.08114",
+        "type": "论文",
+        "tags": [
+          "Morgan Thomas",
+          "zkVM",
+          "ISA",
+        ],
+        "summary": "Thomas等人在{{name}}论文中讲解了Valida指令集架构，专为zkVM实现设计，旨在优化快速高效的执行证明。",
+        "notes": {
+          zh: [
+            "专为zkVM设计的指令集架构（ISA），优化零知识证明执行效率",
+            "无通用寄存器，直接通过栈偏移访问RAM，减少指令数量",
+            "模块化设计，基础版本由指定芯片组构成",
+            "哈佛架构，32位小端序，仅含FP和PC两个专用寄存器",
+            "通过输入/输出带与外部交互，适合区块链可验证计算场景",
+            "相比RISC-V，显著降低SNARK证明开销，提升性能"
+          ],
+          en: [
+            "Instruction Set Architecture (ISA) optimized for zkVMs to enhance ZK proof efficiency",
+            "No general-purpose registers; directly accesses RAM via stack offsets to reduce instruction count",
+            "Modular design; base version consists of specified chipset components",
+            "Harvard architecture, 32-bit little-endian, with only FP and PC as special-purpose registers",
+            "Interacts externally via read-only input and write-only output tapes, ideal for blockchain verifiable computation",
+            "Compared to RISC-V, significantly reduces SNARK proving overhead and improves performance"
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [

@@ -1,0 +1,16 @@
+🚀zkDaily Frontier Tracker 2025-05-14 Wednesday
+
+📄 Valida ISA Spec, version 1.0: A zk-Optimized Instruction Set Architecture
+- https://arxiv.org/abs/2505.08114
+- Thomas等人在论文中讲解了Valida指令集架构，专为zkVM实现设计，旨在优化快速高效的执行证明。
+- Notes:
+  - Instruction Set Architecture (ISA) optimized for zkVMs to enhance ZK proof efficiency
+  - No general-purpose registers; directly accesses RAM via stack offsets to reduce instruction count
+  - Modular design; base version consists of specified chipset components
+  - Harvard architecture, 32-bit little-endian, with only FP and PC as special-purpose registers
+  - Interacts externally via read-only input and write-only output tapes, ideal for blockchain verifiable computation
+  - Compared to RISC-V, significantly reduces SNARK proving overhead and improves performance
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/14.html
+🪶 Collected by @icerdesign
