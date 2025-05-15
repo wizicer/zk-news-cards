@@ -436,6 +436,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-15",
+    projects: [
+      {
+        "name": "The Lies Our Provers Tell Us",
+        "url": "https://www.kobi.one/The-Lies-Our-Provers-Tell-Us-1f32d692802180358ae6c14fd9d09127",
+        "type": "博客",
+        "tags": [
+          "Kobi Gurkan",
+          {zh: "软件供应链", en: "Software Supply Chain"},
+        ],
+        "summary": {
+          zh: "Kobi Gurkan在{{name}}博客中讨论了ZK证明者在软件供应链中的特定问题，强调了随着数据本地化和仅共享证明的趋势，供应链安全问题日益重要。",
+          en: "Kobi Gurkan discusses specific issues in the software supply chain for ZK provers, emphasizing the increasing importance of supply chain security with the trend towards data localization and proof sharing."
+        },
+        "notes": {
+          zh: [
+            "ZK证明的隐私安全依赖可复现构建，但供应链复杂且易被篡改",
+            "开源审计不足，需简化信任模型并聚焦关键环节（如构建过程）",
+            "桌面程序可复现性较好，iOS因封闭生态最难验证",
+            "改进方案：公开构建系统、标准化构建环境、支持验证分发",
+            "TEE等技术可降低信任需求，但依赖可复现构建",
+            "行业趋势：企业正推动端到端验证，需加强全链路安全性"
+          ],
+          en: [
+            "ZK proof privacy relies on reproducible builds, but supply chains are complex and vulnerable",
+            "Open-source audits are insufficient; need simplified trust models focusing on critical steps (e.g. builds)",
+            "Desktop apps are more reproducible; iOS is hardest due to closed ecosystem",
+            "Solutions: Open build systems, standardized environments, verifiable distribution",
+            "TEE reduces trust requirements but depends on reproducible builds",
+            "Industry trend: Enterprises push end-to-end verification, requiring stronger supply chain security"
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [

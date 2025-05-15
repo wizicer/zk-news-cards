@@ -1,0 +1,16 @@
+🚀zkDaily Frontier Tracker 2025-05-15 Thursday
+
+📝 The Lies Our Provers Tell Us
+- https://www.kobi.one/The-Lies-Our-Provers-Tell-Us-1f32d692802180358ae6c14fd9d09127
+- Kobi Gurkan discusses specific issues in the software supply chain for ZK provers, emphasizing the increasing importance of supply chain security with the trend towards data localization and proof sharing.
+- Notes:
+  - ZK proof privacy relies on reproducible builds, but supply chains are complex and vulnerable
+  - Open-source audits are insufficient; need simplified trust models focusing on critical steps (e.g. builds)
+  - Desktop apps are more reproducible; iOS is hardest due to closed ecosystem
+  - Solutions: Open build systems, standardized environments, verifiable distribution
+  - TEE reduces trust requirements but depends on reproducible builds
+  - Industry trend: Enterprises push end-to-end verification, requiring stronger supply chain security
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/15.html
+🪶 Collected by @icerdesign
