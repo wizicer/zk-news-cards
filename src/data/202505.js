@@ -415,7 +415,10 @@ export default [
           "zkVM",
           "ISA",
         ],
-        "summary": "Thomas等人在{{name}}论文中讲解了Valida指令集架构，专为zkVM实现设计，旨在优化快速高效的执行证明。",
+        "summary": {
+          zh: "Thomas等人在{{name}}论文中讲解了Valida指令集架构，专为zkVM实现设计，旨在优化快速高效的执行证明。",
+          en: "Thomas et al. explained the Valida instruction set architecture in their paper{{name}}, designed for zkVM implementation, aiming to optimize fast and efficient proof execution."
+        },
         "notes": {
           zh: [
             "专为zkVM设计的指令集架构（ISA），优化零知识证明执行效率",
