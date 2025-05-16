@@ -475,6 +475,39 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-16",
+    projects: [
+      {
+        "name": "vlayer Launches Mainnet: The Next Step in Making Smart Contracts Useful for Billions",
+        "url": "https://www.vlayer.xyz/blog/vlayer-launches-mainnet-the-next-step-in-making-smart-contracts-useful-for-billions",
+        "type": "新闻",
+        "tags": [
+          "vlayer",
+          "EVM-compatible",
+          "Mainnet"
+        ],
+        "summary": {
+          zh: "vlayer宣布主网上线，旨在通过Time Travel、Teleport、Email Proofs和Web Proofs等创新功能，使智能合约对全球数十亿用户变得实用和相关。",
+          en: "vlayer announced the launch of its mainnet, aiming to make smart contracts useful and relevant to billions of users through innovative features like Time Travel, Teleport, Email Proofs, and Web Proofs."
+        }
+      },
+      {
+        "name": "Fermah x Reclaim",
+        "url": "https://www.fermah.xyz/blog-posts/fermah-x-reclaim",
+        "type": "新闻",
+        "tags": [
+          "Fermah",
+          "Reclaim",
+          "zkTLS",
+        ],
+        "summary": {
+          zh: "Fermah与Reclaim合作推出私有zkTLS及保密证明委托（CPD），显著提升零知识证明效率，优化Web3隐私应用性能。",
+          en: "Fermah and Reclaim have launched the private zkTLS and Confidential Proof Delegation (CPD), significantly enhancing the efficiency of zero-knowledge proofs and optimizing the performance of Web3 privacy applications."
+        }
+      }
+    ]
   }
 ];
 const others = [

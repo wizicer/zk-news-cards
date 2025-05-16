@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-16 星期五
+
+📰 vlayer Launches Mainnet: The Next Step in Making Smart Contracts Useful for Billions
+- https://www.vlayer.xyz/blog/vlayer-launches-mainnet-the-next-step-in-making-smart-contracts-useful-for-billions
+- vlayer宣布主网上线，旨在通过Time Travel、Teleport、Email Proofs和Web Proofs等创新功能，使智能合约对全球数十亿用户变得实用和相关。
+
+📰 Fermah x Reclaim
+- https://www.fermah.xyz/blog-posts/fermah-x-reclaim
+- Fermah与Reclaim合作推出私有zkTLS及保密证明委托（CPD），显著提升零知识证明效率，优化Web3隐私应用性能。
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/16.html
+🪶 由 @icerdesign 收集

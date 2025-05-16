@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-16 Friday
+
+📰 vlayer Launches Mainnet: The Next Step in Making Smart Contracts Useful for Billions
+- https://www.vlayer.xyz/blog/vlayer-launches-mainnet-the-next-step-in-making-smart-contracts-useful-for-billions
+- vlayer announced the launch of its mainnet, aiming to make smart contracts useful and relevant to billions of users through innovative features like Time Travel, Teleport, Email Proofs, and Web Proofs.
+
+📰 Fermah x Reclaim
+- https://www.fermah.xyz/blog-posts/fermah-x-reclaim
+- Fermah and Reclaim have launched the private zkTLS and Confidential Proof Delegation (CPD), significantly enhancing the efficiency of zero-knowledge proofs and optimizing the performance of Web3 privacy applications.
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/16.html
+🪶 Collected by @icerdesign
