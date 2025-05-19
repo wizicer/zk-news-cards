@@ -508,6 +508,44 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-19",
+    projects: [
+      {
+        "name": "Verifying SP1 circuit determinism with Picus: A collaboration between Veridise and Succinct",
+        "url": "https://medium.com/veridise/verifying-sp1-circuit-determinism-with-picus-a-collaboration-between-veridise-and-succinct-985c7a6dd9b5",
+        "type": "博客",
+        "tags": [
+          "Veridise",
+          "SP1",
+          "Picus",
+          {en: "Formal Verification", zh: "形式化验证"},
+        ],
+        "summary": {
+          zh: "Veridise分享了与Succinct合作使用Picus工具验证SP1电路确定性的初步成果，包括成功验证多个SP1电路及识别改进点，强调了确定性在ZK电路安全中的重要性。",
+          en: "Veridise shares the initial results of their collaboration with Succinct using the Picus tool to verify the determinism of SP1 circuits, including successful verification of multiple SP1 circuits and identification of improvement points, emphasizing the importance of determinism in ZK circuit security."
+        },
+        "notes": {
+          zh: [
+            "Veridise与Succinct合作，用Picus工具验证SP1电路的确定性",
+            "确定性验证可排除ZK电路中因逻辑约束不足导致的漏洞",
+            "开发Plonky3到LLZK的转换工具，成功验证11项基础操作",
+            "当前流程存在模块化约束、输入输出标注等局限性",
+            "Succinct计划优化Plonky3框架以支持形式化验证",
+            "目标是将形式化验证扩展至SP1所有电路，成为开发常规环节"
+          ],
+          en: [
+            "Veridise and Succinct collaborated to verify the determinism of SP1 circuits using the Picus tool",
+            "Determinism verification can eliminate vulnerabilities in ZK circuits due to insufficient logical constraints",
+            "Developed a tool to convert Plonky3 to LLZK, successfully verified 11 basic operations",
+            "Current process has limitations such as modular constraints and input/output labeling",
+            "Succinct plans to optimize the Plonky3 framework to support formal verification",
+            "Targeting to extend formal verification to all SP1 circuits, becoming a regular development step"
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [

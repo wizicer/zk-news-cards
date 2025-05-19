@@ -1,0 +1,16 @@
+🚀zkDaily Frontier Tracker 2025-05-19 Monday
+
+📝 Verifying SP1 circuit determinism with Picus: A collaboration between Veridise and Succinct
+- https://medium.com/veridise/verifying-sp1-circuit-determinism-with-picus-a-collaboration-between-veridise-and-succinct-985c7a6dd9b5
+- Veridise shares the initial results of their collaboration with Succinct using the Picus tool to verify the determinism of SP1 circuits, including successful verification of multiple SP1 circuits and identification of improvement points, emphasizing the importance of determinism in ZK circuit security.
+- Notes:
+  - Veridise and Succinct collaborated to verify the determinism of SP1 circuits using the Picus tool
+  - Determinism verification can eliminate vulnerabilities in ZK circuits due to insufficient logical constraints
+  - Developed a tool to convert Plonky3 to LLZK, successfully verified 11 basic operations
+  - Current process has limitations such as modular constraints and input/output labeling
+  - Succinct plans to optimize the Plonky3 framework to support formal verification
+  - Targeting to extend formal verification to all SP1 circuits, becoming a regular development step
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/19.html
+🪶 Collected by @icerdesign
