@@ -546,6 +546,38 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-20",
+    projects: [
+      {
+        "name": "Real-time proving is almost here",
+        "url": "https://x.com/RiscZero/status/1924536174707691710",
+        "type": "新闻",
+        "tags": [
+          "RISCZero",
+          {en: "real-time proving", zh: "实时证明"},
+        ],
+        "summary": {
+          zh: "@RiscZero 宣布将实现以太坊区块证明时间缩短至12秒以内，且构建集群的成本可低至12万美元，目前最好的性能是20秒。",
+          en: "@RiscZero announced that it will reduce the Ethereum block proof time to less than 12 seconds, and the cost of building a cluster can be as low as 120,000 USD, with the best performance currently being 20 seconds."
+        }
+      },
+      {
+        "name": "Broly – Trust-minimized Bitcoin inscriptions directly from your Starknet wallet",
+        "url": "https://www.starknet.io/blog/broly-trust-minimized-bitcoin-inscriptions-directly-from-your-starknet-wallet/",
+        "type": "博客",
+        "tags": [
+          "StarkWare",
+          "Bitcoin",
+          "Starknet",
+        ],
+        "summary": {
+          zh: "@StarkWareLtd Exploration团队在博客{{name}}中介绍了Broly，一个允许用户通过Starknet无需拥有BTC或直接与比特币网络交互即可创建比特币铭文的POC。",
+          en: "@StarkWareLtd Exploration team introduced Broly in their blog{{name}}, a POC that allows users to create Bitcoin inscriptions on Starknet without owning BTC or directly interacting with the Bitcoin network."
+        }
+      }
+    ]
   }
 ];
 const others = [
