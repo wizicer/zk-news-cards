@@ -63,10 +63,9 @@ export const generateTextContent = (cards, language = 'zh', show_details = true,
         // Get project icon
         const icon = project.icon || getTypeIcon(project.type)
         text += `${icon} ${project.name}\n`
+        text += `- ${project.url}\n`
         
         if (show_details) {
-          text += `- ${project.url}\n`
-          
           // Get language-specific summary
           let summary = ''
           if (project.summary) {
