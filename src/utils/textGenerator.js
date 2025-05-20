@@ -28,7 +28,7 @@ export const getTypeIcon = (type) => {
   return iconMap[type] || '📌'
 }
 
-export const generateTextContent = (cards, language = 'zh') => {
+export const generateTextContent = (cards, language = 'zh', show_details = true, dig_twitter_handle = false) => {
   const translations = {
     zh: {
       heading: '🚀zkDaily 前沿热点追踪',
@@ -63,46 +63,67 @@ export const generateTextContent = (cards, language = 'zh') => {
         // Get project icon
         const icon = project.icon || getTypeIcon(project.type)
         text += `${icon} ${project.name}\n`
-        text += `- ${project.url}\n`
         
-        // Get language-specific summary
-        let summary = ''
-        if (project.summary) {
-          if (typeof project.summary === 'object') {
-            // Directly get the language-specific summary
-            summary = project.summary[language]
-            
-            // Fallback if the specified language summary is not available
-            if (!summary) {
-              if (language === 'en' && project.summary.en) {
-                summary = project.summary.en
-              } else if (project.summary.zh) {
-                summary = project.summary.zh
+        if (show_details) {
+          text += `- ${project.url}\n`
+          
+          // Get language-specific summary
+          let summary = ''
+          if (project.summary) {
+            if (typeof project.summary === 'object') {
+              // Directly get the language-specific summary
+              summary = project.summary[language]
+              
+              // Fallback if the specified language summary is not available
+              if (!summary) {
+                if (language === 'en' && project.summary.en) {
+                  summary = project.summary.en
+                } else if (project.summary.zh) {
+                  summary = project.summary.zh
+                }
               }
+            } else {
+              summary = project.summary
             }
-          } else {
-            summary = project.summary
-          }
-        }
-        
-        text += `- ${summary.replace(/{{name}}/g, '')}\n`
-        
-        // Add notes if they exist
-        if (project.notes) {
-          let notesToDisplay = [];
-          
-          // Handle language-specific notes
-          if (typeof project.notes === 'object' && Array.isArray(project.notes[language])) {
-            notesToDisplay = project.notes[language];
-          } else if (Array.isArray(project.notes)) {
-            notesToDisplay = project.notes;
           }
           
-          if (notesToDisplay.length > 0) {
-            text += `- Notes:\n`;
-            notesToDisplay.forEach(note => {
-              text += `  - ${note}\n`;
-            });
+          text += `- ${summary.replace(/{{name}}/g, '')}\n`
+          
+          // Add notes if they exist
+          if (project.notes) {
+            let notesToDisplay = [];
+            
+            // Handle language-specific notes
+            if (typeof project.notes === 'object' && Array.isArray(project.notes[language])) {
+              notesToDisplay = project.notes[language];
+            } else if (Array.isArray(project.notes)) {
+              notesToDisplay = project.notes;
+            }
+            
+            if (notesToDisplay.length > 0) {
+              text += `- Notes:\n`;
+              notesToDisplay.forEach(note => {
+                text += `  - ${note}\n`;
+              });
+            }
+          }
+        } else if (dig_twitter_handle) {
+          // Extract Twitter handle from summary when show_details is false and dig_twitter_handle is true
+          let summary = '';
+          if (project.summary) {
+            if (typeof project.summary === 'object') {
+              summary = project.summary[language] || project.summary.en || project.summary.zh || '';
+            } else {
+              summary = project.summary;
+            }
+          }
+          
+          // Use regex to find Twitter handles
+          const twitterHandleRegex = /@([A-Za-z0-9_]+)/g;
+          const matches = summary.match(twitterHandleRegex);
+          
+          if (matches && matches.length > 0) {
+            text += `- ${matches.join(' ')}\n`;
           }
         }
         

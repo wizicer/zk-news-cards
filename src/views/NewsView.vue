@@ -164,7 +164,7 @@ const weekdayColor = computed(() => {
 
 async function copyToClipboard() {
   try {
-    const text = generateTextContent(displayedCards.value, language.value)
+    const text = generateTextContent(displayedCards.value, language.value, false, true)
     await navigator.clipboard.writeText(text)
     // alert(language.value === 'zh' ? '内容已复制到剪贴板' : 'Content copied to clipboard')
   } catch (err) {

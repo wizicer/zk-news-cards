@@ -82,7 +82,7 @@ async function generateStaticHTML(language = 'zh') {
     if (matchingEntry) {
         // Generate using the text generator directly
         console.log(`Generating ${language} text content directly for ${year}-${month}-${day}`)
-        textOutput = generateTextContent([matchingEntry], language)
+        textOutput = generateTextContent([matchingEntry], language, false, true)
     } else {
         // Fallback to rendered content
         await router.push(`/text?lang=${language}`)
