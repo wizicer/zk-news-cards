@@ -578,6 +578,38 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-21",
+    projects: [
+      {
+        "name": "SP1 Hypercube: Next Generation zkVM for Real-Time Ethereum Proving",
+        "url": "https://blog.succinct.xyz/sp1-hypercube/",
+        "type": "博客",
+        "tags": [
+          "Succinct",
+          "zkVM",
+          {en: "Real-Time Proving", zh: "实时证明"},
+        ],
+        "summary": {
+          zh: "@SuccinctLabs 团队在博客{{name}}中介绍了其下一代zkVM SP1 Hypercube，采用全新的基于多线性多项式的证明系统架构，集群价格低至30~40万美元，对大多数以太坊L1区块可达到10s左右证明时间。",
+          en: "@SuccinctLabs team introduced their next-generation zkVM SP1 Hypercube in their blog{{name}}, using a new proof system architecture based on multilinear polynomials, with a cluster price as low as $300~400k, and can achieve a proof time of about 10 seconds for most Ethereum L1 blocks."
+        }
+      },
+      {
+        "name": "vitalik.eth's tweet on ZKP real-time proving",
+        "url": "https://x.com/VitalikButerin/status/1925050155922862526",
+        "type": "新闻",
+        "tags": [
+          "Vitalik Buterin",
+          {en: "Real-Time Proving", zh: "实时证明"},
+        ],
+        "summary": {
+          zh: "@VitalikButerin 在推文中讨论了ZKP实时证明技术的当前进展，指出了包括实时证明最坏情况、正式验证缺失、证明能耗及L1 gaslimit扩展需求等关键挑战。",
+          en: "@VitalikButerin discussed the current progress of ZKP real-time proving in his tweet, pointing out key challenges such as worst-case proof time, missing formal verification, proof energy consumption, and L1 gaslimit extension."
+        }
+      },
+    ]
   }
 ];
 const others = [

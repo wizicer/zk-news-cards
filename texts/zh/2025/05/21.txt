@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-21 星期三
+
+📝 SP1 Hypercube: Next Generation zkVM for Real-Time Ethereum Proving
+- https://blog.succinct.xyz/sp1-hypercube/
+- @SuccinctLabs
+
+📰 vitalik.eth's tweet on ZKP real-time proving
+- https://x.com/VitalikButerin/status/1925050155922862526
+- @VitalikButerin
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/21.html
+🪶 由 @icerdesign 收集
