@@ -610,6 +610,43 @@ export default [
         }
       },
     ]
+  },
+  {
+    date: "2025-05-22",
+    projects: [
+      {
+        "name": "lattirust",
+        "url": "https://x.com/cknabs/status/1924840275551088873",
+        "type": "开源",
+        "tags": [
+          "Christian Knabenhans",
+          {zh: "格基", en: "Lattice-based"},
+        ],
+        "urls": [
+          createUrlItem("https://github.com/lattirust", "GitHub"),
+        ],
+        "summary": {
+          zh: "@cknabs 开源了lattirust，这是一个类似于arkworks但专注于格基零知识简洁论证的库，类似于lattigo但用于论证。",
+          en: "@cknabs open-sourced lattirust, a library focused on lattice-based zero-knowledge succinct arguments, similar to lattigo but for arguments."
+        }
+      },
+      {
+        "name": "powdr-OpenVM: end-to-end autoprecompiles",
+        "url": "https://x.com/powdr_labs/status/1925229052379509028",
+        "type": "博客",
+        "tags": [
+          "powdr labs",
+          {zh: "编译器", en: "compiler"},
+        ],
+        "urls": [
+          createUrlItem("https://www.powdr.org/blog/powdr-openvm-autoprecompiles", "Blog"),
+        ],
+        "summary": {
+          zh: "@powdr_labs 宣布了powdr-OpenVM，该编译器中间件通过自动预编译增强 @openvm_org，实现了端到端实验中证明时间超过5倍的提升。",
+          en: "@powdr_labs announced powdr-OpenVM, a compiler middleware that enhances @openvm_org with autoprecompiles for custom guest acceleration, showing >5x proof time improvement in end-to-end experiments."
+        }
+      }
+    ]
   }
 ];
 const others = [
