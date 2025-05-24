@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-05-24 星期六
+
+📄 SubLogarithmic Linear Time SNARKs from Compressed Sum-Check
+- https://eprint.iacr.org/2025/908
+
+📄 Enforcing arbitrary constraints on Bitcoin transactions
+- https://eprint.iacr.org/2025/912
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/24.html
+🪶 由 @icerdesign 收集

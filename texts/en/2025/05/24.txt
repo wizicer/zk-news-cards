@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-05-24 Saturday
+
+📄 SubLogarithmic Linear Time SNARKs from Compressed Sum-Check
+- https://eprint.iacr.org/2025/908
+
+📄 Enforcing arbitrary constraints on Bitcoin transactions
+- https://eprint.iacr.org/2025/912
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/24.html
+🪶 Collected by @icerdesign

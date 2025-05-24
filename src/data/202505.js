@@ -647,6 +647,39 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-24",
+    projects: [
+      {
+        "name": "SubLogarithmic Linear Time SNARKs from Compressed Sum-Check",
+        "url": "https://eprint.iacr.org/2025/908",
+        "type": "论文",
+        "tags": [
+          "Nitin Singh",
+          "Sum Check",
+          {zh: "多线性多项式承诺", en: "Multilinear Polynomial Commitment"},
+        ],
+        "summary": {
+          zh: "Singh等人在{{name}}论文中提出了一种利用多线性多项式承诺方案减少经典sum-check协议通信复杂性的方法，实现了证明者成本为O((ℓ+d)n)和通信复杂度为O(ℓ + dlog log n)的突破。",
+          en: "Singh et al. proposed a method in their paper{{name}} to reduce the communication complexity of the classical sum-check protocol using multilinear polynomial commitment schemes, achieving a proof cost of O((ℓ+d)n) and a communication complexity of O(ℓ + dlog log n)."
+        }
+      },
+      {
+        "name": "Enforcing arbitrary constraints on Bitcoin transactions",
+        "url": "https://eprint.iacr.org/2025/912",
+        "type": "论文",
+        "tags": [
+          "Federico Barbacovi",
+          "Bitcoin",
+          "Smart Contract",
+        ],
+        "summary": {
+          zh: "Barbacovi等人在{{name}}论文中提出了一种利用zkSNARKs的新方案，能够在比特币交易上强制执行任意约束，同时保持部分信息私密。该方法还绕过了比特币脚本的非图灵完备性，允许执行无界约束。编者注：该方案是在BSV链上执行，不能在BTC链上执行，而BSV是最早支持Groth16的比特币分叉链。",
+          en: "Barbacovi et al. proposed a new scheme in their paper{{name}} to enforce arbitrary constraints on Bitcoin transactions, while keeping some information private. This method also bypasses the non-Turing-complete nature of Bitcoin scripts, allowing the execution of unbounded constraints. Note: This scheme is executed on the BSV chain, not on the BTC chain, and BSV is the earliest Bitcoin fork chain to support Groth16."
+        }
+      }
+    ]
   }
 ];
 const others = [
