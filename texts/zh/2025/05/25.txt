@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-25 星期日
+
+💻 Ix: a zero-knowledge proof-carrying code platform
+- https://github.com/argumentcomputer/ix
+- @argumentxyz
+
+💻 PetraVM
+- https://github.com/PetraProver/PetraVM
+- @0xPolygon @IrreducibleHW
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/25.html
+🪶 由 @icerdesign 收集

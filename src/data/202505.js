@@ -680,6 +680,39 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-25",
+    projects: [
+      {
+        "name": "Ix: a zero-knowledge proof-carrying code platform",
+        "url": "https://github.com/argumentcomputer/ix",
+        "type": "开源",
+        "tags": [
+          "argumentcomputer",
+          "Lean 4",
+          "Binius",
+        ],
+        "summary": {
+          zh: "@argumentxyz 团队开源了Ix平台，该平台能够将Lean 4程序编译成zk-SNARKs，实现程序的执行和类型检查验证，显著降低验证的运行成本。",
+          en: "@argumentxyz team open-sourced Ix, a zero-knowledge proof-carrying code platform, which can compile Lean 4 programs into zk-SNARKs, implement program execution and type checking verification, significantly reducing the running cost of verification."
+        }
+      },
+      {
+        "name": "PetraVM",
+        "url": "https://github.com/PetraProver/PetraVM",
+        "type": "开源",
+        "tags": [
+          "Polygon and Irreducible",
+          "Binius",
+          {en: "recursive", zh: "递归"},
+        ],
+        "summary": {
+          zh: "@0xPolygon 和 @IrreducibleHW 团队开源了PetraVM，一个基于Binius证明系统的通用虚拟机，支持递归证明验证和高效计算，通过WebAssembly编译和自定义高级语言PetraML实现高性能可验证计算。",
+          en: "@0xPolygon and @IrreducibleHW team open-sourced PetraVM, a general-purpose virtual machine based on the Binius proof system, supporting recursive proof verification and high-performance computation, through WebAssembly compilation and a custom high-level language PetraML."
+        }
+      }
+    ]
   }
 ];
 const others = [

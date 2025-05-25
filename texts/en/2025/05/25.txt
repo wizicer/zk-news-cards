@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-25 Sunday
+
+💻 Ix: a zero-knowledge proof-carrying code platform
+- https://github.com/argumentcomputer/ix
+- @argumentxyz
+
+💻 PetraVM
+- https://github.com/PetraProver/PetraVM
+- @0xPolygon @IrreducibleHW
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/25.html
+🪶 Collected by @icerdesign
