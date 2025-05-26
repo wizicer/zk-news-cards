@@ -1,0 +1,8 @@
+🚀zkDaily 前沿热点追踪 2025-05-26 星期一
+
+📄 Zero-knowledge Authenticator for Blockchain: Policy-private and Obliviously Updateable
+- https://eprint.iacr.org/2025/921
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/26.html
+🪶 由 @icerdesign 收集

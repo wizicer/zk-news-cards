@@ -713,6 +713,42 @@ export default [
         }
       }
     ]
+  },
+  { 
+    date: "2025-05-26",
+    projects: [
+      {
+        "name": "Zero-knowledge Authenticator for Blockchain: Policy-private and Obliviously Updateable",
+        "url": "https://eprint.iacr.org/2025/921",
+        "type": "论文",
+        "tags": [
+          "Kostas Kryptos Chalkias",
+          "threshold",
+        ],
+        "summary": {
+          zh: "Chalkias等人在{{name}}论文中提出了零知识认证器（zkAt），一种新的密码学原语，用于在公共区块链上实现隐私保护的认证。zkAt利用零知识证明使用户能够认证交易，同时保持底层认证策略的私密性。",
+          en: "Chalkias et al. proposed zkAt, a new cryptographic primitive, in their paper{{name}}, for privacy-preserving authentication on public blockchains. zkAt uses zero-knowledge proofs to allow users to authenticate transactions while keeping the underlying authentication policy private."
+        },
+        "notes": {
+          zh: [
+            "本文设计了一个认证策略绑定场景，使电路对外不可见但不可变，便于验证用户私下自设条件。",
+            "利用插值生成等价 QAP，验证逻辑不变，但结构不可见。",
+            "zkAt 修改 Groth16 setup，使 vk 与电路无关，隐藏策略。",
+            "vk 和 π 不泄露策略信息，实现策略隐私。",
+            "zkAt 策略固定，更新需用 zkAt+。",
+            "zkAt+ 用递归 SNARK 支持隐私策略更新。"
+          ],
+          en: [
+            "This paper designs a binding scenario for authentication policies, making the circuit invisible but immutable, allowing users to verify their own private policy.",
+            "Using interpolation to generate an equivalent QAP, the verification logic remains unchanged but the structure is hidden.",
+            "zkAt modifies the Groth16 setup, making the vk independent of the circuit, hiding the policy.",
+            "vk and π do not leak policy information, achieving policy privacy.",
+            "zkAt policies are fixed, updates require zkAt+.",
+            "zkAt+ uses recursive SNARKs to support privacy policy updates."
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [
