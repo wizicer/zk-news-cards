@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-05-27 Tuesday
+
+📄 Breaking Poseidon Challenges with Graeffe Transforms and Complexity Analysis by FFT Lower Bounds
+- https://eprint.iacr.org/2025/950
+
+📄 Fast elliptic curve scalar multiplications in SN(T)ARK circuits
+- https://eprint.iacr.org/2025/933
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/27.html
+🪶 Collected by @icerdesign

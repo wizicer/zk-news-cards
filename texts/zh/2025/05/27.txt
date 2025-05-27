@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-05-27 星期二
+
+📄 Breaking Poseidon Challenges with Graeffe Transforms and Complexity Analysis by FFT Lower Bounds
+- https://eprint.iacr.org/2025/950
+
+📄 Fast elliptic curve scalar multiplications in SN(T)ARK circuits
+- https://eprint.iacr.org/2025/933
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/27.html
+🪶 由 @icerdesign 收集

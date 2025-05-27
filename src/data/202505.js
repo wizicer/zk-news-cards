@@ -749,6 +749,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-27",
+    projects: [
+      {
+        "name": "Breaking Poseidon Challenges with Graeffe Transforms and Complexity Analysis by FFT Lower Bounds",
+        "url": "https://eprint.iacr.org/2025/950",
+        "type": "论文",
+        "tags": [
+          "Ziyu Zhao",
+          "Poseidon",
+          {en: "Cryptanalysis", zh: "密码分析"},
+        ],
+        "summary": {
+          zh: "Zhao和Ding在{{name}}论文中提出了一种利用Graeffe变换和FFT下界复杂性分析破解Poseidon挑战的方法，显著提高了攻击效率，并开源了相关代码。注：Poseidon的有效安全性并没有降低。",
+          en: "Zhao and Ding proposed a method in their paper{{name}} to break Poseidon challenges with Graeffe transforms and complexity analysis by FFT lower bounds, significantly improving the attack efficiency, and open-sourced the related code. Note: The effective security of Poseidon has not been reduced."
+        }
+      },
+      {
+        "name": "Fast elliptic curve scalar multiplications in SN(T)ARK circuits",
+        "url": "https://eprint.iacr.org/2025/933",
+        "type": "论文",
+        "tags": [
+          "Liam Eagen",
+          "elliptic curves",
+          {en: "lattice reduction", zh: "格约简"},
+        ],
+        "urls": [
+          createUrlItem("https://github.com/yelhousni/scalarmul-in-snark", "GitHub"),
+        ],
+        "summary": {
+          zh: "Eagen等人在{{name}}论文中提出了在SN(T)ARK电路中快速进行椭圆曲线标量乘法的新技术，通过整数格约简或半扩展欧几里得算法，将证明时间缩短了22%至53%。",
+          en: "Eagen et al. proposed a new technique in their paper{{name}} to speed up elliptic curve scalar multiplications in SN(T)ARK circuits, reducing proof time by 22% to 53% through integer lattice reduction or semi-extended Euclidean algorithm."
+        }
+      }
+    ]
   }
 ];
 const others = [
