@@ -785,6 +785,40 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-28",
+    projects: [
+      {
+        "name": "SP1 FPGA Acceleration with AntChain OpenLabs",
+        "url": "https://blog.succinct.xyz/sp1-fpga-antchain-openlabs/",
+        "type": "新闻",
+        "tags": [
+          "Succinct",
+          "AntChain",
+          "FPGA",
+        ],
+        "summary": {
+          zh: "@SuccinctLabs 与 @AntChainOpenLab 合作开发了SP1的FPGA加速技术，性能比CPU提升20倍，标志着SP1成为首个具备端到端FPGA硬件加速的RISC-V zkVM。",
+          en: "@SuccinctLabs and @AntChainOpenLab collaborated to develop FPGA acceleration technology for SP1, achieving 20x performance improvement over CPU, marking SP1 as the first RISC-V zkVM with end-to-end FPGA hardware acceleration."
+        }
+      },
+      {
+        "name": "Sum-Check: The Backbone of ZK Proofs",
+        "url": "https://blog.electisec.com/sumcheck",
+        "type": "博客",
+        "tags": [
+          "ElectiSec",
+          "Sum-Check",
+          "Multilinear Polynomials",
+          "Boolean Hypercube"
+        ],
+        "summary": {
+          zh: "@0xteddav 在{{name}}博客中详细介绍了Sum-Check协议，这是零知识证明和可验证计算中的基础工具，允许验证者高效检查证明者是否正确计算了多项式在布尔超立方上的评估总和。",
+          en: "@0xteddav detailed Sum-Check protocol in their blog{{name}}, a fundamental tool in zero-knowledge proofs and verifiable computation, allowing verifiers to efficiently check if the prover correctly calculates the sum of polynomial evaluations on the Boolean hypercube."
+        }
+      }
+    ]
   }
 ];
 const others = [

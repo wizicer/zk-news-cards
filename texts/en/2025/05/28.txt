@@ -1,0 +1,13 @@
+🚀zkDaily Frontier Tracker 2025-05-28 Wednesday
+
+📰 SP1 FPGA Acceleration with AntChain OpenLabs
+- https://blog.succinct.xyz/sp1-fpga-antchain-openlabs/
+- @SuccinctLabs @AntChainOpenLab
+
+📝 Sum-Check: The Backbone of ZK Proofs
+- https://blog.electisec.com/sumcheck
+- @0xteddav
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/05/28.html
+🪶 Collected by @icerdesign

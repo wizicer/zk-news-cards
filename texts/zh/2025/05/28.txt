@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-05-28 星期三
+
+📰 SP1 FPGA Acceleration with AntChain OpenLabs
+- https://blog.succinct.xyz/sp1-fpga-antchain-openlabs/
+- @SuccinctLabs @AntChainOpenLab
+
+📝 Sum-Check: The Backbone of ZK Proofs
+- https://blog.electisec.com/sumcheck
+- @0xteddav
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/05/28.html
+🪶 由 @icerdesign 收集
