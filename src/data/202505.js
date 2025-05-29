@@ -819,6 +819,36 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-29",
+    projects: [
+      {
+        "name": "Map of ZK",
+        "url": "https://forms.gle/PskaAxvVcRihdpUA9",
+        "type": "活动",
+        "tags": [
+          "ZKV",
+          "Map",
+        ],
+        "summary": {
+          zh: "@zkv_xyz 邀请大家填写表单，把ZK项目加入到Map of ZK中。",
+          en: "@zkv_xyz invites everyone to fill out the form to add ZK projects to the Map of ZK."
+        }
+      },
+      {
+        "name": "zkSummit 13 Video Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLj80z0cJm8QFy2umHqu77a8dbZSqpSH54",
+        "type": "视频",
+        "tags": [
+          "zkSummit",
+        ],
+        "summary": {
+          zh: "@zeroknowledgefm 发布了zkSummit 13的视频合集。",
+          en: "@zeroknowledgefm released the video playlist of zkSummit 13."
+        }
+      }
+    ]
   }
 ];
 const others = [
