@@ -849,6 +849,37 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-05-30",
+    projects: [
+      {
+        "name": "Register for the Lagrange Token Airdrop",
+        "url": "https://www.lagrangefoundation.org/blog/register-for-the-la-token-airdrop",
+        "type": "信息",
+        "tags": [
+          "Lagrange Foundation",
+          "Airdrop",
+        ],
+        "summary": {
+          zh: "@lagrangedev Foundation宣布将于2025年5月28日至6月2日进行LA代币空投注册，LA是Lagrange Prover Network的实用代币，支持可验证AI等用例。",
+          en: "@lagrangedev Foundation announced that the LA token airdrop will be registered from May 28 to June 2, 2025, LA is the utility token of the Lagrange Prover Network, supporting verifiable AI and other use cases."
+        }
+      },
+      {
+        "name": "What are Schwartz-Zippel circuits?",
+        "url": "https://www.cryptologie.net/article/629/what-are-schwartz-zippel-circuits-how-do-they-relate-to-iterative-constraint-systems/",
+        "type": "博客",
+        "tags": [
+          "cryptologie.net",
+          "Schwartz-Zippel",
+        ],
+        "summary": {
+          zh: "@cryptodavidw 在{{name}}博客中讨论了Schwartz-Zippel电路及其与迭代约束系统的关系，包括如何使用挑战点来验证多项式等式，以及这在plonk置换中的应用。",
+          en: "@cryptodavidw discussed Schwartz-Zippel circuits and their relationship to iterative constraint systems in their blog{{name}}, including how to use challenge points to verify polynomial equalities, and its application in plonk permutations."
+        }
+      }
+    ]
   }
 ];
 const others = [
