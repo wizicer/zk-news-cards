@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-06-03 Tuesday
+
+📰 Missing final polynomial degree check in FRI verifier
+- https://github.com/Plonky3/Plonky3/security/advisories/GHSA-f69f-5fx9-w9r9
+
+🎥 Cryptography 10 Years Later: Obfuscation, Proof Systems, and Secure Computation Boot Camp Videos
+- https://simons.berkeley.edu/workshops/cryptography-10-years-later-obfuscation-proof-systems-secure-computation-boot-camp/videos
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/03.html
+🪶 Collected by @icerdesign

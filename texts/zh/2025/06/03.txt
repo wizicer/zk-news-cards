@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-06-03 星期二
+
+📰 Missing final polynomial degree check in FRI verifier
+- https://github.com/Plonky3/Plonky3/security/advisories/GHSA-f69f-5fx9-w9r9
+
+🎥 Cryptography 10 Years Later: Obfuscation, Proof Systems, and Secure Computation Boot Camp Videos
+- https://simons.berkeley.edu/workshops/cryptography-10-years-later-obfuscation-proof-systems-secure-computation-boot-camp/videos
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/06/03.html
+🪶 由 @icerdesign 收集

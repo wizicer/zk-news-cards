@@ -38,6 +38,46 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-06-03",
+    projects: [
+      {
+        "name": "Missing final polynomial degree check in FRI verifier",
+        "url": "https://github.com/Plonky3/Plonky3/security/advisories/GHSA-f69f-5fx9-w9r9",
+        "type": "新闻",
+        "tags": [
+          "dlubarov",
+          "Plonky3",
+          "FRI",
+          {zh: "漏洞", en: "Vulnerability"},
+        ],
+        "urls": [
+          createUrlItem("𝕏", "https://x.com/dlubarov/status/1929723510622244941"),
+        ],
+        "summary": {
+          zh: "Plonky3项目披露了一个高严重性安全漏洞，影响ad4fd24之前的版本，FRI验证器缺少最终多项式度检查，可能被恶意证明者利用。",
+          en: "Plonky3 project disclosed a high severity security vulnerability, affecting versions before ad4fd24, where the FRI verifier lacked a final polynomial degree check, potentially exploitable by malicious provers."
+        }
+      },
+      {
+        "name": "Cryptography 10 Years Later: Obfuscation, Proof Systems, and Secure Computation Boot Camp Videos",
+        "url": "https://simons.berkeley.edu/workshops/cryptography-10-years-later-obfuscation-proof-systems-secure-computation-boot-camp/videos",
+        "type": "视频",
+        "tags": [
+          "Simons Institute",
+          "Cryptography",
+          {zh: "混淆", en: "Obfuscation"},
+        ],
+        "urls": [
+          createUrlItem("YouTube", "https://www.youtube.com/playlist?list=PLgKuh-lKre12vDccuxf_xgO27_b1zLrhk"),
+        ],
+        "summary": {
+          zh: "Simons Institute发布了关于密码学十年后发展的系列视频，涵盖了混淆、证明系统和安全计算等前沿话题，深入探讨了这些技术的进展和未来方向。",
+          en: "Simons Institute released a series of videos on the future of cryptography, covering topics such as obfuscation, proof systems, and secure computation, delving into the progress and future directions of these technologies."
+        }
+      }
+    ],
+  }
 ];
 const others = [
 ];
