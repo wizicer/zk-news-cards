@@ -77,6 +77,39 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-04",
+    projects: [
+      {
+        "name": "Zero Knowledge Proofs for the Uninitiated",
+        "url": "https://blog.reclaimprotocol.org/posts/zk-for-the-uninitiated",
+        "type": "博客",
+        "tags": [
+          "Madhavan Malolan",
+          "Reclaim Protocol",
+          {zh: "初学者", en: "Beginner"},
+        ],
+        "summary": {
+          zh: "@reclaimprotocol 的 Madhavan Malolan 在博客{{name}}中为零知识证明的初学者提供了入门介绍，解释了ZKP如何在不泄露数据的情况下验证计算的正确性，并探讨了其在隐私保护中的应用。",
+          en: "@reclaimprotocol 's Madhavan Malolan provided an introduction for beginners to zero-knowledge proofs in blog{{name}}, explaining how ZKP verifies the correctness of calculations without disclosing data and exploring its applications in privacy protection."
+        }
+      },
+      {
+        "name": "Introducing ZKsync Prividium: Private Blockchain Infra Built for Institutions",
+        "url": "https://zksync.mirror.xyz/-22Hu5ugeOtchnp1ut44Zehfh5yolKlu9nubFdJLMD0",
+        "type": "新闻",
+        "tags": [
+          "ZKsync",
+          "Prividium",
+          {zh: "合规性", en: "Compliance"},
+        ],
+        "summary": {
+          zh: "@zksync 团队推出了ZKsync Prividium，这是一个专为机构设计的私有区块链基础设施，提供企业级隐私、内置合规性以及与以太坊的无缝连接。",
+          en: "@zksync team launched ZKsync Prividium, a private blockchain infrastructure built for institutions, providing enterprise-level privacy, built-in compliance, and seamless integration with Ethereum."
+        }
+      }
+    ],
   }
 ];
 const others = [
