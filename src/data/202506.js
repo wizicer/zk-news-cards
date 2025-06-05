@@ -110,6 +110,43 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-05",
+    projects: [
+      {
+        "name": "Capture Hidden Trends - Use Cases for Private and Decentralized ML Training",
+        "url": "https://yuriko.io/posts/capture-hidden-trends/",
+        "type": "博客",
+        "tags": [
+          "Yuriko",
+          "Decentralized AI",
+          "zkML"
+        ],
+        "summary": {
+          zh: "Yuriko在博客{{name}}中探讨了隐私保护和去中心化机器学习训练的潜在用例，包括如何利用ZK证明在不暴露私人数据集的情况下协作训练模型。",
+          en: "Yuriko in blog{{name}} explored potential use cases for private and decentralized machine learning training, including how to use ZK proofs to collaboratively train models without exposing private datasets."
+        },
+        "notes": {
+          zh: [
+            "去中心化ML训练：多方协作建模，保护数据隐私",
+            "传统数据科学存在结构性偏见，忽视弱势群体数据",
+            "应用：健康分析、边缘群体模型、隐私推荐、生物识别",
+            "模型合并技术可分析交叉身份特征",
+            "技术优势：可验证训练，优化边缘计算效率",
+            "社会价值：通过协作挖掘被忽视的社会模式"
+          ],
+          en: [
+            "Decentralized ML training: Multi-party collaboration, data privacy protection",
+            "Traditional data science has structural biases, ignoring vulnerable groups' data",
+            "Applications: Health analysis, edge group modeling, privacy recommendation, biometric recognition",
+            "Model merging technology can analyze cross-identity features",
+            "Technical advantages: Verifiable training, optimized edge computing efficiency",
+            "Social value: Discovering overlooked social patterns through collaboration"
+          ]
+        }
+      }
+    ],
   }
 ];
 const others = [
