@@ -147,6 +147,43 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-06",
+    projects: [
+      {
+        "name": "Malicious Security in Collaborative zk-SNARKs: More than Meets the Eye",
+        "url": "https://eprint.iacr.org/2025/1026",
+        "type": "论文",
+        "tags": [
+          "Sanjam Garg",
+          "MPC",
+          "coSNARKs"
+        ],
+        "summary": {
+          zh: "Garg等人在{{name}}论文中分析了协作zk-SNARKs中的恶意安全问题，揭示了现有设计模板中的两个陷阱，可能导致输入隐私泄露，并提出了缓解策略。",
+          en: "Garg et al. analyzed malicious security in collaborative zk-SNARKs in paper{{name}}, revealing two traps in existing design templates that could lead to input privacy leaks and proposed countermeasures."
+        },
+        "notes": {
+          zh: [
+            "协作zk-SNARK (coSNARKs)设计存在隐私泄露风险，如无效见证可能暴露诚实方输入",
+            "直接套用恶意安全编译器（MPC协议）可能导致整体安全性失效",
+            "在诚实多数假设下，可省略安全检查以提升效率",
+            "首次实现半诚实MPC协议达成恶意安全的非平凡案例",
+            "优化方案减少证明生成开销，适用于多种zk-SNARK方案",
+            "研究结论具有普适性，可能拓展至其他密码学协作协议"
+          ],
+          en: [
+            "Collaborative zk-SNARK (coSNARKs) design has privacy leakage risks, such as invalid witnesses exposing honest party inputs",
+            "Directly applying malicious security compilers (MPC) may render the entire system insecure",
+            "Under the assumption of honest majority, traditional compilers' security checks can be omitted to improve efficiency",
+            "First implementation of semi-honest MPC protocol to achieve malicious security in non-trivial cases",
+            "Optimization scheme reduces proof generation overhead, applicable to various zk-SNARK schemes",
+            "Positive results are general and may have applications beyond collaborative zkSNARKs"
+          ]
+        }
+      }
+    ],
   }
 ];
 const others = [
