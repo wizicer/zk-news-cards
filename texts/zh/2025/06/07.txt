@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-06-07 星期六
+
+📄 On the Adaptive Security of Key-Unique Threshold Signatures
+- https://eprint.iacr.org/2025/943
+
+📄 Polocolo: A ZK-Friendly Hash Function Based on S-boxes Using Power Residues
+- https://eprint.iacr.org/2025/926
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/06/07.html
+🪶 由 @icerdesign 收集

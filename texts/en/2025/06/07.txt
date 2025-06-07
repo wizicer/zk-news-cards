@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-06-07 Saturday
+
+📄 On the Adaptive Security of Key-Unique Threshold Signatures
+- https://eprint.iacr.org/2025/943
+
+📄 Polocolo: A ZK-Friendly Hash Function Based on S-boxes Using Power Residues
+- https://eprint.iacr.org/2025/926
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/07.html
+🪶 Collected by @icerdesign

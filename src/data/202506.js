@@ -184,6 +184,38 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-07",
+    projects: [
+      {
+        "name": "On the Adaptive Security of Key-Unique Threshold Signatures",
+        "url": "https://eprint.iacr.org/2025/943",
+        "type": "论文",
+        "tags": [
+          "Elizabeth Crites",
+          "Threshold Signatures",
+        ],
+        "summary": {
+          zh: "Crites等人在{{name}}论文中探讨了阈值签名自适应安全性的安全假设，提出了两种不可能性结果，强调了实现密钥唯一阈值签名自适应安全的挑战。",
+          en: "Crites et al. explored the security assumptions of adaptive security in threshold signatures in paper{{name}}, presenting two impossibility results and emphasizing the challenges of achieving adaptive security for unique-key threshold signatures."
+        }
+      },
+      {
+        "name": "Polocolo: A ZK-Friendly Hash Function Based on S-boxes Using Power Residues",
+        "url": "https://eprint.iacr.org/2025/926",
+        "type": "论文",
+        "tags": [
+          "Jincheol Ha",
+          "Hash function",
+          "Lookup argument",
+        ],
+        "summary": {
+          zh: "Ha等人在{{name}}论文中提出了一种基于Power Residues的ZK友好哈希函数Polocolo，通过减少Plonk门数量，比现有最先进的ZK友好哈希函数更高效。",
+          en: "Ha et al. proposed a ZK-friendly hash function Polocolo based on Power Residues in paper{{name}}, reducing the number of Plonk gates and outperforming the most advanced ZK-friendly hash functions."
+        }
+      }
+    ],
   }
 ];
 const others = [
