@@ -18,6 +18,12 @@ async function generateStaticHTML(language = 'zh') {
     // Find the entry for today
     const todayData = newsData.find(entry => entry.date === `${year}-${month}-${day}`)
     
+    // If no data for today, warn the user
+    if (!todayData) {
+        console.warn(`⚠️ WARNING: No data found for today (${year}-${month}-${day}). Please check your data files.`)
+        return;
+    }
+    
     // Skip generation if the languages array doesn't include the current language
     if (todayData && todayData.languages && !todayData.languages.includes(language)) {
         console.log(`Skipping generation for ${language} as it's not listed in languages array for today`)
