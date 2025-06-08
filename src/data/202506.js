@@ -216,6 +216,42 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-08",
+    projects: [
+      {
+        "name": "Greyhound: A Lattice-Based Polynomial Commitment Scheme",
+        "url": "https://blog.zksecurity.xyz/posts/greyhound/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          {zh: "格基", en: "Lattice-based"},
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 在{{name}}博客中讨论了Greyhound，一种基于格的证明系统，旨在抵抗量子计算机威胁，并详细解释了其工作原理和优势。",
+          en: "@zksecurityXYZ discussed Greyhound, a lattice-based proof system, in blog{{name}}, explaining its working principles and advantages."
+        },
+        "notes": {
+          zh: [
+            "Greyhound 是首个高效的格基 PCS，证明大小约 50KB",
+            "基于 Ajtai 承诺和 M-SIS 问题，线性证明者和亚线性验证者",
+            "通过矩阵分块和基分解技术优化，与现有 PCS 兼容",
+            "结合 LaBRADOR 压缩，实现对数级证明大小和次线性验证",
+            "专为后量子时代设计",
+            "已有 Rust 实现（LattiRust）和硬件库 ICICLE 支持"
+          ] ,
+          en: [
+            "Greyhound is the first efficient lattice-based PCS, with proof sizes around 50KB",
+            "Based on Ajtai commitment and M-SIS problem, linear prover and sublinear verifier",
+            "Optimized through matrix partitioning and basis decomposition, compatible with existing PCS",
+            "Combined with LaBRADOR compression, achieving logarithmic proof size and sublinear verification",
+            "Designed for the post-quantum era",
+            "Already has Rust implementation (LattiRust) and hardware library ICICLE support"
+          ]
+        }
+      }
+    ],
   }
 ];
 const others = [
