@@ -252,6 +252,37 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-11",
+    projects: [
+      {
+        "name": "A Deep Dive into Logjumps: a Faster Modular Reduction Algorithm",
+        "url": "https://baincapitalcrypto.com/a-deep-dive-into-logjumps-a-faster-modular-reduction-algorithm/",
+        "type": "论文",
+        "tags": [
+          "Koh Wei Jie",
+          {zh: "模约简", en: "Modular Reduction"}
+        ],
+        "summary": {
+          zh: "Koh Wei Jie在{{name}}论文中提出了Logjumps技术，这是一种针对大素数域上模约减的新方法，相比Montgomery约减提供了更高效的解决方案。",
+          en: "Koh Wei Jie proposed Logjumps in paper{{name}}, a new method for modular reduction in large prime fields, which is more efficient than Montgomery reduction."
+        }
+      },
+      {
+        "name": "PSE May 2025 newsletter",
+        "url": "https://pse.dev/en/blog/pse-may-2025-newsletter",
+        "type": "新闻",
+        "tags": [
+          "PSE",
+          {zh: "后量子密码学", en: "Post-Quantum Cryptography"},
+        ],
+        "summary": {
+          zh: "PSE发布了2025年5月的通讯，涵盖了后量子密码学、私有证明委托、客户端证明等多个领域的最新动态和项目进展。",
+          en: "PSE released the May 2025 newsletter, covering the latest developments and project progress in post-quantum cryptography, private proof delegation, client-side proving, and other fields."
+        }
+      }
+    ],
   }
 ];
 const others = [
