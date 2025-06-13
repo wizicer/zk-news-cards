@@ -1,0 +1,12 @@
+🚀zkDaily Frontier Tracker 2025-06-13 Friday
+
+💻 Proof of Residency
+- https://github.com/rutefig/proof-of-residency
+
+💻 ZKsync Airbender
+- https://github.com/matter-labs/zksync-airbender
+- @the_matter_labs
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/13.html
+🪶 Collected by @icerdesign

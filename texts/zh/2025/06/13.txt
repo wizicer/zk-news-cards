@@ -1,0 +1,12 @@
+🚀zkDaily 前沿热点追踪 2025-06-13 星期五
+
+💻 Proof of Residency
+- https://github.com/rutefig/proof-of-residency
+
+💻 ZKsync Airbender
+- https://github.com/matter-labs/zksync-airbender
+- @the_matter_labs
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/06/13.html
+🪶 由 @icerdesign 收集

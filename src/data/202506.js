@@ -283,6 +283,38 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-13",
+    projects: [
+      {
+        "name": "Proof of Residency",
+        "url": "https://github.com/rutefig/proof-of-residency",
+        "type": "开源",
+        "tags": [
+          "rutefig",
+          "Decentralized Validation"
+        ],
+        "summary": {
+          zh: "rutefig团队开源了Proof of Residency项目，利用加密技术生成可验证的居住证明，同时保护用户隐私，仅公开验证居住国家(葡萄牙)而隐藏具体地址。",
+          en: "rutefig team open-sourced the Proof of Residency project, using encryption technology to generate verifiable residency proofs while protecting user privacy, only disclosing the validated country of residence (Portugal) while hiding specific addresses."
+        }
+      },
+      {
+        "name": "ZKsync Airbender",
+        "url": "https://github.com/matter-labs/zksync-airbender",
+        "type": "开源",
+        "tags": [
+          "matter-labs",
+          "RISC-V",
+          "ZKsync",
+        ],
+        "summary": {
+          zh: "@the_matter_labs 开源了ZKsync Airbender，包含RISC-V编译和证明工具，支持电路实现、模拟器及证明生成与验证功能。",
+          en: "@the_matter_labs open-sourced ZKsync Airbender, containing RISC-V compilation and proof tools, supporting circuit implementation, simulator, and proof generation and verification."
+        }
+      }
+    ],
   }
 ];
 const others = [
