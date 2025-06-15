@@ -315,6 +315,39 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-15",
+    projects: [
+      {
+        "name": "The Fields Powering Binius",
+        "url": "https://blog.lambdaclass.com/the-fields-powering-binius/",
+        "type": "博客",
+        "tags": [
+          "LambdaClass",
+          "zkVM",
+          "Binius",
+        ],
+        "summary": {
+          zh: "@class_lambda 在博客{{name}}中探讨了Binius证明系统的数学基础，重点介绍了布尔超立方体和二进制塔的概念，以及如何在电路级别操作中利用这些概念进行字段元素的加法和乘法。",
+          en: "@class_lambda discussed the mathematical foundations of the Binius proof system in blog{{name}}, focusing on Boolean hypercubes and binary towers, and how to utilize these concepts at the circuit level for field element addition and multiplication."
+        }
+      },
+      {
+        "name": "Whitepaper Alert: Exploring Keccak Hashes in Zero-Knowledge with GKR",
+        "url": "https://vlayer.xyz/blog/whitepaper-alert-exploring-keccak-hashes-in-zero-knowledge-with-gkr",
+        "type": "论文",
+        "tags": [
+          "vlayer",
+          "Keccak",
+          "GKR",
+        ],
+        "summary": {
+          zh: "@vlayer_xyz 团队在{{name}}论文中探讨了使用GKR协议在零知识证明中验证Keccak哈希的方法，为处理以太坊原生操作提供了高效、可扩展的解决方案。",
+          en: "@vlayer_xyz team explored using GKR protocol in zero-knowledge proofs to verify Keccak hashes in paper{{name}}, providing an efficient and scalable solution for processing Ethereum native operations."
+        }
+      }
+    ],
   }
 ];
 const others = [
