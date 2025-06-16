@@ -1,0 +1,12 @@
+🚀zkDaily Frontier Tracker 2025-06-16 Monday
+
+📄 A Framework for Compiling Custom Languages as Efficiently Verifiable Virtual Machines
+- https://eprint.iacr.org/2025/1110
+
+💻 ML-KEM – Post-Quantum Key Encapsulation (Kyber)
+- https://dev.ingonyama.com/api/cpp/lattice/pqc_ml_kem
+- @Ingo_zk
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/16.html
+🪶 Collected by @icerdesign

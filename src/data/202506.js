@@ -348,6 +348,38 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-16",
+    projects: [
+      {
+        "name": "A Framework for Compiling Custom Languages as Efficiently Verifiable Virtual Machines",
+        "url": "https://eprint.iacr.org/2025/1110",
+        "type": "论文",
+        "tags": [
+          "Assimakis A. Kattis",
+          "zkVM",
+          "Nock",
+        ],
+        "summary": {
+          zh: "Kattis等人在{{name}}论文中提出了一种将自定义语言编译为高效IOP的框架，特别针对zkVM设计。他们定义了可遍历语言子类，并展示了如何高效编译为电路，以Nock编程语言为例验证了框架的有效性。",
+          en: "Kattis et al. proposed a framework for compiling custom languages as efficiently verifiable virtual machines in paper{{name}}, targeting zkVM design. They defined traversable language subclasses and demonstrated how to efficiently compile to circuits, verifying the framework's effectiveness with the Nock programming language."
+        }
+      },
+      {
+        "name": "ML-KEM – Post-Quantum Key Encapsulation (Kyber)",
+        "url": "https://dev.ingonyama.com/api/cpp/lattice/pqc_ml_kem",
+        "type": "开源",
+        "tags": [
+          "Ingonyama",
+          "ML-KEM",
+        ],
+        "summary": {
+          zh: "@Ingo_zk 发布了ML-KEM的C++ API实现，支持Kyber512、Kyber768和Kyber1024参数集，提供密钥生成、封装和解封装功能，优化了后量子密码学的应用。",
+          en: "@Ingo_zk released the C++ API implementation of ML-KEM, supporting Kyber512, Kyber768, and Kyber1024, providing key generation, encapsulation, and decapsulation functions, optimizing the application of post-quantum cryptography."
+        }
+      }
+    ],
   }
 ];
 const others = [
