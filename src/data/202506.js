@@ -380,6 +380,43 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-17",
+    projects: [
+      {
+        "name": "Spartan: A Framework for Building zkSNARK Schemes",
+        "url": "https://alinush.github.io/spartan",
+        "type": "博客",
+        "tags": [
+          "alinush",
+          "Spartan",
+          "sumcheck",
+        ],
+        "summary": {
+          zh: "alinush在{{name}}博客中介绍了Spartan框架，用于构建基于sumcheck协议和稀疏多线性多项式承诺方案的zkSNARK方案，直接处理R1CS矩阵，优化证明时间。",
+          en: "alinush introduced the Spartan framework in blog{{name}}, a framework for building zkSNARK schemes based on sumcheck protocol and sparse multilinear PCS, directly processing R1CS matrix, optimizing proving time."
+        },
+        "notes": {
+          zh: [
+            "基于 sumcheck 和稀疏 MLE PCS，直接处理 R1CS 矩阵",
+            "证明时间与矩阵非零项数线性相关，优于传统 QAP 方案",
+            "核心优势包括可公开委托计算和线性时间证明生成",
+            "通过编译器实现稀疏矩阵高效处理，降低存储和计算开销",
+            "验证流程依赖两次 sumcheck 和稀疏 MLE 的随机点求值",
+            "适用于稀疏/结构化电路，部分计算可转移至验证者"
+          ],
+          en: [
+            "Based on sumcheck and sparse MLE PCS, directly processing R1CS matrix",
+            "Proof time linearly related to non-zero matrix items, superior to traditional QAP scheme",
+            "Core advantages include public delegation of computation and linear time proof generation",
+            "Efficient sparse matrix processing through compiler, reducing storage and computational overhead",
+            "Verification process depends on two sumcheck and sparse MLE random point evaluations",
+            "Suitable for sparse/structured circuits, some calculations can be transferred to verifier"
+          ]
+        }
+      }
+    ],
   }
 ];
 const others = [
