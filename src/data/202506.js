@@ -417,6 +417,41 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-18",
+    projects: [
+      {
+        "name": "The Hyli testnet is live",
+        "url": "https://blog.hyli.org/the-hyli-testnet-is-live/",
+        "type": "新闻",
+        "tags": [
+          "Hyli",
+          "testnet",
+          "Autobahn",
+          "Noir"
+        ],
+        "summary": {
+          zh: "@hyli_org 团队宣布其测试网上线，分为学习和构建两个阶段，旨在通过游戏化体验展示ZK证明的可能性，并邀请开发者参与构建应用。",
+          en: "@hyli_org team announced the launch of its testnet, divided into learning and building stages, aiming to demonstrate the possibilities of ZK proofs through gamified experiences and inviting developers to participate in building applications."
+        }
+      },
+      {
+        "name": "Speeding Up Sum-Check Proving",
+        "url": "https://eprint.iacr.org/2025/1117",
+        "type": "论文",
+        "tags": [
+          "Suyash Bagad",
+          "Justin Thaler",
+          "sum-check",
+          "Jolt"
+        ],
+        "summary": {
+          zh: "Bagad等人在{{name}}论文中提出了两种优化方法，显著加速了sum-check证明过程，特别是在Jolt zkVM等应用中，实现了2-3倍的性能提升。",
+          en: "Bagad et al. proposed two optimization methods in paper{{name}}, significantly accelerating the sum-check proving process, particularly in applications such as Jolt zkVM, achieving a 2-3x performance boost."
+        }
+      }
+    ],
   }
 ];
 const others = [

@@ -1,0 +1,12 @@
+🚀zkDaily Frontier Tracker 2025-06-18 Wednesday
+
+📰 The Hyli testnet is live
+- https://blog.hyli.org/the-hyli-testnet-is-live/
+- @hyli_org
+
+📄 Speeding Up Sum-Check Proving
+- https://eprint.iacr.org/2025/1117
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/18.html
+🪶 Collected by @icerdesign

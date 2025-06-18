@@ -1,0 +1,12 @@
+🚀zkDaily 前沿热点追踪 2025-06-18 星期三
+
+📰 The Hyli testnet is live
+- https://blog.hyli.org/the-hyli-testnet-is-live/
+- @hyli_org
+
+📄 Speeding Up Sum-Check Proving
+- https://eprint.iacr.org/2025/1117
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/06/18.html
+🪶 由 @icerdesign 收集
