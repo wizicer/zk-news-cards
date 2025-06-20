@@ -452,6 +452,39 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-20",
+    projects: [
+      {
+        "name": "Benchmarking zkVMs: Current State and Prospects",
+        "url": "https://fenbushicapital.medium.com/benchmarking-zkvms-current-state-and-prospects-ba859b44f560",
+        "type": "博客",
+        "tags": [
+          {zh: "分布式资本", en: "Fenbushi Capital"},
+          "zkVM",
+          "Benchmark",
+        ],
+        "summary": {
+          zh: "@fenbushi Capital在{{name}}博客中讨论了zkVM的当前状态和前景，包括对八种zkVM实现的标准化测试和性能评估。",
+          en: "@fenbushi Capital discussed the current state and prospects of zkVM in blog{{name}}, including standardized testing and performance evaluation of eight zkVM implementations."
+        }
+      },
+      {
+        "name": "Jordi Baylina: Independent ZisK with 7 devs, Remain Polygon co-founder / advisor",
+        "url": "https://x.com/jbaylina/status/1935307486421987576",
+        "type": "新闻",
+        "tags": [
+          "Jordi Baylina",
+          "Polygon",
+          "ZisK",
+        ],
+        "summary": {
+          zh: "@jbaylina 宣布与7名核心开发者从Polygon分拆，独立推进ZisK项目，同时仍担任Polygon联合创始人及顾问，主要精力转向 @ziskvm。",
+          en: "@jbaylina announced the spin-off from Polygon with a core team of 7 developers to continue the ZisK project independently, remaining co-founder and advisor at Polygon, and shifting main focus to @ziskvm."
+        }
+      }
+    ],
   }
 ];
 const others = [
