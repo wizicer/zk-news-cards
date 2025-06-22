@@ -485,7 +485,43 @@ export default [
         }
       }
     ],
-  }
+  },
+  {
+    date: "2025-06-22",
+    projects: [
+      {
+        "name": "zkPDF: Unlocking Verifiable Data in the World's Most Popular Document Format",
+        "url": "https://pse.dev/blog/zkpdf-unlocking-verifiable-data",
+        "type": "博客",
+        "tags": [
+          "PSE",
+          "zkpdf",
+        ],
+        "summary": {
+          zh: "@PrivacyScaling 团队在{{name}}博客中介绍了zkPDF，这是一套允许从数字签名PDF中证明事实而不泄露整个文档的零知识电路和工具。",
+          en: "@PrivacyScaling team introduced zkPDF in blog{{name}}, a circuit and toolset that allows proving facts about a PDF without disclosing the entire document."
+        },
+        "notes": {
+          zh: [
+            "zkPDF：用零知识证明验证PDF内容，无需公开全文",
+            "技术突破：解决PDF大文件哈希和复杂解析的ZK验证难题",
+            "方案：基于SP1 ZKVM和自研Rust解析器，支持多语言",
+            "性能：百KB级PDF验证30-50秒，已可实用",
+            "应用：身份文件、电子合同、银行证明等隐私验证",
+            "未来：客户端轻量化、TEE加速、更多功能支持"
+          ],
+          en: [
+            "zkPDF: Verify PDF content with ZK proofs without full disclosure",
+            "Breakthrough: Solves ZK verification challenges for large PDFs",
+            "Solution: SP1 ZKVM + custom Rust parser with multilingual support",
+            "Performance: 30-50s verification for 100KB+ PDFs, production-ready",
+            "Use cases: ID docs, e-contracts, bank statements - privacy-preserving verification",
+            "Future: Client-side proving, TEE acceleration, extended features"
+          ]
+        }
+      },
+    ],
+  },
 ];
 const others = [
 ];
