@@ -522,6 +522,38 @@ export default [
       },
     ],
   },
+  {
+    date: "2025-06-23",
+    projects: [
+      {
+        "name": "GKR: Sumcheck's best friend",
+        "url": "https://blog.electisec.com/gkr",
+        "type": "博客",
+        "tags": [
+          "ElectiSec",
+          "GKR",
+          "Sumcheck",
+        ],
+        "summary": {
+          zh: "ElectiSec在{{name}}博客中讨论了GKR协议及其设计思路，作者提供了实践代码，帮助读者更好地理解GKR协议的工作原理。",
+          en: "ElectiSec discussed the GKR protocol and its design principles in blog{{name}}, providing practical code to help readers better understand how the GKR protocol works."
+        }
+      },
+      {
+        "name": "How @Aptos confidential transfers work",
+        "url": "https://x.com/alinush407/status/1930653240800018448",
+        "type": "新闻",
+        "tags": [
+          "Aptos Labs",
+          "Confidential Transfers",
+        ],
+        "summary": {
+          zh: "@alinush407 介绍了 @Aptos 的机密转账功能，允许用户加密余额和转账金额，仅发送方、接收方和指定审计员可见，利用加法同态加密技术更新加密余额。",
+          en: "@alinush407 introduced @Aptos' confidential transfers, allowing users to encrypt balances and transfer amounts, making them visible only to the sender, receiver, and specified auditors, using additive homomorphic encryption to update encrypted balances."
+        }
+      }
+    ],
+  }
 ];
 const others = [
 ];
