@@ -1,0 +1,12 @@
+🚀zkDaily 前沿热点追踪 2025-06-24 星期二
+
+📄 Understanding Lasso: A Novel Lookup Argument Protocol
+- https://eprint.iacr.org/2025/1169
+
+📰 Major RISC-V zkVM breakthrough!
+- https://x.com/eth_proofs/status/1937083157519458687
+- @ziskvm
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/06/24.html
+🪶 由 @icerdesign 收集

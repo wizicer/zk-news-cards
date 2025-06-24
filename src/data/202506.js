@@ -553,7 +553,40 @@ export default [
         }
       }
     ],
-  }
+  },
+  {
+    date: "2025-06-24",
+    projects: [
+      {
+        "name": "Understanding Lasso: A Novel Lookup Argument Protocol",
+        "url": "https://eprint.iacr.org/2025/1169",
+        "type": "论文",
+        "tags": [
+          "Oleg Fomenko",
+          "Lasso",
+          "Jolt",
+        ],
+        "summary": {
+          zh: "Fomenko等人在{{name}}论文中提供了对Lasso查找参数协议的深入和易于理解的概述，该协议是Jolt ZK-VM的基础组件，涵盖了sum-check协议、多线性多项式及其扩展、Spark承诺等核心原理。",
+          en: "Fomenko et al. provided a deep and easy-to-understand overview of the Lasso protocol in paper{{name}}, which is the foundation component of Jolt ZK-VM, covering sum-check protocols, multilinear polynomials and their extensions, Spark commitments, etc."
+        }
+      },
+      {
+        "name": "Major RISC-V zkVM breakthrough!",
+        "url": "https://x.com/eth_proofs/status/1937083157519458687",
+        "type": "新闻",
+        "tags": [
+          "@ziskvm",
+          "zkVM",
+          "AOT compilation",
+        ],
+        "summary": {
+          zh: "@ziskvm 团队实现了RISC-V zkVM的重大突破，通过AOT编译技术将trace生成速度提升至1.5GHz，比现有技术快10倍，且项目完全开源。",
+          en: "@ziskvm team achieved a major breakthrough in RISC-V zkVM, significantly improving trace generation speed to 1.5GHz, 10x faster than existing technology, and the project is fully open source."
+        },
+      }
+    ],
+  },
 ];
 const others = [
 ];

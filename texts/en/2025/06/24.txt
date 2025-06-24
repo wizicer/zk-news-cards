@@ -1,0 +1,12 @@
+🚀zkDaily Frontier Tracker 2025-06-24 Tuesday
+
+📄 Understanding Lasso: A Novel Lookup Argument Protocol
+- https://eprint.iacr.org/2025/1169
+
+📰 Major RISC-V zkVM breakthrough!
+- https://x.com/eth_proofs/status/1937083157519458687
+- @ziskvm
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/24.html
+🪶 Collected by @icerdesign
