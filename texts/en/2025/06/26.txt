@@ -1,0 +1,9 @@
+🚀zkDaily Frontier Tracker 2025-06-26 Thursday
+
+📝 Circom Pitfalls: Common Anti-Patterns and How to Avoid Them
+- https://blog.zksecurity.xyz/posts/circom-pitfalls-1/
+- @zksecurityXYZ
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/26.html
+🪶 Collected by @icerdesign

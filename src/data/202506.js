@@ -587,6 +587,43 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-06-26",
+    projects: [
+      {
+        "name": "Circom Pitfalls: Common Anti-Patterns and How to Avoid Them",
+        "url": "https://blog.zksecurity.xyz/posts/circom-pitfalls-1/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          "Circom",
+          "Security",
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 在{{name}}博客中讨论了Circom编程中的常见反模式，重点介绍了断言(assert)不添加约束、提示(<--)不受约束以及有限域算术导致的别名攻击等问题。",
+          en: "@zksecurityXYZ discussed common anti-patterns in Circom programming in blog{{name}}, focusing on non-constraint operator assert and <--, and alias attacks caused by finite field arithmetic."
+        },
+        "notes": {
+          zh: [
+            "assert不添加R1CS约束，仅用于模板参数的安全检查。",
+            "使用`<--`操作符时，必须手动添加约束以防止安全漏洞。",
+            "有限域算术可能导致别名攻击，特别是在编码数字时。",
+            "Bits2Num_strict和Num2Bits_strict可以用来防止别名攻击。",
+            "开发者应避免将assert用于信号，而应仅用于模板参数。",
+            "分离计算和约束可提高性能，但须确保所有计算都被适当约束。"
+          ],
+          en: [
+            "assert would not generate constraints, only used for template parameter security checks.",
+            "Manual constraints must be added when using the <-- operator to prevent security vulnerabilities.",
+            "Finite field arithmetic may cause alias attacks, especially when encoding numbers.",
+            "Bits2Num_strict and Num2Bits_strict can be used to prevent alias attacks.",
+            "Developers should avoid using assert for signals and should only use it for template parameters.",
+            "Separating computation and constraints can improve performance, but all calculations must be appropriately constrained."
+          ]
+        }
+      }
+    ],
+  }
 ];
 const others = [
 ];
