@@ -1,0 +1,12 @@
+🚀zkDaily 前沿热点追踪 2025-06-27 星期五
+
+📝 Solana Phantom Challenge Bug
+- https://blog.zksecurity.xyz/posts/solana-phantom-challenge-bug/
+- @zksecurityXYZ
+
+📝 Folding Schemes in the Lattice Setting: Pay-per-bit and NTTs
+- https://blog.icme.io/folding-schemes-in-the-lattice-setting-pay-per-bit-and-ntts/?ref=icme-newsletter
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/06/27.html
+🪶 由 @icerdesign 收集

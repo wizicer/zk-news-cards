@@ -1,0 +1,12 @@
+🚀zkDaily Frontier Tracker 2025-06-27 Friday
+
+📝 Solana Phantom Challenge Bug
+- https://blog.zksecurity.xyz/posts/solana-phantom-challenge-bug/
+- @zksecurityXYZ
+
+📝 Folding Schemes in the Lattice Setting: Pay-per-bit and NTTs
+- https://blog.icme.io/folding-schemes-in-the-lattice-setting-pay-per-bit-and-ntts/?ref=icme-newsletter
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/27.html
+🪶 Collected by @icerdesign

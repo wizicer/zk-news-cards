@@ -623,6 +623,39 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-06-27",
+    projects: [
+      {
+        "name": "Solana Phantom Challenge Bug",
+        "url": "https://blog.zksecurity.xyz/posts/solana-phantom-challenge-bug/",
+        "type": "博客",
+        "tags": [
+          "zkSecurity",
+          "Solana",
+          "ElGamal Proof",
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 团队在博客{{name}}中详细分析了Solana的ZK ElGamal Proof Program中的一个关键安全性漏洞，该漏洞允许恶意证明者伪造sigma OR证明，绕过费用验证。",
+          en: "@zksecurityXYZ team analyzed a critical security vulnerability in Solana's ZK ElGamal Proof Program in blog{{name}}, allowing malicious provers to forge sigma OR proofs, bypassing fee verification."
+        }
+      },
+      {
+        "name": "Folding Schemes in the Lattice Setting: Pay-per-bit and NTTs",
+        "url": "https://blog.icme.io/folding-schemes-in-the-lattice-setting-pay-per-bit-and-ntts/?ref=icme-newsletter",
+        "type": "博客",
+        "tags": [
+          "ICME",
+          "Lattice",
+          "Ajtai commitments",
+        ],
+        "summary": {
+          zh: "ICME在{{name}}博客中探讨了基于格的折叠方案LatticeFold和Neo，比较了它们在处理Ajtai承诺和避免NTTs方面的不同策略，以及Neo如何实现按位付费的承诺方案。",
+          en: "ICME discussed folding schemes in the lattice setting in blog{{name}}, comparing LatticeFold and Neo, and how Neo implements a pay-per-bit commitment scheme."
+        }
+      }
+    ],
   }
 ];
 const others = [
