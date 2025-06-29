@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-06-29 Sunday
+
+📄 Parasol Compiler: Pushing the Boundaries of FHE Program Efficiency
+- https://eprint.iacr.org/2025/1144
+
+📄 HELM: Navigating Homomorphic Encryption through Gates and Lookup Tables
+- https://eprint.iacr.org/2023/1382
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/06/29.html
+🪶 Collected by @icerdesign

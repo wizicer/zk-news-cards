@@ -656,7 +656,39 @@ export default [
         }
       }
     ],
-  }
+  },
+  {
+    date: "2025-06-29",
+    projects: [
+      {
+        "name": "Parasol Compiler: Pushing the Boundaries of FHE Program Efficiency",
+        "url": "https://eprint.iacr.org/2025/1144",
+        "type": "论文",
+        "tags": [
+          "Rick Weber",
+          { en: "FHE", zh: "全同态加密" },
+          { en: "Compilers", zh: "编译器" },
+        ],
+        "summary": {
+          zh: "Weber等人在{{name}}论文中提出了Parasol编译器，旨在使非专家开发者也能高效利用FHE技术，通过自定义ISA和低级库实现，显著提升运行时间和程序大小。",
+          en: "Weber et al. proposed the Parasol compiler in paper{{name}}, aiming to enable non-expert developers to efficiently utilize FHE technology, through custom ISA and low-level libraries, significantly improving runtime and program size."
+        },
+      },
+      {
+        "name": "HELM: Navigating Homomorphic Encryption through Gates and Lookup Tables",
+        "url": "https://eprint.iacr.org/2023/1382",
+        "type": "论文",
+        "tags": [
+          "Charles Gouert",
+          { en: "Homomorphic Encryption", zh: "同态加密" },
+        ],
+        "summary": {
+          zh: "Gouert等人在{{name}}论文中提出了HELM框架，用于通过同态加密保护数据处理隐私。HELM能够将硬件描述语言（如Verilog）编写的程序自动转换为等效的同态电路，支持三种加密评估模式，显著提升了性能。",
+          en: "Gouert et al. proposed the HELM framework in paper{{name}}, used to protect data processing privacy through homomorphic encryption. HELM automatically converts programs written in hardware description languages (such as Verilog) into equivalent homomorphic circuits, supporting three encryption evaluation modes, significantly improving performance."
+        },
+      }
+    ],
+  },
 ];
 const others = [
 ];

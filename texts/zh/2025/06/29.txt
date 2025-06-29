@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-06-29 星期日
+
+📄 Parasol Compiler: Pushing the Boundaries of FHE Program Efficiency
+- https://eprint.iacr.org/2025/1144
+
+📄 HELM: Navigating Homomorphic Encryption through Gates and Lookup Tables
+- https://eprint.iacr.org/2023/1382
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/06/29.html
+🪶 由 @icerdesign 收集
