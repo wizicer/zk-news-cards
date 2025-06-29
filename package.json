@@ -21,23 +21,23 @@
     "cast:all": "npm run generate:all && npm run notify -- -l zh && npm run notify -- -l en"
   },
   "dependencies": {
-    "@vue/server-renderer": "^3.3.11",
-    "axios": "^1.8.2",
-    "commander": "^11.1.0",
+    "@vue/server-renderer": "^3.5.17",
+    "axios": "^1.10.0",
+    "commander": "^14.0.0",
     "crypto": "^1.0.1",
-    "katex": "^0.16.21",
-    "marked": "^15.0.7",
+    "katex": "^0.16.22",
+    "marked": "^16.0.0",
     "node-telegram-bot-api": "^0.66.0",
     "qrcode.vue": "^3.6.0",
-    "vue": "^3.3.11",
-    "vue-router": "^4.5.0"
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.6.2",
-    "dotenv": "^16.4.7",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "dotenv": "^17.0.0",
     "he": "^1.2.0",
-    "puppeteer": "^23.10.1",
-    "rimraf": "^5.0.5",
-    "vite": "^5.4.14"
+    "puppeteer": "^24.11.1",
+    "rimraf": "^6.0.1",
+    "vite": "^7.0.0"
   }
 }
