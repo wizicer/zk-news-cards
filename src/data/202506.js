@@ -689,6 +689,43 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-06-30",
+    projects: [
+      {
+        "name": "Does digital ID have risks even if it's ZK-wrapped?",
+        "url": "https://vitalik.eth.limo/general/2025/06/28/zkid.html",
+        "type": "博客",
+        "tags": [
+          "VitalikButerin",
+          "Digital ID",
+          "Security"
+        ],
+        "summary": {
+          zh: "@VitalikButerin 在{{name}}博文中探讨了ZK包装的数字ID系统存在的风险，包括隐私泄露、胁迫脆弱性和错误等问题，同时提出了多元化身份的解决方案。",
+          en: "@VitalikButerin discussed the risks of ZK-wrapped digital IDs in blog{{name}}, including privacy leaks, coercion vulnerabilities, and errors, and proposed a multi-identity solution."
+        },
+        "notes": {
+          zh: [
+            "ZK包装的数字ID系统在隐私保护方面有优势但存在风险。",
+            "多元化身份可能是解决这类系统问题的现实方案。",
+            "ZK包装的数字ID系统可能限制用户的匿名性。",
+            "胁迫和错误是ZK包装数字ID系统面临的主要非隐私风险。",
+            "财富证明作为反女巫机制在某些情况下不足。",
+            "基本收入类和治理类场景需要身份解决方案以避免排斥性。"
+          ],
+          en: [
+            "ZK-wrapped digital IDs have privacy advantages but pose risks.",
+            "Multi-identity solutions may be a realistic approach to address the risks of such systems.",
+            "ZK-wrapped digital IDs may limit user anonymity.",
+            "Coercion and errors are the main non-privacy risks of ZK-wrapped digital IDs.",
+            "Proof of wealth as an anti-sybil mechanism is insufficient in some cases.",
+            "UBI-like and governance-like situations need identity solutions to avoid exclusivity."
+          ]
+        }
+      }
+    ],
+  }
 ];
 const others = [
 ];
