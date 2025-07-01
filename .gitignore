@@ -33,6 +33,7 @@ dist-ssr
 *.sln
 *.sw?
 
-screenshots/
+screenshots/*
+!screenshots/example*-*.png
 pdfs/
 .env
