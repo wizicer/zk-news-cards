@@ -38,6 +38,42 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-07-03",
+    projects: [
+      {
+        "name": "Unboxing Indistinguishability Obfuscation: A Practical Guide",
+        "url": "https://machina-io.com/posts/unboxing.html",
+        "type": "博客",
+        "tags": [
+          "Enrico Bottazzi",
+          "iO",
+        ],
+        "summary": {
+          zh: "Enrico Bottazzi等人在博客{{name}}中分享了关于不可区分性混淆(iO)的实践指南，包括从基础概念到构建非交互条件签名生成器的全过程。",
+          en: "Enrico Bottazzi et al. shared a practical guide to indistinguishability obfuscation (iO) in blog{{name}}, covering the entire process from basic concepts to building non-interactive conditional signature printer."
+        },
+        "notes": {
+          zh: [
+            "iO被视为函数加密(FE)的扩展，可在密文中动态注入输入。",
+            "构建iO的核心原语包括矩阵乘法、BGG+编码和格陷门。",
+            "当前iO构造的主要效率瓶颈在于递归使用FE。",
+            "通过非黑盒方式使用FE可以替换递归FE为简单的矩阵乘法，提高效率。",
+            "iO技术有望解锁之前不可能的应用场景。",
+            "文章旨在填补iO领域高深技术论文与初学者之间的空白。"
+          ],
+          en: [
+            "iO is considered an extension of functional encryption (FE), allowing dynamic inputs to be injected into ciphertexts.",
+            "The core primitives for building iO include matrix multiplication, BGG+ encoding, and lattice gates.",
+            "The main efficiency bottleneck in current iO constructions is the recursive use of FE.",
+            "Using FE in a non-black-box way can replace recursive FE with simple matrix multiplication, improving efficiency.",
+            "iO technology is expected to unlock previously impossible application scenarios.",
+            "This blog aims to be beginner-friendly."
+          ]
+        }
+      }
+    ],
+  }
 ];
 const others = [
 ];
