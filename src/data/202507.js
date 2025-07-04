@@ -73,6 +73,39 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-07-04",
+    projects: [
+      {
+        "name": "Proof of Geolocation",
+        "url": "https://x.com/aurobindo_arman/status/1940513543423668618",
+        "type": "开源",
+        "tags": [
+          "Arman Aurobindo",
+          {zh: "地理位置", en: "Geolocation"},
+          "Mobile Proving"
+        ],
+        "summary": {
+          zh: "@aurobindo_arman 使用 @zkmopro 和 @ZKVProtocol 构建了一个地理位置证明开源项目，支持在不泄露GPS坐标的情况下证明距离参考点的范围。",
+          en: "@aurobindo_arman used @zkmopro and @ZKVProtocol to build a geolocation proof open-source project, supporting distance proofs without disclosing GPS coordinates."
+        }
+      },
+      {
+        "name": "Roc Camera: Capture verifiably real moments in the age of AI",
+        "url": "https://roc.camera/",
+        "type": "新闻",
+        "tags": [
+          "Roc Camera",
+          {zh: "摄影", en: "Photography"},
+          "TEE"
+        ],
+        "summary": {
+          zh: "Roc Camera推出了一款能够捕捉可验证真实瞬间的相机，通过结合传感器、设备端零知识证明和防篡改的TEE环境，确保照片的真实性。",
+          en: "Roc Camera launched a camera that can capture verifiably real moments, combining sensors, device-end zero-knowledge proofs, and tamper-proof TEE environments to ensure the authenticity of photos."
+        }
+      },
+    ],
   }
 ];
 const others = [
