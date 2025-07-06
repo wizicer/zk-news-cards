@@ -106,6 +106,38 @@ export default [
         }
       },
     ],
+  },
+  {
+    date: "2025-07-06",
+    projects: [
+      {
+        "name": "Opening up ZKP technology to promote privacy in age assurance",
+        "url": "https://blog.google/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/",
+        "type": "开源",
+        "tags": [
+          "Alan Stapelberg",
+          "Google",
+          "Age Assurance",
+        ],
+        "summary": {
+          zh: "Google开源了其ZKP库，旨在支持欧盟年龄验证，使开发者和企业能够更容易地构建隐私增强应用和数字ID解决方案。",
+          en: "Google open-sourced its ZKP library, aiming to support age verification in the EU, making it easier for developers and companies to build privacy-enhancing applications and digital ID solutions."
+        }
+      },
+      {
+        "name": "Exploring Onchain Identity with ZK: A Discussion with Self and Celo",
+        "url": "https://zeroknowledge.fm/podcast/366/",
+        "type": "视频",
+        "tags": [
+          "Zero Knowledge Podcast",
+          "Identity",
+        ],
+        "summary": {
+          zh: "ZK Podcast第366集邀请 @selfprotocol 的Florent Tavernier和 @Celo 的Marek Olszewski，探讨了如何利用ZK技术将身份上链、Sybil保护机制及OpenPassport的起源。",
+          en: "ZK Podcast episode 366 invited @selfprotocol 's Florent Tavernier and @Celo 's Marek Olszewski to discuss how to use ZK technology to on-chain identity, Sybil protection mechanism, and the origin of OpenPassport."
+        }
+      }
+    ],
   }
 ];
 const others = [
