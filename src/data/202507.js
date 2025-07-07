@@ -138,6 +138,36 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-07-07",
+    projects: [
+      {
+        "name": "ZK Hack Berlin Wraps Up Successfully",
+        "url": "https://x.com/__zkhack__/status/1937497743464788015",
+        "type": "活动",
+        "tags": [
+          "@__zkhack__",
+          "ZK Hack",
+        ],
+        "summary": {
+          zh: "@__zkhack__ 在柏林成功举办了第5届ZK Hack活动，作为BerBlockWeek的一部分，活动圆满结束，在这个推上做了总结。",
+          en: "@__zkhack__ held the 5th ZK Hack in Berlin as part of BerBlockWeek, and the event was successfully concluded with a summary on this tweet."
+        },
+        "notes": {
+          zh: [
+            "ZeroHour（冠军）：在仅有64KB内存的PineTime智能手表上实现客户端零知识证明生成，突破硬件限制，由@leonardoalt和@georgwiese开发",
+            "ZK-AntiCheat（亚军）：基于NoirLang和Aztec Network开发的首个隐私保护反作弊引擎，将游戏内存数据形成默克尔树并证明，由@pop_eax开发",
+            "God's Hand（季军）：利用NoirLang和ZKPassport构建的救灾透明度解决方案，解决灾害救援中的问责问题，由@gabrielaxyeth开发"
+          ],
+          en: [
+            "ZeroHour (1st): Generates ZK proofs on a 64KB smartwatch, breaking hardware limits (by @leonardoalt & @georgwiese)",
+            "ZK-AntiCheat (2nd): First privacy-preserving anti-cheat engine using NoirLang/Aztec (by @pop_eax)",
+            "God's Hand (3rd): ZK solution for transparent disaster relief using NoirLang/ZKPassport (by @gabrielaxyeth)"
+          ]
+        }
+      }
+    ],
   }
 ];
 const others = [
