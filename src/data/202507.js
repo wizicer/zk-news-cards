@@ -168,6 +168,43 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-07-08",
+    projects: [
+      {
+        "name": "SnarkSentinel: AI-Powered ZK Auditing Tool",
+        "url": "https://blog.zksecurity.xyz/posts/snarksentinel/",
+        "type": "博客",
+        "tags": [
+          "zkSecurity",
+          "Auditing",
+          "Circom",
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 团队分享了他们开发的AI驱动的ZK审计工具SnarkSentinel，探讨了AI在发现零知识电路和应用中的漏洞方面的潜力，以及人类审计师与AI合作的未来。",
+          en: "@zksecurityXYZ team shared their AI-powered ZK audit tool SnarkSentinel, discussing the potential of AI in identifying vulnerabilities in ZK circuits and applications, and the future of human auditors working with AI."
+        },
+        "notes": {
+          zh: [
+            "AI在审计ZK电路中的应用展示了识别已知漏洞的潜力。",
+            "SnarkSentinel工具在比较规范与实现方面表现出色。",
+            "AI审计工具面临识别低级别加密漏洞的挑战。",
+            "使用Circom语言的代码库是SnarkSentinel的首个目标。",
+            "团队采用了RAG和代理技术来提高AI的审计效率。",
+            "未来的审计可能会更加依赖人类与AI的合作。"
+          ],
+          en: [
+            "AI in ZK circuit auditing shows potential for identifying known vulnerabilities.",
+            "SnarkSentinel performs well in comparing specifications and implementations.",
+            "AI audit tools face challenges in identifying low-level encryption vulnerabilities.",
+            "The codebase using Circom language is SnarkSentinel's first target.",
+            "The team adopted RAG and proxy technologies to improve AI audit efficiency.",
+            "Future audits may increasingly rely on human-AI collaboration."
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [
