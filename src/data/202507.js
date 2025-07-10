@@ -205,6 +205,40 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-07-10",
+    projects: [
+      {
+        "name": "Halo2 Query Collision Bug",
+        "url": "https://blog.zksecurity.xyz/posts/halo2-query-collision/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          "Halo2",
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 在博客{{name}}中揭示了Halo2中的一个重要安全性问题——查询碰撞漏洞，影响了包括Zcash和PSE在内的多个实现，并讨论了其修复方法。",
+          en: "@zksecurityXYZ revealed an important security issue in Halo2 -- Query Collision Bug, affecting multiple implementations including Zcash and PSE, and discussed its fix.",
+        },
+        "notes": {
+          zh: [
+            "查询碰撞漏洞允许恶意证明者通过重复查询同一多项式在同一评估点来伪造证明。",
+            "该漏洞影响多个广泛使用的Halo2版本，包括Zcash和PSE。",
+            "修复方法包括在多点开放参数中检测并拒绝查询碰撞。",
+            "目前没有已知的生产电路受到此漏洞的影响。",
+            "相关团队已经迅速响应并修复了此漏洞。"
+          ],
+          en: [
+            "It allows malicious provers to forge proofs by repeatedly querying the same polynomial at the same evaluation point.",
+            "The vulnerability affects multiple widely used Halo2 versions, including Zcash and PSE.",
+            "Fix methods include detecting and rejecting query collisions in multi-point opening parameters.",
+            "Currently, no known production circuits are affected by this vulnerability.",
+            "The relevant teams have quickly responded and fixed this vulnerability."
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [

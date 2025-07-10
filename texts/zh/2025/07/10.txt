@@ -1,0 +1,9 @@
+🚀zkDaily 前沿热点追踪 2025-07-10 星期四
+
+📝 Halo2 Query Collision Bug
+- https://blog.zksecurity.xyz/posts/halo2-query-collision/
+- @zksecurityXYZ
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/07/10.html
+🪶 由 @icerdesign 收集
