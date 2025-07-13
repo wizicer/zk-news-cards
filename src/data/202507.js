@@ -239,6 +239,36 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-07-13",
+    projects: [
+      {
+        "name": "Hobbit: Space-Efficient zkSNARK with Optimal Prover Time",
+        "url": "https://eprint.iacr.org/2025/1214",
+        "type": "论文",
+        "tags": [
+          "Christodoulos Pappas",
+        ],
+        "summary": {
+          zh: "港科大的Pappas和Papadopoulos在{{name}}论文中提出了Hobbit，一种空间高效的zkSNARK，实现了证明者时间的最优性$O(|C|)$，同时保持透明性和后量子安全性。",
+          en: "Christodoulos Pappas and Dimitrios Papadopoulos proposed Hobbit, a space-efficient zkSNARK, achieving optimal prover time $O(|C|)$, while maintaining transparency and post-quantum security."
+        }
+      },
+      {
+        "name": "Linear Prover IOPs in Log Star Rounds",
+        "url": "https://eprint.iacr.org/2025/1269",
+        "type": "论文",
+        "tags": [
+          "Noor Athamnah",
+          "IOP",
+        ],
+        "summary": {
+          zh: "Athamnah等人在{{name}}论文中提出了一种针对布尔电路的高效线性证明者IOP，仅需$O(\\log^*(S))$轮，显著降低了证明者的计算瓶颈。",
+          en: "Athamnah et al. proposed a linear prover IOP for Boolean circuits in their paper {{name}}, achieving $O(\\log^*(S))$ rounds, significantly reducing the prover's computational bottleneck."
+        }
+      }
+    ]
   }
 ];
 const others = [
