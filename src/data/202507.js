@@ -269,6 +269,37 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-07-15",
+    projects: [
+      {
+        "name": "Cryptography 10 Years Later: Obfuscation, Proof Systems, and Secure Computation",
+        "url": "https://simons.berkeley.edu/workshops/obfuscation/schedule",
+        "type": "视频",
+        "tags": [
+          "Simons Institute",
+          "Obfuscation",
+        ],
+        "summary": {
+          zh: "Simons Institute举办了关于混淆、证明系统和安全计算的研讨会，聚焦于混淆的最新进展及其应用。链接中有视频回放。",
+          en: "Simons Institute held a workshop on obfuscation, proof systems, and secure computation, focusing on the latest progress and applications of obfuscation."
+        },
+      },
+      {
+        "name": "World-leaders in Cryptography: Victor S Miller",
+        "url": "https://open.spotify.com/episode/2sDHSTIck9so4IctEkSTDB",
+        "type": "视频",
+        "tags": [
+          "ASecuritySite",
+          {zh: "椭圆曲线", en: "Elliptic Curve"},
+        ],
+        "summary": {
+          zh: "ASecuritySite Podcast发布了与Victor S Miller的访谈视频，讨论了他在计算数论、数据压缩和密码学领域的研究，包括椭圆曲线密码学的共同创造等成就。",
+          en: "ASecuritySite Podcast released an interview with Victor S Miller, discussing his research in computational number theory, data compression, and cryptography, including his joint creation of elliptic curve cryptography."
+        },
+      },
+    ]
   }
 ];
 const others = [
