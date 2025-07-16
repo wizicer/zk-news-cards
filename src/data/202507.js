@@ -300,6 +300,37 @@ export default [
         },
       },
     ]
+  },
+  {
+    date: "2025-07-16",
+    projects: [
+      {
+        "name": "A Fiat–Shamir Transformation From Duplex Sponges",
+        "url": "https://eprint.iacr.org/2025/536",
+        "type": "论文",
+        "tags": [
+          "Alessandro Chiesa",
+          "Fiat-Shamir",
+        ],
+        "summary": {
+          zh: "Chiesa等人在{{name}}论文中分析了基于理想置换的Fiat-Shamir变换变体，利用双工海绵范式最小化置换调用次数，为实践中的安全参数提供具体界限。",
+          en: "Chiesa et al. analyzed Fiat-Shamir transformations based on ideal permutations, using duplex sponge paradigms to minimize permutation calls, providing specific bounds for practical security parameters."
+        }
+      },
+      {
+        "name": "Let's Labrador",
+        "url": "https://hackmd.io/@Ingonyama/fast-labrador-prover",
+        "type": "博客",
+        "tags": [
+          "Ashutosh Marwah",
+          "lattice-based",
+        ],
+        "summary": {
+          zh: "Ashutosh Marwah在{{name}}博客中详细介绍了Labrador，这是一种基于格的zkSNARK协议，能够生成约50 kB的紧凑证明，并探讨了其在后量子签名聚合等任务中的应用。",
+          en: "Ashutosh Marwah introduced Labrador, a lattice-based zkSNARK protocol, in his blog {{name}}, which generates compact proofs of about 50 kB and discusses its applications in post-quantum signature aggregation and other tasks."
+        },
+      }
+    ]
   }
 ];
 const others = [

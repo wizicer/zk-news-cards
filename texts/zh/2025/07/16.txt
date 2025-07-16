@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-07-16 星期三
+
+📄 A Fiat–Shamir Transformation From Duplex Sponges
+- https://eprint.iacr.org/2025/536
+
+📝 Let's Labrador
+- https://hackmd.io/@Ingonyama/fast-labrador-prover
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/07/16.html
+🪶 由 @icerdesign 收集
