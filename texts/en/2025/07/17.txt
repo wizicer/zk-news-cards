@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-07-17 Thursday
+
+📄 Gödel in Cryptography: Effectively Zero-Knowledge Proofs for NP with No Interaction, No Setup, and Perfect Soundness
+- https://eprint.iacr.org/2025/1296
+
+📄 PlasmaFold: An Efficient and Scalable Layer 2 with Client-Side Proving
+- https://eprint.iacr.org/2025/1300
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/07/17.html
+🪶 Collected by @icerdesign

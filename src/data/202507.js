@@ -331,6 +331,38 @@ export default [
         },
       }
     ]
+  },
+  {
+    date: "2025-07-17",
+    projects: [
+      {
+        "name": "Gödel in Cryptography: Effectively Zero-Knowledge Proofs for NP with No Interaction, No Setup, and Perfect Soundness",
+        "url": "https://eprint.iacr.org/2025/1296",
+        "type": "论文",
+        "tags": [
+          "Rahul Ilango",
+          "Witness Indistinguishability",
+        ],
+        "summary": {
+          zh: "Rahul Ilango在{{name}}论文中提出了一种新的零知识证明放松定义，实现了无需交互、无需设置且具有完美可靠性的零知识证明，突破了Goldreich和Oren的经典不可能性结果。",
+          en: "Rahul Ilango proposed a new zero-knowledge proof relaxation definition in paper{{name}}, achieving interaction-free, setup-free, and perfect soundness zero-knowledge proofs, breaking the classic impossibility results of Goldreich and Oren."
+        }
+      },
+      {
+        "name": "PlasmaFold: An Efficient and Scalable Layer 2 with Client-Side Proving",
+        "url": "https://eprint.iacr.org/2025/1300",
+        "type": "论文",
+        "tags": [
+          "Pierre Daix-Moreux",
+          "Scalability",
+          "IVC",
+        ],
+        "summary": {
+          zh: "Pierre Daix-Moreux和Chengru Zhang在{{name}}论文中提出了PlasmaFold，一种新颖的L2设计，旨在通过混合架构克服现有L2设计的限制，实现高效和可扩展性。",
+          en: "Pierre Daix-Moreux and Chengru Zhang proposed PlasmaFold, a novel L2 design, in paper{{name}}, aiming to overcome the limitations of existing L2 designs through a hybrid architecture, achieving efficiency and scalability."
+        }
+      }
+    ]
   }
 ];
 const others = [

@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-07-17 星期四
+
+📄 Gödel in Cryptography: Effectively Zero-Knowledge Proofs for NP with No Interaction, No Setup, and Perfect Soundness
+- https://eprint.iacr.org/2025/1296
+
+📄 PlasmaFold: An Efficient and Scalable Layer 2 with Client-Side Proving
+- https://eprint.iacr.org/2025/1300
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/07/17.html
+🪶 由 @icerdesign 收集
