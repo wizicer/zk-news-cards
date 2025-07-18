@@ -363,6 +363,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-07-18",
+    projects: [
+      {
+        "name": "Fully Homomorphic Encryption and the Dawn of A Truly Private Internet",
+        "url": "https://bozmen.io/fhe",
+        "type": "博客",
+        "tags": [
+          "gene-spafford",
+          "FHE",
+          {zh: "抗量子", en: "Quantum-Resistant"}
+        ],
+        "summary": {
+          zh: "gene-spafford在博客{{name}}中探讨了全同态加密（FHE）技术，分析了其在实现真正私有互联网中的潜力，包括加密云计算、加密LLM推理和保密区块链智能合约等应用。",
+          en: "gene-spafford discussed fully homomorphic encryption (FHE) technology in blog{{name}}, analyzing its potential for realizing a truly private internet, including encrypted cloud computing, encrypted LLM inference, and confidential blockchain smart contracts."
+        },
+        "notes": {
+          zh: [
+            "FHE支持加密数据直接计算，结果与明文一致",
+            "当前FHE的计算开销是明文操作的1,000x到10,000x，存储开销是原文的40到1,000倍",
+            "FHE算法每年以8倍的速度进步",
+            "FHE是基于格的密码学，是抗量子的",
+            "Craig Gentry的自举技术是FHE能够实现无限次加法和乘法的关键",
+            "FHE的应用将使得基于用户数据收集的业务模型变得过时，实现'隐私默认'的互联网"
+          ],
+          en: [
+            "FHE supports encrypted data direct calculation, with results consistent with plaintext",
+            "Current FHE calculation overhead is 1,000x to 10,000x of plaintext operations, storage overhead is 40 to 1,000 times the original text",
+            "FHE algorithm improves 8 times per year",
+            "FHE is based on lattice cryptography, quantum-resistant",
+            "Craig Gentry's bootstrap technology is the key to FHE's ability to perform infinite addition and multiplication",
+            "FHE applications will make user data collection-based business models obsolete, achieving 'privacy default' internet"
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [
