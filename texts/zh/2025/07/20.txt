@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-07-20 星期日
+
+📝 Small Fields in Plonky3
+- https://hackmd.io/51_gB_3ZSBSZ4KafGGvkUw
+
+📝 A note on implementing subgroup membership using the Tate pairing
+- https://hackmd.io/@yelhousni/tate-subgroup
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/07/20.html
+🪶 由 @icerdesign 收集

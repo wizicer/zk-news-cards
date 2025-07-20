@@ -400,6 +400,38 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-07-20",
+    projects: [
+      {
+        "name": "Small Fields in Plonky3",
+        "url": "https://hackmd.io/51_gB_3ZSBSZ4KafGGvkUw",
+        "type": "博客",
+        "tags": [
+          "Angus Gruen",
+          "Plonky3",
+          {zh: "有限域", en: "Finite Fields"},
+        ],
+        "summary": {
+          zh: "Angus Gruen在{{name}}博客中简要介绍了Plonky3中的五种有限域，重点分析了三种31位域（BabyBear、KoalaBear、Mersenne31）的性能优势及适用场景。",
+          en: "Angus Gruen introduced five finite fields in Plonky3 in his blog {{name}}, analyzing the performance advantages and application scenarios of three 31-bit fields (BabyBear, KoalaBear, Mersenne31)."
+        },
+      },
+      {
+        "name": "A note on implementing subgroup membership using the Tate pairing",
+        "url": "https://hackmd.io/@yelhousni/tate-subgroup",
+        "type": "博客",
+        "tags": [
+          "Youssef El Housni",
+          "Tate pairing",
+        ],
+        "summary": {
+          zh: "Youssef El Housni在{{name}}博客中介绍了使用Tate配对实现椭圆曲线子群成员测试的高效方法，特别适用于小指数情况，显著提升了性能。",
+          en: "Youssef El Housni introduced an efficient method for implementing subgroup membership using the Tate pairing in his blog {{name}}, which is particularly suitable for small indices and significantly improves performance."
+        },
+      }
+    ]
   }
 ];
 const others = [
