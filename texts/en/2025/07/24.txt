@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-07-24 Thursday
+
+📄 Revisiting the IPA-sumcheck connection
+- https://eprint.iacr.org/2025/1325
+
+📝 Hyrax: A Polynomial Commitment Scheme with Sublinear Complexity
+- https://alinush.github.io/hyrax
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/07/24.html
+🪶 Collected by @icerdesign

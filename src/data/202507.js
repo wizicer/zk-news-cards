@@ -432,6 +432,39 @@ export default [
         },
       }
     ]
+  },
+  {
+    date: "2025-07-24",
+    projects: [
+      {
+        "name": "Revisiting the IPA-sumcheck connection",
+        "url": "https://eprint.iacr.org/2025/1325",
+        "type": "论文",
+        "tags": [
+          "Liam Eagen",
+          "Ariel Gabizon",
+          "sumcheck",
+        ],
+        "summary": {
+          zh: "Eagen和Gabizon在{{name}}论文中重新审视了IPA与sumcheck协议的联系，提出了改进多线性多项式承诺性能的方法，包括简化的Halo-style累积和减少验证者复杂度的新技术。",
+          en: "Eagen and Gabizon re-examined the connection between IPA and sumcheck protocol in paper{{name}}, proposing improvements to the performance of multilinear polynomial commitment schemes, including simplified Halo-style accumulation and reduced verifier complexity."
+        }
+      },
+      {
+        "name": "Hyrax: A Polynomial Commitment Scheme with Sublinear Complexity",
+        "url": "https://alinush.github.io/hyrax",
+        "type": "博客",
+        "tags": [
+          "alinush",
+          "Pedersen",
+          {zh: "内积论证", en: "IPA"},
+        ],
+        "summary": {
+          zh: "alinush在{{name}}博客中介绍了Hyrax多项式承诺方案，结合Pedersen向量承诺和Bulletproofs内积论证(IPAs)，实现了次线性的承诺和证明大小及验证时间。",
+          en: "alinush introduced Hyrax, a polynomial commitment scheme with sublinear complexity, in blog{{name}}, combining Pedersen vector commitment and Bulletproofs inner-product arguments (IPAs), achieving sublinear commitment and proof sizes and verification time."
+        }
+      }
+    ]
   }
 ];
 const others = [

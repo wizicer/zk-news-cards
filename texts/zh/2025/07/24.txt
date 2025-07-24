@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-07-24 星期四
+
+📄 Revisiting the IPA-sumcheck connection
+- https://eprint.iacr.org/2025/1325
+
+📝 Hyrax: A Polynomial Commitment Scheme with Sublinear Complexity
+- https://alinush.github.io/hyrax
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/07/24.html
+🪶 由 @icerdesign 收集
