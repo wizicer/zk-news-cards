@@ -465,6 +465,38 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-07-26",
+    projects: [
+      {
+        "name": "Reshaping KYC/AML in the Age of Web3 with Self-Sovereign Compliance",
+        "url": "https://ligero-inc.com/kyc-aml",
+        "type": "博客",
+        "tags": [
+          "Ligero",
+          "KYC",
+          "AML",
+        ],
+        "summary": {
+          zh: "Ligero分享了关于如何在Web3时代通过自我主权合规重塑KYC/AML的见解，包括利用零知识证明技术保护用户数据安全，同时减少金融服务的摩擦。",
+          en: "Ligero shared insights on how to reshape KYC/AML in the Age of Web3 with self-sovereign compliance, including using zero-knowledge proofs to protect user data security while reducing friction in financial services."
+        },
+      },
+      {
+        "name": "eBook State of ZK Q1 - 25 v3.pdf",
+        "url": "https://drive.google.com/file/d/14JVg-MM20er05MymH5jUrfMfLcXCwCSX/view",
+        "type": "新闻",
+        "tags": [
+          "ZKV",
+          "ZK Stats",
+        ],
+        "summary": {
+          zh: "Q2 2025 ZK生态系统报告强调了ZK系统的安全焦点，揭示了大多数ZK漏洞源于电路约束不足，导致健全性失败，强调了更严格的规范和工具需求。",
+          en: "Q2 2025 ZK ecosystem report emphasizes the security focus of ZK systems, revealing that most ZK vulnerabilities arise from circuit constraints, leading to soundness failures, and stressing the need for stricter standards and tools."
+        },
+      }
+    ]
   }
 ];
 const others = [
