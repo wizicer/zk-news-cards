@@ -497,6 +497,39 @@ export default [
         },
       }
     ]
+  },
+  {
+    date: "2025-07-27",
+    projects: [
+      {
+        "name": "zkSDK: Streamlining zero-knowledge proof development through automated trace-driven ZK-backend selection",
+        "url": "https://arxiv.org/abs/2507.05294v1",
+        "type": "论文",
+        "tags": [
+          "William Law",
+          "zkSDK",
+          "Presto",
+        ],
+        "summary": {
+          zh: "William Law在{{name}}论文中提出了zkSDK，一个模块化框架，通过抽象后端复杂性简化ZK应用开发。核心是Presto，一种类似Python的自定义编程语言，用于分析和评估程序的计算工作量强度。",
+          en: "William Law proposed zkSDK in paper{{name}}, a modular framework that abstracts backend complexity to simplify ZK application development. The core is Presto, a custom programming language similar to Python, used for analyzing and evaluating the computational workload intensity of programs."
+        }
+      },
+      {
+        "name": "Preprocessing for Life: Dishonest-Majority MPC with a Trusted or Untrusted Dealer",
+        "url": "https://eprint.iacr.org/2025/787",
+        "type": "论文",
+        "tags": [
+          "Elette Boyle",
+          "MPC",
+          "FLIOP",
+        ],
+        "summary": {
+          zh: "Boyle等人在{{name}}论文中提出了一种新的实用安全多方计算(MPC)预处理模型，通过一次性设置实现高效的在线安全计算，改进了存储和离线通信需求。",
+          en: "Boyle et al. proposed a new practical secure multi-party computation (MPC) preprocessing model in paper{{name}}, achieving efficient online secure computation through one-time setup, improving storage and offline communication requirements."
+        }
+      }
+    ]
   }
 ];
 const others = [

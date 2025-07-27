@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-07-27 Sunday
+
+📄 zkSDK: Streamlining zero-knowledge proof development through automated trace-driven ZK-backend selection
+- https://arxiv.org/abs/2507.05294v1
+
+📄 Preprocessing for Life: Dishonest-Majority MPC with a Trusted or Untrusted Dealer
+- https://eprint.iacr.org/2025/787
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/07/27.html
+🪶 Collected by @icerdesign
