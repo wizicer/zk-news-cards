@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-08-03 星期日
+
+📄 FairZK: A Scalable System to Prove Machine Learning Fairness in Zero-Knowledge
+- https://ieeexplore.ieee.org/document/11023511
+
+📄 CoBBL: Dynamic Constraint Generation for SNARKs
+- https://ieeexplore.ieee.org/document/11023281
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/08/03.html
+🪶 由 @icerdesign 收集

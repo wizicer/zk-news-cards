@@ -33,6 +33,38 @@ export default [
       },
     ],
   },
+  {
+    date: "2025-08-03",
+    projects: [
+      {
+        "name": "FairZK: A Scalable System to Prove Machine Learning Fairness in Zero-Knowledge",
+        "url": "https://ieeexplore.ieee.org/document/11023511",
+        "type": "论文",
+        "tags": [
+          "Tianyu Zhang",
+          "Fairness",
+          "zkML"
+        ],
+        "summary": {
+          zh: "Zhang等人在{{name}}论文中提出了FairZK系统，旨在通过ZK技术验证机器学习模型的公平性，为大规模应用提供了可扩展的解决方案。",
+          en: "Zhang et al. proposed FairZK in the paper{{name}}, a scalable system to prove machine learning fairness in zero-knowledge, aiming to verify the fairness of machine learning models through ZK technology, providing scalable solutions for large-scale applications."
+        },
+      },
+      {
+        "name": "CoBBL: Dynamic Constraint Generation for SNARKs",
+        "url": "https://ieeexplore.ieee.org/document/11023281",
+        "type": "论文",
+        "tags": [
+          "Kunming Jiang",
+          "CoBBL",
+        ],
+        "summary": {
+          zh: "Jiang等人在{{name}}论文中提出了CoBBL，一种为SNARKs动态生成约束的方法，旨在提高证明生成的效率和灵活性。",
+          en: "Jiang et al. proposed CoBBL in the paper{{name}}, a dynamic constraint generation method for SNARKs, aiming to improve the efficiency and flexibility of proof generation."
+        },
+      }
+    ],
+  }
 ];
 const others = [
 ];

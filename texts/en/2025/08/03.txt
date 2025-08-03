@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-08-03 Sunday
+
+📄 FairZK: A Scalable System to Prove Machine Learning Fairness in Zero-Knowledge
+- https://ieeexplore.ieee.org/document/11023511
+
+📄 CoBBL: Dynamic Constraint Generation for SNARKs
+- https://ieeexplore.ieee.org/document/11023281
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/08/03.html
+🪶 Collected by @icerdesign
