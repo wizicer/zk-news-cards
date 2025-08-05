@@ -64,6 +64,40 @@ export default [
         },
       }
     ],
+  },
+  {
+    date: "2025-08-05",
+    projects: [
+      {
+        "name": "The Science of Blockchain Conference 2025 (SBC'25)",
+        "url": "https://www.sbc-conference.com/2025/",
+        "type": "活动",
+        "tags": [
+          "SBC'25",
+          "Stanford",
+        ],
+        "summary": {
+          zh: "SBC'25将于2025年8月4日至6日（正在直播）在加州大学伯克利分校Martin Luther King Jr.学生联合会大楼举行，聚焦区块链生态系统的技术创新，汇集该领域的研究人员和实践者。",
+          en: "SBC'25 will take place from August 4 to 6, 2025, (live-streaming) at the Martin Luther King Jr. Student Union Building of the University of California, Berkeley, focusing on blockchain ecosystem innovation and gathering researchers and practitioners in the field."
+        },
+        "notes": {
+          zh: [
+            "包含区块链、密码学、分布式系统等领域的研究和合作。",
+            "SBC'25将提供现场直播和会后录像，方便远程参与者。",
+            "会前研讨会涵盖DAO、去中心化与AI、区块链应用等话题。",
+            "组织委员会包括斯坦福大学、康奈尔等机构的知名学者。",
+            "SBC'25是区块链技术领域的重要会议。"
+          ],
+          en: [
+            "Includes research in blockchain, cryptography, and distributed systems.",
+            "SBC'25 offers live streaming and post-event recordings for remote participants.",
+            "Pre-conference workshops cover topics like DAOs, decentralization and AI, blockchain applications.",
+            "Organizing committee consists of renowned scholars from Stanford, Cornell, and other institutions.",
+            "SBC'25 is a important conference in the blockchain technology field."
+          ]
+        }
+      }
+    ],
   }
 ];
 const others = [
