@@ -1,0 +1,9 @@
+🚀zkDaily 前沿热点追踪 2025-08-08 星期五
+
+📝 Deep dive into the cryptographic math behind 𝒫𝔩𝔬𝔫𝒦 zero-knowledge proofs
+- https://plonk.zksecurity.xyz/
+- @zksecurityXYZ
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/08/08.html
+🪶 由 @icerdesign 收集

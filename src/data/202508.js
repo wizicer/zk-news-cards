@@ -98,6 +98,41 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-08-08",
+    projects: [
+      {
+        "name": "Deep dive into the cryptographic math behind 𝒫𝔩𝔬𝔫𝒦 zero-knowledge proofs",
+        "url": "https://plonk.zksecurity.xyz/",
+        "type": "博客",
+        "tags": [
+          "zksecurity.xyz",
+          "Plonk",
+          {zh: "交互式学习", en: "Interactive Learning"}
+        ],
+        "summary": {
+          zh: "@zksecurityXYZ 在{{name}}博客中分享了关于𝒫𝔩𝔬𝔫𝒦零知识证明的密码学数学深度解析，包括交互式示例、完整协议实现以及复杂密码学概念的可视化学习。",
+          en: "@zksecurityXYZ shared a deep dive into the cryptographic math behind 𝒫𝔩𝔬𝔫𝒦 zero-knowledge proofs in blog{{name}}, including interactive examples, complete protocol implementation, and visualization of complex cryptographic concepts."
+        },
+        "notes": {
+          zh: [
+            "提供了Sage/Python代码示例和练习以帮助理解",
+            "包含从电路约束到验证的完整协议实现",
+            "通过图表和可视化展示复杂的密码学概念",
+            "专注于𝒫𝔩𝔬𝔫𝒦零知识证明的数学基础",
+            "旨在通过交互式学习加深对ZK证明的理解"
+          ],
+          en: [
+            "Provides Sage/Python code examples and exercises",
+            "Includes protocol implementation from circuit constraints to verification",
+            "Visualizes complex cryptographic concepts through charts and visualizations",
+            "Focuses on the mathematical foundation of 𝒫𝔩𝔬𝔫𝒦 zero-knowledge proofs",
+            "Aims to deepen understanding of ZK proofs through interactive learning"
+          ]
+        }
+      }
+    ]
   }
 ];
 const others = [
