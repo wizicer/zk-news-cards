@@ -133,6 +133,37 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-08-10",
+    projects: [
+      {
+        "name": "Applied Cryptography CMPS 297AD/396AI",
+        "url": "https://appliedcryptography.page/",
+        "type": "活动",
+        "tags": [
+          "American University of Beirut",
+          "Cryptography",
+        ],
+        "summary": {
+          zh: "美国贝鲁特大学将于2025年8月25日至12月13日举办应用密码学课程，专注于现代密码学核心理论及其在安全系统中的应用，包括零知识证明等专题。",
+          en: "The American University of Beirut will host the Applied Cryptography course from August 25 to December 13, 2025, focusing on modern cryptography core theory and its application in secure systems, including zero-knowledge proofs."
+        },
+      },
+      {
+        "name": "Ethereum Attestation Service (EAS)",
+        "url": "https://attest.org/",
+        "type": "博客",
+        "tags": [
+          "EAS Team",
+          "Attestation",
+        ],
+        "summary": {
+          zh: "EAS团队分享了关于Ethereum Attestation Service的信息，讨论了EAS作为一个基础设施公共产品，支持在链上或链下进行任何事物的证明。",
+          en: "EAS team shared information about Ethereum Attestation Service, discussing EAS as an infrastructure public product, supporting any thing to be proven on or off-chain."
+        },
+      }
+    ],
   }
 ];
 const others = [
