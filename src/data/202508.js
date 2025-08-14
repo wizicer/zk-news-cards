@@ -164,6 +164,38 @@ export default [
         },
       }
     ],
+  },
+  {
+    date: "2025-08-14",
+    projects: [
+      {
+        "name": "Data Availability Sampling with Repair",
+        "url": "https://eprint.iacr.org/2025/1414",
+        "type": "论文",
+        "tags": [
+          "Dan Boneh",
+          {zh: "数据可用性采样", en: "Data Availability Sampling"},
+        ],
+        "summary": {
+          zh: "Boneh等人在{{name}}论文中提出了数据可用性采样（DAS）的修复框架，基于局部可纠正多重性码设计新方案，优化了存储开销和修复带宽。",
+          en: "Boneh et al. proposed a repair framework for data availability sampling (DAS) in paper{{name}}, based on locally repairable codes, optimizing storage overhead and repair bandwidth."
+        },
+      },
+      {
+        "name": "New Bitcoin Whiteboard. We can do better than BitVM.",
+        "url": "https://x.com/david_seroy/status/1953471306894299410",
+        "type": "视频",
+        "tags": [
+          "David Seroy",
+          "Bitcoin",
+          "BitVM"
+        ],
+        "summary": {
+          zh: "David Seroy发布了一段关于比特币的新白板视频，讨论了比特币桥接和ZK验证、对Rollups的批评回应、乐观ZK验证、BitVM的不同版本比较、混淆电路以及比特币桥接的未来Glock等内容。",
+          en: "David Seroy released a new video about Bitcoin, discussing Bitcoin bridge and ZK verification, criticism of Rollups, optimistic ZK verification, different versions of BitVM, garbled circuits, and the future of Bitcoin bridge Glock."
+        },
+      }
+    ],
   }
 ];
 const others = [

@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-08-14 星期四
+
+📄 Data Availability Sampling with Repair
+- https://eprint.iacr.org/2025/1414
+
+🎥 New Bitcoin Whiteboard. We can do better than BitVM.
+- https://x.com/david_seroy/status/1953471306894299410
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/08/14.html
+🪶 由 @icerdesign 收集
