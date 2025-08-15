@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-08-15 星期五
+
+📄 Time-Space Trade-Offs for Sumcheck
+- https://eprint.iacr.org/2025/1473
+
+📄 Interstellar: GKR Protocol based Low Prover Cost Folding Scheme for Circuit Satisfiability
+- https://eprint.iacr.org/2025/1294
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/08/15.html
+🪶 由 @icerdesign 收集

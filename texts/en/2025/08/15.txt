@@ -1,0 +1,11 @@
+🚀zkDaily Frontier Tracker 2025-08-15 Friday
+
+📄 Time-Space Trade-Offs for Sumcheck
+- https://eprint.iacr.org/2025/1473
+
+📄 Interstellar: GKR Protocol based Low Prover Cost Folding Scheme for Circuit Satisfiability
+- https://eprint.iacr.org/2025/1294
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/08/15.html
+🪶 Collected by @icerdesign

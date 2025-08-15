@@ -196,6 +196,40 @@ export default [
         },
       }
     ],
+  },
+  {
+    date: "2025-08-15",
+    projects: [
+      {
+        "name": "Time-Space Trade-Offs for Sumcheck",
+        "url": "https://eprint.iacr.org/2025/1473",
+        "type": "论文",
+        "tags": [
+          "Anubhav Baweja",
+          "Chiesa",
+          "Sumcheck",
+        ],
+        "summary": {
+          zh: "Baweja等人在{{name}}论文中研究了sumcheck协议证明者在流模型中的时间空间权衡，提出了上下界，紧密刻画了证明者可实现的效率。",
+          en: "Baweja et al. studied the time-space trade-offs for sumcheck protocol provers in the stream model, proposing upper and lower bounds, tightly characterizing the efficiency of provers."
+        },
+      },
+      {
+        "name": "Interstellar: GKR Protocol based Low Prover Cost Folding Scheme for Circuit Satisfiability",
+        "url": "https://eprint.iacr.org/2025/1294",
+        "type": "论文",
+        "tags": [
+          "Jieyi Long",
+          "GKR",
+          "zkML",
+          "zkVM"
+        ],
+        "summary": {
+          zh: "Jieyi Long在{{name}}论文中提出了Interstellar，一种基于GKR协议的低证明者成本折叠方案，专为电路可满足性设计。通过电路插值技术，该方案显著减少了每步折叠中需要承诺的向量大小，降低了证明者开销。",
+          en: "Jieyi Long proposed Interstellar, a low-prover-cost folding scheme based on GKR protocol for circuit satisfiability in paper{{name}}, significantly reducing the vector size needed for commitment in each step of folding, lowering prover overhead."
+        },
+      }
+    ],
   }
 ];
 const others = [
