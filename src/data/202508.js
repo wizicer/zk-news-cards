@@ -230,7 +230,40 @@ export default [
         },
       }
     ],
-  }
+  },
+  {
+    date: "2025-08-18",
+    projects: [
+      {
+        "name": "Jolt Achieves 6x Speedup with Twist and Shout Integration",
+        "url": "https://a16zcrypto.com/posts/article/jolt-6x-speedup/",
+        "type": "开源",
+        "tags": [
+          "a16z crypto",
+          "zkVM",
+          "Jolt",
+        ],
+        "summary": {
+          zh: "@a16zcrypto 团队宣布Jolt项目整合了Twist和Shout内存检查参数，实现了显著的性能提升，包括在32核CPU上每秒超过100万RISC-V周期，证明大小约为50KB，代码库更加简洁。",
+          en: "@a16zcrypto team announced that the Jolt project integrated Twist and Shout memory check parameters, achieving significant performance improvements, including over 1 million RISC-V cycles per second on a 32-core CPU, proof size of about 50KB, and a more concise codebase."
+        },
+      },
+      {
+        "name": "GKR Protocol Implementation: Deep Dive into the Code",
+        "url": "https://blog.lambdaclass.com/gkr-protocol-implementation-deep-dive-into-the-code/",
+        "type": "博客",
+        "tags": [
+          "Lambdaclass",
+          "GKR",
+          "Sumcheck",
+        ],
+        "summary": {
+          zh: "@class_lambda 团队在博客{{name}}中深入探讨了GKR协议的实现细节，包括算术电路的描述与验证、证明者与验证者的实际操作，以及如何应用Fiat-Shamir变换使协议非交互式。",
+          en: "@class_lambda team in blog{{name}} delved into the details of GKR protocol implementation, including arithmetic circuit description and verification, prover and verifier actual operations, and how to apply Fiat-Shamir transformation to make the protocol non-interactive."
+        },
+      }
+    ],
+  },
 ];
 const others = [
 ];

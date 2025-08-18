@@ -1,0 +1,13 @@
+🚀zkDaily 前沿热点追踪 2025-08-18 星期一
+
+💻 Jolt Achieves 6x Speedup with Twist and Shout Integration
+- https://a16zcrypto.com/posts/article/jolt-6x-speedup/
+- @a16zcrypto
+
+📝 GKR Protocol Implementation: Deep Dive into the Code
+- https://blog.lambdaclass.com/gkr-protocol-implementation-deep-dive-into-the-code/
+- @class_lambda
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/08/18.html
+🪶 由 @icerdesign 收集
