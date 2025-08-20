@@ -264,6 +264,38 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-08-20",
+    projects: [
+      {
+        "name": "FRIttata: Distributed Proof Generation of FRI-based SNARKs",
+        "url": "https://eprint.iacr.org/2025/1285",
+        "type": "论文",
+        "tags": [
+          "Hua Xu",
+          {zh: "分布式计算", en: "distributed computing"},
+          "FRI"
+        ],
+        "summary": {
+          zh: "Xu等人在{{name}}论文中提出了FRIttata，首个既透明又后量子安全的水平可扩展SNARK系统，通过基于FRI的双变量多项式承诺方案，实现了分布式证明生成。",
+          en: "Xu et al. proposed FRIttata, the first transparent and post-quantum secure horizontally scalable SNARK system, using a double-variable polynomial commitment scheme based on FRI, achieving distributed proof generation."
+        },
+      },
+      {
+        "name": "Collaborative zkSNARKs with Sublinear Prover Time and Constant Proof Size",
+        "url": "https://eprint.iacr.org/2025/1388",
+        "type": "论文",
+        "tags": [
+          "Zhiyong Fang",
+          "CoSNARK",
+        ],
+        "summary": {
+          zh: "Fang等人在{{name}}论文中提出了一种新的协作式zkSNARK方案，具有$O(\\frac{C}{n}\\log\\frac{C}{n})$证明者时间和$O(1)$证明大小，显著提高了效率。",
+          en: "Fang et al. proposed a new collaborative zkSNARK scheme in paper{{name}}, with $O(\\frac{C}{n}\\log\\frac{C}{n})$ prover time and $O(1)$ proof size, significantly improving efficiency."
+        },
+      }
+    ],
+  }
 ];
 const others = [
 ];
