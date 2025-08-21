@@ -1,0 +1,12 @@
+🚀zkDaily Frontier Tracker 2025-08-21 Thursday
+
+📝 WHIR for Ethereum zk-s[nt]arks
+- https://ethresear.ch/t/whir-for-ethereum/22938
+
+💻 whir-p3
+- https://github.com/tcoratger/whir-p3
+- @tcoratger
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/08/21.html
+🪶 Collected by @icerdesign

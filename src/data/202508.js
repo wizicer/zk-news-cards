@@ -295,6 +295,38 @@ export default [
         },
       }
     ],
+  },
+  {
+    date: "2025-08-21",
+    projects: [
+      {
+        "name": "WHIR for Ethereum zk-s[nt]arks",
+        "url": "https://ethresear.ch/t/whir-for-ethereum/22938",
+        "type": "博客",
+        "tags": [
+          "Thomas Coratger",
+          "Reed-Solomon codes",
+        ],
+        "summary": {
+          zh: "Coratger 等人在{{name}}博客中介绍了WHIR，一种递归的、基于哈希的接近性测试协议，并讨论由其支撑的以太坊高效证明系统。",
+          en: "Coratger et al. introduced WHIR, a recursive, hash-based proximity testing protocol, and discussed the Ethereum efficient proof system supported by it in the{{name}} blog."
+        },
+      },
+      {
+        "name": "whir-p3",
+        "url": "https://github.com/tcoratger/whir-p3",
+        "type": "开源",
+        "tags": [
+          "tcoratger",
+          "Plonky3",
+          "Rust"
+        ],
+        "summary": {
+          zh: "@tcoratger 发布了whir-p3开源项目，基于Plonky3库构建WHIR，支持ZK证明生成和验证，使用Rust语言实现。",
+          en: "@tcoratger released whir-p3 open source project, based on Plonky3 library to build WHIR, supporting ZK proof generation and verification, using Rust language."
+        },
+      },
+    ],
   }
 ];
 const others = [

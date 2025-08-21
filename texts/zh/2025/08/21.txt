@@ -1,0 +1,12 @@
+🚀zkDaily 前沿热点追踪 2025-08-21 星期四
+
+📝 WHIR for Ethereum zk-s[nt]arks
+- https://ethresear.ch/t/whir-for-ethereum/22938
+
+💻 whir-p3
+- https://github.com/tcoratger/whir-p3
+- @tcoratger
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/08/21.html
+🪶 由 @icerdesign 收集
