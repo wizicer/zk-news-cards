@@ -1,0 +1,11 @@
+🚀zkDaily 前沿热点追踪 2025-08-25 星期一
+
+📝 Linear algebra over field extensions
+- https://lmao.bearblog.dev/linear-algebra-field-extensions/
+
+🛠️ ZK Catalog by L2BEAT
+- https://l2beat.com/zk-catalog
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/08/25.html
+🪶 由 @icerdesign 收集

@@ -327,7 +327,39 @@ export default [
         },
       },
     ],
-  }
+  },
+  {
+    date: "2025-08-25",
+    projects: [
+      {
+        "name": "Linear algebra over field extensions",
+        "url": "https://lmao.bearblog.dev/linear-algebra-field-extensions/",
+        "type": "博客",
+        "tags": [
+          "Guillermo Angeris",
+          "Linear Algebra",
+          "Field Extensions",
+        ],
+        "summary": {
+          zh: "Guillermo Angeris在{{name}}博客中讨论了在ZK证明中使用不同有限域的线性代数操作，包括基础域和扩展域之间的矩阵向量乘法优化。",
+          en: "Guillermo Angeris discussed linear algebra over field extensions in blog{{name}}, including matrix vector multiplication between base and extension fields in ZK proofs."
+        },
+      },
+      {
+        "name": "ZK Catalog by L2BEAT",
+        "url": "https://l2beat.com/zk-catalog",
+        "type": "工具",
+        "tags": [
+          "L2BEAT",
+          "Proof Systems"
+        ],
+        "summary": {
+          zh: "L2BEAT分享了ZK Catalog，展示了使用ZK的区块链项目的ZK特性，及其技术栈、曲线选择以及风险分析等。",
+          en: "L2BEAT shared the ZK Catalog, showcasing the ZK features of blockchain projects, their technology stack, curve selection, and risk analysis."
+        },
+      }
+    ],
+  },
 ];
 const others = [
 ];
