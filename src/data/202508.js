@@ -360,6 +360,41 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-08-28",
+    projects: [
+      {
+        "name": "Sumcheck, Good Lookups, Good Jolt, Good Particularly for Zero-Knowledge Machine Learning",
+        "url": "https://blog.icme.io/sumcheck-good-lookups-good-jolt-good-particularly-for-zero-knowledge-machine-learning/",
+        "type": "博客",
+        "tags": [
+          "ICME team",
+          "zkML",
+          "JOLT",
+          "sumcheck",
+        ],
+        "summary": {
+          zh: "ICME团队分享了zkML-JOLT（Atlas）如何通过sumcheck协议和查找表优化，将zkML速度提升3-7倍，专注于神经网络推理中的稀疏性和非线性的高效处理。",
+          en: "ICME team shared how zkML-JOLT (Atlas) achieves a 3-7x speedup in zkML by using sumcheck protocol and lookup arguments, focusing on efficient processing of sparsity and non-linearity in neural network inference."
+        },
+      },
+      {
+        "name": "JOLT Atlas",
+        "url": "https://github.com/ICME-Lab/jolt-atlas",
+        "type": "开源",
+        "tags": [
+          "ICME-Lab",
+          "zkML",
+          "JOLT",
+          "ONNX",
+        ],
+        "summary": {
+          zh: "ICME-Lab团队开源了JOLT Atlas，这是一个基于JOLT证明系统的zkML框架，支持从ONNX模型进行ML推理验证，通过查找参数简化证明过程。",
+          en: "ICME-Lab team released JOLT Atlas, a zkML framework based on JOLT proof system, supporting ML inference verification from ONNX models, simplifying proof process through lookup arguments."
+        },
+      },
+    ],
+  }
 ];
 const others = [
 ];
