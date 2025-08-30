@@ -394,6 +394,42 @@ export default [
         },
       },
     ],
+  },
+  {
+    date: "2025-08-30",
+    projects: [
+      {
+        "name": "Constraint-Friendly Map-to-Elliptic-Curve-Group Relations and Their Applications",
+        "url": "https://eprint.iacr.org/2025/1503",
+        "type": "论文",
+        "tags": [
+          "Jens Groth",
+          "Multiset hashing"
+        ],
+        "summary": {
+          zh: "Groth等人在{{name}}论文中提出了一种约束友好的映射到椭圆曲线群关系，绕过加密哈希函数需求，在ZKP中实现高效证明，减少约束和加速证明时间。",
+          en: "Groth et al. proposed a constraint-friendly mapping to elliptic curve group relations in paper{{name}}, avoiding encryption hash functions, achieving efficient proofs in ZKP, reducing constraints and accelerating proof time."
+        },
+        "notes": {
+          zh: [
+            "提出约束高效的映射关系，替代传统哈希到曲线方法",
+            "在EC-GGM中分析安全性，支持非确定性映射",
+            "实现约束减少23倍，证明时间加速50-100倍",
+            "适用于zkVM内存检查和BLS签名等ZKP场景",
+            "开源实现基于Noir/Barretenberg，提升实际应用效率",
+            "为ZKP和约束编程提供更优的密码学原语"
+          ],
+          en: [
+            "Propose constraint-friendly mapping to elliptic curve group relations, replacing traditional hash to curve method",
+            "Analyze security in EC-GGM, support non-deterministic mapping",
+            "Achieve constraint reduction by 23x, proof time acceleration by 50-100x",
+            "Suitable for zkVM memory checks and BLS signature ZKP scenarios",
+            "Open-source implementation based on Noir/Barretenberg, enhancing practical application efficiency",
+            "Provide better cryptographic primitives for ZKP and constraint programming"
+          ]
+        }
+      },
+    ],
   }
 ];
 const others = [
