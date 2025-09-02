@@ -38,6 +38,43 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-09-02",
+    projects: [
+      {
+        "name": "UltraGroth Protocol Explained",
+        "url": "https://hackmd.io/@ZamDimon/SkFGEXbKgx",
+        "type": "博客",
+        "tags": [
+          "ZamDimon",
+          "Groth16",
+          "Lookup Checks",
+        ],
+        "summary": {
+          zh: "@ZamDimon 在博客{{name}}中讨论了UltraGroth协议，包括如何通过修改Groth16来支持查找检查，从而优化非本地操作和减少约束数量。",
+          en: "@ZamDimon discussed the UltraGroth protocol in the blog{{name}}, explaining how to modify Groth16 to support lookup checks, optimizing non-local operations and reducing constraint numbers."
+        },
+        "notes": {
+          "zh": [
+            "UltraGroth是Groth16的改进版，支持查找表优化",
+            "保持Groth16验证高效性（3点3配对），仅增加1个G1点和1次配对",
+            "通过安全随机数采样实现高效非本地操作（如位运算、范围检查）",
+            "大幅降低电路约束（如ReLU从线性降至亚线性复杂度）",
+            "已在实际项目Bionetta中应用，安全可靠",
+            "为复杂ZK电路提供高效证明方案"
+          ],
+          "en": [
+            "UltraGroth enhances Groth16 with lookup table support",
+            "Maintains Groth16's efficient verification (3 points, 3 pairings), adds only 1 G1 point and 1 pairing",
+            "Enables efficient non-native operations via secure randomness sampling",
+            "Significantly reduces circuit constraints (e.g., ReLU from linear to sublinear)",
+            "Proven in production with Bionetta, secure and reliable",
+            "Provides efficient proving for complex ZK circuits"
+          ]
+        }
+      }
+    ],
+  }
 ];
 
 const others = [
