@@ -74,6 +74,43 @@ export default [
         }
       }
     ],
+  },
+  {
+    date: "2025-09-06",
+    projects: [
+      {
+        "name": "Glock: Garbled Locks for Bitcoin",
+        "url": "https://eprint.iacr.org/2025/1485",
+        "type": "论文",
+        "tags": [
+          "Liam Eagen",
+          {zh: "混淆电路", en: "Garbled Circuits"},
+          "Bitcoin",
+        ],
+        "summary": {
+          zh: "Eagen等人在{{name}}论文中提出了一种基于混淆电路的乐观智能合约协议Glock，用于比特币，通过泄露秘密和生成签名作为欺诈证明，并减少对Grug技术的依赖。",
+          en: "Eagen et al. proposed a novel optimistic smart contract protocol Glock for Bitcoin in their paper{{name}}, using Garbled Circuits to leak secrets and generate signatures as fraud proofs, reducing dependency on Grug technology."
+        },
+        "notes": {
+          zh: [
+            "Glock使用混淆电路泄露秘密并生成签名作为欺诈证明",
+            "首次提出无需Grug技术的实际构造，提高安全性",
+            "结合Cut-and-Choose、VSS和Adaptor Signatures实现恶意安全",
+            "优化SNARK Pari以减小证明大小，降低链上验证成本",
+            "与Delbrag和BitVM3为独立并行工作，提供替代方案",
+            "减少通信和计算复杂度，适用于比特币网络"
+          ],
+          en: [
+            "Glock uses garbled circuits to leak secrets and generate signatures as fraud proofs",
+            "First practical construction without the need for Grug technology, enhancing security",
+            "Achieves malicious security by combining Cut-and-Choose, VSS, and Adaptor Signatures",
+            "Optimizes SNARK pari to reduce proof size and lower on-chain verification costs",
+            "Works independently and in parallel with Delbrag and BitVM3, providing alternatives",
+            "Reduces communication and computational complexity, suitable for the Bitcoin network"
+          ]
+        }
+      }
+    ]
   }
 ];
 
