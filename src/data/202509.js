@@ -111,6 +111,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-07",
+    projects: [
+      {
+        "name": "Zero-Knowledge Proof Frameworks: A Systematic Survey",
+        "url": "https://arxiv.org/abs/2502.07063v3",
+        "type": "论文",
+        "tags": [
+          "Nojan Sheybani",
+          "Benchmark"
+        ],
+        "summary": {
+          "zh": "Sheybani等人在{{name}}论文中对25个通用ZKP框架进行了系统调查和评估，包括性能测试和Docker容器支持，旨在降低开发者入门门槛。",
+          "en": "Sheybani et al. surveyed 25 ZKP frameworks in their paper{{name}}, including performance testing and Docker container support, aimed at reducing developer entry barriers."
+        },
+        "notes": {
+          "zh": [
+            "系统调查25个ZKP框架，涵盖SNARK、STARK、MPCitH、VOLE。",
+            "评估指标：性能、可用性、可访问性，并提供Docker复现。",
+            "SNARK最成熟，推荐Arkworks、Gnark；PLONK推荐Gnark-KZG、Noir。",
+            "STARK适合后量子安全，推荐RISC Zero。",
+            "VOLE-ZK适合IoT与分布式学习；MPCitH框架有限。",
+            "未来方向：高层API、互操作、硬件加速。"
+          ],
+          "en": [
+            "Surveyed 25 ZKP frameworks: SNARK, STARK, MPCitH, VOLE.",
+            "Metrics: performance, usability, accessibility; Docker for reproducibility.",
+            "SNARK most mature: Arkworks, Gnark; PLONK: Gnark-KZG, Noir.",
+            "STARKs for post-quantum apps, RISC Zero recommended.",
+            "VOLE-ZK fits IoT/distributed learning; MPCitH limited options.",
+            "Future: high-level APIs, interoperability, hardware acceleration."
+          ]
+        }
+      }
+    ]
   }
 ];
 
