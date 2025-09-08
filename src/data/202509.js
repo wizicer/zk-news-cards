@@ -147,6 +147,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-08",
+    projects: [
+      {
+        "name": "Multilinear Polynomials Survival Kit",
+        "url": "https://blog.lambdaclass.com/multilinear-polynomials-survival-kit/",
+        "type": "博客",
+        "tags": [
+          "LambdaClass",
+          "Sum-Check",
+        ],
+        "summary": {
+          zh: "@class_lambda 团队在博客{{name}}中分享了多线性多项式的基本性质，包括定义、插值方法和张量积操作，为理解Sum-Check协议优化提供基础。",
+          en: "@class_lambda team shared the basic properties of multilinear polynomials in blog{{name}}, including definitions, interpolation methods, and tensor product operations, providing a foundation for understanding Sum-Check protocol optimization."
+        },
+        "notes": {
+          zh: [
+            "多线性多项式是ZKP中Sum-Check协议的关键组件，用于高效计算和验证",
+            "插值方法允许任意函数在布尔超立方体上被多线性多项式表示，简化计算",
+            "张量积操作提供多项式乘法的向量空间抽象，优化内存和时间使用",
+            "坐标计算基于拉格朗日基，直接通过函数求值获得，提升效率",
+            "这些性质有助于加速Sum-Check证明，减少ZKP系统的开销",
+            "文章为理解更复杂的ZKP协议（如GKR）提供了数学基础"
+          ],
+          en: [
+            "Multilinear polynomials are key components of the Sum-Check protocol in ZKP, used for efficient computation and verification",
+            "Interpolation methods allow any function to be represented by multilinear polynomials on Boolean hypercubes, simplifying calculations",
+            "Tensor product operations provide a vector space abstraction for polynomial multiplication, optimizing memory and time usage",
+            "Coordinate calculations based on Lagrange basis, directly through function evaluation, improving efficiency",
+            "These properties help accelerate Sum-Check proofs, reducing ZKP system overhead",
+            "The article provides a mathematical foundation for understanding more complex ZKP protocols (e.g., GKR)"
+          ]
+        }
+      }
+    ]
   }
 ];
 
