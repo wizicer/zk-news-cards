@@ -183,6 +183,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-09",
+    projects: [
+      {
+        "name": "Jolt Book",
+        "url": "https://jolt.a16zcrypto.com/",
+        "type": "工具",
+        "tags": [
+          "a16z crypto",
+          "zkVM",
+        ],
+        "summary": {
+          zh: "@a16zcrypto 团队分享了Jolt zkVM的设计，包括基于sumcheck和查找参数的高性能RISC-V实现，以及其简单性和速度优势。",
+          en: "@a16zcrypto team shared the design of Jolt zkVM, including a high-performance RISC-V implementation based on sumcheck and lookup arguments, as well as its simplicity and speed advantages."
+        },
+        "notes": {
+          zh: [
+            "Jolt zkVM基于sumcheck和查找参数设计，强调性能和简单性",
+            "使用Spartan和Dory作为底层证明系统，优化R1CS约束",
+            "支持RISC-V架构，适用于高效虚拟机器证明",
+            "开源项目包括相关论文和博客文章，提供详细文档",
+            "性能达到state-of-the-art水平，特别在CPU上表现突出",
+            "设计围绕Just One Lookup Table理念，简化实现复杂度"
+          ],
+          en: [
+            "Jolt zkVM is designed based on sumcheck and lookup arguments, emphasizing performance and simplicity",
+            "Uses Spartan and Dory as underlying proof systems to optimize R1CS constraints",
+            "Supports RISC-V architecture for efficient virtual machine proofs",
+            "Open-source project including related papers and blog articles, providing detailed documentation",
+            "Performance reaches state-of-the-art levels, particularly outstanding on CPU",
+            "Design centered around the Just One Lookup Table concept, simplifying implementation complexity"
+          ]
+        }
+      }
+    ]
   }
 ];
 
