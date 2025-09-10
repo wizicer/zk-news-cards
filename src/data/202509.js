@@ -219,6 +219,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-10",
+    projects: [
+      {
+        "name": "Optimizing Backend Verification in zk-Rollup Architectures",
+        "url": "https://eprint.iacr.org/2025/1390",
+        "type": "论文",
+        "tags": [
+          "Mehdi Beriane",
+          "BLS12-381",
+        ],
+        "summary": {
+          "zh": "Beriane 等人在{{name}}论文中提出了一种优化zk-Rollup架构后端验证的方法，通过多项式聚合和标量分解等技术显著降低了链上验证成本。",
+          "en": "Beriane et al. proposed an optimization method for zk-Rollup architecture backend verification in their paper{{name}}, using polynomial aggregation and scalar decomposition techniques to significantly reduce on-chain verification costs."
+        },
+        "notes": {
+          "zh": [
+            "针对zk-Rollup链上验证成本高的问题提出优化方案",
+            "核心优化：G1指数运算从40次降至31次，单次验证省108k Gas",
+            "采用动态重心插值法替代FFT，稀疏多项式求值Gas降92-95%",
+            "提出证明聚合策略，减少预编译调用且保持128位安全性",
+            "实验效果：总验证成本从857.2k Gas降至748.45k Gas",
+            "优化兼容Pectra升级，为高效链上验证提供技术蓝图"
+          ],
+          "en": [
+            "Proposes optimizations for high on-chain verification costs in zk-Rollups",
+            "Key optimization: Reduces G1 exponentiations from 40 to 31, saving 108k Gas per verification",
+            "Replaces FFT with dynamic barycentric interpolation, cutting Gas by 92-95% for sparse polynomials",
+            "Introduces proof aggregation to minimize precompile calls while maintaining 128-bit security",
+            "Experimental results: Total verification cost reduced from 857.2k to 748.45k Gas",
+            "Optimizations are compatible with Pectra upgrade and provide blueprint for efficient on-chain verification"
+          ]
+        }
+      }
+    ]
   }
 ];
 
