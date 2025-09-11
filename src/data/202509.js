@@ -255,6 +255,46 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-11",
+    projects: [
+      {
+        "name": "Reinventing Irreducible",
+        "url": "https://www.irreducible.com/posts/reinventing-irreducible",
+        "type": "博客",
+        "tags": [
+          "Irreducible Team",
+          "zkSNARK",
+          "Binius",
+          "zkVM",
+          "Privacy",
+          "Open Source"
+        ],
+        "summary": {
+          zh: "@IrreducibleHW 团队在{{name}}博客中讨论了公司转型，从硬件转向软件，专注于Binius证明系统和本地证明，以推动可验证互联网的发展。",
+          en: "@IrreducibleHW discussed company transformation in their blog{{name}}, moving from hardware to software, focusing on Binius proof system and local proofs, to drive the development of verifiable internet."
+        },
+        "notes": {
+          "zh": [
+            "战略转型：从硬件转向软件，专注证明系统开发",
+            "技术重点：推出CPU优化的Binius64证明系统",
+            "放弃硬件：因市场需求不足和GPU生态优势",
+            "聚焦隐私：支持本地设备验证的隐私应用",
+            "许可策略：证明器AGPL，验证器Apache",
+            "愿景：用零知识证明构建可验证的互联网"
+          ],
+          "en": [
+            "Strategic pivot: From hardware to software, focused on proof systems",
+            "Technical focus: CPU-optimized Binius64 proof system",
+            "Hardware abandoned: Due to weak demand and GPU ecosystem advantages",
+            "Privacy focus: Local verification for privacy applications",
+            "Licensing: Prover AGPL, verifier Apache",
+            "Vision: Building verifiable internet with ZK proofs"
+          ]
+        }
+      }
+    ]
   }
 ];
 
