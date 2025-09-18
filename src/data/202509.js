@@ -295,6 +295,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-18",
+    projects: [
+      {
+        "name": "Announcing Binius64",
+        "url": "https://www.irreducible.com/posts/announcing-binius64",
+        "type": "博客",
+        "tags": [
+          "Irreducible Team",
+          "Binius64",
+        ],
+        "summary": {
+          zh: "@IrreducibleHW 在博客{{name}}中分享了Binius64的发布，讨论了其针对CPU性能的优化、与Binius V0的区别以及性能基准测试结果。",
+          en: "@IrreducibleHW shared the release of Binius64 in their blog{{name}}, discussing CPU performance optimization, differences from Binius V0, and performance benchmark results."
+        },
+        "notes": {
+          "zh": [
+            "推出Binius64：新一代CPU优化的零知识证明系统",
+            "原生64位支持，硬件友好约束（位运算/整数乘法）",
+            "性能较GPU加速zkVM快5倍（多线程CPU）",
+            "暂不支持零知识，计划2025年底实现",
+            "专注隐私支付、匿名凭证等应用场景",
+            "已开源，将改进验证简洁性和开发体验"
+          ],
+          "en": [
+            "Launched Binius64: CPU-optimized ZK proof system",
+            "Native 64-bit support with hardware-friendly constraints",
+            "5x faster than GPU zkVMs (multi-threaded CPU)",
+            "Zero-knowledge coming by end-2025",
+            "Focus: private payments, anonymous credentials",
+            "Open-sourced, improving verification & developer experience"
+          ]
+        }
+        
+      }
+    ]
   }
 ];
 
