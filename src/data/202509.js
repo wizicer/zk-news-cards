@@ -332,6 +332,44 @@ export default [
         
       }
     ]
+  },
+  {
+    date: "2025-09-19",
+    projects: [
+      {
+        "name": "PSE Roadmap: 2025 and Beyond",
+        "url": "https://ethereum-magicians.org/t/pse-roadmap-2025-and-beyond/25423",
+        "type": "博客",
+        "tags": [
+          "PSE team",
+          "Privacy",
+          "Roadmap"
+        ],
+        "summary": {
+          "zh": "PSE团队 (@PrivacyEthereum) 分享了{{name}}博文，讨论了Ethereum隐私路线图，包括私有写入、读取和证明等关键领域，以推动隐私成为应用层的一等公民。",
+          "en": "PSE team (@PrivacyEthereum) shared their blog{{name}}, discussing the Ethereum privacy roadmap, including private writes, reads, and proving, to drive privacy as a first-class citizen in the application layer."
+        },
+        "notes": {
+          "zh": [
+            "PSE转型为以太坊隐私守护者，推动隐私成为默认特性",
+            "聚焦三大领域：私有写入、私有读取和私有证明",
+            "目标：私有操作与公有操作同等廉价便捷",
+            "短期重点：隐私转账、投票协议和机构隐私方案",
+            "通过协作共建生态，推进隐私解决方案落地",
+            "愿景：支撑全球数字商业的价值互联网"
+          ],
+          "en": [
+            "PSE transforms into Privacy Stewards for Ethereum to make privacy default",
+            "Focus on three areas: Private writes, reads and proving",
+            "Goal: Make private operations as cheap as public ones",
+            "Short-term: Private transfers, voting protocols, institutional solutions",
+            "Build ecosystem through collaboration for privacy solutions",
+            "Vision: Enable global digital commerce and value internet"
+          ]
+        }
+        
+      }
+    ]
   }
 ];
 
