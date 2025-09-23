@@ -367,7 +367,43 @@ export default [
             "Vision: Enable global digital commerce and value internet"
           ]
         }
-        
+      }
+    ]
+  },
+  {
+    date: "2025-09-23",
+    projects: [
+      {
+        "name": "From Evaluation to Enhancement: Large Language Models for Zero-Knowledge Proof Code Generation",
+        "url": "https://arxiv.org/abs/2509.11708",
+        "type": "论文",
+        "tags": [
+          "Zhantong Xue",
+          "Circom",
+          "Noir"
+        ],
+        "summary": {
+          "zh": "Xue等人在{{name}}论文中提出了ZK-Eval评估框架和ZK-Coder增强框架，用于评估和改进LLM在ZK代码生成中的能力，显著提升Circom和Noir程序的正确率。",
+          "en": "In the paper{{name}}, Xue et al. propose the ZK-Eval evaluation framework and the ZK-Coder enhancement framework to assess and improve LLM capabilities in ZK code generation, significantly boosting the correctness of Circom and Noir programs."
+        },
+        "notes": {
+          "zh": [
+            "ZKP 编程困难且易错，LLM 在该领域缺乏系统评估。",
+            "ZK-Eval 基准涵盖语言知识、gadget 能力和端到端生成。",
+            "LLM 语法掌握好，但 gadget 与语义正确性差，Circom 更难。",
+            "ZK-Coder 结合约束 sketch、检索和交互修复提升生成质量。",
+            "在 Circom/Noir 上成功率从 <30% 提升至 80–90%。",
+            "修复循环最关键，挑战在电路效率与数据稀缺。"
+          ],
+          "en": [
+            "ZKP programming is hard and error-prone; LLMs lack systematic evaluation.",
+            "ZK-Eval benchmark covers language, gadget, and end-to-end generation.",
+            "LLMs handle syntax well but fail on gadgets and semantics; Circom is harder.",
+            "ZK-Coder uses sketching, retrieval, and repair to improve reliability.",
+            "Success rates on Circom/Noir rise from <30% to 80–90%.",
+            "Repair loop is crucial; challenges remain in efficiency and data scarcity."
+          ]
+        }
       }
     ]
   }

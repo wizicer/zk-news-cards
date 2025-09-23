@@ -1,0 +1,8 @@
+🚀zkDaily 前沿热点追踪 2025-09-23 星期二
+
+📄 From Evaluation to Enhancement: Large Language Models for Zero-Knowledge Proof Code Generation
+- https://arxiv.org/abs/2509.11708
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/09/23.html
+🪶 由 @icerdesign 收集
