@@ -406,6 +406,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-25",
+    projects: [
+      {
+        "name": "Zinc: Succinct Arguments with Small Arithmetization Overheads from IOPs of Proximity to the Integers",
+        "url": "https://eprint.iacr.org/2025/316",
+        "type": "论文",
+        "tags": [
+          "Albert Garreta",
+          "Nethermind Research",
+        ],
+        "summary": {
+          "zh": "来自 @NethermindEth 的 Garreta等人在{{name}}论文中提出了一种基于哈希的简洁论证方案Zinc，通过整数上的IOPs减少算术化开销，支持任意模数的环运算。",
+          "en": "@NethermindEth's Garreta et al. proposed Zinc, a hash-based succinct argument scheme that reduces arithmetization overheads using IOPs of proximity to integers, supporting ring operations with arbitrary moduli."
+        },
+        "notes": {
+          zh: [
+            "Zinc旨在减少ZK证明中的算术化开销，可降低数量级成本",
+            "支持任意模数的环运算，包括非质数和多模数场景",
+            "方案基于哈希和代码，无需隐藏阶群，增强安全性",
+            "核心组件包括Zinc-PIOP框架和Zip多项式承诺",
+            "利用有理数上的查找论证确保见证整数性",
+            "适用于整数算术应用，提升ZK证明的实用效率"
+          ],
+          "en": [
+            "Zinc aims to reduce arithmetization overheads in ZK proofs, lowering costs by orders of magnitude.",
+            "Supports ring operations with arbitrary moduli, including non-prime and multi-modulus scenarios.",
+            "Based on hash and code, no hidden order is required, enhancing security.",
+            "Core components include the Zinc-PIOP framework and Zip polynomial commitments.",
+            "Utilizes rational number-based lookup arguments to ensure proof integrity.",
+            "Suitable for integer arithmetic applications, improving the practical efficiency of ZK proofs."
+          ]
+        }
+      }
+    ]
   }
 ];
 

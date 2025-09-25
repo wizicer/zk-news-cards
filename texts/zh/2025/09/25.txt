@@ -1,0 +1,9 @@
+🚀zkDaily 前沿热点追踪 2025-09-25 星期四
+
+📄 Zinc: Succinct Arguments with Small Arithmetization Overheads from IOPs of Proximity to the Integers
+- https://eprint.iacr.org/2025/316
+- @NethermindEth
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/09/25.html
+🪶 由 @icerdesign 收集
