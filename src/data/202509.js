@@ -442,6 +442,44 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-09-26",
+    projects: [
+      {
+        "name": "Programmable Cryptography: Four Easy Pieces",
+        "url": "https://github.com/0xPARC/0xparc-intro-book/releases/tag/v2.0.0",
+        "type": "信息",
+        "tags": [
+          "0xPARC",
+          "Textbook",
+          "Education"
+        ],
+        "summary": {
+          "zh": "@0xPARC 团队发布了可编程密码学教材{{name}}的v2.0.0版本，包括更新内容和错误修复，支持ZK等密码学技术的学习。",
+          "en": "@0xPARC team released the v2.0.0 version of the programmable cryptography textbook{{name}}, including updates and bug fixes, supporting learning of ZK and other cryptographic technologies."
+        },
+        "notes": {
+          "zh": [
+            "提出可编程密码学框架：2PC、SNARKs、FHE、ORAM。",
+            "2PC：Yao电路与OT实现安全计算。",
+            "SNARK基础：椭圆曲线与多项式承诺。",
+            "SNARK实例：PLONK的算术化与约束检查。",
+            "FHE：基于LWE的全同态加密与bootstrapping。",
+            "ORAM：Path ORAM隐藏访问模式。"
+          ],
+          "en": [
+            "Defines programmable cryptography with 2PC, SNARKs, FHE, ORAM.",
+            "2PC: Secure computation via Yao’s circuits and OT.",
+            "SNARK basics: elliptic curves and polynomial commitments.",
+            "SNARK example: PLONK with arithmetization and constraints.",
+            "FHE: LWE-based homomorphic encryption and bootstrapping.",
+            "ORAM: Path ORAM to hide access patterns."
+          ]
+        }
+        
+      }
+    ]
   }
 ];
 
