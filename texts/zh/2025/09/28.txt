@@ -1,0 +1,8 @@
+🚀zkDaily 前沿热点追踪 2025-09-28 星期日
+
+📄 Scalable zkSNARKs for Matrix Computations: A Generic Framework for Verifiable Deep Learning
+- https://eprint.iacr.org/2025/1646
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/09/28.html
+🪶 由 @icerdesign 收集

@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-09-28 Sunday
+
+📄 Scalable zkSNARKs for Matrix Computations: A Generic Framework for Verifiable Deep Learning
+- https://eprint.iacr.org/2025/1646
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/09/28.html
+🪶 Collected by @icerdesign

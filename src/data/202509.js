@@ -480,6 +480,43 @@ export default [
         
       }
     ]
+  },
+  {
+    date: "2025-09-28",
+    projects: [
+      {
+        "name": "Scalable zkSNARKs for Matrix Computations: A Generic Framework for Verifiable Deep Learning",
+        "url": "https://eprint.iacr.org/2025/1646",
+        "type": "论文",
+        "tags": [
+          "Mingshu Cong",
+          "zkML",
+        ],
+        "summary": {
+          "zh": "Cong等人在{{name}}论文中提出了一种可扩展的zkSNARK框架，用于矩阵计算，实现线性证明时间、对数级证明大小和验证时间，同时保护架构隐私。",
+          "en": "Cong et al. proposed a scalable zkSNARK framework for matrix computations, achieving linear proving time, logarithmic proof size, and verification time, while preserving architecture privacy."
+        },
+        "notes": {
+          "zh": [
+            "提出通用 zkSNARK 框架，将神经网络建模为矩阵计算 DAG。",
+            "设计双层结构：LiteBullet 保持线性 prover，PoP 压缩证明并隐藏架构。",
+            "LiteBullet 基于 folding 内积证明，避免多项式扩展与 sumcheck。",
+            "Evalyn 接口统一不同矩阵与非线性操作，支持异构 NN。",
+            "批处理与查表提升非线性函数和矩阵承诺效率。",
+            "实现 O(Mn²) prover 与 O(log(Mn)) proof/验证复杂度，并开源实现。"
+          ],
+          "en": [
+            "Proposes a generic zkSNARK framework modeling neural networks as matrix-computation DAGs.",
+            "Introduces a dual-layer design: LiteBullet ensures linear proving, PoP compresses proofs and hides structure.",
+            "LiteBullet uses folding-based inner product arguments, avoiding polynomial expansion and sumcheck.",
+            "The Evalyn interface unifies diverse matrix and nonlinear operations, supporting heterogeneous NNs.",
+            "Batching and lookup tables improve efficiency for nonlinear functions and matrix commitments.",
+            "Achieves O(Mn²) prover and O(log(Mn)) proof/verification complexity, with an open-source implementation."
+          ]
+        }
+        
+      }
+    ]
   }
 ];
 
