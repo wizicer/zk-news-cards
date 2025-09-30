@@ -517,6 +517,43 @@ export default [
         
       }
     ]
+  },
+  {
+    date: "2025-09-30",
+    projects: [
+      {
+        "name": "SP1 and zkVMs: A Security Auditor's Guide",
+        "url": "https://blog.sigmaprime.io/sp1-zkvm-security-guide.html",
+        "type": "博客",
+        "tags": [
+          "Sigma Prime",
+          "zkVM",
+          {zh:"审计", en:"Auditing"}
+        ],
+        "summary": {
+          "zh": "Sigma Prime在{{name}}博客中分享了SP1 zkVM的安全审计指南，包括架构概述、输入验证、主机与客机代码分离以及常见漏洞缓解策略等内容。",
+          "en": "@Sigma Prime shared a security audit guide for SP1 zkVM on their blog{{name}}, covering architecture overview, input validation, host-guest code separation, and common vulnerability mitigation strategies."
+        },
+        "notes": {
+          zh: [
+            "所有输入数据均不可信，必须在客机程序中验证",
+            "仅客机代码执行被证明，主机代码行为不受加密保证",
+            "SP1使用32位RISC-V，需注意整数溢出和指针算术问题",
+            "第三方依赖可能引入OS调用或64位假设，需审查和适配",
+            "安全审计应聚焦输入验证和逻辑分离，防止恶意输入",
+            "使用标准Rust工具链，但需注意zkVM环境限制"
+          ],
+          en: [
+            "All input data is untrusted and must be validated in the guest program.",
+            "Only guest code execution is proven, host code behavior is not guaranteed by encryption.",
+            "SP1 uses 32-bit RISC-V, attention needed for integer overflow and pointer arithmetic.",
+            "Third-party dependencies may introduce OS calls or 64-bit assumptions, requiring review and adaptation.",
+            "Security audits should focus on input validation and logic separation to prevent malicious inputs.",
+            "Uses standard Rust toolchain, but attention needed for zkVM environment constraints."
+          ]
+        }
+      }
+    ]
   }
 ];
 
