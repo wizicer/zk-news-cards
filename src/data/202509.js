@@ -532,7 +532,7 @@ export default [
         ],
         "summary": {
           "zh": "Sigma Prime在{{name}}博客中分享了SP1 zkVM的安全审计指南，包括架构概述、输入验证、主机与客机代码分离以及常见漏洞缓解策略等内容。",
-          "en": "@Sigma Prime shared a security audit guide for SP1 zkVM on their blog{{name}}, covering architecture overview, input validation, host-guest code separation, and common vulnerability mitigation strategies."
+          "en": "Sigma Prime shared a security audit guide for SP1 zkVM on their blog{{name}}, covering architecture overview, input validation, host-guest code separation, and common vulnerability mitigation strategies."
         },
         "notes": {
           zh: [
