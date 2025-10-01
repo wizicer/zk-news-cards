@@ -1,0 +1,9 @@
+🚀zkDaily Frontier Tracker 2025-10-01 Wednesday
+
+📝 A Comparison of zkVM DSLs: Halo2, Zirgen, and Plonky3
+- https://hexens.io/blog/zkvm-dsls
+- @hexensio
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/10/01.html
+🪶 Collected by @icerdesign

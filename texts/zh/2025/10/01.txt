@@ -1,0 +1,9 @@
+🚀zkDaily 前沿热点追踪 2025-10-01 星期三
+
+📝 A Comparison of zkVM DSLs: Halo2, Zirgen, and Plonky3
+- https://hexens.io/blog/zkvm-dsls
+- @hexensio
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/10/01.html
+🪶 由 @icerdesign 收集
