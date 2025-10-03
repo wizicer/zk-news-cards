@@ -39,6 +39,42 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-10-03",
+    projects: [
+      {
+        "name": "Arbitrary code execution in guest via memory safety failure in `sys_read`",
+        "url": "https://github.com/risc0/risc0/security/advisories/GHSA-jqq4-c7wq-36h7",
+        "type": "开源",
+        "tags": [
+          "RISC0",
+          {zh: "漏洞", en: "Vulnerability"},
+        ],
+        "summary": {
+          zh: "@risczero 团队在GitHub安全公告中披露了zkVM平台中的高危漏洞，涉及sys_read函数内存安全问题，可能导致任意代码执行，已发布修复版本。",
+          en: "@risczero team disclosed a high-risk vulnerability in the zkVM platform, involving a memory safety issue in the sys_read function, which could lead to arbitrary code execution. The vulnerability has been fixed."
+        },
+        "notes": {
+          "zh": [
+            "漏洞允许主机通过sys_read写入guest任意内存位置，执行任意代码",
+            "所有使用受影响版本的guest程序均存在风险，严重破坏ZK保证",
+            "修复已应用于risc0-zkvm版本2.3.2和3.0.3，移除不安全指针运算",
+            "开发者需更新Cargo.toml中相关crate版本并重建应用",
+            "RISC Zero proof系统和电路未受影响，无需prover行动",
+            "使用risc0-aggregation或RiscZeroSetVerifier的项目需升级至>=0.9版本"
+          ],
+          "en": [
+            "Vulnerability allows host to write arbitrary code to guest memory via sys_read",
+            "All guest programs using affected versions are at risk, breaking zk guarantees",
+            "Fix has been applied to risc0-zkvm versions 2.3.2 and 3.0.3, removing unsafe pointer operations",
+            "Developers need to update Cargo.toml with related crate versions and rebuild application",
+            "RISC Zero proof system and circuits are not affected, no prover action needed",
+            "Projects using risc0-aggregation or RiscZeroSetVerifier need to upgrade to >=0.9 version"
+          ]
+        }
+      }
+    ],
+  },
 ];
 
 const others = [

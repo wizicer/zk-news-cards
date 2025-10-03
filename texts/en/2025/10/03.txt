@@ -1,0 +1,9 @@
+🚀zkDaily Frontier Tracker 2025-10-03 Friday
+
+💻 Arbitrary code execution in guest via memory safety failure in `sys_read`
+- https://github.com/risc0/risc0/security/advisories/GHSA-jqq4-c7wq-36h7
+- @risczero
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/10/03.html
+🪶 Collected by @icerdesign

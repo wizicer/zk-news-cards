@@ -1,0 +1,9 @@
+🚀zkDaily 前沿热点追踪 2025-10-03 星期五
+
+💻 Arbitrary code execution in guest via memory safety failure in `sys_read`
+- https://github.com/risc0/risc0/security/advisories/GHSA-jqq4-c7wq-36h7
+- @risczero
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/10/03.html
+🪶 由 @icerdesign 收集
