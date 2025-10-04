@@ -75,6 +75,43 @@ export default [
       }
     ],
   },
+  {
+    date: "2025-10-04",
+    projects: [
+      {
+        "name": "Intel and AMD trusted enclaves, the backbone of network security, fall to physical attacks",
+        "url": "https://arstechnica.com/security/2025/09/intel-and-amd-trusted-enclaves-the-backbone-of-network-security-fall-to-physical-attacks/",
+        "type": "新闻",
+        "tags": [
+          "Dan Goodin",
+          "Ars Technica",
+          "TEE",
+        ],
+        "summary": {
+          "zh": "研究人员独立发布两篇论文，披露针对Intel SGX和AMD SEV-SNP的物理攻击Battering RAM和Wiretap，利用确定性加密漏洞，允许攻击者查看和操纵受保护数据。",
+          "en": "Researchers independently published two papers disclosing physical attacks Battering RAM and Wiretap against Intel SGX and AMD SEV-SNP, exploiting deterministic encryption vulnerabilities, allowing attackers to view and manipulate protected data."
+        },
+        "notes": {
+          "zh": [
+            "TEE依赖确定性加密，易受重放攻击，需改硬件以增强安全",
+            "Battering RAM攻击成本低于50美元，支持数据读写和篡改",
+            "Wiretap攻击成本500-1000美元，仅支持被动数据读取",
+            "攻击通过物理拦截器实现，物理访问可导致漏洞利用",
+            "芯片商称TEE设计不防御物理攻击，但云服务仍广泛依赖",
+            "区块链服务如Phala使用TEE保护智能合约，面临潜在安全风险"
+          ],
+          "en": [
+            "TEE depends on deterministic encryption, vulnerable to replay attacks, requiring hardware changes to enhance security",
+            "Battering RAM attack costs less than $50, supporting active data read and write",
+            "Wiretap attack costs $500-1000, supporting passive data read only",
+            "Attacks through physical interceptors, supply chain or physical access can lead to vulnerability exploitation",
+            "Chip manufacturers claim TEE design does not defend against physical attacks, but cloud services still widely rely on it",
+            "Blockchain services like Phala use TEE to protect smart contracts, facing potential security risks"
+          ]
+        }
+      }
+    ]
+  }
 ];
 
 const others = [
