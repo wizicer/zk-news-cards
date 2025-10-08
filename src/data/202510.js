@@ -111,6 +111,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: '2025-10-08',
+    projects: [
+      {
+        "name": "PSE September 2025 Newsletter",
+        "url": "https://pse.dev/blog/pse-september-2025-newsletter",
+        "type": "新闻",
+        "tags": [
+          "PSE",
+          "Privacy"
+        ],
+        "summary": {
+          "zh": "@PrivacyEthereum 团队发布了九月通讯，涵盖ZK-Kit进展和PSE路线图，聚焦零知识技术在去中心化和隐私保护方面的应用。",
+          "en": "@PrivacyEthereum team released September 2025 newsletter, covering ZK-Kit progress and PSE roadmap, focusing on the application of zero-knowledge technology in decentralization and privacy protection."
+        },
+        "notes": {
+          zh: [
+            "ZK-Kit团队专注于零知识工具开发，提升编程密码学能力",
+            "PSE路线图概述2025年及未来在零知识领域的战略方向",
+            "强调去中心化和隐私保护在零知识技术中的重要性",
+            "通讯内容涵盖开源项目更新和社区动态",
+            "零知识证明技术正推动区块链隐私和可扩展性发展",
+            "团队持续优化工具以支持开发者构建ZK应用"
+          ],
+          en: [
+            "The ZK-Kit team focuses on developing zero-knowledge tools, enhancing programming cryptographic capabilities",
+            "PSE roadmap outlines 2025 and future strategic directions in the zero-knowledge domain",
+            "Emphasizing decentralization and privacy protection in zero-knowledge technology",
+            "Newsletter content covers open-source project updates and community dynamics",
+            "Zero-knowledge proof technology is driving blockchain privacy and scalability development",
+            "The team continues to optimize tools to support developers in building ZK applications"
+          ]
+        }
+      }
+    ]
   }
 ];
 
