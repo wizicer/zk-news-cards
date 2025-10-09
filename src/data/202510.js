@@ -147,6 +147,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-09",
+    projects: [
+      {
+        "name": "Introducing Valida zkVM 1.0: A Foundation for Verifiable Applications",
+        "url": "https://www.lita.foundation/blog/introducing-valida-zkvm-1-0",
+        "type": "新闻",
+        "tags": [
+          "Lita Team",
+          "zkVM",
+          "Verifiable Computing",
+        ],
+        "summary": {
+          "zh": "@0xLita 团队发布了Valida zkVM 1.0，包括并行证明和编译器优化等特性，提升了性能和开发者体验，但强调其尚未达到生产就绪状态。",
+          "en": "@0xLita team released Valida zkVM 1.0, including parallel proving and compiler optimizations, improving performance and developer experience, but emphasizing that it is not yet production-ready."
+        },
+        "notes": {
+          zh: [
+            "Valida zkVM 1.0引入并行证明，可显著加速多段工作负载",
+            "编译器工具链优化包括智能分支和操作数折叠，提升代码效率",
+            "新增布尔约束和程序一致性检查，强化证明正确性",
+            "安全性问题：健全性审查仍在进行，不建议用于生产环境",
+            "感谢Hideaki Takahashi修复关键健全性错误，推动协作开发",
+            "未来计划扩展性能、语言支持和应用规模"
+          ],
+          en: [
+            "Valida zkVM 1.0 introduces parallel proving, significantly accelerating multi-threaded workloads",
+            "Compiler toolchain optimizations include smart branching and operation folding, improving code efficiency",
+            "New Boolean constraints and program consistency checks strengthen proof correctness",
+            "Security issue: Soundness auditing is still in progress, not recommended for production environment",
+            "Thanks to Hideaki Takahashi for fixing critical soundness errors, promoting collaborative development",
+            "Future plans include expanding performance, language support, and application scale"
+          ]
+        }
+      }
+    ]
   }
 ];
 
