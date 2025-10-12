@@ -184,6 +184,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-12",
+    projects: [
+      {
+        "name": "SoK: Lookup Table Arguments",
+        "url": "https://eprint.iacr.org/2025/1876",
+        "type": "论文",
+        "tags": [
+          "Hossein Hafezi",
+          "Lookup Arguments",
+        ],
+        "summary": {
+          "zh": "Hafezi等人在{{name}}论文中系统化分析了查找表论证的设计，提出统一框架覆盖多种查找类型，并评估现有协议在证明成本、可组合性等方面的表现。",
+          "en": "Hafezi et al. in {{name}} paper systematize the design of lookup table arguments, propose a unified framework covering various lookup types, and evaluate existing protocols in terms of proof cost, composability, etc."
+        },
+        "notes": {
+          "zh": [
+            "查找表论证广泛用于非本地操作、zk-VM和集合成员证明",
+            "现有构造在假设、效率和可组合性上差异显著",
+            "引入统一框架覆盖标准、投影、索引、向量和可分解查找",
+            "分类协议基于证明技术和组合风格",
+            "评估维度包括证明者成本、表大小依赖和递归证明兼容性",
+            "提供实践选择指南并突出预处理和可分解性的优势与限制"
+          ],
+          "en": [
+            "Lookup table arguments are widely used in non-interactive operations, zk-VM and set membership proofs",
+            "Existing constructions differ in assumptions, efficiency, and composability",
+            "Introduce a unified framework covering standard, projection, index, vector and decomposable lookups",
+            "Classify protocols based on proof technology and composition style",
+            "Evaluation metrics include prover cost, table size dependence, and recursive proof composability",
+            "Provide practical guidance on selection and highlight the advantages and limitations of preprocessing and decomposability"
+          ]
+        }
+      }
+    ]
   }
 ];
 
