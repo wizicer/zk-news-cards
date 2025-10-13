@@ -220,6 +220,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-13",
+    projects: [
+      {
+        "name": "Dynark: Making Groth16 Dynamic",
+        "url": "https://eprint.iacr.org/2025/1897",
+        "type": "论文",
+        "tags": [
+          "Tianyu Zhang",
+          "Dynamic",
+          "Groth16",
+        ],
+        "summary": {
+          "zh": "Zhang等人在{{name}}论文中提出了一种动态zkSNARK方案DYNARK，可在见证小变化时以次线性时间更新证明，基于Groth16协议优化效率。",
+          "en": "Zhang et al. in {{name}} paper proposed a dynamic zkSNARK scheme DYNARK, which can update proofs in sublinear time when witnessing small changes, based on Groth16 protocol to optimize efficiency."
+        },
+        "notes": {
+          zh: [
+            "DYNARK支持见证小变化时的快速证明更新，减少计算开销",
+            "半动态设置下更新时间为O(d)群操作，全动态为O(d√n log n)",
+            "证明大小保持192字节，验证时间4.4毫秒，与Groth16一致",
+            "实验表明，n=2^20时，预处理74.3秒后更新仅需3-60毫秒",
+            "无需依赖配对乘积参数或其他zkSNARK，简化系统设计",
+            "完全兼容现有Groth16基础设施，便于实际部署"
+          ],
+          en: [
+            "DYNARK supports fast proof updates when witnessing small changes, reducing computational overhead",
+            "Update time is O(d) group operations in semi-dynamic settings, O(d√n log n) in fully dynamic settings",
+            "Proof size remains 192 bytes, verification time 4.4 milliseconds, consistent with Groth16",
+            "Experiments show that with n=2^20, preprocessing takes 74.3 seconds and updates take 3-60 milliseconds",
+            "Does not depend on pairing product parameters or other zkSNARKs, simplifying system design",
+            "Fully compatible with existing Groth16 infrastructure, making deployment easier"
+          ]
+        }
+      }
+    ]
   }
 ];
 
