@@ -257,6 +257,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-14",
+    projects: [
+      {
+        "name": "Shielded CSV: Private and Efficient Client-Side Validation",
+        "url": "https://eprint.iacr.org/2025/068",
+        "type": "论文",
+        "tags": [
+          "Jonas Nick",
+          "Bitcoin",
+          "PCD",
+        ],
+        "summary": {
+          "zh": "Nick等人在{{name}}论文中提出Shielded CSV协议，结合PCD抽象实现高效隐私交易，仅需64字节数据写入区块链，提升比特币隐私至每秒100笔交易。",
+          "en": "Nick et al. in {{name}} paper proposed Shielded CSV protocol, combining PCD abstraction to achieve efficient privacy transactions, requiring only 64 bytes of data written to the blockchain, improving Bitcoin privacy to 100 transactions per second."
+        },
+        "notes": {
+          zh: [
+            "Shielded CSV提供首个真正私有交易构造，仅需64字节nullifier写入区块链",
+            "验证成本低，用户仅需单个Schnorr签名验证，非用户可忽略数据",
+            "证明大小独立于交易历史，提升效率和隐私",
+            "基于PCD抽象，支持折叠方案和递归STARKs等实现策略",
+            "可扩展性强，未来可进一步改进框架和协议",
+            "安全性高，通过ZK证明保护交易隐私，减少数据泄露风险"
+          ],
+          en: [
+            "Shielded CSV provides the first truly private transaction construction, requiring only 64 bytes of nullifier written to the blockchain",
+            "Verification cost is low, users only need a single Schnorr signature verification, non-users can ignore data",
+            "Proof size is independent of transaction history, improving efficiency and privacy",
+            "Based on PCD abstraction, supports folding schemes and recursive STARKs etc. implementation strategies",
+            "Extremely scalable, future can further improve the framework and protocol",
+            "High security, protected by ZK proofs, reducing data leakage risk"
+          ]
+        }
+      }
+    ]
   }
 ];
 

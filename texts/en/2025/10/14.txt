@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-10-14 Tuesday
+
+📄 Shielded CSV: Private and Efficient Client-Side Validation
+- https://eprint.iacr.org/2025/068
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/10/14.html
+🪶 Collected by @icerdesign
