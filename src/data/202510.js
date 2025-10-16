@@ -294,6 +294,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-16",
+    projects: [
+      {
+        "name": "Poseidon2b: A Binary Field Version of Poseidon2",
+        "url": "https://eprint.iacr.org/2025/1893",
+        "type": "论文",
+        "tags": [
+          "Lorenzo Grassi",
+          "Poseidon",
+          "Binius",
+        ],
+        "summary": {
+          "zh": "Grassi等人在{{name}}论文中提出了Poseidon2b，这是一种专为二进制扩展字段设计的哈希函数，旨在继承Poseidon2的电路友好特性，并与Binius等证明系统兼容，同时分析了代数密码分析和子空间轨迹等攻击向量。",
+          "en": "Grassi et al. in {{name}} paper proposed Poseidon2b, a hash function designed for binary extension fields, inheriting the circuit-friendly characteristics of Poseidon2, and compatible with Binius et al. proof systems, analyzing algebraic cryptanalysis and subspace trajectory attacks."
+        },
+        "notes": {
+          "zh": [
+            "Poseidon2b专为二进制扩展字段设计，继承电路友好特性",
+            "与Binius等证明系统兼容，优化证明和验证时间",
+            "重新评估Poseidon和Poseidon2的攻击在二进制字段的适用性",
+            "重点关注代数密码分析和子空间轨迹等攻击向量",
+            "基准测试显示在证明大小、时间和验证方面有优势",
+            "安全性分析强调二进制字段特有的攻击风险"
+          ],
+          "en": [
+            "Poseidon2b is designed for binary extension fields, inheriting the circuit-friendly characteristics",
+            "Compatible with Binius et al. proof systems, optimizing proof and verification time",
+            "Re-evaluating Poseidon and Poseidon2 attacks in binary extension fields",
+            "Focusing on algebraic cryptanalysis and subspace trajectory attacks",
+            "Benchmarking shows advantages in proof size, time, and verification",
+            "Security analysis highlights the unique attack risks of binary extension fields"
+          ]
+        }
+      }
+    ]
   }
 ];
 
