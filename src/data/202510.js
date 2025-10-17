@@ -331,6 +331,27 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-17",
+    projects: [
+      {
+        "name": "Announcing Pico Prism",
+        "url": "https://x.com/brevis_zk/status/1978430670390133237",
+        "type": "新闻",
+        "tags": [
+          "Brevis",
+          "zkVM",
+        ],
+        "summary": {
+          "zh": "@brevis_zk 推出Pico Prism (zkVM)，性能大幅提升：10秒内交易覆盖率升至98.9%，硬件成本降50%至12.8万美元，证明时间缩短至约6秒。该方案旨在突破以太坊验证瓶颈，所有测试已开源。",
+          "en": "@brevis_zk announced Pico Prism (zkVM), which achieved significant performance improvements: 98.9% transaction coverage within 10 seconds, hardware cost reduced by 50% to $128,000, proof time shortened to about 6 seconds. The scheme aims to break through Ethereum verification bottlenecks, with all benchmark open-sourced."
+        },
+        "images": [
+          "./images/2025/10/17_pico_vs_sp1.png"
+        ]
+      }
+    ]
   }
 ];
 
