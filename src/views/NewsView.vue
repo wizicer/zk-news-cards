@@ -79,6 +79,16 @@
               </li>
             </ul>
           </div>
+          <div class="project-images" v-if="project.images && project.images.length > 0">
+            <h4 class="images-title">Notes</h4>
+            <div class="images-container">
+              <img v-for="(imageUrl, iIndex) in project.images" 
+                   :key="iIndex" 
+                   :src="imageUrl" 
+                   :alt="`${project.name} image ${iIndex + 1}`" 
+                   class="project-image" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="card-footer">
