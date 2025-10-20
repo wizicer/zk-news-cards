@@ -352,6 +352,43 @@ export default [
         ]
       }
     ]
+  },
+  {
+    date: "2025-10-20",
+    projects: [
+      {
+        "name": "A GKR Tutorial",
+        "url": "https://vitalik.eth.limo/general/2025/10/19/gkr.html",
+        "type": "博客",
+        "tags": [
+          "Vitalik Buterin",
+          "GKR",
+          "Sumcheck",
+        ],
+        "summary": {
+          "zh": "@VitalikButerin 在{{name}}博客中详细讲解了GKR协议，包括其在ZK证明系统中的应用、Sumcheck协议原理以及Poseidon哈希的证明优化等内容。",
+          "en": "@VitalikButerin in {{name}} blog post detailedly explained the GKR protocol, including its application in ZK proof systems, the principle of Sumcheck protocol, and the proof optimization of Poseidon hash function."
+        },
+        "notes": {
+          "zh": [
+            "GKR为批量分层计算设计，无需中间层承诺",
+            "基于Sumcheck协议，递归转化验证问题",
+            "专攻哈希和神经网络等结构化计算",
+            "优化后理论开销<15x，实践可达个位数",
+            "需结合其他系统实现零知识",
+            "支持扩展优化，宽度增加时开销趋零"
+          ],
+          "en": [
+            "GKR for batched layered computations, no intermediate commitments",
+            "Uses sumcheck to recursively transform verification",
+            "Specialized for hashes and neural networks",
+            "Optimized overhead <15x theoretically, single-digit practically",
+            "Requires ZK-SNARK/STARK for privacy",
+            "Extensions enable near-zero overhead at scale"
+          ]
+        }
+      }
+    ]
   }
 ];
 
