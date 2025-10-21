@@ -389,6 +389,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-21",
+    projects: [
+      {
+        "name": "High-Throughput Universally Composable Threshold FHE Decryption",
+        "url": "https://eprint.iacr.org/2025/1781",
+        "type": "论文",
+        "tags": [
+          "Guy Zyskind",
+          "FHE",
+          "MPC",
+        ],
+        "summary": {
+          "zh": "Zyskind等人在{{name}}论文中提出了一种高效阈值FHE解密协议，避免噪声泛滥，通过安全MPC舍入实现UC框架下的模拟安全，在线阶段吞吐量提升约20,000倍。",
+          "en": "Zyskind et al. in {{name}} paper proposed an efficient threshold FHE decryption protocol, avoiding noise proliferation, through secure MPC rounding to achieve simulation security in the UC framework, with online throughput improvement of approximately 20,000 times."
+        },
+        "notes": {
+          "zh": [
+            "协议避免噪声泛滥，减少开销和参数大小",
+            "采用离线/在线设计，预处理降低在线通信和计算成本",
+            "支持多种敌手模型，如不诚实多数或诚实多数",
+            "在线阶段吞吐量提升约20,000倍，延迟优化达37倍",
+            "技术可应用于其他MPC协议，如安全机器学习",
+            "在UC框架下证明安全，增强可组合性和实用性"
+          ],
+          "en": [
+            "Protocol avoids noise proliferation, reducing overhead and parameter size",
+            "Offline/online design, preprocessing reduces online communication and computation cost",
+            "Supports multiple adversary models, such as dishonest majority or honest majority",
+            "Online throughput improvement of approximately 20,000 times, with a latency optimization of up to 37 times",
+            "Technique can be applied to other MPC protocols, such as secure machine learning",
+            "Proven secure in the UC framework, enhancing composability and practicality"
+          ]
+        }
+      }
+    ]
   }
 ];
 
