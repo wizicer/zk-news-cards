@@ -426,6 +426,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-22",
+    projects: [
+      {
+        "name": "Zkzkevm: private evm",
+        "url": "https://ethresear.ch/t/zkzkevm-private-evm/23315",
+        "type": "博客",
+        "tags": [
+          "barryWhiteHat",
+          "Private EVM",
+        ],
+        "summary": {
+          "zh": "@barrywhitehat 在帖子{{name}}中讨论了如何通过添加pstore和pload操作码实现私有EVM，支持私有用户状态，同时分析了隐私与全局状态的权衡。",
+          "en": "@barrywhitehat in {{name}} post discussed how to implement private EVM by adding pstore and pload opcodes, supporting private user states, analyzing the trade-off between privacy and global state."
+        },
+        "notes": {
+          "zh": [
+            "私有全局状态不可行，因证明者需知晓状态才能生成证明",
+            "添加pstore和pload操作码可支持私有用户状态",
+            "使用私有存储树和无效树来管理隐私数据",
+            "需处理元数据泄露问题，如message.sender和tx.origin",
+            "可实现私有rollup，用户或服务器生成证明",
+            "未来需考虑EOA隐私和动态值存储的竞态条件"
+          ],
+          "en": [
+            "Private global state is infeasible, as the prover must know the state to generate proofs",
+            "Adding pstore and pload opcodes supports private user states",
+            "Private storage trees and invalid trees manage private data",
+            "Need to handle metadata leaks, such as message.sender and tx.origin",
+            "Can achieve private rollup, with users or servers generating proofs",
+            "Future needs to consider EOA privacy and dynamic value storage race conditions"
+          ]
+        }
+      }
+    ]
   }
 ];
 
