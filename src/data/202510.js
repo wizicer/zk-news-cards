@@ -462,6 +462,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-23",
+    projects: [
+      {
+        "name": "Symphony: Scalable SNARKs in the Random Oracle Model from Lattice-Based High-Arity Folding",
+        "url": "https://eprint.iacr.org/2025/1905",
+        "type": "论文",
+        "tags": [
+          "Binyi Chen",
+          "SNARK",
+          "Folding",
+        ],
+        "summary": {
+          "zh": "Binyi Chen等人在{{name}}论文中提出了Symphony，一种基于格的高阶折叠SNARK，避免在电路中嵌入哈希函数，具有内存高效、并行化和后量子安全等特性。",
+          "en": "Binyi Chen et al. in {{name}} paper proposed Symphony, a lattice-based high-arity folding SNARK, avoiding hash embedding in SNARK circuits, with memory efficiency, parallelization, and post-quantum security."
+        },
+        "notes": {
+          "zh": [
+            "Symphony避免在SNARK电路中嵌入哈希函数，减少安全风险和证明开销",
+            "采用格基折叠方案，提供后量子安全保证",
+            "支持内存高效、并行化和流式处理，优化性能",
+            "证明大小和验证时间为多对数级，提升可扩展性",
+            "通用编译器可将折叠方案转换为SNARK，增强灵活性",
+            "在zkVM和证明学习等应用中具有潜在优势"
+          ],
+          "en": [
+            "Symphony avoids hash embedding in SNARK circuits, reducing security risks and proof overhead",
+            "Adopting lattice-based folding scheme, providing post-quantum security guarantees",
+            "Supporting memory efficiency, parallelization, and streaming processing, optimizing performance",
+            "Proof size and verification time are multi-polynomial, enhancing scalability",
+            "Universal compiler can convert folding scheme to SNARK, enhancing flexibility",
+            "Having potential advantages in zkVM and proof learning applications"
+          ]
+        }
+      }
+    ]
   }
 ];
 

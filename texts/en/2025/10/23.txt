@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-10-23 Thursday
+
+📄 Symphony: Scalable SNARKs in the Random Oracle Model from Lattice-Based High-Arity Folding
+- https://eprint.iacr.org/2025/1905
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/10/23.html
+🪶 Collected by @icerdesign
