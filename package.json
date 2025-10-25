@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@vue/server-renderer": "^3.5.17",
-    "axios": "^1.10.0",
+    "axios": "^1.12.0",
     "commander": "^14.0.0",
     "crypto": "^1.0.1",
     "katex": "^0.16.22",
@@ -38,6 +38,9 @@
     "he": "^1.2.0",
     "puppeteer": "^24.11.1",
     "rimraf": "^6.0.1",
-    "vite": "^7.0.0"
+    "vite": "^7.0.8"
+  },
+  "resolutions": {
+    "form-data": "^4.0.4"
   }
 }
