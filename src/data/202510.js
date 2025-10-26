@@ -499,6 +499,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-26",
+    projects: [
+      {
+        "name": "CIS 7000: Succinct Arguments",
+        "url": "https://pratyushmishra.com/classes/cis-7000-f25/",
+        "type": "活动",
+        "tags": [
+          "Pratyush Mishra",
+          "Course",
+        ],
+        "summary": {
+          "zh": "Pratyush Mishra组织了CIS 7000课程，时间为2025年秋季的周一和周三，从8月底开始到12月中旬结束，专注于zkSNARKs的数学基础、实现和应用。",
+          "en": "Pratyush Mishra organized CIS 7000 course, running on Mondays and Wednesdays in Fall 2025, focusing on the mathematical foundations, implementation, and applications of zkSNARKs."
+        },
+        "notes": {
+          "zh": [
+            "课程无公开录屏，但可查看幻灯片。",
+            "课程涵盖zkSNARKs的数学基础、实现和应用",
+            "包括多项式IOPs、KZG承诺、Spartan PIOP等关键技术",
+            "强调zkSNARKs在区块链和隐私保护中的实际应用",
+            "学生通过论文展示和项目深入理解ZKP系统",
+            "课程结构结合讲座、讨论和实验，提升综合能力",
+          ],
+          "en": [
+            "The course does not have public recordings, but the slides are available.",
+            "Course covers mathematical foundations, implementation, and applications of zkSNARKs",
+            "Includes key technologies such as multi-variate IOPs, KZG commitments, and Spartan PIOP",
+            "Emphasizes practical applications of zkSNARKs in blockchain and privacy protection",
+            "Students deepen understanding of ZKP systems through paper presentations and projects",
+            "Course structure combines lectures, discussions, and experiments to enhance comprehensive abilities",
+            "Final project can involve research or literature review, driving academic progress"
+          ]
+        }
+      }
+    ]
   }
 ];
 
