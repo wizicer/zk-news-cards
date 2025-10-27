@@ -536,6 +536,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-27",
+    projects: [
+      {
+        "name": "Cryptography Research Spotlight - An Overview of the LatticeFold Architectural Family",
+        "url": "https://review.stanfordblockchain.xyz/p/76-cryptography-research-spotlight",
+        "type": "博客",
+        "tags": [
+          "Stanford Blockchain Club",
+          "LatticeFold",
+        ],
+        "summary": {
+          "zh": "Stanford Blockchain Club在博客{{name}}中分享了与Dan Boneh的对话，讨论了LatticeFold架构家族及其在ZK证明系统中的应用，包括后量子安全、硬件友好算术和折叠技术等内容。",
+          "en": "Stanford Blockchain Club shared a blog post{{name}} with Dan Boneh, discussing LatticeFold's post-quantum security, hardware friendliness, and folding techniques, as well as its applications in ZK proof systems."
+        },
+        "notes": {
+          "zh": [
+            "LatticeFold使用Ajtai承诺和MSIS假设，提供后量子安全，替代传统离散对数承诺",
+            "折叠技术通过扩展、分解和折叠步骤，控制范数增长，确保绑定安全",
+            "支持64位模数算术，与CPU/GPU硬件友好，提升证明效率",
+            "可应用于聚合后量子签名，增强区块链系统的可扩展性",
+            "与HyperNova等现有方案相比，LatticeFold在硬件实现和安全性上有优势",
+            "强调折叠与ZK的互补性，折叠处理可扩展性，ZK处理隐私"
+          ],
+          "en": [
+            "LatticeFold uses Ajtai commitments and MSIS assumption, providing post-quantum security, replacing traditional discrete logarithm commitments",
+            "Folding technology controls norm growth through extension, decomposition, and folding steps, ensuring binding security",
+            "Supports 64-bit arithmetic, friendly with CPU/GPU hardware, improving proof efficiency",
+            "Can be applied to aggregated post-quantum signatures, enhancing blockchain system scalability",
+            "Compared to existing schemes like HyperNova, LatticeFold has advantages in hardware implementation and security",
+            "Emphasizes the complementary nature of folding and ZK, folding handles scalability, ZK handles privacy"
+          ]
+        }
+      }
+    ]
   }
 ];
 
