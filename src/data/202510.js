@@ -572,6 +572,43 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-28",
+    projects: [
+      {
+        "name": "phantom-fhe-ram",
+        "url": "https://phantom.zone/posts/phantom-fhe-ram",
+        "type": "博客",
+        "tags": [
+          "Jean-Philippe Bossuat",
+          "Phantom VM",
+          "FHE",
+        ],
+        "summary": {
+          "zh": "Phantom VM 团队在博客{{name}}中分享了FHE-RAM的实现，基于Poulpy库，支持加密RAM的私有读写，服务器仅知RAM大小和操作类型，确保数据隐私。",
+          "en": "Phantom VM team shared a blog post{{name}} about FHE-RAM implementation, based on Poulpy library, supporting private read and write of encrypted RAM, with server knowing only RAM size and operation type, ensuring data privacy."
+        },
+        "notes": {
+          "zh": [
+            "FHE-RAM允许加密存储RAM，用户可私有读写，服务器仅知操作类型和RAM大小",
+            "使用GLWE和GGSW密码学技术，支持地址分解和同态操作",
+            "1MB RAM在单核i9-12900K上读延迟302ms，写延迟871ms，可并行优化",
+            "设计包括密钥生成、数据加密和读写协议，确保端到端隐私",
+            "开源实现提供详细参数和示例，便于集成和扩展",
+            "适用于需要高隐私保护的分布式计算场景"
+          ],
+          "en": [
+            "FHE-RAM allows encrypted storage of RAM, with private read and write by users, and server knowing only operation type and RAM size",
+            "GLWE and GGSW cryptography techniques support address decomposition and homomorphic operations",
+            "1MB RAM read delay is 302ms, write delay is 871ms, with parallel optimization potential",
+            "Design includes key generation, data encryption, and read-write protocol, ensuring end-to-end privacy",
+            "Open-source implementation provides detailed parameters and examples, facilitating integration and extension",
+            "Suitable for distributed computing scenarios requiring high privacy protection"
+          ]
+        }
+      }
+    ]
   }
 ];
 
