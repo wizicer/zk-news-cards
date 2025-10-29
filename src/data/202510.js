@@ -609,6 +609,27 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-29",
+    projects: [
+      {
+        "name": "ZisK has reached a major proving milestone for Ethereum",
+        "url": "https://x.com/ziskvm/status/1983221583704445333",
+        "type": "新闻",
+        "tags": [
+          "@ziskvm",
+          "Real-time Proving"
+        ],
+        "summary": {
+          "zh": "@ziskvm 团队宣布ZisK实现重大证明里程碑，所有以太坊区块现可实时证明，平均证明时间约7.5秒，提升了ZK证明效率。",
+          "en": "@ziskvm team announced a major proving milestone for ZisK, with all Ethereum blocks now provable in real-time, with an average proving time of about 7.5 seconds, improving ZK proof efficiency."
+        },
+        "images": [
+          "./images/2025/10/29_ziskvm.png"
+        ]
+      }
+    ]
   }
 ];
 
