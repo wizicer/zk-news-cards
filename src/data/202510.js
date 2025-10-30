@@ -630,6 +630,39 @@ export default [
         ]
       }
     ]
+  },
+  {
+    date: "2025-10-30",
+    projects: [
+      {
+        "name": "CoBBl: Dynamic constraint generation for SNARKs",
+        "url": "https://eprint.iacr.org/2025/1849",
+        "type": "论文",
+        "tags": [
+          "Kunming Jiang",
+          "Compiler",
+        ],
+        "summary": {
+          "zh": "Jiang等人在{{name}}论文中提出了一种SNARK编译器CoBBl，结合直接翻译和CPU仿真的优势，实现动态约束生成，显著提升编译和证明效率。",
+          "en": "Jiang et al. proposed CoBBl, a SNARK compiler that combines direct translation and CPU simulation for dynamic constraint generation, significantly improving compilation and proving efficiency."
+        },
+        "notes": {
+          zh: [
+            "CoBBl结合直接翻译和CPU仿真优势，优化约束生成",
+            "性能显著提升：编译时间比CirC快1-30倍，证明时间快26-350倍",
+            "在Jolt友好基准上，证明时间优于Jolt 1.1-1.8倍",
+            "避免未执行计算成本，提高效率",
+            "支持程序特定优化，减少约束数量",
+          ],
+          en: [
+            "CoBBl combines the advantages of direct translation and CPU simulation for dynamic constraint generation",
+            "Significantly improves compilation and proving efficiency",
+            "Avoids the cost of unexecuted calculations, improving efficiency",
+            "Supports program-specific optimization, reducing constraint count",
+          ]
+        }
+      }
+    ]
   }
 ];
 

@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-10-30 Thursday
+
+📄 CoBBl: Dynamic constraint generation for SNARKs
+- https://eprint.iacr.org/2025/1849
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/10/30.html
+🪶 Collected by @icerdesign
