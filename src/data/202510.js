@@ -663,6 +663,42 @@ export default [
         }
       }
     ]
+  },
+  {
+    date: "2025-10-31",
+    projects: [
+      {
+        "name": "Vision: A Modular Framework for Anonymous Credential Systems",
+        "url": "https://eprint.iacr.org/2025/1981",
+        "type": "论文",
+        "tags": [
+          "Anja Lehmann",
+          "BBS Signatures",
+        ],
+        "summary": {
+          "zh": "Lehmann等人在{{name}}论文中提出了一种匿名凭证系统的模块化框架，使用核心组件和可插拔模块支持伪名、范围证明和设备绑定等功能，以提升标准化和安全性。",
+          "en": "Lehmann et al. proposed a modular framework for anonymous credential systems, using core components and pluggable modules to support pseudonyms, range proofs, and device binding, improving standardization and security."
+        },
+        "notes": {
+          "zh": [
+            "模块化框架可减少重复工作，提升匿名凭证系统的标准化",
+            "核心组件包括承诺、签名和NIZK方案，支持可插拔扩展",
+            "模块如伪名、范围证明和设备绑定独立于输入，增强灵活性",
+            "实例化使用BBS签名和ECDSA，解决遗留硬件绑定问题",
+            "框架适用于数字身份和Privacy Pass等现实应用",
+            "强调安全性，模块化设计可降低协议修改风险"
+          ],
+          "en": [
+            "Modular framework reduces redundant work, improving standardization of anonymous credential systems",
+            "Core components include commitments, signatures, and NIZK schemes, supporting pluggable extensions",
+            "Modules such as pseudonyms, range proofs, and device binding are independent of input, enhancing flexibility",
+            "Implementation using BBS signatures and ECDH, solving legacy hardware binding issues",
+            "Framework suitable for digital identity and privacy pass applications",
+            "Emphasizing security, modular design reduces protocol modification risks"
+          ]
+        }
+      }
+    ]
   }
 ];
 
