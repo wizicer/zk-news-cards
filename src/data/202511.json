@@ -1,0 +1,39 @@
+[
+  {
+    "date": "2025-11-01",
+    "projects": [
+      {
+        "name": "zkEnc: Witness Encryption for Circom Circuits",
+        "url": "https://zkenc.limaois.me/",
+        "type": "开源",
+        "tags": [
+          "zkEnc",
+          "Witness Encryption",
+          "Circom"
+        ],
+        "summary": {
+          "zh": "@billwu1999 发布了zkEnc开源项目，包括基于Circom定义解密条件、支持R1CS等特性，允许在终端、Node.js和浏览器中实现高性能加密。",
+          "en": "@billwu1999 released zkEnc open source project, including based on Circom defining decryption conditions, supporting R1CS, allowing high-performance encryption in terminal, Node.js and browser."
+        },
+        "notes": {
+          "zh": [
+            "见证加密允许加密到计算语句，而非密钥",
+            "使用Circom电路定义解密条件，支持R1CS",
+            "可在终端、Node.js和浏览器中部署",
+            "基于Rust和WASM实现高性能",
+            "无需密钥交换或可信第三方",
+            "强调可验证计算和隐私安全"
+          ],
+          "en": [
+            "Witness encryption allows encryption to computation statements, not keys",
+            "Using Circom circuits to define decryption conditions, supporting R1CS",
+            "Can be deployed in terminal, Node.js, and browser",
+            "Based on Rust and WASM for high performance",
+            "No key exchange or trusted third party required",
+            "Emphasizing verifiable computation and privacy security"
+          ]
+        }
+      }
+    ]
+  }
+]

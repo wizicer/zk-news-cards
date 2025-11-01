@@ -9,6 +9,7 @@ import news2507 from './data/202507.js'
 import news2508 from './data/202508.js'
 import news2509 from './data/202509.js'
 import news2510 from './data/202510.js'
+import news2511 from './data/202511.json' with { type: 'json' }
 
 const getWeekday = (dateStr) => {
   const weekdays = {
@@ -34,6 +35,7 @@ export const newsData = [
   ...news2508,
   ...news2509,
   ...news2510,
+  ...news2511,
 ].map(item => {
   const [year, month, day] = item.date.split('-');
   return {
