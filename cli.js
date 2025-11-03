@@ -333,4 +333,55 @@ program
         }
     });
 
+program
+    .command('today')
+    .description('Add today\'s entry to the corresponding JSON file')
+    .action(async () => {
+        try {
+            const { year, month, day } = getDateParts();
+            const yearMonth = `${year}${month}`;
+            const dateString = `${year}-${month}-${day}`;
+            const dataFilePath = path.join(__dirname, 'src', 'data', `${yearMonth}.json`);
+
+            // Check if the file exists
+            if (!fs.existsSync(dataFilePath)) {
+                // Create new file with today's entry
+                const newData = [
+                    {
+                        date: dateString,
+                        projects: []
+                    }
+                ];
+                fs.writeFileSync(dataFilePath, JSON.stringify(newData, null, 2) + '\n', 'utf-8');
+                console.log(`Created new file: ${dataFilePath}`);
+                console.log(`Added entry for ${dateString}`);
+            } else {
+                // Read existing file
+                const fileContent = fs.readFileSync(dataFilePath, 'utf-8');
+                const data = JSON.parse(fileContent);
+
+                // Check if entry for today already exists
+                const existingEntry = data.find(entry => entry.date === dateString);
+                if (existingEntry) {
+                    console.log(`Entry for ${dateString} already exists in ${dataFilePath}`);
+                    return;
+                }
+
+                // Add new entry
+                const newEntry = {
+                    date: dateString,
+                    projects: []
+                };
+                data.push(newEntry);
+
+                // Write back to file
+                fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
+                console.log(`Added entry for ${dateString} to ${dataFilePath}`);
+            }
+        } catch (error) {
+            console.error('Error adding today\'s entry:', error);
+            process.exit(1);
+        }
+    });
+
 program.parse();

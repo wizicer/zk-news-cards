@@ -12,6 +12,7 @@
     "notify": "node cli.js notify",
     "pdf": "node cli.js pdf",
     "api": "node cli.js api",
+    "today": "node cli.js today",
     "build:ssr": "vite build --ssr server-entry.js --outDir dist/server",
     "generate": "npm run generate:all",
     "generate:all": "npm run build:ssr && node ssr.js --all-languages",
