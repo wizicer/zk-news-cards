@@ -1,0 +1,8 @@
+🚀zkDaily 前沿热点追踪 2025-11-03 星期一
+
+📄 Anchored Merkle Range Proof for Pedersen Commitments
+- https://eprint.iacr.org/2025/1811
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/11/03.html
+🪶 由 @icerdesign 收集

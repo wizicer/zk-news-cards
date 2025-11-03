@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-11-03 Monday
+
+📄 Anchored Merkle Range Proof for Pedersen Commitments
+- https://eprint.iacr.org/2025/1811
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/11/03.html
+🪶 Collected by @icerdesign

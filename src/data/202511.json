@@ -35,5 +35,41 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-03",
+    "projects": [
+      {
+        "name": "Anchored Merkle Range Proof for Pedersen Commitments",
+        "url": "https://eprint.iacr.org/2025/1811",
+        "type": "论文",
+        "tags": [
+          "Leona Hioki",
+          "Pedersen Commitment"
+        ],
+        "summary": {
+          "zh": "来自Intmax的Leona Hioki在{{name}}论文中提出了一种基于Merkle树的Pedersen承诺范围证明机制，通过锚定和轻量级验证避免ZK验证和配对运算，降低交易成本。",
+          "en": "Leona Hioki from Intmax proposed a range proof mechanism for Pedersen commitments based on Merkle trees, avoiding ZK verification and pairings, reducing transaction costs."
+        },
+        "notes": {
+          "zh": [
+            "避免每笔交易的重ZK验证和配对运算，降低计算开销",
+            "使用Merkle树和锚定机制确保范围证明的隐私性",
+            "结合DLEQ和Schnorr证明强化安全性",
+            "验证成本低，仅需Merkle证明、DLEQ和Schnorr证明",
+            "适用于EVM环境，优化gas使用",
+            "预印本形式发布，尚未正式同行评审"
+          ],
+          "en": [
+            "Avoids repeated ZK verification and pairings in each transaction, reducing computational overhead",
+            "Uses Merkle trees and anchor mechanism to ensure privacy of range proofs",
+            "Combines DLEQ and Schnorr proofs for enhanced security",
+            "Verification cost is low, requiring only Merkle proofs, DLEQ, and Schnorr proofs",
+            "Suitable for EVM environment, optimizing gas usage",
+            "Preprint form, not yet peer-reviewed"
+          ]
+        }
+      }
+    ]
   }
 ]
