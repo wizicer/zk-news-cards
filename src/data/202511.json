@@ -71,5 +71,41 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-04",
+    "projects": [
+      {
+        "name": "zk-Cookies: Continuous Anonymous Authentication for the Web",
+        "url": "https://eprint.iacr.org/2025/1938",
+        "type": "论文",
+        "tags": [
+          "Alexander Frolov",
+          "Anonymous Credentials"
+        ],
+        "summary": {
+          "zh": "Frolov等人在{{name}}论文中提出了一种连续匿名认证方案(CAA) zk-Cookies，使用zkSNARKs实现高效行为信号分析，防止凭证共享和盗窃，并支持差分隐私。",
+          "en": "Frolov et al. proposed a continuous anonymous authentication (CAA) scheme named zk-Cookies in their paper {{name}}, which utilizes zkSNARKs for efficient behavior signal analysis to prevent credential sharing and theft, and supports differential privacy."
+        },
+        "notes": {
+          "zh": [
+            "CAA方案将行为信号处理移至客户端，减少服务器数据收集",
+            "使用zkSNARKs实现高效计算和隐私保护",
+            "支持IP地址、地理位置、浏览器指纹等常见行为信号",
+            "原型应用用于基于传统凭证的年龄验证",
+            "集成差分隐私分析，提升数据安全性",
+            "计算性能优化，更新操作在200毫秒内完成"
+          ],
+          "en": [
+            "Shifts behavior signal processing to the client, reducing server data collection",
+            "Utilizes zkSNARKs for efficient computation and privacy protection",
+            "Supports common behavior signals such as IP addresses, geolocation, and browser fingerprints",
+            "Prototype application for age verification based on traditional credentials",
+            "Integrates differential privacy analysis to enhance data security",
+            "Performance optimization, updating operations completed in 200 milliseconds"
+          ]
+        }
+      }
+    ]
   }
 ]
