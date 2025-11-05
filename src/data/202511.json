@@ -107,5 +107,41 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-05",
+    "projects": [
+      {
+        "name": "Cryptographic Personas: Responsible Pseudonyms Without De-Anonymization",
+        "url": "https://eprint.iacr.org/2025/1969",
+        "type": "论文",
+        "tags": [
+          "Rachel Thomas",
+          {"zh": "匿名消息", "en": "Anonymous Messaging"}
+        ],
+        "summary": {
+          "zh": "Thomas等人在{{name}}论文中提出了加密角色系统，支持用户在社区中创建不可链接的匿名身份，并在违反规范时撤销匿名发布能力，通过离线证明生成和证明折叠技术优化实时应用性能。",
+          "en": "Thomas et al. proposed a cryptographic personas system in their paper {{name}}, which supports users in creating unlinkable anonymous identities in communities and revoking anonymous publishing capabilities when users violate rules, optimizing real-time application performance through offline proof generation and proof folding."
+        },
+        "notes": {
+          "zh": [
+            "提出可撤销匿名权的“Cryptographic Personas”，实现负责任的匿名发言。",
+            "基于 zk-promises 构建可更新状态的匿名凭证体系。",
+            "利用 Privacy Pass 将证明生成离线化，显著降低延迟。",
+            "采用 Proof Folding 优化服务器验证性能。",
+            "在 Signal 群聊中实现原型验证其实用性。",
+            "平衡匿名自由与社群治理的密码学方案。"
+          ],
+          "en": [
+            "Proposes 'Cryptographic Personas' for revocable, responsible anonymity.",
+            "Builds a stateful anonymous credential system on zk-promises.",
+            "Uses Privacy Pass to offline proof generation and cut latency.",
+            "Applies Proof Folding to boost server efficiency.",
+            "Implements a prototype in Signal group chats.",
+            "Balances anonymity and community accountability cryptographically."
+          ]
+        }
+      }
+    ]
   }
 ]
