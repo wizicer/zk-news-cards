@@ -8,7 +8,6 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import dotenv from 'dotenv';
 import TelegramBot from 'node-telegram-bot-api';
-import { newsData } from './src/data.js';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -41,6 +40,7 @@ async function takeScreenshot(language = 'zh') {
     const { year, month, day } = getDateParts();
 
     // Check if content exists for this language in today's data
+    const { newsData } = await import('./src/data.js');
     const todayData = newsData.find(entry => entry.date === `${year}-${month}-${day}`);
     if (todayData && todayData.languages && !todayData.languages.includes(language)) {
         console.log(`Skipping screenshot for ${language} as it's not listed in languages array for today`);
@@ -101,6 +101,7 @@ async function generatePDF(language = 'zh') {
     const { year, month, day } = getDateParts();
 
     // Check if content exists for this language in today's data
+    const { newsData } = await import('./src/data.js');
     const todayData = newsData.find(entry => entry.date === `${year}-${month}-${day}`);
     if (todayData && todayData.languages && !todayData.languages.includes(language)) {
         console.log(`Skipping PDF generation for ${language} as it's not listed in languages array for today`);
