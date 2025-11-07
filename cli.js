@@ -1,5 +1,4 @@
 import { Command } from 'commander';
-import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
@@ -7,7 +6,6 @@ import axios from 'axios';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import dotenv from 'dotenv';
-import TelegramBot from 'node-telegram-bot-api';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -23,8 +21,6 @@ const WECOM_WEBHOOK_URL_EN = process.env.WECOM_WEBHOOK_URL_EN || process.env.WEC
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID_ZH = process.env.TELEGRAM_CHAT_ID_ZH || process.env.TELEGRAM_CHAT_ID;
 const TELEGRAM_CHAT_ID_EN = process.env.TELEGRAM_CHAT_ID_EN || process.env.TELEGRAM_CHAT_ID;
-
-const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
 // Date utility function
 function getDateParts() {
@@ -59,6 +55,7 @@ async function takeScreenshot(language = 'zh') {
 
     const htmlPath = path.join(htmlDir, `${day}.html`);
 
+    const puppeteer = (await import('puppeteer')).default;
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     
@@ -117,6 +114,7 @@ async function generatePDF(language = 'zh') {
     const htmlPath = path.join(htmlDir, `${day}.html`);
     const filepath = path.join(pdfDir, `${day}-${language}.pdf`);
 
+    const puppeteer = (await import('puppeteer')).default;
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     
@@ -199,6 +197,9 @@ async function sendTelegramNotification(imagePath, textPath, language = 'zh') {
         console.error(`Telegram configuration missing for ${language}. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID_${language.toUpperCase()} in .env file`);
         return;
     }
+
+    const TelegramBot = (await import('node-telegram-bot-api')).default;
+    const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
     try {
         // Split the chat IDs by comma
