@@ -159,6 +159,9 @@
           "sum-check",
           "zkVMs"
         ],
+        "slogan": {
+          "zh": "【ZK论文】\n为什么所有高性能 SNARK 都离不开 Sum-check？\nJustin Thaler 告诉你"
+        },
         "summary": {
           "zh": "Justin Thaler在{{name}}论文中分析了sum-check协议在快速SNARK设计中的应用，强调其通过批处理评估、内存检查等技术最小化证明者工作。",
           "en": "Justin Thaler in {{name}} paper analyzed the application of sum-check protocol in fast SNARK design, emphasizing its minimization of prover work through batch evaluation and memory checks."
