@@ -1,0 +1,8 @@
+🚀zkDaily 前沿热点追踪 2025-11-08 星期六
+
+📄 Sum-check Is All You Need: An Opinionated Survey on Fast Provers in SNARK Design
+- https://eprint.iacr.org/2025/2041
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/11/08.html
+🪶 由 @icerdesign 收集
