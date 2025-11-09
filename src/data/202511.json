@@ -186,5 +186,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-09",
+    "projects": [
+      {
+        "name": "On Reed–Solomon Proximity Gaps Conjectures",
+        "url": "https://eprint.iacr.org/2025/2046",
+        "type": "论文",
+        "tags": [
+          "Elizabeth Crites",
+          "Reed-Solomon Codes"
+        ],
+        "slogan": {
+          "zh": "【ZK论文】\n证伪多个Reed-Solomon邻近间隙猜想，\n影响FRI、DEEP-FRI等SNARK安全"
+        },
+        "summary": {
+          "zh": "Crites和Stewart在{{name}}论文中证伪了多个Reed-Solomon邻近间隙猜想，这些猜想支撑FRI、DEEP-FRI等SNARK系统的安全性与效率，并提出最小修改方案。",
+          "en": "Crites and Stewart in {{name}} paper disproved multiple Reed-Solomon proximity gap conjectures, supporting the security and efficiency of FRI, DEEP-FRI, and other SNARK systems, and proposed minimal modifications to meet list decoding capacity bounds."
+        },
+        "notes": {
+          "zh": [
+            "证伪多个Reed-Solomon邻近间隙猜想，影响FRI、DEEP-FRI等SNARK安全",
+            "提出最小修改方案以符合列表解码容量界限",
+            "证明相关协议与列表解码的关联，解决开放问题",
+            "可能削弱依赖这些猜想的ZK证明系统安全性",
+            "需重新评估现有证明系统的理论基础",
+            "为编码理论和ZK领域提供新的研究方向"
+          ],
+          "en": [
+            "Disproved multiple Reed-Solomon proximity gap conjectures, affecting the security of FRI, DEEP-FRI, and other SNARK systems",
+            "Proposed minimal modifications to meet list decoding capacity bounds",
+            "Proved the relationship between related protocols and list decoding, solving open problems",
+            "May weaken the security of ZK proof systems relying on these conjectures",
+            "Need to re-evaluate the theoretical foundations of existing proof systems",
+            "Provides new research directions for coding theory and ZK"
+          ]
+        }
+      }
+    ]
   }
 ]
