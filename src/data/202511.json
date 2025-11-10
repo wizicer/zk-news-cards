@@ -227,5 +227,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-10",
+    "projects": [
+      {
+        "name": "Linear-time and Logarithmically-sound Permutation and Multiset SNARKs",
+        "url": "https://eprint.iacr.org/2025/1967",
+        "type": "论文",
+        "tags": [
+          "Bing-Jyue Chen",
+          "Sumcheck"
+        ],
+        "slogan": {
+          "zh": "【ZK论文】\n从 sum-check 到线性代数，\nSNARK 的优化逻辑正在被重写"
+        },
+        "summary": {
+          "zh": "Chen等人在{{name}}论文中提出了一种线性时间且对数可靠的置换和多重集SNARK，通过线性代数视角消除二次证明开销，无需辅助承诺即可实现高效验证。",
+          "en": "Chen et al. proposed a linear-time and logarithmically-sound permutation and multiset SNARK in their {{name}} paper, eliminating quadratic proof overhead through a linear-algebraic perspective, avoiding auxiliary commitments for efficient verification."
+        },
+        "notes": {
+          "zh": [
+            "新方法避免辅助承诺，降低可靠性错误风险，增强安全性",
+            "线性代数视角使部分评估无额外代数成本，优化性能",
+            "支持证明者提供置换，无需预处理，提高灵活性",
+            "验证者可O(polylog(n))时间评估置换，减少对证明者依赖",
+            "匹配最优证明者下界，确保理论效率",
+            "域无关设计扩展应用范围，提升通用性"
+          ],
+          "en": [
+            "New method avoids auxiliary commitments, reducing soundness errors and enhancing security",
+            "Linear-algebraic perspective allows partial evaluation without additional algebraic costs, optimizing performance",
+            "Supports permutation proofs from provers without preprocessing, enhancing flexibility",
+            "Verifiers can evaluate permutations in O(polylog(n)) time, reducing dependency on provers",
+            "Matches optimal prover bounds, ensuring theoretical efficiency",
+            "Field-independent design extends application scope, improving universality"
+          ]
+        }
+      }
+    ]
   }
 ]

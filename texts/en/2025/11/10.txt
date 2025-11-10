@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-11-10 Monday
+
+📄 Linear-time and Logarithmically-sound Permutation and Multiset SNARKs
+- https://eprint.iacr.org/2025/1967
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/11/10.html
+🪶 Collected by @icerdesign
