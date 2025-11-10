@@ -22,7 +22,8 @@
             "可在终端、Node.js和浏览器中部署",
             "基于Rust和WASM实现高性能",
             "无需密钥交换或可信第三方",
-            "强调可验证计算和隐私安全"
+            "强调可验证计算和隐私安全",
+            "作者已澄清该工作仍无法证明安全性。[链接](https://x.com/billwu1999/status/1985375556226224252)"
           ],
           "en": [
             "Witness encryption allows encryption to computation statements, not keys",
@@ -30,7 +31,8 @@
             "Can be deployed in terminal, Node.js, and browser",
             "Based on Rust and WASM for high performance",
             "No key exchange or trusted third party required",
-            "Emphasizing verifiable computation and privacy security"
+            "Emphasizing verifiable computation and privacy security",
+            "Author clarified the work's security remains unproven. [Link](https://x.com/billwu1999/status/1985375556226224252)"
           ]
         }
       }
