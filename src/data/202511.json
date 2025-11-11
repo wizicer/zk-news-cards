@@ -266,5 +266,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-11",
+    "projects": [
+      {
+        "name": "Lagrange interpolation for IQ < 200",
+        "url": "https://medium.com/@laurippeltonen/lagrange-interpolation-for-iq-200-8cec1e99647d",
+        "type": "博客",
+        "tags": [
+          "Lauri Peltonen",
+          "Polynomials"
+        ],
+        "slogan": {
+          "zh": "【ZK博客】\n别被名字吓到！\n5分钟看懂 Lagrange 插值到底在干嘛"
+        },
+        "summary": {
+          "zh": "Lauri Peltonen在{{name}}博客中分享了Lagrange插值方法的基础知识，包括其定义、步骤和应用，并提及了在ZKP中多项式插值的重要性。",
+          "en": "Lauri Peltonen in {{name}} blog shared the basic knowledge of Lagrange interpolation, including its definition, steps, and applications, and mentioned the importance of polynomial interpolation in ZKP."
+        },
+        "notes": {
+          "zh": [
+            "Lagrange插值生成唯一最低次多项式通过所有给定点",
+            "插值可用于数据恢复，如音频丢失数据填补",
+            "在ZKP中，多项式插值支持高效验证和比较",
+            "Schwartz-Zippel引理允许通过少数点验证多项式",
+            "Lagrange方法简单易懂，适合教学和基础实现",
+            "实际应用中，FFT等其他方法可能更高效"
+          ],
+          "en": [
+            "Lagrange interpolation generates the unique lowest degree polynomial through all given points",
+            "Interpolation can be used for data recovery, such as audio data recovery",
+            "In ZKP, polynomial interpolation supports efficient verification and comparison",
+            "Schwartz-Zippel lemma allows verification of polynomials through a few points",
+            "Lagrange method is simple and easy to understand, suitable for teaching and basic implementation",
+            "In practical applications, other methods such as FFT may be more efficient"
+          ]
+        }
+      }
+    ]
   }
 ]
