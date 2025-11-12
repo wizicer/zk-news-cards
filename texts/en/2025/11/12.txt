@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-11-12 Wednesday
+
+📄 A Note on Notes: Towards Scalable Anonymous Payments via Evolving Nullifiers and Oblivious Synchronization
+- https://eprint.iacr.org/2025/2031
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/11/12.html
+🪶 Collected by @icerdesign

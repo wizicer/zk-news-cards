@@ -305,5 +305,41 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-12",
+    "projects": [
+      {
+        "name": "A Note on Notes: Towards Scalable Anonymous Payments via Evolving Nullifiers and Oblivious Synchronization",
+        "url": "https://eprint.iacr.org/2025/2031",
+        "type": "论文",
+        "tags": [
+          "Sean Bowe",
+          "Oblivious Synchronization"
+        ],
+        "summary": {
+          "zh": "Bowe和Miers在{{name}}论文中提出了一种通过演化无效器和遗忘同步实现可扩展匿名支付的新技术，允许验证者永久修剪无效器而不影响隐私或用户开销。",
+          "en": "Bowe and Miers in {{name}}paper proposed a new technique for scalable anonymous payments via evolving nullifiers and oblivious synchronization, allowing validators to permanently trim nullifiers without affecting privacy or user costs."
+        },
+        "notes": {
+          "zh": [
+            "匿名支付协议存在无效器线性增长问题，限制扩展性",
+            "演化无效器技术允许永久修剪无效器，不破坏未花费资金",
+            "遗忘同步模型使用远程服务生成简洁证明，服务对交易细节不可知",
+            "服务仅维护临时状态，用户可自由切换服务",
+            "该技术不增加用户计算、带宽或延迟开销",
+            "增强隐私保护，防止服务链接用户与交易"
+          ],
+          "en": [
+            "Anonymous payment protocols have linear growth of nullifiers, limiting scalability",
+            "Evolutionary nullifiers allow permanent trimming of nullifiers without destroying unspent funds",
+            "Oblivious synchronization model uses remote services to generate concise proofs, services are unaware of transaction details",
+            "Services maintain temporary states, users can freely switch services",
+            "This technology does not increase user computation, bandwidth, or latency costs",
+            "Enhances privacy protection, preventing service linking users with transactions"
+          ]
+        }
+      }
+    ]
   }
 ]
