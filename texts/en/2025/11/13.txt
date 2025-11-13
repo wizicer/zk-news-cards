@@ -1,0 +1,9 @@
+🚀zkDaily Frontier Tracker 2025-11-13 Thursday
+
+📝 Circom Pitfalls Part 2: Output Constraints, Input Assumptions, and Signed Comparisons
+- https://blog.zksecurity.xyz/posts/circom-pitfalls-2/
+- @zksecurityXYZ
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/11/13.html
+🪶 Collected by @icerdesign

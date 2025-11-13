@@ -317,6 +317,9 @@
           "Sean Bowe",
           "Oblivious Synchronization"
         ],
+        "slogan": {
+          "zh": "【ZK论文】\n为什么匿名支付会‘越用越慢’？\n这篇论文给出突破性解决"
+        },
         "summary": {
           "zh": "Bowe和Miers在{{name}}论文中提出了一种通过演化无效器和遗忘同步实现可扩展匿名支付的新技术，允许验证者永久修剪无效器而不影响隐私或用户开销。",
           "en": "Bowe and Miers in {{name}}paper proposed a new technique for scalable anonymous payments via evolving nullifiers and oblivious synchronization, allowing validators to permanently trim nullifiers without affecting privacy or user costs."
@@ -337,6 +340,46 @@
             "Services maintain temporary states, users can freely switch services",
             "This technology does not increase user computation, bandwidth, or latency costs",
             "Enhances privacy protection, preventing service linking users with transactions"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "date": "2025-11-13",
+    "projects": [
+      {
+        "name": "Circom Pitfalls Part 2: Output Constraints, Input Assumptions, and Signed Comparisons",
+        "url": "https://blog.zksecurity.xyz/posts/circom-pitfalls-2/",
+        "type": "博客",
+        "tags": [
+          "ZKSecurity",
+          "Circom",
+          "Vulnerabilities"
+        ],
+        "slogan": {
+          "zh": "【ZK博客】\n别掉坑里！\nCircom 三大隐藏漏洞：输出约束、输入假设、比较陷阱"
+        },
+        "summary": {
+          "zh": "@zksecurityXYZ 在{{name}}博客中讨论了Circom电路设计中的常见陷阱，包括输出约束缺失、输入假设未验证和比较运算的符号问题，强调了安全性漏洞的预防措施。",
+          "en": "@zksecurityXYZ in {{name}} blog discussed common traps in Circom, including missing output constraints, unverified input assumptions, and signed comparison operators."
+        },
+        "notes": {
+          "zh": [
+            "输出约束缺失是常见漏洞源，如IsEqual输出未强制为1可被恶意利用",
+            "输入假设未验证可导致AND门输出错误，需添加布尔约束如flag*(flag-1)=0",
+            "Circom比较运算符基于有符号整数，val函数映射元素到(-p/2, p/2]区间",
+            "大整数模板如BigLessThan输出未约束可允许越界输入，需显式检查输出",
+            "安全最佳实践：始终显式约束组件输出和输入，避免依赖隐式假设",
+            "比较运算符的有符号语义可能导致p/2 > p/2+1等反直觉结果，需在见证生成时注意"
+          ],
+          "en": [
+            "Output constraints are common vulnerabilities, such as IsEqual output not forced to 1 can be exploited by malicious users",
+            "Input assumptions can cause AND gate output errors, need to add boolean constraints like flag*(flag-1)=0",
+            "Circom comparison operators are based on signed integers, val function maps elements to (-p/2, p/2] interval",
+            "Large integer templates like BigLessThan output without constraints can allow out-of-bound inputs, need to explicitly check outputs",
+            "Security best practices: always explicitly constrain component outputs and inputs, avoid relying on implicit assumptions",
+            "Comparison operators' signed semantics may cause p/2 > p/2+1 etc. counterintuitive results, need to pay attention to witness generation"
           ]
         }
       }

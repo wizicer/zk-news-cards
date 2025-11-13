@@ -1,0 +1,9 @@
+🚀zkDaily 前沿热点追踪 2025-11-13 星期四
+
+📝 Circom Pitfalls Part 2: Output Constraints, Input Assumptions, and Signed Comparisons
+- https://blog.zksecurity.xyz/posts/circom-pitfalls-2/
+- @zksecurityXYZ
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/11/13.html
+🪶 由 @icerdesign 收集
