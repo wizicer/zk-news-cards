@@ -384,5 +384,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-15",
+    "projects": [
+      {
+        "name": "TensorSwitch: Nearly Optimal Polynomial Commitments from Tensor Codes",
+        "url": "https://eprint.iacr.org/2025/2065",
+        "type": "论文",
+        "tags": [
+          "Benedikt Bünz",
+          "Tensor Codes"
+        ],
+        "slogan": {
+          "zh": "【ZK论文】\nSNARG 的新基石？\nTensorSwitch 将 PCS 证明大小压到 O(log log n)"
+        },
+        "summary": {
+          "zh": "Bünz等人在{{name}}论文中提出了TensorSwitch，一种基于哈希的多线性多项式承诺方案，显著优化了证明者时间和证明大小，适用于SNARG设计。",
+          "en": "Bünz et al. proposed TensorSwitch, a hash-based multi-linear polynomial commitment scheme in paper{{name}}, which significantly optimizes prover time and proof size, suitable for SNARG designs."
+        },
+        "notes": {
+          "zh": [
+            "TensorSwitch优化PCS的证明者时间和证明大小，降低ZK证明开销",
+            "使用线性码和交互式预言模型，可编译为标准密码学PCS",
+            "承诺时间依赖码率ρ和编码时间τ，支持高效场运算",
+            "验证时间对数级增长，适合大规模多项式处理",
+            "证明大小极小，仅O(log log n)预言，提升可扩展性",
+            "基于哈希构建，增强安全性，减少对复杂密码学假设的依赖"
+          ],
+          "en": [
+            "TensorSwitch optimizes the prover time and proof size of PCs to reduce ZK proof overhead",
+            "It uses linear codes and interactive predicative models, which can be compiled into standard cryptographic PCs",
+            "Commitment time depends on coding rate ρ and encoding time τ, supporting efficient gate operations",
+            "Verification time grows logarithmically, suitable for large-scale polynomial processing",
+            "Proof size is minimal, only O(log log n) witnesses",
+            "Built on hashing for increased security and reduced dependence on complex cryptographic assumptions"
+          ]
+        }
+      }
+    ]
   }
 ]

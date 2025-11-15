@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-11-15 Saturday
+
+📄 TensorSwitch: Nearly Optimal Polynomial Commitments from Tensor Codes
+- https://eprint.iacr.org/2025/2065
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/11/15.html
+🪶 Collected by @icerdesign
