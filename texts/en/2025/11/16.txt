@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-11-16 Sunday
+
+📄 Vega: Low-Latency Zero-Knowledge Proofs over Existing Credentials
+- https://eprint.iacr.org/2025/2094
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/11/16.html
+🪶 Collected by @icerdesign

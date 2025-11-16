@@ -423,5 +423,43 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-16",
+    "projects": [
+      {
+        "name": "Vega: Low-Latency Zero-Knowledge Proofs over Existing Credentials",
+        "url": "https://eprint.iacr.org/2025/2094",
+        "type": "论文",
+        "tags": [
+          "Darya Kaviani",
+          "Srinath Setty",
+          "Anonymous Credentials"
+        ],
+        "slogan": {
+          "zh": "【ZK论文】\n折叠重用 + 查找算术化：\nVega 重新定义数字身份中的 ZKP 性能"
+        },
+        "summary": {
+          "zh": "Kaviani和Setty在{{name}}论文中提出Vega系统，利用折叠重用和查找中心化算术化技术，实现低延迟ZKP，无需可信设置，显著提升数字身份验证效率。",
+          "en": "Kaviani and Setty proposed Vega system in {{name}} paper, which uses folding reuse and lookup centralized arithmetization to achieve low-latency ZKP, without trusted setup, significantly improving digital identity authentication efficiency."
+        },
+        "notes": {
+          "zh": [
+            "Vega无需可信设置，降低安全依赖",
+            "折叠重用技术减少重复计算，提升效率",
+            "查找中心化算术化优化字段提取和哈希",
+            "证明大小和延迟优于现有技术",
+            "支持数字身份隐私保护"
+          ],
+          "en": [
+            "Vega does not require a trusted setup, reducing security dependencies",
+            "Folding reuse technology reduces repeated calculations, improving efficiency",
+            "Lookup centralized arithmetization optimizes field extraction and hashing",
+            "Proof size and latency are better than existing technologies",
+            "Supports digital identity privacy protection"
+          ]
+        }
+      }
+    ]
   }
 ]
