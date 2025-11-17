@@ -461,5 +461,45 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-17",
+    "projects": [
+      {
+        "name": "Merkle Multi-Proofs",
+        "url": "https://xn--2-umb.com/25/merkle-multi-proof/",
+        "type": "博客",
+        "tags": [
+          "Remco Bloemen",
+          "Merkle Tree",
+          "2π.com"
+        ],
+        "slogan": {
+          "zh": "【ZK博客】\n为什么 Merkle 多证明的大小总在变？\n数学告诉你答案"
+        },
+        "summary": {
+          "zh": "Remco Bloemen在{{name}}博客中分析了Merkle多证明在哈希证明系统中的性能，推导了证明大小和验证者工作量的精确分布，包括期望值、方差和概率质量函数。",
+          "en": "Remco Bloemen analyzed the performance of Merkle multi-proofs in hash-based proofs, deriving the exact distribution of proof size and verifier work, including expected values, variances, and probability mass functions."
+        },
+        "notes": {
+          "zh": [
+            "Merkle证明是哈希证明系统的核心，影响证明大小和验证者工作量",
+            "索引分布为均匀随机有放回抽样，允许精确性能分析",
+            "推导了证明大小和验证者工作量的期望值、方差和概率质量函数",
+            "支持压缩多证明和纯验证者端实现，提升效率",
+            "分析可扩展至非完美树和混合分支树，适应不同向量长度",
+            "提供了高效计算方法和近似公式，适用于实际应用场景"
+          ],
+          "en": [
+            "Merkle proofs are the core of hash-based proofs, affecting proof size and verifier work",
+            "Index distribution is uniform random sampling with replacement, allowing precise performance analysis",
+            "Derived the exact distribution of proof size and verifier work, including expected values, variances, and probability mass functions",
+            "Supports compressed multi-proofs and pure verifier-end implementation, improving efficiency",
+            "Analysis extends to imperfect trees and mixed branch trees, adapting to different vector lengths",
+            "Provides efficient calculation methods and approximate formulas, suitable for practical applications"
+          ]
+        }
+      }
+    ]
   }
 ]
