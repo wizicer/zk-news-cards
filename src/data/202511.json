@@ -501,5 +501,45 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-18",
+    "projects": [
+      {
+        "name": "Ztarknet: Starknet-based L2 for Zcash",
+        "url": "https://github.com/Ztarknet/ztarknet",
+        "type": "开源",
+        "tags": [
+          "Ztarknet",
+          "Circle STARK",
+          "Zcash"
+        ],
+        "slogan": {
+          "zh": "【ZK开源】\nZtarknet：把 Starknet 搬到 Zcash 上的 L2 方案正式开源"
+        },
+        "summary": {
+          "zh": "Ztarknet 团队开源了Ztarknet项目，提出基于Starknet的L2解决方案，使用Circle STARK证明在Zcash L1上验证状态转换，支持Cairo程序执行和透明Zcash扩展。",
+          "en": "Ztarknet team open-sourced Ztarknet project, proposing a Starknet-based L2 solution for Zcash, using Circle STARK proofs to validate state transitions on Zcash L1, supporting Cairo program execution and transparent Zcash extensions."
+        },
+        "notes": {
+          "zh": [
+            "使用Circle STARK证明验证L2状态转换，增强安全性",
+            "通过TZE框架在Zcash L1原生验证，避免Script更改",
+            "集成Madara和Stwo/Cairo，优化Rust生态系统开发",
+            "数据可用性在PoC阶段最小化，需后续评估",
+            "锚定UTXO链模式，确保L2进展与L1同步",
+            "项目处于概念阶段，提供开发资源和测试指南"
+          ],
+          "en": [
+            "Use Circle STARK proofs to verify L2 state transitions, enhancing security",
+            "Verify directly on Zcash L1 using the TZE framework to avoid script changes",
+            "Integrate Madara and Stwo/Cairo to optimize Rust ecosystem development",
+            "Data availability is minimized during PoC stage, and further evaluation is needed",
+            "Anchor the UTXO chain mode to ensure L2 progress synchronizes with L1",
+            "The project is in concept stage, providing development resources and testing guidelines"
+          ]
+        }
+      }
+    ]
   }
 ]
