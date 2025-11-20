@@ -1,0 +1,8 @@
+🚀zkDaily 前沿热点追踪 2025-11-20 星期四
+
+📄 Single-Server Private Outsourcing of zk-SNARKs
+- https://eprint.iacr.org/2025/2113
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/11/20.html
+🪶 由 @icerdesign 收集

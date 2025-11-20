@@ -541,5 +541,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-20",
+    "projects": [
+      {
+        "name": "Single-Server Private Outsourcing of zk-SNARKs",
+        "url": "https://eprint.iacr.org/2025/2113",
+        "type": "论文",
+        "tags": [
+          "Kasra Abbaszadeh",
+          "Outsourcing",
+          "MSM"
+        ],
+        "slogan": {
+          "zh": "【ZK论文】\nZK 证明太慢？这项技术让你把计算外包给服务器，还不泄露隐私"
+        },
+        "summary": {
+          "zh": "Abbaszadeh等人在论文中提出了一种单服务器私有外包zkSNARK框架，通过EMSM原语实现客户端计算降低20倍，并保护见证和证明隐私。",
+          "en": "Abbaszadeh et al. proposed a single-server private outsourcing zkSNARK framework, which utilizes EMSM primitives to reduce client computation by 20 times, and protect witness and proof privacy."
+        },
+        "notes": {
+          "zh": [
+            "提出单服务器私有外包zkSNARK，解决高证明成本问题",
+            "核心为EMSM原语，基于LPN假设，保护见证和证明隐私",
+            "支持主流zkSNARK如Nova、Groth16和Plonk",
+            "客户端计算降低20倍，证明延迟减少9倍",
+            "实现并评估构造，验证实用性和性能提升",
+            "安全性依赖于LPN变体，确保外包过程无信息泄露"
+          ],
+          "en": [
+            "Proposed a single-server private outsourcing zkSNARK framework, which utilizes EMSM primitives to reduce client computation by 20 times, and protect witness and proof privacy.",
+            "Supports mainstream zkSNARKs such as Nova, Groth16, and Plonk",
+            "Reduces client computation by 20 times and decreases proof latency by 9 times",
+            "Implemented and evaluated the construction, verifying practicality and performance improvements",
+            "Security depends on LPN variants, ensuring information leak during outsourcing"
+          ]
+        }
+      }
+    ]
   }
 ]
