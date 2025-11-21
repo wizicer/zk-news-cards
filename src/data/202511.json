@@ -580,5 +580,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-21",
+    "projects": [
+      {
+        "name": "Privacy Commitment",
+        "url": "https://blog.ethereum.org/2025/10/08/privacy-commitment",
+        "type": "博客",
+        "tags": [
+          "Ethereum Foundation",
+          "Privacy"
+        ],
+        "slogan": {
+          "zh": "【ZK新闻】\n以太坊将隐私设为一等属性？EF 发布官方 Privacy Commitment"
+        },
+        "summary": {
+          "zh": "Ethereum Foundation在博客{{name}}中分享了其对隐私的承诺，包括隐私的重要性、EF隐私集群的组成以及关键项目如PSE和IPTF，旨在将隐私融入以太坊生态核心。",
+          "en": "Ethereum Foundation in blog{{name}} shared its commitment to privacy, including the importance of privacy, the composition of EF privacy cluster, and key projects such as PSE and IPTF, aiming to integrate privacy into the core of the Ethereum ecosystem."
+        },
+        "notes": {
+          "zh": [
+            "隐私是数字信任的核心，对个人、开发者和机构至关重要",
+            "EF隐私集群包括PSE团队，专注于ZKP等前沿密码学研究",
+            "关键项目包括隐私读写、隐私证明和身份，提升用户体验",
+            "机构隐私任务组（IPTF）连接监管与隐私技术解决实际用例",
+            "开源工具如Semaphore和Kohaku已广泛用于生态隐私研发",
+            "EF致力于与生态合作，使隐私成为以太坊的一等属性"
+          ],
+          "en": [
+            "Privacy is the core of digital trust, important for individuals, developers, and institutions",
+            "EF privacy cluster includes PSE team, focusing on frontier cryptography research such as ZKP",
+            "Key projects include private read-write, private proofs, and private identity, enhancing user experience",
+            "IPTF connects regulators with privacy technology to address real-world cases",
+            "Open-source tools like Semaphore and Kohaku are widely used in privacy research in the ecosystem",
+            "EF commits to working with the ecosystem to make privacy an equal attribute of Ethereum"
+          ]
+        }
+      }
+    ]
   }
 ]
