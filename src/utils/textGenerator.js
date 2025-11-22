@@ -9,6 +9,7 @@ const iconMap = {
   '应用': '📱',
   '信息': '📃',
   '漏洞': '🪳',
+  '教程': '📝',
 }
 
 export const categoryNameMapEn = {
@@ -22,6 +23,7 @@ export const categoryNameMapEn = {
   '应用': 'App',
   '信息': 'News',
   '漏洞': 'Vulnerability',
+  '教程': 'Tutorial',
 }
 
 export const getTypeIcon = (type) => {

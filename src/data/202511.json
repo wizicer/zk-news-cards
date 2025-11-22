@@ -619,5 +619,45 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-22",
+    "projects": [
+      {
+        "name": "Master ZKPs through Sumcheck & SageMath | Interactive Tutorial",
+        "url": "https://sumcheck.zksecurity.xyz/",
+        "type": "教程",
+        "tags": [
+          "zksecurity.xyz",
+          "Sumcheck",
+          "SageMath"
+        ],
+        "slogan": {
+          "zh": "【ZK教程】\n从零实现 Sumcheck！这份互动式教程带你真正学懂 ZK"
+        },
+        "summary": {
+          "zh": "@zksecurityXYZ 分享了Sumcheck教程，通过SageMath交互式教程掌握Sumcheck协议和MLEs，包括从基础到高级ZKP协议的完整实现和练习。",
+          "en": "@zksecurityXYZ shared a Sumcheck tutorial, teaching Sumcheck protocol and MLEs through interactive SageMath tutorials, including a complete implementation and exercises from basic to advanced ZKP protocols."
+        },
+        "notes": {
+          "zh": [
+            "教程使用SageMath构建Sumcheck和MLEs从零开始",
+            "涵盖从基础概念到高级协议如HyperPlonk的完整学习路径",
+            "包括交互式代码和练习，提升学习效果",
+            "Sumcheck协议作为现代ZK系统的核心组件被详细讲解",
+            "Fiat-Shamir转换用于将交互式协议转为非交互式证明",
+            "教程结构模块化，允许用户按兴趣跳转学习"
+          ],
+          "en": [
+            "The tutorial uses SageMath to build Sumcheck and MLEs from scratch",
+            "Covers a complete learning path from basic concepts to advanced protocols like HyperPlonk",
+            "Includes interactive code and exercises to enhance learning effectiveness",
+            "Sumcheck protocol is thoroughly explained as a core component of modern ZK systems",
+            "Fiat-Shamir conversion is used to convert interactive protocols into non-interactive proofs",
+            "The tutorial is modular, allowing users to learn by interest"
+          ]
+        }
+      }
+    ]
   }
 ]
