@@ -659,5 +659,45 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-24",
+    "projects": [
+      {
+        "name": "S-two book",
+        "url": "https://blog.zksecurity.xyz/posts/stwo-book/",
+        "type": "教程",
+        "tags": [
+          "zkSecurity",
+          "S-Two",
+          "Cairo AIR"
+        ],
+        "slogan": {
+          "zh": "【ZK教程】\n从 Cairo AIR 到 S-two Prover：下一代 STARK 技术全解读"
+        },
+        "summary": {
+          "zh": "@zksecurityXYZ 分享了与 @StarkWareLtd 合作开发的S-two书籍，内容包括学习如何编写AIR、Cairo AIR实现以及Circle STARKs技术细节。",
+          "en": "@zksecurityXYZ shared a S-two book, teaching how to write AIR, Cairo AIR implementation, and Circle STARKs details."
+        },
+        "notes": {
+          "zh": [
+            "S-two是Starkware的下一代证明器，采用Circle STARKs技术",
+            "在Mersenne31素数域上实现，提供高性能证明生成",
+            "支持自定义电路，包括虚拟机(VM)和机器学习(ML)推理",
+            "书籍内容涵盖AIR编写、Cairo AIR实现和Circle STARKs细节",
+            "zkSecurity提供ZK系统审计、研究和开发服务",
+            "鼓励读者参考相关博客系列以深入了解Circle STARKs"
+          ],
+          "en": [
+            "S-two is the next generation verifier of Starkware, adopting Circle STARKs technology",
+            "Implemented on the Mersenne31 prime field, providing high-performance proof generation",
+            "Supports custom circuits, including virtual machines (VM) and machine learning (ML) inference",
+            "The book covers writing AIR, implementing Cairo AIR, and details of Circle STARKs",
+            "zkSecurity provides audit, research, and development services for ZK systems",
+            "Encourages readers to refer to related blog series to deepen their understanding of Circle STARKs"
+          ]
+        }
+      }
+    ]
   }
 ]
