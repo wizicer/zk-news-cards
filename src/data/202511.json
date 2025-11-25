@@ -699,5 +699,45 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-25",
+    "projects": [
+      {
+        "name": "PSS: TACEO Services",
+        "url": "https://core.taceo.io/articles/pss-taceo-services/",
+        "type": "博客",
+        "tags": [
+          "TACEO",
+          "MPC",
+          "coSNARKs"
+        ],
+        "slogan": {
+          "zh": "【ZK博客】\nTACEO 推出 PSS：用 MPC+ZK 做到真正去中心化的私有共享状态"
+        },
+        "summary": {
+          "zh": "TACEO团队在{{name}}博客中分享了Private Shared State（PSS）解决方案，结合MPC和ZK技术实现去中心化、隐私和可验证性，并介绍了OPRF、OMap和Proof三大核心服务。",
+          "en": "TACEO team shared a PSS solution, combining MPC and ZK technology to achieve decentralized, privacy, and verifiability, and introduced OPRF, OMap, and Proof three core services."
+        },
+        "notes": {
+          "zh": [
+            "PSS结合MPC和ZK，同时实现去中心化、隐私和可验证性",
+            "TACEO:OPRF提供匿名身份识别，防止Sybil攻击且不泄露用户信息",
+            "TACEO:OMap通过ORAM技术避免访问模式攻击，保护数据隐私",
+            "TACEO:Proof允许委托生成coSNARK证明，降低用户计算负担",
+            "网络架构包括协调层、MPC节点和coSNARK引擎，确保高效安全",
+            "性能指标：支付吞吐量达200 TPS，身份证明生成约1秒"
+          ],
+          "en": [
+            "PSS integrates MPC and ZK to achieve decentralized, privacy, and verifiability",
+            "TACEO:OPRF provides anonymous identity recognition, preventing Sybil attacks without revealing user information",
+            "TACEO:OMap uses ORAM technology to avoid access pattern attacks, protecting data privacy",
+            "TACEO:Proof allows generating coSNARK proofs by delegating computation burden to users",
+            "The network architecture includes a coordinator layer, MPC nodes, and coSNARK engines, ensuring efficient security",
+            "Performance indicators: Payment throughput reaches 200 TPS, identity proof generation is about 1 second"
+          ]
+        }
+      }
+    ]
   }
 ]
