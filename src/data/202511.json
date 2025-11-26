@@ -739,5 +739,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-26",
+    "projects": [
+      {
+        "name": "Plinko PIR tutorial",
+        "url": "https://vitalik.eth.limo/general/2025/11/25/plinko.html",
+        "type": "博客",
+        "tags": [
+          "Vitalik Buterin",
+          "PIR"
+        ],
+        "slogan": {
+          "zh": "【ZK博客】\nVitalik 教你 Plinko：单服务器 PIR 也能做到高效隐私读取"
+        },
+        "summary": {
+          "zh": "Vitalik Buterin 在博客{{name}}中讨论了私有信息检索协议 Plinko，包括其如何实现高效隐私读取、降低通信和计算开销，并应用于区块链数据查询等场景。",
+          "en": "Vitalik Buterin in blog {{name}} discussed the private information retrieval protocol Plinko, including how it achieves efficient privacy reading, reduces communication and computational overhead, and applies to blockchain data queries."
+        },
+        "notes": {
+          "zh": [
+            "Plinko 协议通过预处理和可逆 PRF 实现高效 PIR，降低通信和计算开销",
+            "协议支持单服务器设置，无需信任假设，提升隐私安全性",
+            "查询阶段使用随机化技术保护客户端索引隐私，防止服务器推断",
+            "可结合 FHE 进一步优化，但当前效率问题待解决",
+            "适用于隐私保护数据库查询、区块链数据读取等场景",
+            "实际部署需考虑存储和带宽成本，例如以太坊状态树查询"
+          ],
+          "en": [
+            "Plinko protocol achieves efficient PIR through preprocessing and reversible PRF, reducing communication and computational overhead",
+            "The protocol supports single-server settings, enhancing privacy security without trust assumptions",
+            "Randomization techniques protect client index privacy during the query phase, preventing server inference",
+            "Can be further optimized with FHE, but current efficiency issues remain unresolved",
+            "Suitable for privacy-protected database queries, blockchain data reading, etc.",
+            "Actual deployment requires considering storage and bandwidth costs, such as Ethereum state tree queries"
+          ]
+        }
+      }
+    ]
   }
 ]
