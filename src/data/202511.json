@@ -778,5 +778,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-27",
+    "projects": [
+      {
+        "name": "Proximity Conjecture",
+        "url": "https://blog.zksecurity.xyz/posts/proximity-conjecture/",
+        "type": "博客",
+        "tags": [
+          "zkSecurity",
+          "Reed-Solomon Codes"
+        ],
+        "slogan": {
+          "zh": "【ZK博客】\n你的 SNARK 参数可能不安全？Proximity Conjecture 最新分析来了"
+        },
+        "summary": {
+          "zh": "@zksecurityXYZ 在{{name}}博客中讨论了近期多项研究证伪邻近间隙猜想的影响，分析了其对基于哈希的SNARKs安全性和性能的后果，包括参数调整的必要性。",
+          "en": "@zksecurityXYZ discussed the recent multi-project refutation of the proximity conjecture in the blog, analyzing the impact on the security and performance of hash-based SNARKs, including the necessity of parameter adjustment."
+        },
+        "notes": {
+          "zh": [
+            "邻近间隙猜想被证伪，影响基于哈希的SNARKs参数设置",
+            "不安全参数区域被识别，需调整δ值以避免安全风险",
+            "从推测安全到证明安全，证明大小和验证时间翻倍，证明者时间基本不变",
+            "从推测安全到新推测安全，性能下降2-3%，证明者时间影响小",
+            "问题与列表解码问题相关，剩余未知区域安全性未解",
+            "建议在审计和开发中优先考虑参数安全，避免性能与安全权衡失误"
+          ],
+          "en": [
+            "The proximity conjecture has been refuted, affecting the parameter settings of hash-based SNARKs",
+            "Unsafe parameter regions have been identified, requiring adjustment of δ values to avoid security risks",
+            "From speculative security to proven security, proof size and verification time double, prover time remains",
+            "From speculative security to new speculative security, performance decreases by 2-3%, prover time impact is small",
+            "The problem is related to list decoding, and the remaining unknown regions' security remains unresolved",
+            "It is recommended to prioritize parameter security in audits and development to avoid performance and security trade-offs"
+          ]
+        }
+      }
+    ]
   }
 ]
