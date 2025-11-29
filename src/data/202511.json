@@ -817,5 +817,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-11-29",
+    "projects": [
+      {
+        "name": "Lattice Basis Reduction Lectures",
+        "url": "https://cryptography101.ca/lattice-basis-reduction/",
+        "type": "视频",
+        "tags": [
+          "cryptography101.ca",
+          "Lattice Cryptography"
+        ],
+        "slogan": {
+          "zh": "【ZK视频】\n想学格密码？这套 LLL 视频讲座从零讲到攻击实战"
+        },
+        "summary": {
+          "zh": "cryptography101.ca 发布了关于LLL格基约简算法的视频讲座，详细介绍了格理论、LLL算法及其在密码分析中的应用，包括数学背景和实际示例。",
+          "en": "cryptography101.ca has released a video lecture on LLL lattice basis reduction algorithm, providing a detailed introduction to lattice theory, LLL algorithm, and its applications in cryptanalysis, including mathematical background and practical examples."
+        },
+        "notes": {
+          "zh": [
+            "LLL算法是密码分析中的强大工具，适用于多种攻击场景",
+            "课程涵盖线性代数和格理论等数学背景，便于初学者理解",
+            "视频讲座包括从基础到应用的完整系列，如Gauss算法和Gram-Schmidt正交化",
+            "提供错误修正和额外材料，确保内容准确性",
+            "强调LLL在密码学中的实际应用，如解决最短向量问题",
+            "支持教育者整合资源，促进密码学教学"
+          ],
+          "en": [
+            "LLL algorithm is a powerful tool in cryptanalysis, applicable to various attack scenarios",
+            "The course covers linear algebra and lattice theory, making it easy for beginners to understand",
+            "The video lecture includes a complete series from foundation to application, such as Gauss algorithm and Gram-Schmidt orthogonalization",
+            "Error correction and additional materials are provided to ensure content accuracy",
+            "Emphasizes the practical application of LLL in cryptography, such as solving the shortest vector problem",
+            "Supports educators in integrating resources to promote cryptography education"
+          ]
+        }
+      }
+    ]
   }
 ]
