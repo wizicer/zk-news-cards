@@ -1,0 +1,41 @@
+[
+  {
+    "date": "2025-12-01",
+    "projects": [
+      {
+        "name": "Pairing-Based SNARGs with Two Group Elements",
+        "url": "https://eprint.iacr.org/2025/2160",
+        "type": "论文",
+        "tags": [
+          "Gal Arnon",
+          "Random Oracle Model"
+        ],
+        "slogan": {
+          "zh": "【ZK论文】\nSNARG 证明最小能有多小？最新论文给出的答案是：2 个群元素"
+        },
+        "summary": {
+          "zh": "Arnon等人提出了一种公开可验证SNARG，证明仅含两个群元素且无额外比特，在GGM + ROM中实现最小证明尺寸，并建立了单群元素SNARG的下界。",
+          "en": "Arnon et al. proposed a publicly verifiable SNARG, which only contains two group elements and no additional bits, achieving the minimum proof size in GGM + ROM, and establishing a lower bound for single group element SNARGs."
+        },
+        "notes": {
+          "zh": [
+            "提出首个公开可验证SNARG，证明仅两个群元素，无额外比特",
+            "在GGM + ROM中实现最小证明尺寸，BLS12-381实例下为768比特",
+            "安全性分析紧密，无隐藏安全损失",
+            "建立新下界：单群元素SNARG在GGM + ROM中不可行",
+            "证明尺寸较现有方案提升近2倍，但尚未具体高效",
+            "为未来实用实例化铺平道路，强化了Groth的下界"
+          ],
+          "en": [
+            "Proposed the first publicly verifiable SNARG, which only contains two group elements and no additional bits, achieving the minimum proof size in GGM + ROM, and establishing a lower bound for single group element SNARGs.",
+            "Achieves the minimum proof size in GGM + ROM, with BLS12-381 instance size of 768 bits",
+            "Tight security analysis with no hidden security losses",
+            "Establishes a new lower bound: single group element SNARGs are impossible in GGM + ROM",
+            "Proof size is nearly twice that of existing schemes, but not yet specifically efficient",
+            "Paves the way for future practical instantiation, reinforcing Groth's lower bound"
+          ]
+        }
+      }
+    ]
+  }
+]

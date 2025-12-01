@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-12-01 Monday
+
+📄 Pairing-Based SNARGs with Two Group Elements
+- https://eprint.iacr.org/2025/2160
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/12/01.html
+🪶 Collected by @icerdesign

@@ -1,0 +1,8 @@
+🚀zkDaily 前沿热点追踪 2025-12-01 星期一
+
+📄 Pairing-Based SNARGs with Two Group Elements
+- https://eprint.iacr.org/2025/2160
+
+---
+📄 网页查看： https://news.plonk.pro/zh/2025/12/01.html
+🪶 由 @icerdesign 收集
