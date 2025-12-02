@@ -1,0 +1,8 @@
+🚀zkDaily Frontier Tracker 2025-12-02 Tuesday
+
+📄 Sum-check protocol for approximate computations
+- https://eprint.iacr.org/2025/2152
+
+---
+📄 View on web: https://news.plonk.pro/en/2025/12/02.html
+🪶 Collected by @icerdesign

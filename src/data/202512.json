@@ -37,5 +37,44 @@
         }
       }
     ]
+  },
+  {
+    "date": "2025-12-02",
+    "projects": [
+      {
+        "name": "Sum-check protocol for approximate computations",
+        "url": "https://eprint.iacr.org/2025/2152",
+        "type": "论文",
+        "tags": [
+          "Dor Bitan",
+          "Probabilistic proofs"
+        ],
+        "slogan": {
+          "zh": "【ZK论文】\n验证计算也能允许一点误差？sum-check 新扩展太有意思了"
+        },
+        "summary": {
+          "zh": "Bitan等人在{{name}}论文中提出了一种近似计算的sum-check协议扩展，利用低度多项式的度量结构，支持可调误差参数，并分析了Fiat-Shamir变换下的安全性。",
+          "en": "Bitan et al. proposed an extension of the sum-check protocol for approximate computations, using the metric structure of low-degree polynomials, supporting adjustable error parameters, and analyzing the security under Fiat-Shamir transformation."
+        },
+        "notes": {
+          "zh": [
+            "协议扩展sum-check以处理近似计算，支持可调误差参数δ",
+            "可靠性误差随δ/Δ优雅下降，初始误差Δ大时验证者更易拒绝",
+            "利用低度多项式的度量结构，区别于经典代数方法",
+            "复数域实例化最自然，分析基于单位圆上的多项式行为",
+            "Fiat-Shamir变换下出现新的中间安全现象，与近似相关",
+            "实现黑盒可行性，编译器独立于算术操作实现，仅需满足误差界"
+          ],
+          "en": [
+            "Protocol extends sum-check for approximate computations, supporting adjustable error parameters δ",
+            "Soundness error gracefully decreases with δ/Δ, validators may reject with initial error Δ large",
+            "Utilizes the metric structure of low-degree polynomials, distinct from classic algebraic methods",
+            "Natural instantiation over complex numbers, analysis based on polynomial behavior on the unit circle",
+            "New intermediate security phenomena appear under Fiat-Shamir transformation, related to approximation",
+            "Achieves black-box feasibility, compiler independent of arithmetic operations, only needing to satisfy error bounds"
+          ]
+        }
+      }
+    ]
   }
 ]
